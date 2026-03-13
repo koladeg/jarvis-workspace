@@ -4,8 +4,8 @@ _Learn about the person you're helping. Update this as you go._
 
 - **Name:** Kolade
 - **What to call them:** kolade
-- **Pronouns:** _(optional)_
-- **Timezone:**
+- **Pronouns:** he/him
+- **Timezone:** Africa/Lagos (Nigeria)
 - **Notes:** First conversation: chose the assistant name Jarvis, prefers a calm vibe, picked 😇 as the signature emoji.
 
 ## Context
