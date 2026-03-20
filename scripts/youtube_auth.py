@@ -25,20 +25,39 @@ def authorize():
         print("✓ Using existing authorization")
         return creds
     
-    # Create new authorization
+    # Create flow for manual auth code entry
     flow = InstalledAppFlow.from_client_secrets_file(
         str(CREDENTIALS_FILE), SCOPES
     )
     
-    creds = flow.run_local_server(port=0)
+    # Generate auth URL
+    auth_url, _ = flow.authorization_url(prompt='consent')
     
-    # Save token for future use
-    with open(TOKEN_FILE, "w") as f:
-        f.write(creds.to_json())
+    print("\n🔐 YouTube Authorization Required")
+    print("=" * 60)
+    print("1. Open this URL on your LOCAL MACHINE (not on the server):")
+    print(f"\n{auth_url}\n")
+    print("2. Click 'Allow'")
+    print("3. You'll get an auth code (or be redirected)")
+    print("4. Copy the code and paste it below")
+    print("=" * 60)
     
-    print(f"✓ Authorization complete!")
-    print(f"✓ Token saved to: {TOKEN_FILE}")
-    return creds
+    auth_code = input("\nPaste auth code here: ").strip()
+    
+    try:
+        flow.fetch_token(code=auth_code)
+        creds = flow.credentials
+        
+        # Save token for future use
+        with open(TOKEN_FILE, "w") as f:
+            f.write(creds.to_json())
+        
+        print(f"\n✓ Authorization complete!")
+        print(f"✓ Token saved to: {TOKEN_FILE}")
+        return creds
+    except Exception as e:
+        print(f"❌ Authorization failed: {e}")
+        return None
 
 if __name__ == "__main__":
     try:

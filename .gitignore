@@ -1,2 +1,3 @@
 .credentials/
 scripts/google-drive-oauth.py
+.google-drive-sa.json
