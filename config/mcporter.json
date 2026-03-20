@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "zapier-mcp": {
+      "baseUrl": "https://mcp.zapier.com/api/v1/connect?token=M2EwZDk5NTgtMmM3Ni00MmQ2LThmNzctMzJiYTI4N2Q1YjZiOm00UFFaVXJraEVVcEpOOXNvVGdnaVplMmZGVDduOHdCeVd1UGgzK0VHV3c9"
+    }
+  },
+  "imports": []
+}

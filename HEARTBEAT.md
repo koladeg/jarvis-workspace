@@ -1,5 +1,8 @@
-# HEARTBEAT.md
+# HEARTBEAT.md - Periodic Tasks
 
-# Keep this file empty (or with only comments) to skip heartbeat API calls.
+Run every ~30 minutes. Uses `ollama/llama3.2:3b` for lightweight checks.
 
-# Add tasks below when you want the agent to check something periodically.
+## Tasks
+
+- Check git status in workspace (any uncommitted changes?)
+- Note: Add email/calendar checks when needed

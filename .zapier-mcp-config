@@ -1,0 +1,15 @@
+# Zapier MCP Configuration
+# SENSITIVE: Do NOT commit to git or expose in logs
+
+[connection]
+endpoint = https://mcp.zapier.com/api/v1/connect
+auth_method = bearer_token
+token_b64 = M2EwZDk5NTgtMmM3Ni00MmQ2LThmNzctMzJiYTI4N2Q1YjZiOm00UFFaVXJraEVVcEpOOXNvVGdnaVplMmZGVDduOHdCeVd1UGgzK0VHV3c9
+
+[status]
+configured = true
+date_added = 2026-03-16T23:17:00Z
+ready = true
+
+# Connection method: Use Authorization header with bearer token
+# Example: curl -H "Authorization: Bearer <token>" https://mcp.zapier.com/api/v1/connect

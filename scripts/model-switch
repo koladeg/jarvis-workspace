@@ -1,0 +1,58 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+usage() {
+  cat <<'EOF'
+Usage: model-switch <openai|opus|toggle|status>
+
+Commands:
+  openai   Switch default model to openai-codex/gpt-5.4
+  opus     Switch default model to anthropic/claude-opus-4-6
+  toggle   Flip between the two models
+  status   Show current default model
+EOF
+}
+
+get_current() {
+  openclaw config get agents.defaults.model.primary 2>/dev/null | tr -d '[:space:]'
+}
+
+set_model() {
+  local model="$1"
+  openclaw models set "$model" >/dev/null
+  printf 'Switched default model to %s\n' "$model"
+}
+
+cmd="${1:-status}"
+current="$(get_current || true)"
+
+case "$cmd" in
+  openai)
+    set_model "openai-codex/gpt-5.4"
+    ;;
+  opus)
+    set_model "anthropic/claude-opus-4-6"
+    ;;
+  toggle)
+    if [[ "$current" == "anthropic/claude-opus-4-6" ]]; then
+      set_model "openai-codex/gpt-5.4"
+    else
+      set_model "anthropic/claude-opus-4-6"
+    fi
+    ;;
+  status)
+    if [[ -n "$current" ]]; then
+      printf 'Current default model: %s\n' "$current"
+    else
+      echo 'Could not determine current default model.'
+      exit 1
+    fi
+    ;;
+  -h|--help|help)
+    usage
+    ;;
+  *)
+    usage
+    exit 1
+    ;;
+esac
