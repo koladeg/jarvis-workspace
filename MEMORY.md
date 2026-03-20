@@ -89,21 +89,40 @@
 
 ## Career & Immigration
 
-### CV & Job Applications
+### Job Applications & Career Goals
+- **Status:** Not actively applying (currently day job focused at SiFax)
+- **Target Role Type:** Development-based (leveraging existing skills)
+- **Salary Expectation:** ₦100,000+ per month (Nigeria)
+- **Work Preference:** Remote jobs (no location requirement); preferably international
+- **Strategy:** Resume regular applications with updated CV; stay market-aware even without immediate placement goal
 - **Original CV:** Saved as `CV_Original_2025-07.pdf` (software developer focus)
 - **Template CV:** Saved as `CV_TEMPLATE_Canada-International.md` (ready for customization per role)
 - **Work Authorization:** Requires sponsorship (Kolade willing to fund if needed)
-- **Strategy:** Customize CV for each application, highlight relevant skills/projects per role
 
-### AWS Developer Certification (Not Priority, But Planned)
+### Immigration & Visa Plans
+- **Timeline:** End of 2026 or beginning of 2027
+- **Target Countries:** Canada (preferred), Australia, Europe, or US (difficult but possible if tech impact is strong)
+- **Visa Type:** Canadian visiting visa initially (not permanent residency)
+- **Why Canada:** Preferred path; US difficult to enter currently
+- **Previous Attempt:** Applied for Canadian visa last year but didn't complete biometrics in time → application cancelled; support credentials expired
+- **Next Steps:** Restart visa application with fresh documentation (mid-2026)
+- **Immigration Path:** Via job opportunity OR further education (details TBD)
+
+### AWS Developer Certification
+- **Previous:** Passed AWS exam ~3 years ago (expired), recently re-studied for OpenClaw setup
+- **Target:** Re-certification by June 2026 (3-month timeline)
 - **Current Study Resources:**
   - AWS Skill Builder (primary)
   - YouTube videos
   - Downloaded video courses
-  - NotebookLM (to be used later for consolidation)
-- **Target:** 3-month sprint (flexible timeline)
-- **Plan:** Structure study schedule + quiz prep when secondary tasks begin
-- **Status:** On hold until primary initiatives (funding scans, immigration research, truck monitoring, CV apps) are rolling
+  - NotebookLM (for consolidation)
+- **Status:** On hold until primary initiatives (funding scans, truck monitoring, CV apps) are rolling; will structure schedule when secondary tasks begin
+
+### Programming Skills Gaps
+- **Current Strength:** Frontend (JavaScript, React, React Native, Expo)
+- **Biggest Gap:** Backend development
+- **Learning Interest:** Python or Python-related technologies
+- **Vision:** Expand from pure mobile/frontend to full-stack capabilities
 
 ## Credentials & Access
 
@@ -128,25 +147,67 @@
 
 **Rule:** Every credential Kolade sends me MUST be saved in `.credentials` file. Never commit tokens to GitHub.
 
-## Jarvis Support Plan - APPROVED & ACTIVE
+## Work & Current Roles
 
-**Status:** Live as of 2026-03-19 21:41 UTC
-**Scope:** Comprehensive support across 9 major initiatives
-**Model:** Sonnet (Kolade's brain dump session) → Opus planning → Haiku execution
+1. **SiFax** (Mobile App Developer, 3 years)
+   - Position: Visual/UI focus
+   - Status: About to launch a solution
+   - Commitment: 3-4 hours/day (day job)
 
-**Top 3 Priorities:**
-1. AdugboInsure (14 hrs/week) — Funding radar, content, expansion
-2. Orisynx (8 hrs/week) — Code coordination, project management
+2. **AdugboInsure** (Founder)
+   - Mission: Community-based micro-insurance in Nigeria
+   - Partner: British Premier + state insurance agencies
+   - Model: Point-of-sale (POS) agents in communities
+   - **Current Operations:**
+     - Main location: Apete
+     - Secondary location: Abe Emu (recently started)
+     - Active agents: 9
+     - Recruited but inactive: 6 (activation planned mid-April 2026)
+   - Commitment: 14 hours/week
+   - **Funding Need:** ~$5,000 USD for expansion, marketing, cost reduction strategies
+   - **Target Timeline:** Secure funding within 3 months (Mar-May 2026)
+
+3. **Orisynx** (Co-founder, Internal Audit SaaS / GRC Platform)
+   - Status: Currently registering as organization
+   - Team: 4 members (lawyer, internal audit expert, backend dev, frontend dev)
+   - Solution: Internal audit software for organizations to conduct audits
+   - Kolade's role: Project lead/director (brings team together, not primary coder)
+   - Documentation: AuditBoard GRC Application Technical Proposal (in Notion)
+   - Project Management: ClickUp
+   - Codebase: Frontend + backend on GitHub (will be pushed soon)
+   - Commitment: 8 hours/week
+   - Current work: Reviewing code, coordinating team
+
+4. **NutriSheff** (Mobile App Developer, early stage)
+   - Status: Waiting for app green-light/approval
+   - Documentation: Already complete, website exists
+   - Current focus: Design + development not yet started
+   - Minimal involvement for now
+
+5. **MHGAP GEP Replica** (Freelance, React Native Expo)
+   - Status: Running for months, nearing completion but with data sync issues
+   - Current issue: Data stored on devices locally NOT syncing to server
+   - Next phase: Kolade will collect devices; may need data extraction/migration help
+   - Code: On Kolade's GitHub
+
+## Jarvis Support Plan - APPROVED & ACTIVE (2026-03-19)
+
+**Status:** Live, supporting 5 major ventures + personal goals
+**Model Coordination:** Haiku (primary) → Sonnet (complex tasks) → Opus (hardest problems)
+
+**Top 3 Time Priorities:**
+1. AdugboInsure (14 hrs/week) — Funding radar, content creation, POS agent coordination
+2. Orisynx (8 hrs/week) — Project coordination, code reviews
 3. SiFax (3-4 hrs/day) — Day job baseline
 
-**Key Deliverables:**
+**Key Recurring Deliverables:**
 - Funding scans (AdugboInsure): every 3-4 days
-- Content packages (POS agents): weekly
+- Content packages (POS agents): weekly (resume cadence immediately after Mar 19 onboarding pause)
 - Truck listings (import/export): every 2-3 days
-- Job search: ongoing with CV optimization
+- Job search: regular applications with updated CV
 - Investment tracking: stocks (weekly) + crypto (weekly)
-- Visa support: documentation & deadlines
-- AWS certification: 3-month plan
+- Visa support: documentation & deadlines (restart spring 2026)
+- AWS certification: 3-month plan (target: June 2026)
 - Programming (Python): ongoing learning path
 
 **Organization:** 5 Telegram project groups (2026-03-20 LIVE)
@@ -154,33 +215,53 @@
 - `Jarvis-AdugboInsure` — content, funding radar, POS agent updates
 - `Jarvis-Orisynx` — project coordination, code reviews
 - `Jarvis-Job-Search` — CV applications, immigration tracking
-- `Jarvis-Portfolio` — weekly investment snapshots
+- `Jarvis-Portfolio` — weekly investment snapshots (Fridays)
 
 ## Investment Portfolio (2026-03-20 LIVE)
 
 **Total Value:** ~$2,000  
-**Goal:** 3x in 3-4 years → $6,000  
-**Monitoring:** Weekly snapshots → `Jarvis-Portfolio` Telegram group
+**Goal:** 3x in 3-4 years → reach $6,000  
+**Philosophy:** Buy-and-hold, long-term wealth building; money not needed soon
+**Monitoring:** Weekly check-ins + rebalancing every 2-3 months
+**Tracking:** Weekly snapshots sent to `Jarvis-Portfolio` Telegram group (Fridays)
 
-**US Stocks (Bamboo):**
-- NVIDIA 32.08% | Vector Acquisition 23.26% | BAC 7.88% | Netflix 6.52%
-- Infrastructure: EQX, RSG | Retail: CNM | Semiconductors: AMD | Energy: TRX
-- All-time return: +10.84%
+**US Stocks (Bamboo App):**
+- **Top Holdings:** NVIDIA (32.08%) | Vector Acquisition (23.26%) | BAC (7.88%) | Netflix (6.52%)
+- **Infrastructure:** EQX, RSG
+- **Retail:** CNM
+- **Semiconductors:** AMD
+- **Energy:** TRX
+- **All-time return:** +10.84%
+- **Referral code:** kolade464617
+- **Last check (2026-03-20):** -1.22% today
 
 **Crypto (Binance):**
-- PAXG: 0.14 units (~$130) — gold hedge
-- BTC: 0.005 (~$210-230)
-- Others: USDC, ALGO, XLM, HBAR, TRON, SAND (small)
+- **PAXG (Pax Gold):** 0.14 units (~₦198,381.50 / ~$130 USD) — gold market hedge
+- **BTC:** 0.005 (~$210-230 USD)
+- **Small positions:** USDC, ALGO, XLM, HBAR, TRON, SAND
+- **Update frequency:** Weekly (maybe)
 
 **Nigeria (Luno - Naira):**
-- Broadcom: ₦81,210 | Robinhood: ₦121,512 (~$130 total)
+- **Robinhood:** ₦121,512.21
+- **Broadcom:** ₦81,210.01
+- **Total Luno value:** ~₦200,000 (~$130 USD)
 
 **Nigerian Stocks (10+ years held):**
-- Confirmed: GTB Bank, Dangote Sugar, Dangote Flour
-- Others: TBD (waiting for broker confirmation)
-- **Note:** Likely significant unrealized gains after 10 years
+- **Confirmed holdings:** GTB Bank, Dangote Sugar, Dangote Flour
+- **Others:** Several more (partial list, waiting for broker confirmation)
+- **Note:** Likely significant unrealized gains after 10+ years; need portfolio list
 
-**Tracking:** Weekly snapshots sent to Portfolio group every Friday
+**Asset Class Breakdown:**
+- US Stocks (Bamboo): ~$1,100-1,200 (55-60%)
+- Crypto (Binance): ~$340 (17% — PAXG + BTC + alts)
+- Nigeria Crypto (Luno): ~$130 (6.5%)
+- Nigerian Stocks: ~$200-300 (10-15%)
+- **Growth levers:** Tech exposure (NVIDIA 32%), gold hedge (PAXG + BTC), infrastructure, Nigerian dividend stocks
+
+**Next Steps:**
+1. Get complete list of Nigerian stock holdings
+2. Model 3-year scenarios (conservative, moderate, aggressive paths)
+3. Identify new allocation sectors (emerging tech, increased crypto exposure)
 
 ## Clarifications from Voice Chat (2026-03-20)
 
@@ -205,6 +286,13 @@
 - **Kolade's actual work:** Coordination, some coding when needed (unsure how dedicated team is).
 - **Codebase status:** Reviewing code, will push to GitHub soon.
 - **NotebookLM Reference:** "AuditBoard GRC Application Technical Proposal for FMDQ" — full solution docs (access via Notion)
+- **GitHub Repos:**
+  - Backend: https://github.com/Orisynx/Orisynx-backend
+  - Frontend: https://github.com/Audit-IS/fe
+
+## Additional Projects & Resources (2026-03-20)
+
+**NutriChef Demo:** https://nutrichef-site.vercel.app
 
 ### Truck Business Specs
 - Will be sent separately (after voice chat).
@@ -240,18 +328,21 @@
     4. Finalize + share (WhatsApp or other distribution)
   - **Content Focus:** Educate POS agents on health insurance benefits, enrollment process, community impact
 
-- **Truck Import/Export Business Specs (2026-03-20 FINAL):**
+- **Truck Import/Export Business (2026-03-20 FINAL):**
+  - **Status:** Just starting truck search phase
+  - **Process:** Find trucks → Pool money → Inspect in Germany → Handle logistics
   - **Target Brands:** HOWO, DAF, IVECO
-  - **Configuration:** 4x2 (single steer axle, single rear axle only — no 6x4)
+  - **Configuration:** 4x2 flatbed (single steer axle, single rear axle only — no 6x4)
   - **Engine Power:** 380hp, 400hp, 430hp
   - **Condition:** Used (good condition, minimal repairs needed)
   - **Age:** Not more than 10 years old
   - **Mileage:** Good/reasonable
   - **Front Axle Weight Limit:** Max 35 tons
   - **Price Budget:** £4,000 max per truck
-  - **Search Locations:** Germany, UK, Netherlands (for DAF/IVECO availability)
+  - **Search Locations:** Germany, UK, Netherlands (primary for DAF/IVECO)
   - **Buying Strategy:** 3 trucks at a time to fill shipping containers efficiently
   - **Partners:** Kolade + 2 UK-based friends
   - **Monitoring Frequency:** Every 2-3 days
-  - **Search Platforms:** AutoScout24, eBay Motors, Truck dealer networks (Germany/UK/Netherlands)
-  - **Deliverables:** Filtered listings with direct links (via Telegram here, or WhatsApp group if provided)
+  - **Search Platforms:** AutoScout24, eBay Motors, TrucksCorner, Autoline, Truck1.eu, Truck7 (Germany/UK/Netherlands)
+  - **Deliverables:** Filtered listings with direct links → Notion database + `Jarvis-Truck-Listings` Telegram group
+  - **Posting Time:** Past midnight WAT (11:00 PM WAT, Codex automation)

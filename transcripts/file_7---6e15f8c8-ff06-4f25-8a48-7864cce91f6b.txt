@@ -1,0 +1,4 @@
+Do you currently have a skill to manage GitHub repositories?
+I want you to be able to access my repo.
+Not specifically mine, you might be a contributor to my repo.
+So I'll make you a repository and then you'll be able to access it that way.
