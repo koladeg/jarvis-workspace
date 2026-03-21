@@ -145,7 +145,12 @@
 - Vercel token: Stored in `.credentials`
   - Allows: view deployments, manage deployments, create new deployments
 
-**Rule:** Every credential Kolade sends me MUST be saved in `.credentials` file. Never commit tokens to GitHub.
+**Rule (2026-03-21):** 
+- Every credential Kolade sends me MUST be saved in `.credentials` file immediately
+- Never ask Kolade to resend or remind — I save on first receipt
+- Never commit tokens to GitHub
+- Label credentials clearly for future reference
+- They persist across sessions
 
 ## Work & Current Roles
 
