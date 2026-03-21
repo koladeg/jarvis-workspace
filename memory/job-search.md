@@ -110,9 +110,32 @@
 **NOT VIABLE:**
 - FlexJobs - Requires paid membership
 
+## Application Workflow & Templates (2026-03-21)
+
+**Files Created:**
+1. `CV_Orium_SeniorReactNativeDeveloper.md` — Customized CV
+2. `CoverLetter_Orium_SeniorReactNativeDeveloper.txt` — Cover letter template
+
+**Application Process:**
+1. Find job link (RemoteOK or company careers page)
+2. Download/paste CV + cover letter
+3. Submit via their platform
+4. Log to this file
+5. Follow up after 2 weeks if no response
+
 ## Applications Submitted
 
-(Track applications here as they're sent)
+### Application #1: Orium - Senior React Native Developer (Canada)
+- **Status:** READY TO SUBMIT (CV + cover letter created)
+- **Salary:** Upgrade to Premium to see
+- **Location:** Canada (IMMIGRATION FRIENDLY)
+- **Role:** Senior React Native Developer
+- **Job Link:** [PENDING - to be filled when found]
+- **CV Used:** CV_Orium_SeniorReactNativeDeveloper.md
+- **Cover Letter:** CoverLetter_Orium_SeniorReactNativeDeveloper.txt
+- **Submitted Date:** [PENDING]
+- **Follow-up Date:** [PENDING]
+- **Notes:** Healthcare experience (mhGAP), 4+ years React Native, visa sponsorship ready
 
 ## Notes
 

@@ -1,0 +1,403 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-03-21T15:01:00Z",
+  "maintained_by": "Jarvis",
+  "purpose": "Master list of job boards for automated scraping and manual searches",
+  "strategy": "Maintained, tested list. Add new sites as discovered.",
+  
+  "sites": [
+    {
+      "id": "remoteok-react",
+      "name": "RemoteOK - React Jobs",
+      "url": "https://remoteok.com/remote-react-jobs",
+      "category": "remote-first",
+      "access": "✅ WORKING",
+      "method": "agent-browser",
+      "login_required": false,
+      "volume": "376+ jobs",
+      "salary_visible": true,
+      "nigeria_friendly": true,
+      "test_date": "2026-03-21",
+      "notes": "No login, excellent React job volume, good salary data",
+      "scrape_difficulty": "easy"
+    },
+    {
+      "id": "remoteok-react-native",
+      "name": "RemoteOK - React Native Jobs",
+      "url": "https://remoteok.com/?search=react+native",
+      "category": "remote-first",
+      "access": "✅ WORKING",
+      "method": "agent-browser",
+      "login_required": false,
+      "volume": "50+ jobs",
+      "salary_visible": false,
+      "nigeria_friendly": true,
+      "test_date": "2026-03-21",
+      "notes": "Search-based, React Native specific, good international pool",
+      "scrape_difficulty": "easy"
+    },
+    {
+      "id": "remoteok-general",
+      "name": "RemoteOK - All Remote Jobs",
+      "url": "https://remoteok.com",
+      "category": "remote-first",
+      "access": "✅ WORKING",
+      "method": "agent-browser",
+      "login_required": false,
+      "volume": "1000+ jobs daily",
+      "salary_visible": "varies",
+      "nigeria_friendly": true,
+      "test_date": "2026-03-21",
+      "notes": "Broadest remote job market, all categories",
+      "scrape_difficulty": "easy"
+    },
+    {
+      "id": "hackernews-jobs",
+      "name": "Hacker News Jobs",
+      "url": "https://news.ycombinator.com/jobs",
+      "category": "startup-focused",
+      "access": "✅ WORKING",
+      "method": "agent-browser",
+      "login_required": false,
+      "volume": "300+ YC jobs",
+      "salary_visible": "often",
+      "nigeria_friendly": true,
+      "test_date": "2026-03-21",
+      "notes": "High-quality YC startup jobs, visa-sponsoring companies, daily refresh",
+      "scrape_difficulty": "easy"
+    },
+    {
+      "id": "linkedin",
+      "name": "LinkedIn Jobs",
+      "url": "https://www.linkedin.com/jobs",
+      "category": "general",
+      "access": "⚠️ REQUIRES LOGIN",
+      "method": "agent-browser + credentials",
+      "login_required": true,
+      "volume": "10,000+ jobs",
+      "salary_visible": true,
+      "nigeria_friendly": true,
+      "test_date": "2026-03-21",
+      "notes": "Largest job board, but TOS risky for bots. Only use with explicit credentials.",
+      "scrape_difficulty": "hard"
+    },
+    {
+      "id": "weworkremotely",
+      "name": "We Work Remotely",
+      "url": "https://weworkremotely.com",
+      "category": "remote-first",
+      "access": "❌ BLOCKED",
+      "method": "agent-browser",
+      "login_required": false,
+      "volume": "1000+ jobs",
+      "salary_visible": "varies",
+      "nigeria_friendly": true,
+      "test_date": "2026-03-21",
+      "notes": "Cloudflare security blocks automated access. Consider manual visits.",
+      "scrape_difficulty": "impossible"
+    },
+    {
+      "id": "wellfound",
+      "name": "Wellfound (formerly AngelList)",
+      "url": "https://wellfound.com/jobs",
+      "category": "startup-focused",
+      "access": "❌ BLOCKED",
+      "method": "agent-browser",
+      "login_required": false,
+      "volume": "5000+ startup jobs",
+      "salary_visible": false,
+      "nigeria_friendly": true,
+      "test_date": "2026-03-21",
+      "notes": "CAPTCHA + bot protection prevents scraping. High-quality startup jobs.",
+      "scrape_difficulty": "impossible"
+    },
+    {
+      "id": "indeed",
+      "name": "Indeed.com",
+      "url": "https://www.indeed.com/jobs",
+      "category": "general",
+      "access": "❌ BLOCKED",
+      "method": "agent-browser",
+      "login_required": false,
+      "volume": "100,000+ jobs",
+      "salary_visible": true,
+      "nigeria_friendly": true,
+      "test_date": "2026-03-21",
+      "notes": "Cloudflare blocks automated access. World's largest job board.",
+      "scrape_difficulty": "impossible"
+    },
+    {
+      "id": "upwork",
+      "name": "Upwork (Freelance)",
+      "url": "https://www.upwork.com",
+      "category": "freelance",
+      "access": "❌ BLOCKED",
+      "method": "agent-browser",
+      "login_required": false,
+      "volume": "10,000+ gigs",
+      "salary_visible": true,
+      "nigeria_friendly": true,
+      "test_date": "2026-03-21",
+      "notes": "Cloudflare + CAPTCHA. Freelance alternative to full-time roles.",
+      "scrape_difficulty": "impossible"
+    },
+    {
+      "id": "dribbble",
+      "name": "Dribbble Jobs",
+      "url": "https://dribbble.com/jobs",
+      "category": "design-focused",
+      "access": "✅ WORKING",
+      "method": "agent-browser",
+      "login_required": false,
+      "volume": "500+ design jobs",
+      "salary_visible": "varies",
+      "nigeria_friendly": true,
+      "test_date": "2026-03-21",
+      "notes": "Design-focused (#1 design job board), not dev roles",
+      "scrape_difficulty": "easy"
+    },
+    {
+      "id": "flexjobs",
+      "name": "FlexJobs.com",
+      "url": "https://www.flexjobs.com",
+      "category": "remote-first",
+      "access": "⚠️ PAYWALL",
+      "method": "browser (requires subscription)",
+      "login_required": true,
+      "volume": "3000+ jobs",
+      "salary_visible": true,
+      "nigeria_friendly": true,
+      "test_date": "2026-03-21",
+      "notes": "Requires paid membership (~$15/month). Curated, scam-free jobs.",
+      "scrape_difficulty": "impossible-paywall"
+    },
+    {
+      "id": "whoishiring",
+      "name": "Who's Hiring (HN Monthly)",
+      "url": "https://whoishiring.io",
+      "category": "startup-focused",
+      "access": "❌ BLOCKED",
+      "method": "agent-browser",
+      "login_required": false,
+      "volume": "2000+ monthly jobs",
+      "salary_visible": "often",
+      "nigeria_friendly": true,
+      "test_date": "2026-03-21",
+      "notes": "Cloudflare blocks. Alternative HN monthly hiring threads.",
+      "scrape_difficulty": "impossible"
+    },
+    {
+      "id": "stackoverflow-jobs",
+      "name": "Stack Overflow Jobs",
+      "url": "https://stackoverflow.com/jobs",
+      "category": "developer-focused",
+      "access": "❌ BLOCKED",
+      "method": "curl/API",
+      "login_required": false,
+      "volume": "5000+ tech jobs",
+      "salary_visible": true,
+      "nigeria_friendly": true,
+      "test_date": "2026-03-21",
+      "notes": "No public API anymore. Manual browsing required.",
+      "scrape_difficulty": "impossible"
+    },
+    {
+      "id": "github-jobs",
+      "name": "GitHub Jobs",
+      "url": "https://github.com/jobs",
+      "category": "developer-focused",
+      "access": "🔷 PARTIAL",
+      "method": "API + manual",
+      "login_required": false,
+      "volume": "1000+ tech jobs",
+      "salary_visible": "varies",
+      "nigeria_friendly": true,
+      "test_date": "2026-03-21",
+      "notes": "Deprecated but still lists jobs. Manual search recommended.",
+      "scrape_difficulty": "medium"
+    },
+    {
+      "id": "dev-to-jobs",
+      "name": "Dev.to - Jobs Tag",
+      "url": "https://dev.to/search?tags=jobs",
+      "category": "developer-community",
+      "access": "✅ POSSIBLE",
+      "method": "agent-browser",
+      "login_required": false,
+      "volume": "500+ community jobs",
+      "salary_visible": false,
+      "nigeria_friendly": true,
+      "test_date": "2026-03-21",
+      "notes": "Community-posted jobs, lower volume but genuine companies",
+      "scrape_difficulty": "easy"
+    },
+    {
+      "id": "ycombinator-directory",
+      "name": "YC Company Directory + Jobs",
+      "url": "https://www.ycombinator.com/companies",
+      "category": "startup-focused",
+      "access": "🔷 PARTIAL",
+      "method": "manual + research",
+      "login_required": false,
+      "volume": "3000+ YC startups",
+      "salary_visible": false,
+      "nigeria_friendly": true,
+      "test_date": "2026-03-21",
+      "notes": "Directory of all YC companies. Manual job searches per company.",
+      "scrape_difficulty": "hard"
+    },
+    {
+      "id": "producthunt-jobs",
+      "name": "Product Hunt - Jobs",
+      "url": "https://www.producthunt.com",
+      "category": "startup-community",
+      "access": "🔷 PARTIAL",
+      "method": "manual search",
+      "login_required": false,
+      "volume": "100+ monthly",
+      "salary_visible": false,
+      "nigeria_friendly": true,
+      "test_date": "2026-03-21",
+      "notes": "Startup community posts jobs occasionally. Check #jobs tag.",
+      "scrape_difficulty": "hard"
+    },
+    {
+      "id": "startup-jobs-reddit",
+      "name": "Reddit - r/jobbit, r/forhire, r/startups",
+      "url": "https://reddit.com/r/jobbit",
+      "category": "community",
+      "access": "✅ POSSIBLE",
+      "method": "manual + API",
+      "login_required": false,
+      "volume": "200+ monthly",
+      "salary_visible": "varies",
+      "nigeria_friendly": true,
+      "test_date": "2026-03-21",
+      "notes": "Community-posted. Subreddits: jobbit, forhire, startups, webdev",
+      "scrape_difficulty": "medium"
+    },
+    {
+      "id": "hired",
+      "name": "Hired.com",
+      "url": "https://hired.com",
+      "category": "recruiter-matchmaking",
+      "access": "🔷 APPLY",
+      "method": "manual",
+      "login_required": true,
+      "volume": "1000+ companies recruiting",
+      "salary_visible": true,
+      "nigeria_friendly": "maybe",
+      "test_date": "2026-03-21",
+      "notes": "Reverse job board (companies apply to you). Requires profile.",
+      "scrape_difficulty": "impossible"
+    },
+    {
+      "id": "toptal-jobs",
+      "name": "Toptal - Jobs",
+      "url": "https://www.toptal.com/jobs",
+      "category": "freelance-elite",
+      "access": "🔷 APPLY",
+      "method": "manual + vetting",
+      "login_required": true,
+      "volume": "300+ elite contracts",
+      "salary_visible": true,
+      "nigeria_friendly": "maybe",
+      "test_date": "2026-03-21",
+      "notes": "Elite freelance platform. Requires vetting process.",
+      "scrape_difficulty": "impossible"
+    },
+    {
+      "id": "podia",
+      "name": "Podia (Community Gigs)",
+      "url": "https://podia.com",
+      "category": "creator-gigs",
+      "access": "🔷 PARTIAL",
+      "method": "manual",
+      "login_required": false,
+      "volume": "100+ monthly",
+      "salary_visible": false,
+      "nigeria_friendly": true,
+      "test_date": "2026-03-21",
+      "notes": "Creator/educator gigs. Lower volume, niche opportunities.",
+      "scrape_difficulty": "hard"
+    }
+  ],
+  
+  "status_legend": {
+    "✅ WORKING": "Can be scraped/accessed automatically",
+    "🔷 PARTIAL": "Can be manually checked or partially automated",
+    "⚠️ REQUIRES LOGIN": "Needs credentials, risky for TOS",
+    "⚠️ PAYWALL": "Requires paid subscription",
+    "❌ BLOCKED": "Cloudflare/CAPTCHA/technical blocks prevent access"
+  },
+  
+  "recommendations": {
+    "primary_sources": [
+      "remoteok-react",
+      "remoteok-react-native",
+      "hackernews-jobs"
+    ],
+    "secondary_sources": [
+      "remoteok-general",
+      "dribbble",
+      "dev-to-jobs"
+    ],
+    "manual_check": [
+      "linkedin",
+      "ycombinator-directory",
+      "reddit-jobs"
+    ],
+    "avoid": [
+      "weworkremotely",
+      "wellfound",
+      "indeed",
+      "upwork",
+      "whoishiring"
+    ]
+  },
+  
+  "next_sites_to_test": [
+    {
+      "name": "Angel Investors Jobs",
+      "url": "https://www.angel.co",
+      "reason": "Updated AngelList, startup focus"
+    },
+    {
+      "name": "Slack Job Communities",
+      "url": "https://remoteworld.slack.com",
+      "reason": "Niche remote work Slack communities"
+    },
+    {
+      "name": "BuildersBreak Job Board",
+      "url": "https://buildersbreak.com",
+      "reason": "Indie hackers + startup community"
+    },
+    {
+      "name": "Ghost Jobs",
+      "url": "https://ghostjobs.dev",
+      "reason": "Tech job listings, dev-focused"
+    },
+    {
+      "name": "Nomad Jobs",
+      "url": "https://nomad.list/jobs",
+      "reason": "Digital nomad + remote work"
+    },
+    {
+      "name": "Coastline Jobs",
+      "url": "https://jobs.coastline.ai",
+      "reason": "AI/ML focused jobs"
+    }
+  ],
+  
+  "maintenance": {
+    "frequency": "Monthly (1st of month)",
+    "responsible": "Jarvis",
+    "check": [
+      "Test access on 2-3 primary sources",
+      "Add new sites discovered",
+      "Remove permanently blocked sites",
+      "Update volume/salary visibility",
+      "Log changes in CHANGELOG"
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+Subject: Senior React Native Developer Application — Kolade Gureje
+
+---
+
+Dear Orium Hiring Team,
+
+I'm applying for the Senior React Native Developer position at Orium. With 4+ years of production React Native development and a track record of shipping enterprise-grade mobile applications, I'm excited about the opportunity to contribute to your product while establishing my career in Canada.
+
+**Why I'm a Strong Fit:**
+
+React Native Expertise: Over 4 years delivering production apps at SIFAX, serving enterprise clients across fintech and healthcare. I'm comfortable with the full mobile development lifecycle—from architecture and state management (Redux) to deployment and monitoring (Sentry).
+
+Healthcare Domain Experience: I recently led the development of mhGAP, a WHO mental health intervention app used in clinical trials, recording 250+ patient visits with 98% data accuracy. This experience taught me the importance of building reliable, user-centric mobile solutions in mission-critical contexts—something I believe aligns with Orium's values.
+
+Team Leadership: I've mentored junior developers and managed small cross-functional teams, always focusing on code quality, clear communication, and delivering on timeline. I'm comfortable in a collaborative, fast-moving startup environment.
+
+Startup Mentality: As a founder of AdugboInsure, I understand the pressure and opportunity of building something from scratch. I bring that same energy and resourcefulness to every project.
+
+**What I'm Looking For:**
+
+A role where I can grow as a senior engineer—deepening my mobile architecture expertise, mentoring other developers, and contributing to product decisions. I'm drawn to Orium's focus on remote-first culture and Canada-based operations, which aligns with my goal to expand my career internationally while maintaining the work-life balance that distributed teams enable.
+
+**Work Authorization:**
+
+I'm a Nigerian national and will require work permit sponsorship, which I'm fully committed to navigating. I'm serious about relocating to Canada and building a long-term career here.
+
+I'd love to discuss how my experience with React Native and healthcare apps can contribute to Orium's growth. I'm available for a conversation at your convenience.
+
+Best regards,  
+Kolade Gureje  
++234 8079366207  
+koladegureje@gmail.com  
+GitHub: github.com/koladeg  
+Portfolio: koladeg.github.io
+
+---
+
+**Application Tips:**
+
+1. Paste this into your cover letter field (or email body if applying via email)
+2. Customize [company name] references if needed
+3. Keep tone: confident but humble, specific about skills
+4. Length: 3-4 short paragraphs (fits 1 page)
+5. Send with customized CV attached

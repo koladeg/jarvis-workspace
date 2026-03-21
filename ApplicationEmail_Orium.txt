@@ -1,0 +1,57 @@
+Subject: Application - Senior React Native Developer at Orium
+
+Dear Orium Hiring Team,
+
+I'm excited to apply for the Senior React Native Developer position. With 4+ years of production React Native experience and a strong track record in healthcare and fintech applications, I believe I'm a great fit for your team.
+
+**Why I'm a Strong Match:**
+
+React Native Expertise: Over 4 years building production mobile apps at SIFAX, with deep expertise in Redux, Firebase, REST APIs, and iOS/Android deployment. Most recently, I led the development of mhGAP—a WHO mental health intervention app used in clinical trials, recording 250+ patient visits with 98% data accuracy.
+
+Enterprise Experience: I understand the demands of enterprise clients—reliability, scalability, and attention to detail. My healthcare background demonstrates my ability to work in mission-critical environments where code quality directly impacts end users.
+
+Team Collaboration: I've worked closely with designers, product managers, and backend teams to deliver scalable solutions. I'm comfortable in Agile environments and thrive in autonomous, collaborative teams.
+
+Startup Mentality: As a founder (AdugboInsure), I bring resourcefulness, ownership, and a bias toward action—traits that help fast-moving teams ship faster.
+
+**Technical Fit:**
+- React Native/Expo, Redux, Firebase, REST APIs
+- TypeScript, JavaScript
+- Node.js backend basics
+- Git, CircleCI, AWS
+- Experience with iOS/Android deployment
+
+**Why Canada & Orium?**
+
+I'm drawn to Orium's focus on intelligent commerce solutions and your track record delivering 300+ composable launches in the Americas. I'm seeking a remote opportunity that allows me to contribute meaningfully while establishing my career internationally. I'm a Nigerian national committed to relocating to Canada and will require work permit sponsorship—something I'm fully prepared to navigate with Orium.
+
+**About Me:**
+- AWS Certified Solutions Architect (Nov 2022)
+- Experience working remotely with distributed teams
+- Fluent English (written/verbal)
+- Available to start immediately
+
+I'm excited about the possibility of contributing to your team and helping you build scalable, high-impact mobile solutions for enterprise clients. The 6-month contract structure works well for me and allows both of us to assess mutual fit.
+
+I'd welcome a conversation at your convenience. You can reach me at:
+- Phone: +234 8079366207
+- Email: koladegureje@gmail.com
+- GitHub: github.com/koladeg
+- Portfolio: koladeg.github.io
+
+Looking forward to connecting!
+
+Best regards,
+Kolade Gureje
+Lagos, Nigeria
+
+---
+
+**HOW TO USE THIS EMAIL:**
+
+1. Copy the entire email above (from "Subject:" to the end)
+2. Paste into RemoteOK's application form (if it has a message field)
+3. Or send directly to Orium's recruitment email (if provided)
+4. Include your customized CV as attachment: CV_Orium_SeniorReactNativeDeveloper.md
+
+**Alternative:** Use this as a cover letter in their online form if email is requested separately.
