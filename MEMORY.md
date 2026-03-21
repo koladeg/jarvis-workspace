@@ -173,15 +173,36 @@
    - **Target Timeline:** Secure funding within 3 months (Mar-May 2026)
 
 3. **Orisynx** (Co-founder, Internal Audit SaaS / GRC Platform)
-   - Status: Currently registering as organization
-   - Team: 4 members (lawyer, internal audit expert, backend dev, frontend dev)
-   - Solution: Internal audit software for organizations to conduct audits
-   - Kolade's role: Project lead/director (brings team together, not primary coder)
-   - Documentation: AuditBoard GRC Application Technical Proposal (in Notion)
-   - Project Management: ClickUp
-   - Codebase: Frontend + backend on GitHub (will be pushed soon)
-   - Commitment: 8 hours/week
-   - Current work: Reviewing code, coordinating team
+   - **Status:** Organization registering; code pushed to GitHub; MVP-phase product
+   - **Team:** 4 members (lawyer, internal audit expert, backend dev moving to DevOps, frontend dev from Canada)
+   - **Kolade's role:** Project lead/director — coordinates team, code reviews, NOT primary coder
+   - **Documentation:** NotebookLM notebook: "AuditBoard GRC Application Technical Proposal for FMDQ" (18 sources)
+   - **Codebase:** GitHub repos (Frontend + Backend) now live
+   - **Project Mgmt:** ClickUp + Notion
+   - **Commitment:** 8 hours/week
+   
+   **Core Business:**
+   - **Product:** Workflow-driven GRC/Internal Audit platform (named "Oversight Sync" / **Orisynx**)
+   - **Model:** B2B SaaS, subscription-based (per-user pricing)
+   - **Target Market:** Nigeria initially → expand to Africa
+   - **Primary Sectors:** Financial services (microfinance banks, finance companies), secondarily manufacturing/healthcare
+   - **Price Point:** <₦3M/year (vs. ₦1B+ for foreign solutions like AuditBoard, SAP, Archer)
+   
+   **Problem:** Foreign GRC solutions cost ₦500M-₦1B+ upfront + millions in annual fees. Nigerian orgs default to Word/Excel → fragmented, unreliable, no collaboration, no real-time reviews
+   
+   **Solution Differentiators:**
+   - Workflow-driven (planning → testing → reporting → follow-up)
+   - Single source of truth for risks, controls, audit evidence
+   - Evidence-attached-to-tests (not dumped in folders)
+   - Client portal (auditees respond to findings, update CAPAs)
+   - Auto-aggregated dashboards (compliance scores, risk ratings across org)
+   - Cost leadership (Naira-priced, <₦3M vs. ₦1B+)
+   
+   **MVP Focus:**
+   - Plan audit, conduct tests with evidence, write report, track findings
+   - Template library (incremental, based on user feedback)
+   - No complex AI integrations initially
+   - Early adopter feedback drives next features
 
 4. **NutriSheff** (Mobile App Developer, early stage)
    - Status: Waiting for app green-light/approval
