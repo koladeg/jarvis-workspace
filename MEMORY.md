@@ -99,6 +99,51 @@
 - **Template CV:** Saved as `CV_TEMPLATE_Canada-International.md` (ready for customization per role)
 - **Work Authorization:** Requires sponsorship (Kolade willing to fund if needed)
 
+### Job Search Workflow & Accessible Sites (2026-03-21 VERIFIED)
+**Plan:** Weekly pulls from job boards → filter React/React Native roles → customize CV per role → apply directly
+**Frequency:** Every 3-5 days; weekly summary posted to `Jarvis-Job-Search` Telegram group
+
+**✅ WORKING Sites (agent-browser tested 2026-03-21):**
+
+1. **RemoteOK** (https://remoteok.com)
+   - Access: ✅ No login, full list visible
+   - Volume: 376+ React jobs, 1000s total remote jobs
+   - Salary: Usually visible
+   - URL patterns:
+     - `/remote-react-jobs` — 376 React roles
+     - `/remote-react-native-jobs` — React Native specific
+     - `/remote-engineer-jobs` — All engineers
+   - Agent-browser: Works perfectly, can pull listings + details
+   
+2. **Hacker News Jobs** (https://news.ycombinator.com/jobs)
+   - Access: ✅ No login, free access
+   - Volume: 300+ current YC startup jobs (changes daily)
+   - Quality: High-quality startups only (venture-backed)
+   - Salary: Often visible ($95k-$270k+ range)
+   - Feature: Sponsorship-friendly (many YC companies hire internationally)
+   - Agent-browser: Works well, can extract job titles + links
+
+**❌ BLOCKED Sites (tested 2026-03-21):**
+- **LinkedIn** — requires login; risky for bots (TOS violation risk)
+- **We Work Remotely** — Cloudflare CAPTCHA blocks agent-browser
+- **AngelList/Wellfound** — CAPTCHA + bot protection
+- **Indeed** — Cloudflare blocks automated access
+- **Upwork** — Cloudflare blocks
+- **Stack Overflow Jobs** — No public API, limited access
+- **Dribbble** — Design-focused, not dev jobs
+
+**Current Search Filters:**
+- Tech: React, React Native, JavaScript, Full Stack
+- Location: Worldwide (Canada, Australia, Europe priority)
+- Type: Remote-only
+- Salary: Visible preferred (sponsor-friendly signal)
+- Seniority: Senior/Mid-level roles
+
+**Next Steps:**
+- Primary source: **RemoteOK** (consistent, easy scraping)
+- Secondary source: **Hacker News Jobs** (quality YC startups, usually sponsor-friendly)
+- Apply workflow: Pull listings → customize CV → direct apply
+
 ### Immigration & Visa Plans
 - **Timeline:** End of 2026 or beginning of 2027
 - **Target Countries:** Canada (preferred), Australia, Europe, or US (difficult but possible if tech impact is strong)
