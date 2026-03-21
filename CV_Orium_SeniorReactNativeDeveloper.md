@@ -23,14 +23,6 @@ Senior React Native specialist with 4+ years delivering production mobile applic
 - Python (basics)
 - Database integration: MongoDB, Firebase Realtime
 
-**DevOps & Tools:**
-- Version Control: Git (GitHub, Bitbucket)
-- CI/CD: CircleCI
-- Cloud: AWS (S3), Firebase
-- Testing: Jest, TDD
-- Monitoring: Sentry
-- Docker basics
-
 ---
 
 ## Professional Experience

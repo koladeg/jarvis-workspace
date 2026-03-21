@@ -1,0 +1,266 @@
+================================================================================
+ORIUM - SENIOR REACT NATIVE DEVELOPER APPLICATION
+Complete Package (CV + Cover Letter + Email)
+================================================================================
+Date: March 21, 2026
+Candidate: Kolade Gureje
+Position: Senior React Native Developer
+Company: Orium
+Location: Canada (Remote)
+
+================================================================================
+EMAIL DRAFT - COPY THIS FOR REMOTEOK FORM OR DIRECT EMAIL
+================================================================================
+
+Subject: Application - Senior React Native Developer at Orium
+
+Dear Orium Hiring Team,
+
+I'm excited to apply for the Senior React Native Developer position. With 4+ 
+years of production React Native experience and a strong track record in 
+healthcare and fintech applications, I believe I'm a great fit for your team.
+
+**Why I'm a Strong Match:**
+
+React Native Expertise: Over 4 years building production mobile apps at SIFAX, 
+with deep expertise in Redux, Firebase, REST APIs, and iOS/Android deployment. 
+Most recently, I led the development of mhGAP—a WHO mental health intervention 
+app used in clinical trials, recording 250+ patient visits with 98% data accuracy.
+
+Enterprise Experience: I understand the demands of enterprise clients—reliability, 
+scalability, and attention to detail. My healthcare background demonstrates my 
+ability to work in mission-critical environments where code quality directly 
+impacts end users.
+
+Team Collaboration: I've worked closely with designers, product managers, and 
+backend teams to deliver scalable solutions. I'm comfortable in Agile 
+environments and thrive in autonomous, collaborative teams.
+
+Startup Mentality: As a founder (AdugboInsure), I bring resourcefulness, 
+ownership, and a bias toward action—traits that help fast-moving teams ship 
+faster.
+
+**Technical Fit:**
+- React Native/Expo, Redux, Firebase, REST APIs
+- TypeScript, JavaScript
+- Node.js backend basics
+- Git, CircleCI, AWS
+- Experience with iOS/Android deployment
+
+**Why Canada & Orium?**
+
+I'm drawn to Orium's focus on intelligent commerce solutions and your track 
+record delivering 300+ composable launches in the Americas. I'm seeking a 
+remote opportunity that allows me to contribute meaningfully while establishing 
+my career internationally. I'm a Nigerian national committed to relocating to 
+Canada and will require work permit sponsorship—something I'm fully prepared 
+to navigate with Orium.
+
+**About Me:**
+- AWS Certified Solutions Architect (Nov 2022)
+- Experience working remotely with distributed teams
+- Fluent English (written/verbal)
+- Available to start immediately
+
+I'm excited about the possibility of contributing to your team and helping you 
+build scalable, high-impact mobile solutions for enterprise clients. The 
+6-month contract structure works well for me and allows both of us to assess 
+mutual fit.
+
+I'd welcome a conversation at your convenience. You can reach me at:
+- Phone: +234 8079366207
+- Email: koladegureje@gmail.com
+- GitHub: github.com/koladeg
+- Portfolio: koladeg.github.io
+
+Looking forward to connecting!
+
+Best regards,
+Kolade Gureje
+Lagos, Nigeria
+
+================================================================================
+RESUME / CV - PASTE THIS IF NEEDED IN TEXT FIELD
+================================================================================
+
+KOLADE GUREJE — SENIOR REACT NATIVE DEVELOPER
+
+Contact: +234 8079366207 | koladegureje@gmail.com | Lagos, Nigeria
+Portfolio: https://koladeg.github.io/
+LinkedIn: linkedin.com/in/kolade-gureje
+GitHub: github.com/koladeg
+
+---
+
+PROFESSIONAL SUMMARY
+
+Senior React Native specialist with 4+ years delivering production mobile 
+applications in healthcare and fintech. Proven expertise in Redux state 
+management, RESTful APIs, Firebase, and cross-platform development. Seeking 
+Canada-based opportunity with Orium to build enterprise-grade mobile solutions 
+while establishing international tech career. Open to work permit sponsorship 
+and relocation discussions.
+
+---
+
+TECHNICAL SKILLS
+
+MOBILE DEVELOPMENT (Primary):
+- React Native/Expo, Redux, Firebase, Formik, React Navigation
+- TypeScript, JavaScript
+- iOS & Android deployment
+
+BACKEND & APIs:
+- Node.js, REST APIs, Socket.IO
+- Python (basics)
+- Database integration: MongoDB, Firebase Realtime
+
+DEVOPS & TOOLS:
+- Version Control: Git (GitHub, Bitbucket)
+- CI/CD: CircleCI
+- Cloud: AWS (S3), Firebase
+- Testing: Jest, TDD
+- Monitoring: Sentry
+- Docker basics
+
+---
+
+PROFESSIONAL EXPERIENCE
+
+SOFTWARE DEVELOPER / DEPUTY MANAGER — SIFAX
+Jan 2020 – Present | Lagos, Nigeria (3+ years)
+- Architected and deployed cross-platform mobile applications using React Native
+- Integrated RESTful APIs and implemented Redux for complex state management
+- Conducted unit testing with Jest, maintaining high code coverage standards
+- Mentored junior developers on React Native best practices
+- Tech Stack: React Native, Redux, Firebase, REST APIs, Node.js
+
+PROJECT LEAD DEVELOPER — University College Hospital (UCH)
+Sep 2024 – Nov 2024 | Oyo State, Nigeria
+- Led team of 3 to develop mhGAP mental health mobile app replica for INTREPID III study
+- Impact: Recorded 250+ patient visits in 6 months with 98% data accuracy
+- Implemented eForms and dynamic workflows in React Native (replacing paper-based processes)
+- Streamlined API integrations for real-time analytics and reporting
+- Tech Stack: React Native, Redux, Formik, Firebase, REST APIs
+
+PROJECT MANAGER & MOBILE DEVELOPER — UCH
+Mar 2023 – Sep 2023 | Oyo State, Nigeria
+- Directed cross-functional team to deliver mental health intervention application
+- Improved data collection efficiency by 40% through mobile-first design
+- Managed stakeholder expectations and sprint planning
+
+FRONT-END DEVELOPER — NeighborTailor.com
+Nov 2019 – Nov 2022 | Remote
+- Built responsive React Native components for e-commerce platform
+- Improved app load time by 35% through performance optimization
+- Collaborated with backend team on 15+ feature integrations
+
+---
+
+KEY PROJECTS
+
+1. mhGAP Replica — WHO Mental Health Intervention Platform
+   Impact: 250+ patient visits, 98% data accuracy in clinical trials
+   Tech: React Native, Redux, Formik, Firebase, REST APIs
+   Responsibility: Full-stack mobile development + team leadership
+
+2. GoTruck — Logistics Mobile App
+   Tech: React Native, Redux, REST APIs, Real-time tracking
+   Impact: Enterprise logistics solution for 50+ daily shipments
+
+3. ReportPrep AI — Voice-First Report Generation Platform
+   Tech: Next.js, TypeScript, Tailwind, Firebase, Gemini AI
+   Impact: 500+ documents generated monthly through voice-to-text automation
+
+---
+
+EDUCATION & CERTIFICATIONS
+
+AWS Certified Solutions Architect – Associate
+Issued: Nov 2022 | Expires: Nov 2025 | Score: 920/1000
+
+ALX Founder Academy Program
+Mar 2024 – Jun 2024 | Startup Leadership & Product Development
+
+Cloud DevOps Nanodegree — Udacity
+Jun 2022 – Aug 2022 | Infra as Code, CI/CD, Container Orchestration
+
+Ironhack Bootcamp — Miami, FL
+Jun 2020 – Aug 2020 | Full-Stack Web Development (JavaScript focus)
+
+Bachelor of Computer Science & Information Technology — Bowen University
+2010 – 2014 | GPA 3.5
+
+---
+
+WHY ORIUM?
+
+- Remote Culture: Experienced working asynchronously with distributed teams
+- Startup Experience: Built products from scratch at AdugboInsure (founder role)
+- React Native Expertise: 4+ years production experience across iOS/Android
+- Healthcare Domain: Deep experience building mission-critical healthcare apps
+- Growth Mindset: Continuously learning (AWS certification, DevOps training, AI)
+- International Ready: Visa sponsorship needed but fully committed to Canada relocation
+
+---
+
+ADDITIONAL INFORMATION
+
+- Work Authorization: Nigerian national, eligible for Canadian work permit sponsorship
+- Remote Experience: 2+ years working remotely with international teams
+- Leadership: Managed teams of 3-5 developers
+- Communication: Fluent English (written/verbal), clear technical documentation
+
+================================================================================
+HOW TO USE THIS DOCUMENT
+================================================================================
+
+**For RemoteOK Application Form:**
+1. Go to: https://remoteok.com/remote-jobs/remote-senior-react-native-developer-orium-1129706
+2. Click "Apply for this job"
+3. Fill form fields:
+   - Name: Kolade Gureje
+   - Email: koladegureje@gmail.com
+   - Phone: +234 8079366207
+4. Message/Cover Letter field: PASTE the EMAIL section above
+5. Resume field: UPLOAD the PDF (once created) or PASTE the CV section above
+6. Click Submit
+
+**To Create PDF (if needed):**
+Option 1: Copy all text above → paste into Google Docs → File → Download → PDF
+Option 2: Copy CV section → paste into Word → File → Save as PDF
+Option 3: Use your preferred document tool
+
+**To Save as Email Draft:**
+1. Open your email (Gmail/Outlook/etc)
+2. Create new email
+3. To: (leave blank for now)
+4. Subject: Application - Senior React Native Developer at Orium
+5. Body: PASTE the EMAIL section above (everything from "Dear Orium Hiring Team" to "Lagos, Nigeria")
+6. Attachment: Once PDF created, attach it
+7. Click "Save Draft"
+
+================================================================================
+QUICK CHECKLIST
+================================================================================
+
+Before Submitting:
+[ ] Copy email section from above
+[ ] Paste into RemoteOK form or email
+[ ] Download/attach CV as PDF
+[ ] Phone number: +234 8079366207
+[ ] Email: koladegureje@gmail.com
+[ ] GitHub link: github.com/koladeg
+[ ] Portfolio: koladeg.github.io
+[ ] Review for typos
+[ ] Submit
+
+After Submitting:
+[ ] Log submission date: March 21, 2026
+[ ] Note follow-up date: April 4, 2026 (2 weeks)
+[ ] Save confirmation email if provided
+[ ] Update memory/job-search.md with submission
+
+================================================================================
+End of Document
+================================================================================

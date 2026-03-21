@@ -1,0 +1,109 @@
+WEEKLY MEMORY CONSOLIDATION - March 15-21, 2026
+
+=== DAILY LOGS SUMMARY ===
+
+2026-03-13: Initial Setup
+- Identity established: Jarvis, calm vibe, 😇 emoji
+- User profile: Kolade (he/him, Africa/Lagos timezone)
+- Model preference configured: Opus weekends + 7PM-midnight Lagos time; Haiku otherwise
+
+2026-03-17: Infrastructure & Access Setup
+- Notion: ✅ Full access (AuditBoard, Community Health Insurance, Pro TypeScript)
+- NotebookLM: ✅ Authenticated, ready for content creation
+- Zapier MCP: ✅ Live (62 tools: Gmail 9, ClickUp 21, Google 31; 92/100 budget remaining)
+- Gmail Direct: ✅ IMAP configured (jarviskolademail@gmail.com)
+- GitHub: Created but not yet fully integrated
+- Pending: Yahoo email import setup, Google Workspace OAuth consent screen
+
+2026-03-18: Browser & OAuth Progression
+- agent-browser installed ✅ (CLI v0.21.1, set as default)
+- Google Drive OAuth: Hit consent screen issue (needs Kolade's manual setup)
+- Credential storage system: Established at .credentials
+- Model override: Haiku for Mar 18-20 per Kolade request
+- Browser automation: Local install works, fallback to cloud providers available
+
+2026-03-19: Major Strategy Alignment (Voice Brain Dump)
+- Work commitments: SiFax (3-4h/day) + AdugboInsure (14h/week) + Orisynx (8h/week) + 2 other projects
+- AdugboInsure: Needs $5k funding, expanding POS agents, requires weekly content creation
+- Immigration: Canada visa end of 2026/early 2027; previous app cancelled, restart needed
+- Job search: Will apply internationally (React/React Native roles), target ₦100k+/month
+- Truck business: Starting imports from Germany; flatbed trucks, £4k max, 2-3 days monitoring
+- Crypto strategy: Weekly updates on Bybit (primary) + Luna
+- AWS cert: Target June 2026 (3 months)
+- Backend learning: Python focus to complement React/React Native strength
+
+2026-03-19: Detailed Brain Dump (5 parts + clarifications)
+- Key priorities: AdugboInsure funding (highest), Orisynx coordination, SiFax day job
+- AdugboInsure status: 9 active agents, 6 inactive (activate mid-April); zero users yet (awareness phase)
+- Orisynx: 4-person team (lawyer, audit expert, backend dev, frontend dev); MVP phase; code ready for GitHub
+- Investment thesis: Tech + AI focus; long-term buy-and-hold; goal: 3x in 3-4 years ($2k→$6k)
+- Content strategy: Weekly videos for POS agents (secondary school level) via WhatsApp
+
+2026-03-20: Portfolio Snapshot & Clarification
+- Portfolio: ~$2k (NVIDIA 32%, Vector 23%, BAC 8%, crypto 17%, others)
+- All-time return: +10.84%; today: -1.22%
+- Goal: Weekly snapshots to Jarvis-Portfolio Telegram group (Fridays)
+- Immigration clarity: Canada preferred; US possible if tech impact is strong
+- AdugboInsure reality: Zero users after 3 months testing; focus is awareness not traction
+- Orisynx team: Kolade is coordinator/director, not primary coder; solution docs in AuditBoard Notion
+
+2026-03-20 (Consolidation): Initial Consolidation Summary
+- Created: Identified 5 job boards (RemoteOK working, HN Jobs quality, others Cloudflare-blocked)
+- System setup: Automated job-search cron, Nigeria eligibility filters, CV templates
+- First application: Orium (Canada, Senior React Native), ready to submit
+
+2026-03-21: Job Search Full Deployment
+- Master catalog: 22 job boards analyzed, access difficulty categorized
+- Automated system: cron script ready (every 3 days recommended)
+- Nigeria filter: 5 green-light companies identified (Orium, Ubicloud, LiteLLM, SigNoz, Bluelight)
+- First application: Orium CV + cover letter customized, awaiting Kolade to find link + submit
+- Workflow: Find → Customize → Apply → Log → Follow-up workflow established
+
+=== KEY INSIGHTS ===
+
+1. **Identity & Preference Architecture:** Established clear persona (calm, helpful), timezone-aware model scheduling, credential management system.
+
+2. **Parallel Ventures Model:** Supporting 5 simultaneous ventures at different scales. Requires sophisticated prioritization (14h AdugboInsure, 8h Orisynx, day job + personal projects).
+
+3. **Content Creation Pipeline:** AdugboInsure's weekly educational videos for POS agents represent high-leverage awareness work (not customer acquisition, pure awareness building).
+
+4. **Job Search as Structured System:** Moved from ad-hoc to systematic: automated pulls → filtered database → customized applications → tracking. RemoteOK + HN Jobs are the reliable sources; Cloudflare blocks most others.
+
+5. **Immigration as Living Priority:** Canadian visa restart (spring 2026) requires fresh documentation. Job search interacts with visa strategy (sponsorship-friendly roles prioritized).
+
+6. **Truck Business Infrastructure:** 3-truck container-pooling model with UK partners; Germany-focused sourcing; requires 2-3 day monitoring cadence (€£4k budget per truck, 4x2 flatbed flatbed only).
+
+7. **Investment Philosophy Aligned:** Buy-and-hold, 3-year horizon, tech/AI/infrastructure/gold focus. Weekly tracking established.
+
+8. **Infrastructure Maturity:** Notion (knowledge), NotebookLM (analysis), GitHub (code), Zapier (automation), direct IMAP (backup), local Ollama (this consolidation). Ecosystem working smoothly.
+
+=== DECISIONS MADE ===
+
+1. **Default model routing:** Haiku (cost) → Sonnet (moderate) → Opus (hard); Announce each switch.
+2. **Browser choice:** agent-browser CLI as primary (tested Mar 21); fallback to cloud providers if needed.
+3. **Job board strategy:** RemoteOK + HN Jobs only (reliable sources); others either blocked (Cloudflare) or require login (LinkedIn risky).
+4. **Credential handling:** Save immediately in .credentials upon receipt; never ask for resend.
+5. **Memory architecture:** Daily logs (memory/YYYY-MM-DD.md) + curated long-term (MEMORY.md) + consolidated archives (memory/ARCHIVE.md).
+
+=== UNRESOLVED/PENDING ===
+
+1. Yahoo email import (Kolade to complete in Gmail settings)
+2. Google Drive OAuth consent screen (Kolade to configure)
+3. GitHub OAuth for gws (pending)
+4. Orium application submission (link needed, ready to apply)
+5. AWS certification schedule (on hold until secondary tasks stable)
+6. Complete list of Nigerian stock holdings (broker confirmation needed)
+7. Truck import websites (list to be sent by Kolade)
+8. Updated CV for full international scope (template ready, awaiting customization triggers)
+9. Canada visa documentation assembly (restart mid-2026)
+
+=== NEXT STEPS (ARCHIVAL) ===
+
+Files 2-13 days old ready for summary compression:
+- 2026-03-13 (8 days old): Initial setup summary 1 line
+- 2026-03-17 (4 days old): Infrastructure setup summary (keep accessible, recent)
+- 2026-03-18 (3 days old): OAuth + browser setup (keep accessible, recent)
+- 2026-03-19 brain dumps (2 days old): Archive compressed into business summary + insights
+- 2026-03-20 files (1 day old): Keep for now, consolidate next week
+
+Consolidation approach: Compress 2026-03-13 and older brain dumps into ARCHIVE.md; keep recent daily files (mar 17-21) for session reference; update MEMORY.md with stabilized insights from past week.

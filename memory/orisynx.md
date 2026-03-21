@@ -106,6 +106,27 @@
 
 ---
 
+## Legal Documents & Registration
+
+**Shareholders' Agreement (executed 2026-03-18):**
+- **Company:** ORISYNX LIMITED (RC: 9422696)
+- **Shareholders (equal 1/3 each currently):**
+  1. Oladayo Oniroko (Lagos)
+  2. Adebiyi Samuel Olufemi (Ibadan)
+  3. Gureje Kolade Temitayo (Lagos) — **YOU**
+- **Fourth Shareholder Slot:** Reserved for future admission (unanimous approval required, becomes 25% each)
+- **All shareholders are Directors** of the company
+- **Key provisions:**
+  - Equal shareholding is fundamental
+  - Board decisions: simple majority (except Reserved Matters = unanimous)
+  - Board meetings: quarterly minimum
+  - Drag-along rights: 75% can force minority to sell
+  - Tag-along rights: minority can join majority sale
+  - Pre-emption: existing shareholders can match any external offers first
+  - Exit: 60 days notice; other shareholders can buy at fair market value
+  - Non-compete: 2 years post-exit
+  - Reserved matters: 12 items require unanimous approval (asset sales >₦500K, borrowing >₦1M, dividends, new shareholders, etc.)
+
 ## Current Status
 
 **Organization Registration:** In progress (lawyer handling)
