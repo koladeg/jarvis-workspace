@@ -1,0 +1,141 @@
+# Orisynx - Internal Audit SaaS / GRC Platform
+
+## Core Business Model
+
+**Company Name:** Orisynx (Oversight Sync)
+
+**What:** Workflow-driven GRC/Internal Audit platform for Nigerian organizations
+
+**Problem Solved:**
+- Foreign GRC solutions cost ₦500M-₦1B+ upfront + millions annually
+- Nigerian orgs default to Word/Excel → fragmented, unreliable, no collaboration
+- No real-time reviews, evidence scattered in folders, no aggregation
+
+**Solution Differentiators:**
+1. **Workflow-driven** — Plan audit → conduct tests → report → track findings
+2. **Single source of truth** — Centralize risks, controls, audit evidence
+3. **Evidence-attached-to-tests** — Evidence tied to specific tests, not dumped in folders
+4. **Client portal** — Auditees respond to findings, update CAPAs in-system
+5. **Auto-aggregated dashboards** — Compliance scores, risk ratings aggregated across org
+6. **Cost leadership** — <₦3M/year vs. ₦1B+ for AuditBoard, SAP, Archer
+
+**Business Model:**
+- B2B SaaS, subscription-based (per-user pricing)
+- Target price: <₦3M/year
+- Revenue model: Subscription + potential per-user/per-org variations
+
+**Target Market (Go-to-Market):**
+- **Phase 1:** Nigeria (microfinance banks, finance companies primary)
+- **Phase 2:** Expand to Africa (manufacturing, healthcare secondary sectors)
+- **User personas:** Internal auditors, internal control officers, risk management teams
+
+**MVP Scope:**
+- Plan audit (risk register → controls mapping)
+- Conduct tests with attached evidence
+- Write report
+- Track findings / CAPA management
+- Template library (incremental, user-feedback driven)
+- No complex AI integrations initially
+
+**Key Insight:** Start with microfinance banks (biggest pain point, smallest budget) → prove market fit → expand
+
+---
+
+## Team
+
+1. **Lawyer** — Handling organization registration
+2. **Internal Audit Expert** — Senior in sector, advising on solution design
+3. **Backend Developer** — Moving into DevOps role, using AI for tooling
+4. **Frontend Developer** — Based in Canada, strong design foundation, independent contributor
+5. **Kolade (You)** — Project lead/director, coordinates team, code reviews, NOT primary coder
+
+**Team Dynamics:**
+- Team autonomy is high (especially frontend dev in Canada)
+- Backend dev moving toward DevOps may reduce direct coding involvement
+- Need to ensure alignment on MVP scope and timeline
+
+---
+
+## Project Infrastructure
+
+### GitHub Repositories
+- **Frontend:** https://github.com/Audit-IS/fe
+- **Backend:** https://github.com/Orisynx/Orisynx-backend
+- **Status:** Code pushed live (as of 2026-03-21)
+
+### ClickUp
+- **Workspace:** "Orisynx's Workspace"
+- **Channels:**
+  - **Management** 🔒 (private) — Company registration, legal docs
+  - **dev** — Development tasks, technical planning
+  - **Orisynx's Workspace** — General workspace
+  - **Welcome** — Onboarding/reference
+- **Integration:** Via Zapier MCP (configured 2026-03-16)
+- **Access:** Zapier endpoint: https://mcp.zapier.com/api/v1/connect
+- **Token stored:** `.zapier-mcp-config` (bearer token configured)
+- **Team members (DMs):** Props Account, Kolade Gureje, FO, Dayo, Orisynx
+
+### NotebookLM
+- **Notebook:** "AuditBoard GRC Application Technical Proposal for FMDQ"
+- **Notebook ID:** cbefa8a7-c4d4-4d52-adc5-ecaccb4854b8
+- **URL:** https://notebooklm.google.com/notebook/cbefa8a7-c4d4-4d52-adc5-ecaccb4854b8
+- **Sources:** 18 documents covering GRC domain, internal audit workflows, control testing, RCSA
+- **Access:** Via nlm CLI (authenticated 2026-03-21)
+- **Credentials stored:** `/home/claw/.openclaw/workspace/.credentials/notebooklm_cookies.txt`
+
+### Notion
+- **Documentation:** Used for technical proposal and reference materials
+- **Access:** [CONFIRM IF NEEDED]
+
+---
+
+## Credentials & Access
+
+**ClickUp (via Zapier):**
+- Workspace/team details: [SAVED IN ZAPIER INTEGRATION]
+- Access method: Via Zapier MCP CLI or compatible tools
+- Token: Bearer token in `.zapier-mcp-config`
+
+**GitHub:**
+- Access already configured in `.credentials` (existing token)
+
+**NotebookLM:**
+- Authenticated via cookies in `.credentials/notebooklm_cookies.txt`
+- Profile: default
+- Auth method: Google cookies (nlm login --manual --file)
+
+---
+
+## Current Status
+
+**Organization Registration:** In progress (lawyer handling)
+
+**Code Status:** Pushed to GitHub (as of 2026-03-21)
+- Frontend: Live on repo
+- Backend: Live on repo
+- Code review phase complete
+
+**Next Steps:**
+1. Finalize org registration
+2. Define launch timeline
+3. Identify early adopter / pilot customer
+4. Plan MVP release schedule
+
+---
+
+## Key Decisions & Constraints
+
+- **MVP-first approach** — Ship workflow, template library grows with user feedback
+- **Nigerian market focus initially** — Microfinance banks are the beachhead
+- **Cost positioning is critical** — Must stay <₦3M/year to be compelling
+- **No complex features early** — Automate what orgs do manually, add sophistication incrementally
+- **Team coordination is project-critical** — Especially with distributed team (Canada dev)
+
+---
+
+## To Remember
+
+- This is **not an awareness/education product like AdugboInsure** — it's a production SaaS tool with real users/customers
+- **Pricing in Naira is a competitive advantage** — foreign competitors quote in USD, making them prohibitively expensive
+- **The problem is real and urgent** — orgs are actively looking for local alternatives to expensive foreign GRC tools
+- **Early adopters will drive product** — listen to microfinance bank feedback, iterate fast
