@@ -23,6 +23,73 @@
 
 ---
 
+## Orisynx (Audit Management Platform) — 2026-03-22
+
+### Meeting Brief & MVP Requirements
+**Meeting Date:** Sunday, March 22, 2026, 07:09 UTC  
+**Key Quote:** *"Our work starts from the audit plan because that's what we do... The board has to approve your audit plan because that's to say this is my plan of activity."*
+
+**Core Architecture (4-Layer Model):**
+1. **Planner** (Calendar/Timeline) — Annual audit schedule (templates, activate as needed)
+2. **Audit Program** (Work Programs) — Checklists & procedures (CSV/Excel import)
+3. **Workspace** (Isolated per-audit environment) — Team performs tests, attaches evidence, documents findings
+4. **Dashboard** (Read-only overview) — Status snapshots, no data entry
+
+### MVP Feature Priorities
+| Feature | Priority | Purpose |
+|---------|----------|---------|
+| CSV/Excel Import | HIGH | Ingest custom work programs |
+| Downloadable Templates | HIGH | Provide standardized format |
+| Workspace Isolation & Team Access | HIGH | Per-audit isolation, team-only visibility |
+| Local Approvals with Locking | HIGH | Team Lead review + post-approval edit lock |
+| Granular Roles/Permissions | HIGH | Role matrix, per-audit team access |
+| Template Activation Workflow | MEDIUM | Activate planned audits from calendar |
+| Canvas Metaphor UX | MEDIUM | Canvas (creation) vs Workspace (execution) distinction |
+| Remove "Department Involved" Field | MEDIUM | Cross-cutting cleanup |
+
+### Current MVP Screens (19 total)
+Auth → Create audit → Audit view → Task manager → Task view → Calendar page → Findings → CAPA tracker → Document review and sign off → Users → Edit user → Document library → Templates manager → Create template → Reports → Analytics → Audit history → Notifications → Account user
+
+### Screen-to-Requirement Mapping (Key Findings)
+- **Calendar page** = Planner base (mostly done, needs template activation)
+- **Task manager/Task view** = Part of Workspace (incomplete, needs team isolation)
+- **Audit view** = Could be Dashboard (needs to be made read-only)
+- **Document review and sign off** = Local approvals (exists, needs locking)
+- **Templates manager/Create template** = Template base (needs CSV import/export)
+- **Users/Edit user** = Roles base (needs granular permission matrix)
+
+### Missing/Under-Defined
+- Audit Program as first-class entity (work programs, CSV import pipeline)
+- Workspace as cohesive model (currently fragmented)
+- Approval locking post-sign-off
+- Canvas metaphor (UX/IA reframing)
+- Granular permissions enforcement
+- Read-only enforcement on dashboard
+
+### Top 10 Technical Tickets (To Add to ClickUp)
+1. **CSV/Excel Import for Audit Programs** — HIGH
+2. **Workspace Isolation & Team Access Controls** — HIGH
+3. **Approval Locking (Post-Sign-Off)** — HIGH
+4. **Granular Roles & Permissions Matrix** — HIGH
+5. **Template Download/Export Endpoints** — HIGH
+6. **Planner: Template Activation Workflow** — MEDIUM
+7. **Remove "Department Involved" Field** — MEDIUM
+8. **Dashboard: Enforce Read-Only on Audit View** — MEDIUM
+9. **Canvas Metaphor UX Redesign** — MEDIUM
+10. **Workspace: Unified Navigation** — MEDIUM
+
+### Product Documents Saved
+- `Orisynx_Brief_2026-03-22.md` — Full meeting brief + requirements breakdown
+- Meeting analysis done by Codex (openai-codex/gpt-5.4) on 2026-03-22 09:32 UTC
+
+### Next Steps
+- Add 15 tickets to ClickUp (full list in Codex analysis)
+- Assign tickets to team members (backend, frontend, DevOps roles already assigned)
+- Start Phase 1: Data Models & Schemas
+- Clarify: CSV columns, approval hierarchy, evidence storage backend, audit statuses, findings categories
+
+---
+
 ## Preferences
 
 - **Browser (default for connecting to the internet):** `agent-browser` CLI v0.21.1

@@ -136,11 +136,101 @@
 - Backend: Live on repo
 - Code review phase complete
 
+**MVP Product Definition:** Complete (2026-03-22)
+- Architecture finalized: Planner → Audit Program → Workspace → Dashboard
+- 19 current MVP screens mapped to requirements
+- 15+ technical tickets identified for ClickUp
+- Gaps identified: CSV import, workspace isolation, approval locking, granular permissions
+
 **Next Steps:**
 1. Finalize org registration
-2. Define launch timeline
-3. Identify early adopter / pilot customer
-4. Plan MVP release schedule
+2. Add tickets to ClickUp (ready to copy/paste)
+3. Assign tickets to team (backend, frontend, DevOps)
+4. Start Phase 1: Data Models & Schemas
+5. Identify early adopter / pilot customer
+6. Plan MVP release schedule
+
+---
+
+## Product Brief & MVP Architecture (2026-03-22 Meeting)
+
+**Key Quote:** *"Our work starts from the audit plan because that's what we do... The board has to approve your audit plan because that's to say this is my plan of activity."*
+
+### 4-Layer Architecture
+1. **Planner** (Calendar/Timeline) — Annual audit schedule held as templates, activated as needed
+2. **Audit Program** (Work Programs) — Specific checklists & procedures, imported from CSV/Excel or custom-created
+3. **Workspace** (Isolated per-audit environment) — Team performs tests, attaches evidence, documents findings, raises exceptions
+4. **Dashboard** (Read-only overview) — Status snapshots, no data entry
+
+### Canvas Metaphor
+- **Canvas** = Creation menu (where you design audits, import templates, plan schedule)
+- **Workspace** = Where you "paint" (actual audit execution: tests, evidence, findings)
+- **Dashboard** = Read-only snapshot view (overview only, not for operational work)
+
+### MVP Feature Priorities
+| Feature | Priority | Purpose |
+|---------|----------|---------|
+| CSV/Excel Import for Audit Programs | HIGH | Users import custom work programs from Excel |
+| Downloadable Templates | HIGH | System provides standardized template format for download/re-upload |
+| Workspace Isolation & Team Access | HIGH | Each audit isolated; only assigned team members + Head of Department see it |
+| Local Approvals with Locking | HIGH | Team Lead reviews work, approval locks section from further edits (audit trail) |
+| Granular Roles & Permissions Matrix | HIGH | Role-based access control per audit, per action, per screen |
+| Template Activation Workflow | MEDIUM | Activate planned audits from Planner calendar as execution begins |
+| Approval Hierarchy (configurable) | MEDIUM | Audit Owner assigns Approval Authorities; Board-level approvals external |
+| Remove "Department Involved" Field | MEDIUM | Cross-cutting cleanup (no guest auditors in MVP; only audit staff) |
+| Canvas Metaphor UX Redesign | MEDIUM | Rename/restructure navigation to reflect canvas vs workspace distinction |
+| Workspace: Unified Navigation | MEDIUM | Tie Task manager + Findings + Document library into cohesive workspace |
+
+### Current MVP Screens (19 total)
+**Mapped to Brief Requirements:**
+- Calendar page → Planner (base, needs template activation flow)
+- Task manager / Task view → Workspace component (needs isolation, team access)
+- Audit view → Dashboard candidate (needs read-only enforcement)
+- Document review and sign off → Local approvals (needs post-approval locking)
+- Templates manager / Create template → Template management (needs CSV import/export)
+- Users / Edit user → Roles/permissions base (needs granular permission matrix)
+- Findings → Workspace output (good, linked to tests)
+- CAPA tracker → Findings follow-up (good fit)
+- Document library → Evidence repository (good, part of workspace)
+- Reports / Analytics → Dashboard supplement (good, overview)
+- Others: Auth, Audit history, Notifications, Account user (supporting)
+
+### Gaps Identified (To Close)
+1. **Audit Program as first-class entity** — Work programs/checklists and CSV import pipeline not clearly represented
+2. **Workspace as cohesive model** — Currently fragmented across task manager, findings, document library screens
+3. **Approval locking** — Sign-off exists, but post-approval edit lock not explicit
+4. **Granular permissions** — Role matrix not fully implemented; per-audit team access likely missing
+5. **Canvas metaphor** — No explicit distinction between creation (canvas) and execution (workspace)
+6. **Read-only enforcement** — Dashboard rule ("NOT for data entry") likely not enforced in current Audit view
+7. **"Department Involved" removal** — Field likely still exists in forms/reports; needs cross-cutting cleanup
+
+### Top 10 Technical Tickets (Ready for ClickUp)
+1. **CSV/Excel Import for Audit Programs** — HIGH | Endpoint accepts uploaded CSV, parses work programs, creates checklist items
+2. **Workspace Isolation & Team Access Controls** — HIGH | Query-level isolation per audit; permission checks on all workspace screens
+3. **Approval Locking (Post-Sign-Off)** — HIGH | After Team Lead approval, lock approved section; unlock requires new approval
+4. **Granular Roles & Permissions Matrix** — HIGH | Define role matrix (Admin, Audit Manager, Team Lead, Auditor, Reviewer); permission enforcement per screen/action
+5. **Template Download/Export Endpoints** — HIGH | Download template as CSV; users can customize and re-import
+6. **Planner: Template Activation Workflow** — MEDIUM | Calendar view allows "Activate" action on planned audit; creates active audit from template
+7. **Remove "Department Involved" Field** — MEDIUM | Remove field from Create audit UI; remove from schema; remove from reports/imports
+8. **Dashboard: Enforce Read-Only on Audit View** — MEDIUM | Audit view becomes read-only; all data entry moves to workspace/task flows
+9. **Canvas Metaphor UX Redesign** — MEDIUM | Rename/reorder menu items; restructure Audit view as overview; add "Audit Plan" primary nav item
+10. **Workspace: Unified Navigation** — MEDIUM | Workspace consolidates task manager, findings, document library, evidence into single cohesive interface
+
+### Questions for Clarification (Before Building)
+1. **CSV Import Columns:** What are exact column names in downloadable template?
+2. **Approval Hierarchy:** Multi-level (Lead → Senior Lead → Head) or single Team Lead approval?
+3. **Evidence Storage:** File size limits? Storage backend (S3, local)?
+4. **Audit Statuses:** Planned → Active → In Review → Approved → Closed, or different?
+5. **Findings Categories:** Control gaps, observations, recommendations, or custom per client?
+6. **Team Assignment:** How many team members per audit? Fixed teams or flexible?
+7. **Board Approval:** External document attachment (PDF upload) or in-system workflow?
+
+### Documents Created
+- `Orisynx_Brief_2026-03-22.md` — Full meeting brief + 4-layer architecture + detailed requirement breakdown + ticket descriptions
+- `memory/orisynx.md` (this file) — Living project memory
+
+### Model Used for Analysis
+- **Codex** (openai-codex/gpt-5.4) — Deep technical breakdown of MVP screens vs requirements (2026-03-22 09:32 UTC)
 
 ---
 
