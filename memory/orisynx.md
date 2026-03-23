@@ -234,6 +234,132 @@
 
 ---
 
+## MVP Review Meeting Workflow (Process for Future Meetings)
+
+**Established Process (2026-03-22):**
+
+### Step 1: Capture the Brief
+- Meeting discussion → detailed requirements list
+- Save to `Orisynx_Brief_YYYY-MM-DD.md` (structured format with sections)
+- Include: architecture, feature priorities, gaps, clarifying questions
+
+### Step 2: Analyze with Codex
+- Spawn Codex subagent (openai-codex/gpt-5.4)
+- Task: Map current MVP screens to brief requirements
+- Output: Screen-to-requirement mapping + gap analysis + technical ticket descriptions
+- Result: Codex identifies what's built vs what's missing
+
+### Step 3: Save to Orisynx Memory
+- Update `memory/orisynx.md` with:
+  - Meeting summary
+  - Architecture diagram
+  - MVP feature priorities table
+  - Current screens status
+  - Gaps identified
+  - Top 10 tickets (copy/paste ready)
+  - Clarification questions for team
+
+### Step 4: Create ClickUp Tickets via Zapier MCP
+**Setup (one-time):**
+- mcporter config at: `/home/claw/.openclaw/workspace/config/mcporter.json`
+- Zapier MCP server pre-authenticated with ClickUp token
+- Use tool: `mcporter call zapier-mcp.clickup_create_task`
+
+**Batch ticket creation script:**
+```bash
+#!/bin/bash
+CONFIG="/home/claw/.openclaw/workspace/config/mcporter.json"
+
+# Loop through tickets array
+for ticket in "${tickets[@]}"; do
+  IFS='|' read -r title desc <<< "$ticket"
+  mcporter call zapier-mcp.clickup_create_task \
+    "instructions=Create MVP ticket for Orisynx audit system" \
+    "name=$title" \
+    "content=$desc" \
+    "priority=$PRIORITY" \
+    --config "$CONFIG" --output json > /dev/null 2>&1
+  sleep 2
+done
+```
+
+**Parameters:**
+- `name=` — Ticket title
+- `content=` — Ticket description/acceptance criteria
+- `priority=` — "HIGH" or "MEDIUM" (string, not number)
+- `instructions=` — Natural language context for Zapier
+- `--config` — Must point to mcporter.json
+- `sleep 2` — Rate limiting (avoid Zapier throttling)
+
+**Result:**
+- Tickets created in ClickUp Backlogs list
+- Status: "to do"
+- Priority: Set correctly
+- Creator: Kolade Gureje (bot uses authenticated context)
+- URL: Each ticket gets a ClickUp link
+
+### Step 5: Team Assignment & Refinement
+- Pull up ClickUp Backlogs
+- Assign tickets to team (backend, frontend, DevOps)
+- Add acceptance criteria from detailed ticket descriptions
+- Move to sprint/project folder as needed
+
+---
+
+## For Next MVP Review Meeting (Template)
+
+**Pre-Meeting:**
+1. Ensure Zapier MCP is still authenticated (test with one dummy ticket)
+2. Prepare brief document template
+
+**During Meeting:**
+1. Capture requirements discussion
+2. Create `Orisynx_Brief_YYYY-MM-DD.md`
+
+**Post-Meeting (Same Day if Possible):**
+1. Spawn Codex for analysis → 1-2 minutes
+2. Save to `memory/orisynx.md` → 2-3 minutes
+3. Create HIGH priority tickets via mcporter → 15-20 minutes (rate limited)
+4. If time allows, create MEDIUM tickets (delegate to Codex for batch creation)
+5. Share ClickUp link with team
+
+**Total Time:** ~45-60 minutes from meeting end to tickets ready in ClickUp
+
+---
+
+## ClickUp Tickets Created (2026-03-22)
+
+### HIGH Priority (11 tickets)
+1. CSV/Excel Import for Audit Programs
+2. Workspace Isolation & Team Access Controls
+3. Approval Locking (Post-Sign-Off)
+4. Granular Roles & Permissions Matrix
+5. Template Download/Export Endpoints
+6. Planner: Template Activation Workflow
+7. Remove Department Involved Field
+8. Dashboard: Enforce Read-Only on Audit View
+9. Canvas Metaphor UX Redesign
+10. Workspace: Unified Navigation
+11. Audit Program as First-Class Entity
+
+### MEDIUM Priority (12 tickets — created by Codex)
+1. Approval Hierarchy (Configurable)
+2. Board-Level Approval Integration
+3. Audit Statuses & Lifecycle
+4. Findings Categories & Severity
+5. Evidence Attachment & Storage
+6. CAPA Tracking Workflow
+7. Template Versioning & Activation
+8. Audit Team Assignment & Access
+9. Dashboard Widgets & Customization
+10. Audit Report Export
+11. Notifications & Approvals Workflow
+12. Permission Enforcement Tests
+
+**Total MVP Tickets:** 23 (11 HIGH + 12 MEDIUM)
+
+---
+
 ## Key Decisions & Constraints
 
 - **MVP-first approach** — Ship workflow, template library grows with user feedback
