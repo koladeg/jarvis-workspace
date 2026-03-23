@@ -209,7 +209,7 @@ PYTHON_SCRIPT
 
 EXIT_CODE=$?
 
-if [ $EXIT_CODE -eq 1 ] && [ "$QUIET" = "false" ]; then
+if [ $EXIT_CODE -eq 1 ] && [ "$QUIET" = "false" ] && [ "$JSON_OUT" = "false" ]; then
   echo ""
   echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
   echo "HOW TO FIX:"
