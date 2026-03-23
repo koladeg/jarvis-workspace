@@ -1,25 +1,24 @@
 # MEMORY.md
 
-## Weekly Consolidation & Progress (2026-03-21)
+## Weekly Consolidation & Progress (2026-03-23)
 
-**Last consolidated:** Saturday, March 21, 2026 (17:00 UTC)  
+**Last consolidated:** Monday, March 23, 2026 (17:00 UTC)  
 **Archive location:** `memory/ARCHIVE.md` (historical consolidations)  
-**Next consolidation:** Saturday, March 28, 2026
+**Next consolidation:** Monday, March 30, 2026
 
-**Status Summary:**
-- ✅ Infrastructure week complete (5 major integrations deployed)
-- ✅ Business strategy alignment complete (5 ventures prioritized)
-- ✅ Job search system live and automated (cron ready)
-- ✅ First application ready (Orium — waiting for submission)
-- ⏳ Pending: Yahoo email import, Google Drive OAuth consent, GitHub OAuth
-- ⏳ Pending: First job application submission (link needed)
+**Status Summary (Week 2 — March 17-23):**
+- ✅ Infrastructure mature: 5 integrations live + tested (Notion, NotebookLM, Zapier, Gmail IMAP, agent-browser)
+- ✅ Job search live: RemoteOK + HN Jobs automation running; first application (Orium) ready to submit
+- ✅ Portfolio tracking: Weekly system established ($2k → $6k in 3-4 years goal)
+- ✅ 5 ventures prioritized: execution phase for all
+- ⏳ BLOCKING: Orium job link, truck specifications, ClickUp workspace link
+- ⏳ TECHNICAL: NotebookLM auth expired (refresh needed for video pipeline)
 
-**Weekly Highlights:**
-1. **Job Search Systematized:** RemoteOK + HN Jobs automated pulls; Nigeria eligibility filters; CV templates ready
-2. **Infrastructure Mature:** 5 integrations live (Notion, NotebookLM, Zapier, Gmail, agent-browser)
-3. **Business Strategy Clear:** 5 ventures mapped to priority (AdugboInsure funding critical; Orisynx coordination; SiFax baseline; truck monitoring; job search systematic)
-4. **Portfolio Tracked:** Weekly snapshots established (Fridays to Telegram)
-5. **Immigration Restart:** Canadian visa timeline (spring 2026); job search supporting sponsorship strategy
+**Critical This Week:**
+1. **Job Application:** Orium submission pending (link required) → Ready for immediate submission
+2. **AdugboInsure:** Funding radar + dashboard deployment (Sunday 19:00 WAT)
+3. **Truck Business:** Specifications needed → Enable automation setup
+4. **NotebookLM:** Auth refresh → Unblock video generation pipeline
 
 ---
 
@@ -147,13 +146,25 @@ Auth → Create audit → Audit view → Task manager → Task view → Calendar
   - **Haiku** (`anthropic/claude-haiku-4-5`): Lightweight checks only (git status, quick summaries)
   - **Always announce** which model I'm using before starting a task.
 
-## Memory System
+## Memory System & Local LLM
 
-- **Current setup (2026-03-16):** Ollama embeddings + built-in SQLite vector search.
+- **Current setup (2026-03-16):** Ollama embeddings + built-in SQLite vector search + local inference.
   - Simple, lightweight, local-only (no external API calls).
   - `MEMORY.md` and `memory/YYYY-MM-DD.md` are automatically indexed and searchable.
   - File watcher auto-syncs changes (debounce 1.5s).
   - Tools: `memory_search` (semantic) and `memory_get` (targeted read).
+  
+- **Ollama Models Available (2026-03-23):**
+  - `nomic-embed-text:latest` (274 MB) — Memory embeddings (working ✓)
+  - `llama3.2:3b` (2.0 GB) — Local inference for lightweight tasks
+  
+- **Ollama Usage Policy (NEW - 2026-03-23):**
+  - Use `llama3.2:3b` for lightweight, fast tasks that don't need external API calls
+  - **Good for:** Git status checks, quick summaries, log analysis, simple formatting
+  - **Not good for:** Complex reasoning, multi-step tasks, anything that needs current model
+  - **Cost:** Zero (local CPU inference, no API charges)
+  - **Speed:** Fast on modern CPUs, instant on GPU
+  - **Rule:** Prefer Ollama for routine checks; escalate to cloud models for complex work
 
 - **Memory file organization:**
   - `MEMORY.md` — curated long-term, evergreen notes (survives compaction)
@@ -250,14 +261,14 @@ Auth → Create audit → Audit view → Task manager → Task view → Calendar
 - ✅ **Bluelight Consulting** — Remote consulting, sponsor-friendly
 - ❌ **Loancrate** — US-only, harder visa path (skip)
 
-**First Application Live (2026-03-21):**
-- **Company:** Orium (Canada, healthcare)
+**First Application Status (Updated 2026-03-23):**
+- **Company:** Orium (Canada, healthcare) — **READY TO SUBMIT**
 - **Role:** Senior React Native Developer
 - **Files created:**
-  - CV_Orium_SeniorReactNativeDeveloper.md (customized, emphasizes React Native + mhGAP healthcare experience)
-  - CoverLetter_Orium_SeniorReactNativeDeveloper.txt (visa sponsorship transparent, cultural fit)
-- **Status:** Ready to submit (awaiting Kolade to find job link + confirm)
-- **Strategy:** Highlight React Native (4+ years) + healthcare domain (mhGAP: 250+ patients, 98% accuracy) + international experience
+  - CV_Orium_SeniorReactNativeDeveloper.md (customized, React Native 4+ yrs + mhGAP healthcare)
+  - CoverLetter_Orium_SeniorReactNativeDeveloper.txt (visa sponsorship transparent)
+- **Status:** Complete & tested → Awaiting Kolade's job link confirmation
+- **Next:** Ubicloud (AWS/infrastructure focus) + LiteLLM (backend/startup) CVs in parallel
 
 **Application Workflow (Established):**
 1. Find role on RemoteOK/HN Jobs
@@ -300,33 +311,62 @@ Auth → Create audit → Audit view → Task manager → Task view → Calendar
 - **Learning Interest:** Python or Python-related technologies
 - **Vision:** Expand from pure mobile/frontend to full-stack capabilities
 
-## Credentials & Access
+## System Health & Integration Status (2026-03-23 Current)
 
-**Secure storage:** 
-- `/home/claw/.openclaw/workspace/.credentials` — API keys and tokens
-- `/home/claw/.openclaw/workspace/.google-drive-sa.json` — Google Drive service account (archived, not used)
+**Infrastructure Health:** ✅ All systems operational
 
-**Backup System (2026-03-18):**
-- **Location:** jarviskolademail@gmail.com
-- **Method:** IMAP direct access
-- **Label:** `[Backups] Memory Archive`
-- **Strategy:** Monthly compression + archival of memory files
-- **IMAP account:** jarviskolademail@gmail.com
-  - App Password: `urun qvjm dfad xlwk`
-  - Full IMAP access configured
+**Integration Status:**
+1. **Gmail + Zapier MCP** — ✅ LIVE
+   - Direct IMAP access (primary): jarviskolademail@gmail.com — 92/100 Zapier tasks remaining
+   - No Yahoo import yet (can work around with current setup)
+   
+2. **Notion** — ✅ LIVE
+   - API key saved in `.credentials`
+   - 3 workspaces accessible (AuditBoard, Community Health Insurance, Pro TypeScript)
+   - Synced: AdugboInsure agents + tasks; Orisynx meeting brief
+   
+3. **agent-browser** — ✅ LIVE
+   - Primary browser for RemoteOK, HN Jobs pulls
+   - Works reliably; Linux deps via cloud providers if needed
+   - Snapshot + ref workflow established
+   
+4. **NotebookLM** — ⚠️ PARTIAL (Auth expired)
+   - CLI upgraded to 0.5.4
+   - Cookies in `.credentials/notebooklm_cookies.txt` expired
+   - Blocks: Video generation, artifact download
+   - Fix: Refresh auth with live Google session
+   
+5. **ClickUp (via Zapier)** — ✅ READY
+   - 21 tools available
+   - Waiting on: Workspace link from Kolade (Orisynx tickets)
 
-**Credentials saved (2026-03-18):**
-- GitHub token: Stored in `.credentials` (Read + Write scope)
-  - Scopes: repo (read/write), gist, workflow
-- Vercel token: Stored in `.credentials`
-  - Allows: view deployments, manage deployments, create new deployments
+**Credentials & Access**
 
-**Rule (2026-03-21):** 
-- Every credential Kolade sends me MUST be saved in `.credentials` file immediately
-- Never ask Kolade to resend or remind — I save on first receipt
-- Never commit tokens to GitHub
-- Label credentials clearly for future reference
-- They persist across sessions
+**System (2026-03-23):** Bulletproof credentials management deployed.
+- Source of truth: `.credentials/CREDENTIALS_INDEX.json`
+- Save function: `save_credential <name> <value> <service>` (installed in `~/.bashrc`)
+- Verify: `bash scripts/credentials-verify.sh` (exit 0 = healthy, exit 1 = STOP + ask Kolade)
+- Guide: `CREDENTIALS_README.md`
+
+**Current Status (2026-03-23):**
+- ✅ Notion API key: `notion_api_key.txt`
+- ✅ Telegram Bot Config: `telegram_bot_config.txt` (5 chat IDs)
+- ✅ NotebookLM cookies: `notebooklm_cookies.txt` (expires ~2026-04-13)
+- ✅ YouTube OAuth: `youtube_oauth.json` (expires ~2026-09-20)
+- ✅ Gmail App Password: `gmail_app_password.txt` (`urun qvjm dfad xlwk`, IMAP: jarviskolademail@gmail.com)
+- ❌ GitHub Token: MISSING — Kolade must re-provide (was never actually saved despite claim)
+- ⚠️ Vercel Token: MISSING — optional, provide when available
+
+**Backup System:**
+- Location: jarviskolademail@gmail.com
+- Method: IMAP direct access (app password saved in `gmail_app_password.txt`)
+- Label: `[Backups] Memory Archive`
+- Strategy: Monthly compression + archival
+
+**Hard Rules:**
+- Save on receipt via `save_credential()` — never write files ad-hoc
+- If verify exits code 1: STOP and ask Kolade
+- Friday heartbeat: always run verify and report to Kolade
 
 ## Work & Current Roles
 

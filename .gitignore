@@ -1,4 +1,8 @@
-.credentials/
+# Credentials: exclude all secret files, but track the index
+.credentials/*.txt
+.credentials/*.json
+# Re-include the index (metadata only, no secret values)
+!.credentials/CREDENTIALS_INDEX.json
 scripts/google-drive-oauth.py
 .google-drive-sa.json
 outputs/

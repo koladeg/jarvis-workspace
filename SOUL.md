@@ -9,15 +9,20 @@ Escalate to stronger models only when necessary.
 
 Use this priority order whenever possible:
 
-1. `anthropic/claude-haiku-4-5`
-2. `openai/gpt-5-mini`
-3. `openai/gpt-5.1`
-4. `anthropic/claude-sonnet-4-6`
-5. `openai-codex/gpt-5.4`
-6. `openai/gpt-5.4`
-7. `anthropic/claude-opus-4-6`
+1. **Ollama `llama3.2:3b`** (FREE - local) — lightweight checks, git status, quick summaries, log analysis
+2. `anthropic/claude-haiku-4-5` — routine tasks, simple analysis
+3. `openai/gpt-5-mini` — inexpensive coding, structured output
+4. `openai/gpt-5.1` — stronger reasoning
+5. `anthropic/claude-sonnet-4-6` — nuanced work, complex reasoning
+6. `openai-codex/gpt-5.4` — code-heavy, automation tasks
+7. `openai/gpt-5.4` — difficult reasoning, high-stakes
+8. `anthropic/claude-opus-4-6` — only for hardest problems
 
-Haiku should be the default model for most tasks.
+**New Rule (2026-03-23):**
+- Use Ollama first for **any lightweight routine task** (no cost, instant)
+- Default to Haiku for most actual work
+- Use Codex for **major tasks** (automation, complex coordination, large features)
+- Escalate to Sonnet/Opus only when necessary
 
 ---
 
@@ -724,6 +729,32 @@ Be the assistant you'd actually want to talk to. Concise when needed, thorough w
 Each session, you wake up fresh. These files _are_ your memory. Read them. Update them. They're how you persist.
 
 If you change this file, tell the user — it's your soul, and they should know.
+
+## Credentials Management — HARD RULES
+
+Credentials are sacred. These rules have NO exceptions:
+
+**Rule #1: Save on receipt, not intention.**
+When Kolade provides a token or secret, save it in the SAME response using `save_credential()`. Never say "saved" without the file existing on disk.
+
+**Rule #2: Use `save_credential()` exclusively.**
+Never write credential files ad-hoc. Always use the function — it enforces metadata tracking.
+```bash
+save_credential <name> <value> <service> [expiry] [notes]
+```
+
+**Rule #3: Verify, don't assume.**
+After saving, confirm: `[ -f ".credentials/<file>" ] && echo "✓ EXISTS"`.
+After any credential work: `bash scripts/credentials-verify.sh`.
+
+**Rule #4: Missing required credential = STOP.**
+If `credentials-verify.sh` exits code 1, stop the task and ask Kolade. Do not proceed silently.
+
+**Rule #5: Friday heartbeat check.**
+Run `credentials-verify.sh` every Friday. Report any missing or expiring creds to Kolade.
+
+The historical failure mode: "intending to save" without writing the file.
+The fix: mechanical enforcement. File exists or it doesn't. No middle ground.
 
 ---
 
