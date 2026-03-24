@@ -22,6 +22,43 @@
 
 ---
 
+## Orisynx Legal & Governance (2026-03-24)
+
+### Shareholders' Agreement — EXECUTED 2026-03-23
+**Status:** Ready for signature | Kolade: Share with team immediately
+
+**Three Founders (Equal 1/3 Each):**
+1. Oladayo Oniroko
+2. Adebiyi Samuel Olufemi  
+3. Gureje Kolade Temitayo (Kolade)
+
+**Key Governance Points:**
+- **Vesting:** 3-year cliff (33.33% at Yr 1, +33.33% at Yr 2, +33.34% at Yr 3)
+- **Vesting Conditions:** Active contribution, 75% board meeting attendance, no material breach, no competing activity, continued shareholding, good standing
+- **Bad Leaver = Forfeiture:** Unvested shares lost at ₦0.00 (no payment) on voluntary exit, removal for cause, breach, abandonment (90+ days), insolvency, criminal conviction, or non-compete breach
+- **Good Leaver Exception:** Death or permanent disability = immediate full vesting (no forfeiture)
+- **Fourth Shareholder:** Reserved slot; unanimous admission required; becomes equal 25% shareholder
+- **Reserved Matters:** Require unanimous consent (M&A, new shares, borrowing >₦1M, budgets, dividends, auditors, litigation, etc.)
+- **Drag-Along:** 75%+ shareholders can force 25%- to sell
+- **Tag-Along:** Minority can join if majority selling 25%+
+- **Board:** All shareholders are directors; quarterly meetings minimum; 75% attendance required for vesting
+
+**Critical Deadlines:**
+- Vesting Year 1: March 23, 2027
+- Vesting Year 2: March 23, 2028
+- Vesting Year 3: March 23, 2029
+
+**Action Items for Kolade:**
+1. ✅ Get agreement from Kolade
+2. 📋 Get all three founders to sign (with witnesses)
+3. 📝 Keep Vesting Register (Board must assess each founder annually)
+4. 📅 Schedule Board assessments at each anniversary
+5. ⚖️ File signed agreement with CAC (if required)
+
+**File:** `/home/claw/.openclaw/workspace/documents/ORISYNX_Shareholders_Agreement_2026-03-23.md`
+
+---
+
 ## Orisynx (Audit Management Platform) — 2026-03-22
 
 ### Meeting Brief & MVP Requirements
