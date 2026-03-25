@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdugboInsure - Financial Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #2c3e50;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        .header {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            color: #2c3e50;
+            margin: 0;
+        }
+
+        .header .date-info {
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+
+        /* Key Metrics Summary */
+        .metrics-summary {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .metric-box {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid #27AE60;
+            text-align: center;
+        }
+
+        .metric-box.blue {
+            border-left-color: #2980B9;
+        }
+
+        .metric-box.gray {
+            border-left-color: #95a5a6;
+        }
+
+        .metric-label {
+            font-size: 12px;
+            color: #7f8c8d;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .metric-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        /* Main Layout */
+        .dashboard-layout {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 1024px) {
+            .dashboard-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Card Section */
+        .card-section h2 {
+            font-size: 18px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 10px;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-top: 4px solid #27AE60;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .card.blue {
+            border-top-color: #2980B9;
+        }
+
+        .card.gray {
+            border-top-color: #95a5a6;
+        }
+
+        .card-icon {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .card-title {
+            font-size: 12px;
+            color: #7f8c8d;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .card-value {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .card-change {
+            font-size: 11px;
+            color: #27AE60;
+            margin-top: 8px;
+        }
+
+        .card-change.negative {
+            color: #e74c3c;
+        }
+
+        /* Charts Section */
+        .charts-section h2 {
+            font-size: 18px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 10px;
+        }
+
+        .chart-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .chart-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        /* SVG Charts */
+        svg {
+            width: 100%;
+            height: auto;
+        }
+
+        .bar-chart-bar {
+            transition: fill 0.3s;
+        }
+
+        .bar-chart-bar:hover {
+            opacity: 0.8;
+        }
+
+        .line-chart-line {
+            fill: none;
+            stroke: #2980B9;
+            stroke-width: 3;
+        }
+
+        .line-chart-dot {
+            fill: #2980B9;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 12px;
+            margin-top: 20px;
+            padding: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .metrics-summary {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .card-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                margin: 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 20px;
+            }
+
+            .metrics-summary {
+                grid-template-columns: 1fr;
+            }
+
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .metric-box {
+                padding: 15px;
+            }
+
+            .metric-value {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div>
+                <h1>📊 Financial Dashboard</h1>
+                <div class="date-info">AdugboInsure - Last updated: <span id="currentDate"></span></div>
+            </div>
+        </div>
+
+        <!-- Key Metrics Summary -->
+        <div class="metrics-summary">
+            <div class="metric-box">
+                <div class="metric-label">Total Enrollment Revenue</div>
+                <div class="metric-value">₦45.2M</div>
+            </div>
+            <div class="metric-box blue">
+                <div class="metric-label">Total Claims Processed</div>
+                <div class="metric-value">₦23.8M</div>
+            </div>
+            <div class="metric-box gray">
+                <div class="metric-label">Net Income</div>
+                <div class="metric-value">₦21.4M</div>
+            </div>
+            <div class="metric-box">
+                <div class="metric-label">Profit Margin</div>
+                <div class="metric-value">47.3%</div>
+            </div>
+        </div>
+
+        <!-- Main Dashboard Layout -->
+        <div class="dashboard-layout">
+            <!-- Left Column: Key Metrics Cards -->
+            <div class="card-section">
+                <h2>Key Metrics</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-icon">👥</div>
+                        <div class="card-title">Total Enrollment</div>
+                        <div class="card-value">12,450</div>
+                        <div class="card-change">↑ 8.2% from last month</div>
+                    </div>
+                    <div class="card blue">
+                        <div class="card-icon">✅</div>
+                        <div class="card-title">Claims Processed</div>
+                        <div class="card-value">856</div>
+                        <div class="card-change">↑ 5.1% from last month</div>
+                    </div>
+                    <div class="card gray">
+                        <div class="card-icon">💰</div>
+                        <div class="card-title">Net Income</div>
+                        <div class="card-value">₦21.4M</div>
+                        <div class="card-change">↑ 12.3% from last month</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">👤</div>
+                        <div class="card-title">Active Members</div>
+                        <div class="card-value">11,920</div>
+                        <div class="card-change">↑ 3.7% from last month</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Charts -->
+            <div class="charts-section">
+                <h2>Performance Charts</h2>
+
+                <!-- Enrollment Trend Chart -->
+                <div class="chart-container">
+                    <div class="chart-title">Enrollment Trend (Last 6 Months)</div>
+                    <svg viewBox="0 0 500 250" preserveAspectRatio="xMidYMid meet">
+                        <!-- Grid Lines -->
+                        <line x1="40" y1="20" x2="40" y2="200" stroke="#ecf0f1" stroke-width="1"/>
+                        <line x1="40" y1="200" x2="480" y2="200" stroke="#ecf0f1" stroke-width="1"/>
+                        
+                        <!-- Grid -->
+                        <line x1="40" y1="50" x2="480" y2="50" stroke="#ecf0f1" stroke-width="1" stroke-dasharray="2,2"/>
+                        <line x1="40" y1="100" x2="480" y2="100" stroke="#ecf0f1" stroke-width="1" stroke-dasharray="2,2"/>
+                        <line x1="40" y1="150" x2="480" y2="150" stroke="#ecf0f1" stroke-width="1" stroke-dasharray="2,2"/>
+
+                        <!-- Line -->
+                        <polyline class="line-chart-line" points="60,140 130,100 200,80 270,60 340,50 410,30"/>
+
+                        <!-- Dots -->
+                        <circle class="line-chart-dot" cx="60" cy="140" r="5"/>
+                        <circle class="line-chart-dot" cx="130" cy="100" r="5"/>
+                        <circle class="line-chart-dot" cx="200" cy="80" r="5"/>
+                        <circle class="line-chart-dot" cx="270" cy="60" r="5"/>
+                        <circle class="line-chart-dot" cx="340" cy="50" r="5"/>
+                        <circle class="line-chart-dot" cx="410" cy="30" r="5"/>
+
+                        <!-- Labels -->
+                        <text x="60" y="220" text-anchor="middle" font-size="11" fill="#7f8c8d">Sep</text>
+                        <text x="130" y="220" text-anchor="middle" font-size="11" fill="#7f8c8d">Oct</text>
+                        <text x="200" y="220" text-anchor="middle" font-size="11" fill="#7f8c8d">Nov</text>
+                        <text x="270" y="220" text-anchor="middle" font-size="11" fill="#7f8c8d">Dec</text>
+                        <text x="340" y="220" text-anchor="middle" font-size="11" fill="#7f8c8d">Jan</text>
+                        <text x="410" y="220" text-anchor="middle" font-size="11" fill="#7f8c8d">Feb</text>
+                    </svg>
+                </div>
+
+                <!-- Claims by Category -->
+                <div class="chart-container">
+                    <div class="chart-title">Claims by Category</div>
+                    <svg viewBox="0 0 500 250" preserveAspectRatio="xMidYMid meet">
+                        <!-- Grid -->
+                        <line x1="40" y1="20" x2="40" y2="200" stroke="#ecf0f1" stroke-width="1"/>
+                        <line x1="40" y1="200" x2="480" y2="200" stroke="#ecf0f1" stroke-width="1"/>
+                        <line x1="40" y1="80" x2="480" y2="80" stroke="#ecf0f1" stroke-width="1" stroke-dasharray="2,2"/>
+                        <line x1="40" y1="140" x2="480" y2="140" stroke="#ecf0f1" stroke-width="1" stroke-dasharray="2,2"/>
+
+                        <!-- Bars -->
+                        <rect class="bar-chart-bar" x="60" y="100" width="35" height="100" fill="#27AE60"/>
+                        <rect class="bar-chart-bar" x="110" y="60" width="35" height="140" fill="#2980B9"/>
+                        <rect class="bar-chart-bar" x="160" y="120" width="35" height="80" fill="#3498db"/>
+                        <rect class="bar-chart-bar" x="210" y="80" width="35" height="120" fill="#27AE60"/>
+                        <rect class="bar-chart-bar" x="260" y="110" width="35" height="90" fill="#2980B9"/>
+
+                        <!-- Labels -->
+                        <text x="77" y="220" text-anchor="middle" font-size="11" fill="#7f8c8d">Health</text>
+                        <text x="127" y="220" text-anchor="middle" font-size="11" fill="#7f8c8d">Motor</text>
+                        <text x="177" y="220" text-anchor="middle" font-size="11" fill="#7f8c8d">Travel</text>
+                        <text x="227" y="220" text-anchor="middle" font-size="11" fill="#7f8c8d">Home</text>
+                        <text x="277" y="220" text-anchor="middle" font-size="11" fill="#7f8c8d">Life</text>
+                    </svg>
+                </div>
+
+                <!-- Revenue vs Costs -->
+                <div class="chart-container">
+                    <div class="chart-title">Revenue vs Costs</div>
+                    <svg viewBox="0 0 500 250" preserveAspectRatio="xMidYMid meet">
+                        <!-- Grid -->
+                        <line x1="40" y1="20" x2="40" y2="200" stroke="#ecf0f1" stroke-width="1"/>
+                        <line x1="40" y1="200" x2="480" y2="200" stroke="#ecf0f1" stroke-width="1"/>
+                        <line x1="40" y1="80" x2="480" y2="80" stroke="#ecf0f1" stroke-width="1" stroke-dasharray="2,2"/>
+                        <line x1="40" y1="140" x2="480" y2="140" stroke="#ecf0f1" stroke-width="1" stroke-dasharray="2,2"/>
+
+                        <!-- Revenue Bars -->
+                        <rect class="bar-chart-bar" x="65" y="80" width="25" height="120" fill="#27AE60"/>
+                        <rect class="bar-chart-bar" x="135" y="60" width="25" height="140" fill="#27AE60"/>
+                        <rect class="bar-chart-bar" x="205" y="70" width="25" height="130" fill="#27AE60"/>
+                        <rect class="bar-chart-bar" x="275" y="50" width="25" height="150" fill="#27AE60"/>
+                        <rect class="bar-chart-bar" x="345" y="40" width="25" height="160" fill="#27AE60"/>
+
+                        <!-- Cost Bars -->
+                        <rect class="bar-chart-bar" x="95" y="110" width="25" height="90" fill="#e74c3c"/>
+                        <rect class="bar-chart-bar" x="165" y="100" width="25" height="100" fill="#e74c3c"/>
+                        <rect class="bar-chart-bar" x="235" y="105" width="25" height="95" fill="#e74c3c"/>
+                        <rect class="bar-chart-bar" x="305" y="95" width="25" height="105" fill="#e74c3c"/>
+                        <rect class="bar-chart-bar" x="375" y="90" width="25" height="110" fill="#e74c3c"/>
+
+                        <!-- Legend -->
+                        <rect x="50" y="10" width="15" height="15" fill="#27AE60"/>
+                        <text x="70" y="22" font-size="12" fill="#2c3e50">Revenue</text>
+
+                        <rect x="180" y="10" width="15" height="15" fill="#e74c3c"/>
+                        <text x="200" y="22" font-size="12" fill="#2c3e50">Costs</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>AdugboInsure Financial Dashboard | Data updated every 6 hours</p>
+        </div>
+    </div>
+
+    <script>
+        // Set current date
+        const today = new Date();
+        const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('currentDate').textContent = today.toLocaleDateString('en-US', dateOptions);
+    </script>
+</body>
+</html>
