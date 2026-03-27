@@ -18,6 +18,14 @@ Run every ~30 minutes. Uses `ollama/llama3.2:3b` (free, local) for lightweight c
   - If any creds expiring in < 7 days: warn Kolade to refresh
   - Format: "🔐 Weekly Creds Check: X/Y present. [list any issues]"
 
-**Tomorrow (2026-03-23) at 2:30 PM UTC (3:30 PM WAT):**
-- Send reminder to Jarvis-Orisynx group: "Team, please sign the shareholder agreement if you haven't already."
-- Task: Post message to telegram group chat
+**ACTIVE CRON JOBS (Set 2026-03-25 10:06 UTC):**
+
+**Bank Document Reminders** — Daily at 09:00, 15:00, 21:00 UTC (10:00, 16:00, 22:00 WAT)
+- Message: "Bank Document Reminder — Everyone needs to fill the bank document"
+- Duration: Today + tomorrow (auto-sends via `/scripts/send-reminders.sh`)
+- Status: ✅ LIVE
+
+**Dev Sync-Up Reminder** — Every Thursday at 08:00 UTC (09:00 WAT)
+- Message: "Dev Sync-Up Today — Front-end & Back-end sync scheduled"
+- Frequency: Weekly (repeating)
+- Status: ✅ LIVE

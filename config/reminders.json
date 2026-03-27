@@ -1,0 +1,121 @@
+{
+  "telegram": {
+    "bot_token_env": "TELEGRAM_BOT_TOKEN",
+    "channels": {
+      "adugboinsure": {
+        "chat_id": "-5126825082",
+        "name": "Jarvis-AdugboInsure",
+        "description": "AdugboInsure project channel"
+      },
+      "orisynx": {
+        "chat_id": "-5249388197",
+        "name": "Jarvis-Orisynx",
+        "description": "Orisynx project channel"
+      },
+      "truck": {
+        "chat_id": "-5025917446",
+        "name": "Jarvis-Truck-Listings",
+        "description": "Truck listings channel"
+      },
+      "job_search": {
+        "chat_id": "-5224228330",
+        "name": "Jarvis-Job-Search",
+        "description": "Job search automation channel"
+      },
+      "portfolio": {
+        "chat_id": "-5174964902",
+        "name": "Jarvis-Portfolio",
+        "description": "Portfolio channel"
+      }
+    }
+  },
+  "reminders": [
+    {
+      "id": "friday-notebooklm-check",
+      "enabled": true,
+      "channel": "adugboinsure",
+      "schedule": "0 18 * * 5",
+      "description": "Weekly NotebookLM token check",
+      "message": "\ud83d\udd10 **Weekly Credentials Check**\n\nTime to verify NotebookLM token and other credentials before Sunday automation runs.\n\nAction: Check if tokens need refresh.",
+      "reminder_window_minutes": 0
+    },
+    {
+      "id": "adugboinsure-meeting-alert",
+      "enabled": true,
+      "channel": "adugboinsure",
+      "schedule": "0 14 * * 2",
+      "description": "AdugboInsure team meeting 30 min alert",
+      "message": "\ud83d\udcc5 **AdugboInsure Meeting in 30 minutes**\n\nTeam sync-up scheduled for 14:30 UTC (15:30 WAT).\n\nPlease join on time.",
+      "reminder_window_minutes": 30
+    },
+    {
+      "id": "test-reminder-2026-03-25-1926-now",
+      "enabled": false,
+      "channel": "adugboinsure",
+      "schedule": "26 19 25 3 3",
+      "description": "Immediate one-time test reminder",
+      "message": "\ud83e\uddea Immediate test reminder fired successfully. The reminder daemon is working.",
+      "dedupe": "once",
+      "reminder_window_minutes": 0
+    },
+    {
+      "id": "test-reminder-2026-03-25-1930",
+      "enabled": false,
+      "channel": "adugboinsure",
+      "schedule": "30 19 25 3 3",
+      "description": "One-time test reminder",
+      "message": "\ud83e\uddea Test reminder fired successfully. The reminder daemon is working.",
+      "dedupe": "once",
+      "reminder_window_minutes": 0
+    },
+    {
+      "id": "orisynx-dev-sync-thursday",
+      "enabled": true,
+      "channel": "orisynx",
+      "schedule": "0 8 * * 4",
+      "description": "Orisynx dev sync-up every Thursday",
+      "message": "\ud83d\udcc5 *Dev Sync-Up Today*\n\nFront-end and Back-end sync is scheduled for today.\n\nPlease come prepared with updates and blockers.",
+      "reminder_window_minutes": 0
+    },
+    {
+      "id": "orisynx-bank-doc-2026-03-26-0300",
+      "enabled": false,
+      "channel": "orisynx",
+      "schedule": "0 3 26 3 4",
+      "description": "One-time bank document reminder",
+      "message": "\ud83c\udfe6 *Bank Document Reminder*\n\nEveryone still needs to fill the bank document. Please complete it as soon as possible.",
+      "dedupe": "once",
+      "reminder_window_minutes": 0
+    },
+    {
+      "id": "orisynx-bank-doc-2026-03-26-0900",
+      "enabled": false,
+      "channel": "orisynx",
+      "schedule": "0 9 26 3 4",
+      "description": "One-time bank document reminder",
+      "message": "\ud83c\udfe6 *Bank Document Reminder*\n\nEveryone still needs to fill the bank document. Please complete it as soon as possible.",
+      "dedupe": "once",
+      "reminder_window_minutes": 0
+    },
+    {
+      "id": "orisynx-bank-doc-2026-03-26-1500",
+      "enabled": false,
+      "channel": "orisynx",
+      "schedule": "0 15 26 3 4",
+      "description": "One-time bank document reminder",
+      "message": "\ud83c\udfe6 *Bank Document Reminder*\n\nEveryone still needs to fill the bank document. Please complete it as soon as possible.",
+      "dedupe": "once",
+      "reminder_window_minutes": 0
+    },
+    {
+      "id": "orisynx-bank-doc-2026-03-26-2100",
+      "enabled": false,
+      "channel": "orisynx",
+      "schedule": "0 21 26 3 4",
+      "description": "One-time bank document reminder",
+      "message": "\ud83c\udfe6 *Bank Document Reminder*\n\nEveryone still needs to fill the bank document. Please complete it as soon as possible.",
+      "dedupe": "once",
+      "reminder_window_minutes": 0
+    }
+  ]
+}
