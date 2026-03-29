@@ -1,7 +1,27 @@
 {
   "mcpServers": {
     "zapier-mcp": {
-      "baseUrl": "https://mcp.zapier.com/api/v1/connect?token=M2EwZDk5NTgtMmM3Ni00MmQ2LThmNzctMzJiYTI4N2Q1YjZiOm00UFFaVXJraEVVcEpOOXNvVGdnaVplMmZGVDduOHdCeVd1UGgzK0VHV3c9"
+      "baseUrl": "${ZAPIER_MCP_BASE_URL}"
+    },
+    "google-workspace": {
+      "command": "/home/claw/.local/bin/workspace-mcp",
+      "args": [
+        "--single-user",
+        "--tools",
+        "drive",
+        "gmail",
+        "docs",
+        "sheets",
+        "--read-only"
+      ],
+      "env": {
+        "GOOGLE_OAUTH_CLIENT_ID": "${GOOGLE_OAUTH_CLIENT_ID}",
+        "GOOGLE_OAUTH_CLIENT_SECRET": "${GOOGLE_OAUTH_CLIENT_SECRET}"
+      }
+    },
+    "google-workspace-http": {
+      "baseUrl": "http://127.0.0.1:8000/mcp",
+      "auth": "oauth"
     }
   },
   "imports": []

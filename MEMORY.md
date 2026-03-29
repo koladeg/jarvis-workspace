@@ -1,31 +1,37 @@
 # MEMORY.md
 
-## Weekly Consolidation & Progress (2026-03-23)
+## Weekly Consolidation & Progress (2026-03-28)
 
-**Last consolidated:** Monday, March 23, 2026 (17:00 UTC)  
+**Last consolidated:** Saturday, March 28, 2026 (17:00 UTC)  
 **Archive location:** `memory/ARCHIVE.md` (historical consolidations)  
-**Next consolidation:** Monday, March 30, 2026
+**Next consolidation:** Saturday, April 4, 2026
 
-**Status Summary (Week 2 — March 17-23):**
-- ✅ Infrastructure mature: 5 integrations live + tested (Notion, NotebookLM, Zapier, Gmail IMAP, agent-browser)
-- ✅ Job search live: RemoteOK + HN Jobs automation running; first application (Orium) ready to submit
-- ✅ Portfolio tracking: Weekly system established ($2k → $6k in 3-4 years goal)
-- ✅ 5 ventures prioritized: execution phase for all
-- ⏳ BLOCKING: Orium job link, truck specifications, ClickUp workspace link
-- ⏳ TECHNICAL: NotebookLM auth expired (refresh needed for video pipeline)
+**Status Summary (Week of March 22-28):**
+- ✅ Orisynx legal/governance milestone remains durable: the Shareholders' Agreement is signed and the vesting structure is fixed; next operational follow-through is CAC filing plus the vesting register / annual assessments.
+- ✅ Job-search infrastructure remains live: RemoteOK + Hacker News Jobs are still the trusted sources, and the Orium application package is still ready pending the exact job link.
+- ✅ Portfolio baseline remains steady: current portfolio is about $2k with a 3-4 year growth goal toward ~$6k and weekly monitoring still the intended cadence.
+- ✅ AdugboInsure content production continued: coverage and claims scripts were drafted, and CBHI educational content was posted successfully to the Jarvis-AdugboInsure Telegram group.
+- ✅ NotebookLM workflow materially improved this week: local Mac browser control was proven, then fresh cookies were received privately and `nlm` was re-authenticated successfully.
+- ✅ Three new AdugboInsure NotebookLM videos were launched and completed successfully on 2026-03-28 (claims, testimonials, and CBHI benefits/community-based health insurance).
+- ⚠️ New operating rule locked in: do **not** launch 3 NotebookLM videos in parallel again; future runs should be sequential, with faster generate→download handling to avoid token expiry.
+- ⚠️ Current media pipeline gap has narrowed: generation now works, but deterministic export/download of completed MP4s into local files is still the missing step before branding and YouTube upload.
+- 📦 mhGAP tablets are now physically with Kolade.
+- ⚠️ Provider stability note remains relevant: Anthropic rate limits were frequent enough that the server default model was switched back to `openai-codex/gpt-5.4` on 2026-03-27.
+- ⏳ Still waiting on a few external inputs from Kolade: Orium job link, truck specifications, and ClickUp workspace link.
 
-**Critical This Week:**
-1. **Job Application:** Orium submission pending (link required) → Ready for immediate submission
-2. **AdugboInsure:** Funding radar + dashboard deployment (Sunday 19:00 WAT)
-3. **Truck Business:** Specifications needed → Enable automation setup
-4. **NotebookLM:** Auth refresh → Unblock video generation pipeline
+**Critical Next Steps (March 29 - April 4):**
+1. **AdugboInsure Media:** Export/download the completed NotebookLM videos immediately, then brand them and publish to Kolade's YouTube channel.
+2. **AdugboInsure Funding:** Secure OYSHIA partnership letter and 3-5 testimonials before the April 2 submission window.
+3. **Job Search:** Submit the Orium application once the exact link is provided.
+4. **Pitching:** Create the Plug & Play pitch deck (10-15 slides) and founder video.
+5. **Ops:** Deploy the truck-monitoring cron job after Kolade shares the truck specs.
 
 ---
 
 ## Orisynx Legal & Governance (2026-03-24)
 
-### Shareholders' Agreement — EXECUTED 2026-03-23
-**Status:** Ready for signature | Kolade: Share with team immediately
+### Shareholders' Agreement — SIGNED & EXECUTED 2026-03-24
+**Status:** ✅ SIGNED BY ALL THREE FOUNDERS | Waiting for: CAC filing + Vesting Register setup
 
 **Three Founders (Equal 1/3 Each):**
 1. Oladayo Oniroko
@@ -132,6 +138,7 @@ Auth → Create audit → Audit view → Task manager → Task view → Calendar
   - Installed at `/usr/bin/agent-browser`
   - Tested and working (2026-03-19 14:11 UTC)
   - This is Kolade's chosen default for internet browsing.
+  - **RULE (2026-03-24):** Always use agent-browser for web tasks. Don't ask, don't offer fallbacks. Always agent-browser. 🔒
   
   **Workflow (snapshot + ref pattern):**
   1. `agent-browser open <url>` — navigate to URL
@@ -367,11 +374,12 @@ Auth → Create audit → Audit view → Task manager → Task view → Calendar
    - Works reliably; Linux deps via cloud providers if needed
    - Snapshot + ref workflow established
    
-4. **NotebookLM** — ⚠️ PARTIAL (Auth expired)
+4. **NotebookLM** — ⚠️ PARTIAL (Cookie auth expired, local browser workflow works)
    - CLI upgraded to 0.5.4
-   - Cookies in `.credentials/notebooklm_cookies.txt` expired
-   - Blocks: Video generation, artifact download
-   - Fix: Refresh auth with live Google session
+   - Cookies in `.credentials/notebooklm_cookies.txt` expired / brittle
+   - Local Mac OpenClaw browser workflow validated: NotebookLM tab control and Video Overview generation succeeded
+   - Remote AWS-driven browser control still blocked until AWS gateway restart completes after `gateway.tailscale.mode=serve`
+   - Preferred fix: use live local browser session; avoid relying on pasted cookies in chat
    
 5. **ClickUp (via Zapier)** — ✅ READY
    - 21 tools available

@@ -9,6 +9,12 @@ Run every ~30 minutes. Uses `ollama/llama3.2:3b` (free, local) for lightweight c
 
 ## Scheduled Reminders
 
+**Saturdays at 08:00 WAT (07:00 UTC)** — RECURRING
+- Reminder: Ask Kolade for fresh NotebookLM cookies **privately** for AdugboInsure automation
+- Task: Get cookie file/session needed to run NotebookLM content automation for **3 videos** covering the next **3 weeks**
+- Why: We are switching from browser-bridge setup to cookie-based execution for reliability/speed
+- Security: Never request or accept cookies in the group chat; ask for them via private/direct channel only
+
 **Fridays at 18:00 UTC (7:00 PM WAT)** — RECURRING
 - Reminder: Check NotebookLM token before Sunday automation
 - Task: Provide fresh NotebookLM auth token (if expired) so AdugboInsure content generation can run Sunday 18:00 UTC

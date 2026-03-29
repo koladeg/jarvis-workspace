@@ -4,6 +4,10 @@
     "nano-pdf": {
       "version": "1.0.0",
       "installedAt": 1774106636209
+    },
+    "browser-fu": {
+      "version": "1.0.2",
+      "installedAt": 1774601604952
     }
   }
 }

@@ -30,22 +30,27 @@ def authorize():
         str(CREDENTIALS_FILE), SCOPES
     )
     
-    # Generate auth URL
-    auth_url, _ = flow.authorization_url(prompt='consent')
+    # Use local server flow with explicit redirect URI so Google receives a valid redirect_uri
+    flow.redirect_uri = "http://localhost:8080/"
+    auth_url, _ = flow.authorization_url(
+        access_type='offline',
+        prompt='consent',
+        include_granted_scopes='true'
+    )
     
     print("\n🔐 YouTube Authorization Required")
     print("=" * 60)
     print("1. Open this URL on your LOCAL MACHINE (not on the server):")
     print(f"\n{auth_url}\n")
     print("2. Click 'Allow'")
-    print("3. You'll get an auth code (or be redirected)")
-    print("4. Copy the code and paste it below")
+    print("3. After approval, Google will redirect to a localhost URL")
+    print("4. Copy the FULL redirected URL from your browser address bar and paste it below")
     print("=" * 60)
     
-    auth_code = input("\nPaste auth code here: ").strip()
+    auth_response = input("\nPaste full redirected URL here: ").strip()
     
     try:
-        flow.fetch_token(code=auth_code)
+        flow.fetch_token(authorization_response=auth_response)
         creds = flow.credentials
         
         # Save token for future use

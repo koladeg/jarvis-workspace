@@ -1,5 +1,193 @@
 # Memory Archive - Historical Consolidations
 
+## 14-Day Compression Update - 2026-03-27
+
+- **2026-03-13:** Identity baseline established — Jarvis name, calm vibe, 😇 emoji, Kolade in Africa/Lagos, and initial time-based premium-model preference recorded.
+
+## Week of March 22-28, 2026 - Weekly Consolidation Summary
+
+**Archive Date:** Saturday, March 28, 2026 (17:00 UTC)  
+**Period:** Past 7 days (March 22-28)  
+**Status:** ✅ Consolidated and archived
+
+### Consolidated Sessions (Compressed)
+- **2026-03-22:** Weekly checkpoint confirmed all core systems operational; main blockers remained the Orium link, truck specs, and ClickUp workspace link.
+- **2026-03-23:** AdugboInsure coverage script drafted; NotebookLM CLI upgraded to 0.5.4; auth was still expired at that point.
+- **2026-03-24:** CBHI educational content posted successfully to Jarvis-AdugboInsure; direct NotebookLM cookie/browser auth was still failing in that run.
+- **2026-03-25:** mhGAP tablets confirmed physically with Kolade.
+- **2026-03-26:** Local Mac OpenClaw + NotebookLM browser workflow was validated end-to-end; key lesson was to use fresh snapshots because refs are highly ephemeral.
+- **2026-03-27:** AWS-side blocker isolated to loopback/tailscale config and manual service restart needs; server default model switched back to `openai-codex/gpt-5.4` due to Anthropic rate limits; substantial safe disk cleanup completed.
+- **2026-03-28:** Fresh NotebookLM cookies were received privately, `nlm` re-authenticated successfully, and 3 AdugboInsure video generations completed; new rule set: future generations must run sequentially and be downloaded promptly before branding/upload.
+
+### Distilled Long-Term Updates
+- NotebookLM generation is now proven again when fresh private cookies are supplied; the bottleneck has shifted from auth to reliable export/download.
+- AdugboInsure video operations now have a clearer rule set: private cookie handling only, sequential generation, and quick post-generation download to reduce token-expiry risk.
+- Remote AWS↔Mac browser bridging is no longer the preferred primary path for AdugboInsure video work unless needed later; the direct cookie-based `nlm` path worked better this week.
+- The durable external blockers are unchanged: Orium job link, truck specifications, and ClickUp workspace link.
+
+### 14-Day Compression Check
+- No new daily logs older than 14 days required compression this run; `2026-03-13.md` was already represented by the existing archive summary line.
+
+### Next Consolidation
+- Saturday, April 4, 2026
+
+
+## Week of March 20-26, 2026 - Weekly Consolidation Summary
+
+**Archive Date:** Thursday, March 26, 2026 (17:00 UTC)  
+**Period:** Past 7 days (March 20-26)  
+**Status:** ✅ Consolidated and archived
+
+### Consolidated Sessions (Compressed)
+- **2026-03-20:** Portfolio baseline captured (~$2k now, ~$6k goal in 3-4 years; weekly tracking plan established)
+- **2026-03-21:** Job-search system live (RemoteOK + HN Jobs workflow; Orium application package ready pending exact link)
+- **2026-03-22:** No `memory/2026-03-22.md` daily file present during this consolidation run
+- **2026-03-23:** AdugboInsure coverage script drafted; NotebookLM CLI upgraded to 0.5.4; auth remains expired so video generation stayed blocked
+- **2026-03-24:** CBHI educational content posted successfully to Jarvis-AdugboInsure Telegram; NotebookLM browser/cookie auth still invalid
+- **2026-03-25:** mhGAP tablets confirmed with Kolade
+- **2026-03-26:** AdugboInsure claims script drafted; auth refresh attempt failed again; branded video export still blocked until live Google session refresh
+
+### Distilled Long-Term Updates
+- Orisynx signed-governance milestone remains a major durable memory and stays in active long-term memory
+- NotebookLM's recurring failure mode is now clear: CLI availability is fine, but live Google auth refresh is the real dependency for video work
+- AdugboInsure content can continue in script/post form even while video generation is blocked
+- External dependency pattern remains unchanged: Orium job link, truck specs, and ClickUp link are still the main inputs needed from Kolade
+- Physical asset update worth retaining: mhGAP tablets are now with Kolade
+
+### 14-Day Compression Check
+- No `memory/YYYY-MM-DD.md` daily logs were older than 14 days at this run, so no date-based daily logs were compressed further.
+
+### Next Consolidation
+- Thursday, April 2, 2026
+
+---
+
+## Week of March 18-25, 2026 - Weekly Consolidation Summary
+
+**Archive Date:** Wednesday, March 25, 2026 (17:00 UTC)  
+**Period:** Past 7 days (March 18-25)  
+**Status:** ✅ Consolidated and archived
+
+### Consolidated Sessions (Compressed)
+
+**2026-03-20: Portfolio Finalized**
+- Portfolio value: ~$2k (goal: $6k in 3-4 years, buy-and-hold strategy)
+- Asset breakdown: 55-60% US stocks (NVIDIA 32% core) | 17% crypto | 10-15% Nigerian stocks | 6.5% other
+- Tracking: Weekly snapshots to Jarvis-Portfolio Telegram (Fridays)
+- Next: Rebalancing every 2-3 months; scenario modeling for 3-year paths
+
+**2026-03-21: Job Search System Live**
+- Automation deployed: RemoteOK + HN Jobs pulls every 3 days (Codex automation)
+- Working sources verified: RemoteOK (376+ React) + HN Jobs (300+ YC startups)
+- Blocked sources: LinkedIn, Indeed, We Work Remotely, Upwork, Stack Overflow (Cloudflare)
+- First application ready: Orium (Senior React Native) — awaiting job link
+- Nigeria green-light companies: Orium ✅, Ubicloud ✅, LiteLLM ✅, SigNoz ✅, Bluelight ✅
+- Workflow established: Find → Customize CV → Apply → Log → Follow-up
+
+**2026-03-22: Weekly Infrastructure Checkpoint**
+- All systems operational: Notion, NotebookLM, Zapier, Gmail, agent-browser (5 integrations live)
+- Ventures: 5 active (AdugboInsure, Orisynx, SiFax, Truck, Job Search) — clear prioritization
+- Blocking items: Orium link, truck specs, ClickUp workspace link (3 critical)
+- Metrics tracking established for next consolidation
+
+**2026-03-23: Content Generation & Technical Issue**
+- AdugboInsure: Video script drafted on "coverage" topic
+- NotebookLM auth expired (Google cookies invalid); blocks video generation/download
+- Impact: Video pipeline blocked until auth refreshed (~mid-April expiry)
+- Workaround: Continue script drafting without video output
+- Status: FFmpeg branding script verified; content generated and posted to Telegram despite auth issue
+
+**2026-03-24: ORISYNX LEGAL MILESTONE — Agreement Signed**
+- **Status:** ✅ Shareholders' Agreement SIGNED by all 3 founders
+- **Founders:** Oladayo Oniroko, Adebiyi Samuel Olufemi, Gureje Kolade Temitayo (1/3 each)
+- **Vesting:** 3-year cliff (33.33% each year; full vesting Year 3)
+- **Critical deadlines:** Vesting anniversaries March 23, 2027 / 2028 / 2029
+- **Board:** Quarterly meetings required; 75% attendance for vesting compliance
+- **Bad leaver:** Unvested shares forfeited at ₦0 on exit/removal/breach
+- **Good leaver:** Death/disability = immediate full vesting
+- **Next actions:** File with CAC; establish Vesting Register; schedule annual board assessments
+
+**2026-03-24: PLUG & PLAY HEALTHTECH APPLICATION COMPLETE**
+- **Status:** Full application package READY (pitch script, financial model, team bios, growth plan)
+- **Pending from Kolade:** Pitch deck (10-15 slides) + founder video (2-3 min)
+- **Target submission:** Week of April 2, 2026
+- **De-risking strategy:** Secure OYSHIA partnership letter + 3-5 testimonials BEFORE final pitch
+- **Priority:** Testimonials are critical to strengthen application before April 2 submission
+
+### Key Insights Distilled
+
+1. **Orisynx Vesting Locks Long-Term Commitment:** 3-year cliff with quarterly board meetings + 75% attendance requirement signals serious equity commitment. Annual assessments at each vesting anniversary are mandatory — deadlines are March 23, 2027/2028/2029.
+
+2. **Funding Application Now Multi-Phase:** Plug & Play requires final pitch deck + founder video, but BEFORE April 2 submission, must secure OYSHIA partnership letter + 3-5 testimonials. De-risking testimonials is the actual critical path item.
+
+3. **NotebookLM Auth Crisis Window:** Auth expires ~April 13, 2026 (2.5 weeks). Refresh must happen before mid-April to avoid video generation pipeline collapse. Workaround (script-only) works short-term but video capability is needed for AdugboInsure content.
+
+4. **Job Search Ready for Launch:** First application (Orium) is fully prepared; just needs job link. Automation cron is ready. Parallel preparation of Ubicloud + LiteLLM CVs can start immediately after Orium submission.
+
+5. **3-Critical-Blocker Pattern:** Same 3 blocking items (Orium link, truck specs, ClickUp link) persist from last week. These are preventing measurable progress on 3 separate ventures. Single clear ask to Kolade would unblock all three.
+
+6. **Infrastructure Stability High:** 5 major integrations all functioning. No critical system failures. Ready to execute on all planned initiatives without infrastructure barriers.
+
+7. **AdugboInsure Funding Path Clear:** Plug & Play application is the primary funding path. Testimonials + partnership letter are the de-risking levers. Pitch deck + video are final presentations (not the blocking items).
+
+### Decisions Locked In
+
+- **Orisynx:** 3-year vesting commitment locked; quarterly board meetings non-negotiable; vesting anniversaries are calendar events
+- **Job Search:** Orium first, then Ubicloud + LiteLLM in parallel; RemoteOK + HN Jobs only (others blocked)
+- **AdugboInsure Funding:** Plug & Play is primary path; testimonials + OYSHIA partnership are critical de-risking
+- **NotebookLM:** Auth refresh must happen by mid-April or video pipeline breaks
+- **Blocking items:** 3 critical items preventing progress on 3 ventures; need clear ask to Kolade
+
+### Pending Resolutions
+
+**High Priority (Blocking):**
+1. Orium job link → Enable first application submission
+2. Truck specifications → Enable monitoring automation setup
+3. ClickUp workspace link → Start Orisynx ticket assignment
+
+**Medium Priority (Unblocks secondary work):**
+1. OYSHIA partnership letter → Strengthen funding application
+2. 3-5 AdugboInsure testimonials → De-risk Plug & Play submission
+3. NotebookLM auth refresh → Unblock video generation pipeline
+
+**Low Priority (Nice-to-have):**
+1. Pitch deck slides (10-15) → Final presentation asset
+2. Founder video recording → Marketing asset (but not blocking application)
+
+### Metrics Tracked
+
+**AdugboInsure:**
+- Funding leads discovered: On track (Plug & Play application ready)
+- Weekly dashboard: Awaiting Kolade input on weekly metrics
+- Content videos: 1 script drafted (coverage); waiting NotebookLM auth refresh
+
+**Orisynx:**
+- Legal milestone: ✅ Agreement signed (MVP focus next)
+- Team coordination: Quarterly board meetings now mandatory (first anniversary March 23, 2027)
+- MVP tickets: Awaiting ClickUp workspace link from Kolade
+
+**Job Search:**
+- Orium application: Ready to submit (awaiting link)
+- Ubicloud CV: Parallel prep started
+- LiteLLM CV: Parallel prep started
+- Cron deployment: Ready (awaiting Orium submission to confirm workflow)
+
+**Truck Business:**
+- Listings found: Awaiting truck specifications to start monitoring automation
+
+---
+
+**Files Compressed This Week:**
+- `2026-03-20.md` (portfolio finalization)
+- `2026-03-21.md` (job search system launch)
+- `2026-03-22-weekly-checkpoint.md` (infrastructure status)
+- `2026-03-23.md` (content generation + auth issue)
+- `2026-03-24.md` (Orisynx legal + Plug & Play funding)
+
+**Next Consolidation:** Wednesday, April 1, 2026 (weekly)
+
+---
+
 ## Week of March 15-21, 2026 - Weekly Consolidation Summary
 
 **Archive Date:** March 21, 2026 (Saturday, 17:00 UTC)  

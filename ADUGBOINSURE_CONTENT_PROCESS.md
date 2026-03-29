@@ -12,14 +12,15 @@ AdugboInsure has a **3-part automated content workflow** for agent education vid
 
 1. **Script Generation** — NotebookLM AI creates secondary-school level scripts
 2. **Video Creation** — NotebookLM generates video from script
-3. **Branding** — FFmpeg adds AdugboInsure intro/outro
-4. **Distribution** — Post video to Telegram groups for agents
+3. **Branding** — FFmpeg adds AdugboInsure logo/branding intro/outro
+4. **Publishing** — Upload branded video to Kolade's YouTube channel
 
 **Current Status:**
-- ✅ Scripts are being generated successfully (last 3 topics ready)
-- ✅ FFmpeg branding script is functional
-- ❌ **NotebookLM auth is EXPIRED** (cookie file is 0 bytes)
-- ❌ Cannot generate videos until auth is refreshed
+- ✅ NotebookLM cookie-based auth was refreshed successfully on 2026-03-28
+- ✅ 3 new videos were generated successfully for Claims, Testimonials, and Benefits
+- ✅ FFmpeg branding scripts and YouTube upload script exist in workspace
+- ⚠️ Workflow rule updated: generate videos sequentially, one at a time
+- ⚠️ Remaining execution gap: export/download generated MP4s into local files before branding/upload
 
 **What needs to happen before tomorrow's run:**
 1. Refresh NotebookLM authentication with a live Google session
