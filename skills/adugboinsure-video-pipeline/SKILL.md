@@ -1,63 +1,44 @@
 ---
 name: adugboinsure-video-pipeline
-description: Generate, brand, and publish AdugboInsure education videos from NotebookLM with cookie-based auth. Use when producing weekly or multi-week AdugboInsure video batches, especially when the user provides fresh NotebookLM cookies and expects the full flow: authenticate, generate videos sequentially, confirm completion, add AdugboInsure logo branding, and upload to Kolade's YouTube channel.
+description: Edit and publish AdugboInsure videos with the approved overlay workflow. Use when a new AdugboInsure source video is available locally or in Drive and the task is to run the full pipeline: download or locate the source MP4, apply the approved replacement image as a full-width centered overlay for the first 3 seconds and last 5 seconds, preserve original audio, verify preview frames and runtime, upload to YouTube, and return the actual video ID/link.
 ---
 
 # AdugboInsure Video Pipeline
 
-## Workflow
-
-1. Authenticate NotebookLM CLI with fresh cookies from `.credentials/notebooklm_cookies.txt`.
-2. Verify auth with `nlm login --check` and `nlm notebook list`.
-3. Use notebook `Implementing Community-Based Health Insurance Schemes`.
-4. Generate videos **sequentially** — never start multiple AdugboInsure videos at once.
-5. After each generation, wait for `nlm studio status <notebook-id>` to show `completed` before starting the next.
-6. After generation, treat the video as incomplete until branding is added.
-7. Add AdugboInsure branding/logo with `scripts/add_adugboinsure_branding.sh` (or `scripts/brand_adugbo_video.sh` if needed).
-8. Upload branded output to YouTube with `python3 scripts/youtube_upload.py ...` using stored YouTube OAuth credentials.
-9. Record artifact ids, output paths, and uploaded YouTube URLs in the daily memory file.
-
-## Rules
-
-- Never request or accept NotebookLM cookies in a group chat.
-- Prefer private/direct credential handoff only.
-- Do not parallelize NotebookLM video generations for AdugboInsure.
-- Branding + YouTube upload are part of the required workflow, not optional extras.
-
-## Core commands
-
-### Authenticate
+Use the single-run script for the approved production flow:
 
 ```bash
-nlm login -m -f /home/claw/.openclaw/workspace/.credentials/notebooklm_cookies.txt --force
-nlm login --check
-nlm notebook list
+bash /home/claw/.openclaw/workspace/skills/adugboinsure-video-pipeline/scripts/run-approved-video-pipeline.sh \
+  <input_video> \
+  /home/claw/.openclaw/workspace/outputs/assets/adugboinsure_intro_replacement.jpg \
+  "<youtube title>" \
+  "<youtube description>"
 ```
 
-### Start one video
+## Approved edit spec
 
-```bash
-nlm create video <notebook-id> --format explainer --style classic --language en --focus "<prompt>" -y
-```
+- Start from the raw MP4.
+- Use the approved replacement image, not the old banner.
+- Overlay the image on top of the existing video timeline.
+- Scale the image to full video width and center it vertically.
+- Show the overlay for the first 3 seconds and the last 5 seconds only.
+- Do not append intro/outro clips.
+- Do not add new audio; preserve the original audio.
+- Before upload, generate preview frames at 2 seconds and 2 seconds before the end.
+- Before upload, verify final runtime matches the source runtime.
+- Only report success after returning the real YouTube video ID and URL.
 
-### Poll completion
+## Reporting contract
 
-```bash
-nlm studio status <notebook-id>
-```
+Always report state in this order:
 
-### Brand a downloaded video
+1. source located/downloaded
+2. edit rendered
+3. runtime verified
+4. upload complete with video ID/link
 
-```bash
-bash scripts/add_adugboinsure_branding.sh <input.mp4> <output.mp4>
-```
+If any step fails, say exactly which step failed. Never imply upload success without the returned YouTube ID/link.
 
-### Upload to YouTube
+## Guardrail from the failed run
 
-```bash
-python3 scripts/youtube_upload.py <video_path> "<title>" "<description>"
-```
-
-## Current known gap
-
-NotebookLM CLI in this workspace can create and status videos, but download/export may still require a separate retrieval step if the generated MP4 is not directly materialized locally. If download is not available via CLI, use the proven browser/cookie workflow or extend the pipeline with a deterministic export step before branding.
+A previous export became far too long because the image overlay render was not hard-limited to the source duration. Always preserve source duration with an explicit duration cap and verify it before upload.

@@ -1,0 +1,85 @@
+WEEKLY MEMORY CONSOLIDATION REPORT
+Date: Tuesday, March 31, 2026 — 17:00 UTC
+Period Consolidated: March 25–31, 2026 (7 days)
+Status: ✅ COMPLETE
+
+─────────────────────────────────────────────────────────────────
+
+SUMMARY OF UPDATES
+
+1. MEMORY.md Updated
+   • Timestamp: 2026-03-31
+   • Added: Research agent success, gateway entrypoint issue, GitHub secret guardrail validation
+   • Removed: None (no outdated entries)
+   • Net addition: 3 durable lessons for next week
+
+2. ARCHIVE.md Updated
+   • New section: Week of March 25–31, 2026 (added to top)
+   • Format: Compressed daily logs + distilled long-term insights
+   • 14-day check: No logs older than 14 days needed archival
+   • Section count: Now 3 week summaries
+
+3. Daily Logs Read
+   • 2026-03-25: mhGAP tablets delivery confirmed
+   • 2026-03-26: NotebookLM browser automation validated
+   • 2026-03-27: AWS diagnostics, disk cleanup (6.2GB), CLI repair
+   • 2026-03-28: NotebookLM re-auth success, 3 videos generated
+   • 2026-03-29: GitHub secret-scanning guardrail, 2 YouTube uploads
+   • 2026-03-30: Coverage script prep, NotebookLM auth expired again
+   • 2026-03-31: Research agent configured, gateway entrypoint issue found
+
+─────────────────────────────────────────────────────────────────
+
+KEY INSIGHTS CONSOLIDATED
+
+OPERATIONAL WINS (Keep & Reinforce)
+✅ AdugboInsure media workflow now proven: private-cookie auth → sequential generation → branding overlay → YouTube upload. Two successful uploads logged.
+✅ Research agent infrastructure deployed: independent workspace, Codex model, auth valid until April 4.
+✅ GitHub secrets guardrail validated: scanning caught embedded OAuth; workflow now solid (scrub before push, prefer env vars).
+✅ Safe disk cleanup: 6.2 GB recovered from caches without touching credentials or core files.
+
+DURABLE GUARDRAILS REINFORCED
+🔒 NotebookLM: Accept cookies ONLY privately, never in group chat. Generate sequentially. Export immediately.
+🔒 GitHub: Never push secrets. Scrub tracked files first. Use env vars or credential files.
+🔒 AWS Infrastructure: Gateway must use `gateway.bind=auto` (not loopback) for remote/tailnet access; requires manual systemd restart.
+
+ACTIVE BLOCKERS (Awaiting Kolade)
+⚠️ Gateway entrypoint mismatch: service path points to non-existent file. Solution: `openclaw doctor --fix`
+⚠️ NotebookLM auth: Expires periodically; need fresh cookies before next video run
+⚠️ Research agent instructions: Waiting for gateway fix, then define job-search/truck-monitor/funding-radar prompts
+⚠️ Orium job link: Needed for first application submission
+⚠️ ClickUp workspace link: Needed for Orisynx ticket sync
+
+TECHNICAL DEBT IDENTIFIED
+📋 AdugboInsure pipeline script: upload-result parsing can fail at final step; needs tightening so full render→verify→upload completes cleanly in one pass.
+📋 NotebookLM auth remains brittle: token expiry happens unpredictably; consider storing more than one valid cookie set or implementing auto-refresh.
+
+─────────────────────────────────────────────────────────────────
+
+CONSOLIDATION STATISTICS
+
+Daily logs processed: 7 (Mar 25–31)
+Files updated: 2 (MEMORY.md, ARCHIVE.md)
+New durable insights added: 3
+Outdated entries removed: 0
+External blockers identified: 5
+Active project statuses consolidated: 5 (AdugboInsure, Orisynx, Job Search, Truck Search, Research Agent)
+
+─────────────────────────────────────────────────────────────────
+
+NEXT CONSOLIDATION
+
+Scheduled: Tuesday, April 7, 2026 (17:00 UTC)
+Will cover: April 1–7, 2026
+
+FILES MODIFIED THIS RUN
+
+• /home/claw/.openclaw/workspace/MEMORY.md (updated)
+• /home/claw/.openclaw/workspace/memory/ARCHIVE.md (prepended new week summary)
+• /home/claw/.openclaw/workspace/memory/2026-03-31-consolidation-report.txt (this file, created)
+
+─────────────────────────────────────────────────────────────────
+
+READY FOR DELIVERY
+
+Summary ready to post to user. No further action needed.

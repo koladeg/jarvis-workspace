@@ -1,5 +1,101 @@
 # Memory Archive - Historical Consolidations
 
+## Week of March 25-31, 2026 - Weekly Consolidation Summary
+
+**Archive Date:** Tuesday, March 31, 2026 (17:00 UTC)  
+**Period:** Past 7 days (March 25-31)  
+**Status:** ✅ Consolidated and archived
+
+### Consolidated Sessions (Compressed)
+- **2026-03-25:** mhGAP tablets were confirmed physically with Kolade.
+- **2026-03-26:** Local Mac OpenClaw + NotebookLM browser automation was validated end-to-end; key lesson: always re-snapshot immediately before actions because NotebookLM refs are ephemeral and become stale quickly.
+- **2026-03-27:** AWS gateway bind mismatch diagnosed (loopback only, blocking remote/tailnet access); server model switched back to `openai-codex/gpt-5.4` for stability; safe disk cleanup recovered 6.2 GB; broken `openclaw` CLI symlink repaired.
+- **2026-03-28:** Fresh NotebookLM cookies authenticated successfully; three AdugboInsure videos generated; new durable rules: private-cookie-only handling, sequential generation, fast post-generation export to avoid token expiry.
+- **2026-03-29:** GitHub secret-scanning blocked push (embedded OAuth); config cleaned to use env vars before successful amended push; AdugboInsure branding workflow finalized; two YouTube uploads confirmed (`84Gs3aWNJEc`, `QXT6pZ7c2n8`); truck max age updated 10→15 years; reusable one-command pipeline created.
+- **2026-03-30:** Coverage script + Telegram draft prepared; NotebookLM auth expired again before generation/download, confirming reliable fresh auth is still the active blocker.
+- **2026-03-31:** Research agent configured successfully with independent workspace + Codex model (auth valid until 2026-04-04); gateway entrypoint mismatch identified (service path misconfiguration); solution: `openclaw doctor --fix` required.
+
+### Distilled Long-Term Updates
+- AdugboInsure media automation is now materially stronger: private-cookie re-auth works when fresh, sequential generation + branding + YouTube upload is a proven workflow, and two successful uploads are logged. Remaining gap: upload-result parsing in the pipeline script needs tightening so the entire render→verify→upload flow completes cleanly in one pass without manual intervention.
+- NotebookLM operating rules are now durable: accept cookies only in private channels (never group chat); generate videos sequentially; download/export finished outputs immediately to avoid token expiry; the auth state remains brittle and expires periodically, so treat each run as requiring a fresh auth check.
+- Research agent infrastructure is ready for deployment: secondary agent workspace is live, model routing is set, and auth is valid. Next step: define research agent instructions (job search, truck monitoring, funding tracking) once the gateway entrypoint issue is resolved.
+- Gateway infrastructure issue identified but not yet fixed: service entrypoint misconfiguration (`/home/claw/.npm-global/lib/node_modules/openclaw/dist/index.js` does not exist; actual path is `/home/claw/.npm-global/lib/node_modules/.openclaw-Ct2F2T6w/dist/index.js`). Recommended fix: `openclaw doctor --fix` to repair the service file and runtime alignment.
+- GitHub secret guardrail proved effective: secret-scanning caught embedded OAuth credentials; workflow is now firmly established: scrub credentials before any push, prefer env vars or credential files, and test with `gh secret-scanning scan` before committing.
+- Truck search criteria changed durably: vehicle age maximum is now 15 years (updated from 10).
+
+### External Waits & Blockers
+1. **Gateway entrypoint fix:** Kolade must run `openclaw doctor --fix` on AWS machine to repair service alignment.
+2. **NotebookLM auth:** Kolade must send fresh cookies privately before next AdugboInsure video run.
+3. **Research agent instructions:** Pending gateway fix; then define prompts for job search, truck monitoring, funding tracking.
+4. **Orium job link:** Pending Kolade input for first application submission.
+5. **ClickUp workspace link:** Pending Kolade input for Orisynx ticket integration.
+
+### 14-Day Compression Check
+- No new `memory/YYYY-MM-DD.md` daily logs older than 14 days required compression this run.
+
+### Next Consolidation
+- Tuesday, April 7, 2026
+
+---
+
+## Week of March 24-30, 2026 - Weekly Consolidation Summary
+
+**Archive Date:** Monday, March 30, 2026 (17:00 UTC)  
+**Period:** Past 7 days (March 24-30)  
+**Status:** ✅ Consolidated and archived
+
+### Consolidated Sessions (Compressed)
+- **2026-03-24:** CBHI educational content was posted successfully to Jarvis-AdugboInsure, while direct NotebookLM auth was still failing in that run.
+- **2026-03-25:** mhGAP tablets were confirmed physically with Kolade.
+- **2026-03-26:** Local Mac OpenClaw + NotebookLM browser workflow was validated end-to-end; main lesson was to re-snapshot immediately before actions because NotebookLM refs are highly ephemeral.
+- **2026-03-27:** AWS-side remote browser blocker was narrowed to loopback/tailscale config plus manual restart needs; server default model was switched back to `openai-codex/gpt-5.4` because Anthropic was rate-limited; safe disk cleanup recovered about 6.2 GB.
+- **2026-03-28:** Fresh NotebookLM cookies were received privately, `nlm` was re-authenticated successfully, and three AdugboInsure video generations completed; durable rules were locked in: private-cookie handling only, sequential generation, and fast post-generation download/export.
+- **2026-03-29:** Git push guardrail tightened after secret-scanning blocked a push; tracked config was cleaned to use env-var placeholders before a successful amended push. AdugboInsure branding/upload workflow was finalized further, two YouTube uploads were confirmed, a reusable pipeline script was created, and truck max age was updated from 10 to 15 years.
+- **2026-03-30:** A fresh coverage script and Telegram draft were prepared, but NotebookLM auth had expired again for the actual generation/download step, confirming that reliable fresh authentication remains the active blocker for the next media run.
+
+### Distilled Long-Term Updates
+- AdugboInsure's durable media workflow is now clearer and stronger: private cookie re-auth works when fresh, sequential generation is required, completed outputs should be downloaded promptly, approved overlay branding is fixed, and at least two corrected YouTube uploads are confirmed.
+- The remaining AdugboInsure automation gap is now narrow and specific: improve upload-result parsing in the one-command pipeline and ensure fresh private auth is available at run time.
+- Durable security guardrail reinforced: never commit or push secrets; scrub tracked files first and prefer environment variables or credential files.
+- Truck sourcing criteria changed durably: acceptable vehicle age is now up to 15 years.
+- External blockers still unchanged at a high level: Orium job link, fuller truck specs, and ClickUp workspace link remain the main missing inputs from Kolade.
+
+### 14-Day Compression Check
+- No new `memory/YYYY-MM-DD.md` daily logs older than 14 days required compression this run; `2026-03-13.md` was already represented in the archive.
+
+### Next Consolidation
+- Monday, April 6, 2026
+
+
+## Week of March 23-29, 2026 - Weekly Consolidation Summary
+
+**Archive Date:** Sunday, March 29, 2026 (17:00 UTC)  
+**Period:** Past 7 days (March 23-29)  
+**Status:** ✅ Consolidated and archived
+
+### Consolidated Sessions (Compressed)
+- **2026-03-23:** AdugboInsure coverage script drafted; NotebookLM CLI upgraded to 0.5.4; auth was expired, so generation/download stayed blocked in that run.
+- **2026-03-24:** CBHI educational content posted successfully to Jarvis-AdugboInsure; direct browser/cookie auth was still failing in that run.
+- **2026-03-25:** mhGAP tablets confirmed physically with Kolade.
+- **2026-03-26:** Local Mac OpenClaw + NotebookLM browser workflow was validated end-to-end; core lesson was to re-snapshot immediately before actions because NotebookLM refs are highly ephemeral.
+- **2026-03-27:** AWS-side remote browser blocker was narrowed to loopback/tailscale config plus manual restart needs; server default model switched back to `openai-codex/gpt-5.4` because Anthropic was rate-limited; substantial safe disk cleanup recovered about 6.2 GB.
+- **2026-03-28:** Fresh NotebookLM cookies were received privately, `nlm` was re-authenticated successfully, and three AdugboInsure video generations completed; new rules were locked in: private-cookie handling only, sequential generation, and fast post-generation download.
+- **2026-03-29:** Git push guardrail tightened after secret-scanning blocked a push; `config/mcporter.json` was cleaned to use env-var placeholders before a successful amended push. AdugboInsure branding/upload workflow was finalized further, two YouTube uploads were confirmed, a reusable pipeline script was created, and truck max age was updated from 10 to 15 years.
+
+### Distilled Long-Term Updates
+- AdugboInsure's NotebookLM workflow is now materially healthier: private cookie re-auth works, generation works, approved branding specs exist, and at least two corrected YouTube uploads are confirmed.
+- The remaining AdugboInsure automation gap is narrower now: final upload-result parsing in the one-command pipeline should be tightened so render→verify→upload completes cleanly without manual retry.
+- Durable security guardrail added: never commit or push secrets; scrub tracked files first and prefer environment variables or credential files.
+- Truck sourcing criteria changed durably: acceptable vehicle age is now up to 15 years.
+- External blockers still unchanged at a high level: Orium job link, fuller truck specs, and ClickUp workspace link are still the main missing inputs from Kolade.
+
+### 14-Day Compression Check
+- No new `memory/YYYY-MM-DD.md` daily logs older than 14 days required compression this run; `2026-03-13.md` was already represented in the archive.
+
+### Next Consolidation
+- Sunday, April 5, 2026
+
+
 ## 14-Day Compression Update - 2026-03-27
 
 - **2026-03-13:** Identity baseline established — Jarvis name, calm vibe, 😇 emoji, Kolade in Africa/Lagos, and initial time-based premium-model preference recorded.

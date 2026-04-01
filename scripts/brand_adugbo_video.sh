@@ -6,7 +6,7 @@ set -e
 
 INPUT_VIDEO="$1"
 OUTPUT_DIR="${2:-.}"
-LOGO_PATH="${3:-/home/claw/.openclaw/workspace/assets/adugboinsure_logo.png}"
+LOGO_PATH="${3:-/home/claw/.openclaw/workspace/assets/adugboinsure_logo.jpg}"
 BRAND_COLOR="yellow"  # FFmpeg color code for yellow
 
 # Validate inputs
