@@ -1,30 +1,32 @@
 # MEMORY.md
 
-## Weekly Consolidation & Progress (2026-03-28)
+## Weekly Consolidation & Progress (2026-04-07)
 
-**Last consolidated:** Saturday, March 28, 2026 (17:00 UTC)  
+**Last consolidated:** Tuesday, April 7, 2026 (17:00 UTC)  
 **Archive location:** `memory/ARCHIVE.md` (historical consolidations)  
-**Next consolidation:** Saturday, April 4, 2026
+**Next consolidation:** Tuesday, April 14, 2026
 
-**Status Summary (Week of March 22-28):**
-- ✅ Orisynx legal/governance milestone remains durable: the Shareholders' Agreement is signed and the vesting structure is fixed; next operational follow-through is CAC filing plus the vesting register / annual assessments.
-- ✅ Job-search infrastructure remains live: RemoteOK + Hacker News Jobs are still the trusted sources, and the Orium application package is still ready pending the exact job link.
-- ✅ Portfolio baseline remains steady: current portfolio is about $2k with a 3-4 year growth goal toward ~$6k and weekly monitoring still the intended cadence.
-- ✅ AdugboInsure content production continued: coverage and claims scripts were drafted, and CBHI educational content was posted successfully to the Jarvis-AdugboInsure Telegram group.
-- ✅ NotebookLM workflow materially improved this week: local Mac browser control was proven, then fresh cookies were received privately and `nlm` was re-authenticated successfully.
-- ✅ Three new AdugboInsure NotebookLM videos were launched and completed successfully on 2026-03-28 (claims, testimonials, and CBHI benefits/community-based health insurance).
-- ⚠️ New operating rule locked in: do **not** launch 3 NotebookLM videos in parallel again; future runs should be sequential, with faster generate→download handling to avoid token expiry.
-- ⚠️ Current media pipeline gap has narrowed: generation now works, but deterministic export/download of completed MP4s into local files is still the missing step before branding and YouTube upload.
-- 📦 mhGAP tablets are now physically with Kolade.
-- ⚠️ Provider stability note remains relevant: Anthropic rate limits were frequent enough that the server default model was switched back to `openai-codex/gpt-5.4` on 2026-03-27.
-- ⏳ Still waiting on a few external inputs from Kolade: Orium job link, truck specifications, and ClickUp workspace link.
+**Status Summary (Week of March 31 - April 7):**
+- ✅ Research-agent infrastructure moved from setup to proof-of-execution: the `research` workspace was created, tested successfully, strengthened with local-first/Ollama-first + Apify guidance, and then used for a real first live research pass with outputs written back into the research workspace.
+- ✅ Research sourcing is now a durable active lane, not just a planned one: the first real pass surfaced strong-fit funding leads including Startup Innovation Challenge 2026, Nigeria Health Watch, and PharmAccess; no strong-fit truck or job update surfaced in that pass.
+- 🎓 Research-agent school/application guidance is now tighter and durable: prioritize MBA routes, plus credible programs in business, innovation, entrepreneurship, and technology; credible bootcamps can still be included when useful.
+- ⚠️ New execution standard from Kolade: setup, schedules, and heartbeats do **not** count as done unless a live workflow actually runs and writes outputs back.
+- ⚠️ New communication guardrail from Kolade: if no real mechanism or automation exists yet, say so plainly instead of implying it is already in place.
+- ✅ Research-agent tooling advanced materially: Apify MCP works through the local stdio launcher path in `workspace-research`; the hosted bearer/OAuth route via `mcporter` did not work and should not be treated as the current reliable path.
+- ✅ Credential state improved: Apify token was saved privately and credentials verification was healthy on 2026-04-01.
+- ⚠️ Durable bug worth retaining: the current `save_credential()` flow can create the credential file but fail to update the JSON index when expiry is passed as `null`; verify after use and repair index manually if needed.
+- ✅ AdugboInsure queue discipline remains durable: do not generate a new weekly video while the approved batch still covers the planned posting window; check coverage first and refill only when the queue drops below the target buffer.
+- ✅ Orisynx weekly reporting moved from assumption to reality: the missing automation gap was diagnosed, `skills/orisynx-weekly-brief/` plus `scripts/send-orisynx-weekly-brief.sh` were added, a Friday 13:00 UTC cron was installed, and the first live repo brief was sent successfully.
+- 📄 New durable implementation lesson: boxed PDF bank forms need calibration-first, per-character box-aware placement, and signature-line-only placement; generic fill approaches are unreliable.
+- 🔧 **Gateway repair remains a live ops issue:** the bind mismatch was improved by changing `gateway.bind` to `auto`, but the durable remaining fix is still `openclaw doctor --fix` for the service entrypoint/runtime mismatch.
+- ⏳ Still waiting on key external inputs from Kolade: Orium job link, fuller truck specifications beyond the updated age limit, and ClickUp workspace link.
 
-**Critical Next Steps (March 29 - April 4):**
-1. **AdugboInsure Media:** Export/download the completed NotebookLM videos immediately, then brand them and publish to Kolade's YouTube channel.
-2. **AdugboInsure Funding:** Secure OYSHIA partnership letter and 3-5 testimonials before the April 2 submission window.
-3. **Job Search:** Submit the Orium application once the exact link is provided.
-4. **Pitching:** Create the Plug & Play pitch deck (10-15 slides) and founder video.
-5. **Ops:** Deploy the truck-monitoring cron job after Kolade shares the truck specs.
+**Critical Next Steps (April 7 - April 14):**
+1. **Ops:** Run `openclaw doctor --fix`, then re-test the research agent under the repaired gateway.
+2. **Research Agent:** Continue live runs that write outputs back, especially for funding, school/MBA, jobs, and trucks.
+3. **AdugboInsure Queue Discipline:** Check approved video coverage before generating anything new.
+4. **AdugboInsure Access:** Refresh NotebookLM authentication privately before the next generation/download run.
+5. **External Inputs:** Collect the Orium link, fuller truck specs, and ClickUp workspace link so blocked workflows can progress.
 
 ---
 
@@ -158,24 +160,15 @@ Auth → Create audit → Audit view → Task manager → Task view → Calendar
   agent-browser open https://example.com && agent-browser snapshot -i && agent-browser click @e1
   ```
 
-- Model preference schedule (timezone: Africa/Lagos):
-  - **ACTIVE OVERRIDE (Mar 19, 2026 ~14:22 UTC): Use Sonnet for Kolade's brain dump session**
-  - After brain dump: resume regular schedule
-  - Regular schedule:
-    - Use `anthropic/claude-haiku-4-5` on weekends.
-    - Use `anthropic/claude-haiku-4-5` on weekdays from 7:00 PM to 12:00 AM (midnight).
-    - Outside those times, use OpenAI/Codex model.
-
 - **Model switching announcement rule:**
   - **Notify Kolade every time the model switches** (both Anthropic AND OpenAI models).
   - Always explain why the switch was necessary.
   - Format: "📢 MODEL SWITCH: [model name] — reason"
 
+- **Git / secrets rule (2026-03-29):** Never push secrets to GitHub. If a tracked file contains credentials, tokens, client IDs, client secrets, or similar sensitive values, remove/redact them first and prefer env vars or credential files before any commit/push.
+
 - **Model escalation hierarchy** (for complex tasks):
-  - **Default:** Haiku (lightweight, cost-efficient)
-  - **If task is moderately complex:** Switch to **Sonnet** (`anthropic/claude-sonnet-4-6`)
-  - **If task is very complex/needs best reasoning:** Switch to **Opus** (`anthropic/claude-opus-4-6`)
-  - For OpenAI: escalate similarly (Codex → GPT-5.1 → GPT-5.4)
+  - **Default:** - Codex → GPT-5.1 → GPT-5.4)
   - Escalate as needed. Announce each switch with reason.
 
 - **Subagent delegation:**
@@ -185,9 +178,7 @@ Auth → Create audit → Audit view → Task manager → Task view → Calendar
   - Pattern: Haiku coordinates, spawns Sonnet/Opus subagents for heavy lifting
 
 - Model usage strategy:
-  - **Opus** (`anthropic/claude-opus-4-6`): PAUSED — Anthropic at 85% limit (2026-03-20)
   - **Codex** (`openai-codex/gpt-5.4`): PRIMARY for automation — truck searches, portfolio tracking, content generation, coordination
-  - **Haiku** (`anthropic/claude-haiku-4-5`): Lightweight checks only (git status, quick summaries)
   - **Always announce** which model I'm using before starting a task.
 
 ## Memory System & Local LLM
@@ -374,12 +365,12 @@ Auth → Create audit → Audit view → Task manager → Task view → Calendar
    - Works reliably; Linux deps via cloud providers if needed
    - Snapshot + ref workflow established
    
-4. **NotebookLM** — ⚠️ PARTIAL (Cookie auth expired, local browser workflow works)
+4. **NotebookLM** — ⚠️ PARTIAL (private cookie auth works, but expires and remains brittle)
    - CLI upgraded to 0.5.4
-   - Cookies in `.credentials/notebooklm_cookies.txt` expired / brittle
-   - Local Mac OpenClaw browser workflow validated: NotebookLM tab control and Video Overview generation succeeded
-   - Remote AWS-driven browser control still blocked until AWS gateway restart completes after `gateway.tailscale.mode=serve`
-   - Preferred fix: use live local browser session; avoid relying on pasted cookies in chat
+   - Fresh private cookies can re-authenticate `nlm` successfully, but the auth state can expire again between runs
+   - Local Mac OpenClaw browser workflow was validated end-to-end and remains a viable fallback path when needed
+   - Remote AWS-driven browser bridging is no longer the preferred primary path for AdugboInsure video work
+   - Preferred operating rule: never request or accept cookies in any group chat; handle auth privately only, generate videos sequentially, and download/export finished outputs promptly
    
 5. **ClickUp (via Zapier)** — ✅ READY
    - 21 tools available
@@ -398,7 +389,7 @@ Auth → Create audit → Audit view → Task manager → Task view → Calendar
 - ✅ Telegram Bot Config: `telegram_bot_config.txt` (5 chat IDs)
 - ✅ NotebookLM cookies: `notebooklm_cookies.txt` (expires ~2026-04-13)
 - ✅ YouTube OAuth: `youtube_oauth.json` (expires ~2026-09-20)
-- ✅ Gmail App Password: `gmail_app_password.txt` (`urun qvjm dfad xlwk`, IMAP: jarviskolademail@gmail.com)
+- ✅ Gmail App Password: `gmail_app_password.txt` (stored privately for IMAP access to jarviskolademail@gmail.com)
 - ❌ GitHub Token: MISSING — Kolade must re-provide (was never actually saved despite claim)
 - ⚠️ Vercel Token: MISSING — optional, provide when available
 
@@ -645,7 +636,7 @@ Auth → Create audit → Audit view → Task manager → Task view → Calendar
   - **Configuration:** 4x2 flatbed (single steer axle, single rear axle only — no 6x4)
   - **Engine Power:** 380hp, 400hp, 430hp
   - **Condition:** Used (good condition, minimal repairs needed)
-  - **Age:** Not more than 10 years old
+  - **Age:** Not more than 15 years old (updated from 10 years on 2026-03-29)
   - **Mileage:** Good/reasonable
   - **Front Axle Weight Limit:** Max 35 tons
   - **Price Budget:** £4,000 max per truck

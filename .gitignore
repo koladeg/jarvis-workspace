@@ -3,6 +3,17 @@
 .credentials/*.json
 # Re-include the index (metadata only, no secret values)
 !.credentials/CREDENTIALS_INDEX.json
+
+# Runtime/state/log noise
+.cache/
+.state/
+.reminder-state/
+logs/*.log
+tmp/
+tmp_*.txt
+consolidation-input.txt
+auto,
+
 scripts/google-drive-oauth.py
 .google-drive-sa.json
 outputs/
