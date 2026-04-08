@@ -78,42 +78,62 @@
       "reminder_window_minutes": 0
     },
     {
-      "id": "orisynx-bank-doc-2026-03-26-0300",
-      "enabled": false,
-      "channel": "orisynx",
-      "schedule": "0 3 26 3 4",
-      "description": "One-time bank document reminder",
-      "message": "\ud83c\udfe6 *Bank Document Reminder*\n\nEveryone still needs to fill the bank document. Please complete it as soon as possible.",
+      "id": "adugboinsure-acumen-followup-2026-04-14",
+      "enabled": true,
+      "channel": "adugboinsure",
+      "schedule": "0 9 14 4 2",
+      "description": "Follow up on Acumen application",
+      "message": "\ud83d\udccc **AdugboInsure Follow-Up Due \u2014 Acumen**\n\nTime to follow up on the Acumen Grow your business submission sent on 2026-04-07.\n\nRecommended action:\n- Check for reply/confirmation\n- Send the prepared follow-up if still silent\n- Update the application tracker status\n\nTracker: `projects/adugboinsure/application_tracker.md`",
       "dedupe": "once",
       "reminder_window_minutes": 0
     },
     {
-      "id": "orisynx-bank-doc-2026-03-26-0900",
+      "id": "orisynx-bank-doc-2026-04-03-1500",
       "enabled": false,
       "channel": "orisynx",
-      "schedule": "0 9 26 3 4",
+      "schedule": "0 15 3 4 5",
       "description": "One-time bank document reminder",
-      "message": "\ud83c\udfe6 *Bank Document Reminder*\n\nEveryone still needs to fill the bank document. Please complete it as soon as possible.",
+      "message": "\ud83c\udfe6 *Bank Document Reminder*\n\nEveryone needs to fill the bank document.",
       "dedupe": "once",
       "reminder_window_minutes": 0
     },
     {
-      "id": "orisynx-bank-doc-2026-03-26-1500",
+      "id": "orisynx-bank-doc-2026-04-03-2100",
       "enabled": false,
       "channel": "orisynx",
-      "schedule": "0 15 26 3 4",
+      "schedule": "0 21 3 4 5",
       "description": "One-time bank document reminder",
-      "message": "\ud83c\udfe6 *Bank Document Reminder*\n\nEveryone still needs to fill the bank document. Please complete it as soon as possible.",
+      "message": "\ud83c\udfe6 *Bank Document Reminder*\n\nEveryone needs to fill the bank document.",
       "dedupe": "once",
       "reminder_window_minutes": 0
     },
     {
-      "id": "orisynx-bank-doc-2026-03-26-2100",
+      "id": "orisynx-bank-doc-2026-04-04-0900",
       "enabled": false,
       "channel": "orisynx",
-      "schedule": "0 21 26 3 4",
+      "schedule": "0 9 4 4 6",
       "description": "One-time bank document reminder",
-      "message": "\ud83c\udfe6 *Bank Document Reminder*\n\nEveryone still needs to fill the bank document. Please complete it as soon as possible.",
+      "message": "\ud83c\udfe6 *Bank Document Reminder*\n\nEveryone needs to fill the bank document.",
+      "dedupe": "once",
+      "reminder_window_minutes": 0
+    },
+    {
+      "id": "orisynx-bank-doc-2026-04-04-1500",
+      "enabled": false,
+      "channel": "orisynx",
+      "schedule": "0 15 4 4 6",
+      "description": "One-time bank document reminder",
+      "message": "\ud83c\udfe6 *Bank Document Reminder*\n\nEveryone needs to fill the bank document.",
+      "dedupe": "once",
+      "reminder_window_minutes": 0
+    },
+    {
+      "id": "orisynx-bank-doc-2026-04-04-2100",
+      "enabled": false,
+      "channel": "orisynx",
+      "schedule": "0 21 4 4 6",
+      "description": "One-time bank document reminder",
+      "message": "\ud83c\udfe6 *Bank Document Reminder*\n\nEveryone needs to fill the bank document.",
       "dedupe": "once",
       "reminder_window_minutes": 0
     }
