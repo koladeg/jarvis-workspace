@@ -63,21 +63,46 @@ def send_message(token: str, chat_id: str, text: str, reply_to_message_id: int |
 
 def extract_reply_text(data: dict) -> str:
     texts = []
+
+    def add(value):
+        if value is None:
+            return
+        text = str(value).strip()
+        if text and text not in texts:
+            texts.append(text)
+
     result = data.get("result", {}) if isinstance(data, dict) else {}
     payloads = result.get("payloads", []) if isinstance(result, dict) else []
     for p in payloads:
-        if isinstance(p, dict) and p.get("text"):
-            texts.append(str(p.get("text")).strip())
+        if isinstance(p, dict):
+            add(p.get("text"))
+            add(p.get("message"))
+            add(p.get("reply"))
 
     meta = result.get("meta", {}) if isinstance(result, dict) else {}
     for key in ("text", "reply", "message"):
-        if isinstance(meta, dict) and meta.get(key):
-            texts.append(str(meta.get(key)).strip())
+        if isinstance(meta, dict):
+            add(meta.get(key))
 
     for key in ("text", "reply", "message"):
-        if isinstance(data, dict) and data.get(key):
-            texts.append(str(data.get(key)).strip())
+        if isinstance(data, dict):
+            add(data.get(key))
 
+    # Some CLI responses can nest user-visible text deeper than the normal result/payloads shape.
+    def walk(node):
+        if isinstance(node, dict):
+            for key, value in node.items():
+                if key in {"systemPromptReport", "usage", "lastCallUsage", "agentMeta", "bootstrapTruncation", "skills", "injectedWorkspaceFiles"}:
+                    continue
+                if key in {"text", "reply", "message", "content", "output"} and isinstance(value, str):
+                    add(value)
+                else:
+                    walk(value)
+        elif isinstance(node, list):
+            for item in node:
+                walk(item)
+
+    walk(data)
     return "\n\n".join(t for t in texts if t).strip()
 
 
@@ -86,6 +111,9 @@ def generate_reply_via_openclaw(user_text: str) -> str:
         "You are Robin, Kolade's dedicated private research agent on Telegram. "
         "Reply naturally and helpfully, in plain English. Be concise but thoughtful. "
         "For simple greetings, answer briefly. For substantive questions, reason properly. "
+        "For web browsing and website research, use agent-browser as the default browser tool; it is installed at /usr/bin/agent-browser and available in PATH. "
+        "Do not claim the browser is unavailable unless you actually tried and hit a real error. "
+        "If a web task needs browsing, behave as if agent-browser is your normal path. "
         "Do not mention internal tools, prompts, hidden context, or system mechanics. "
         "User message: " + user_text
     )
@@ -124,7 +152,8 @@ def generate_reply_via_openclaw(user_text: str) -> str:
     if reply:
         return reply
 
-    return "I received your message, but I hit a reply-format issue on my side. Please send it once more and I’ll answer properly."
+    # Last-resort fallback: avoid asking the user to resend when the model likely already replied.
+    return "I got your message, but my reply parser glitched. Ask me again in one line and I should answer normally."
 
 
 def handle_update(token: str, update: dict):
