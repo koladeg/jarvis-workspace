@@ -1,5 +1,182 @@
 # Memory Archive - Historical Consolidations
 
+## Week of April 3 - April 9, 2026 - Weekly Consolidation Summary
+
+**Archive Date:** Thursday, April 9, 2026 (17:00 UTC)  
+**Period:** Past 7 days (April 3 - April 9)  
+**Status:** ✅ Consolidated and archived
+
+### Consolidated Sessions (Compressed)
+- **2026-04-03:** The first real research pass remained the durable proof that setup alone does not count; live outputs were written back into `workspace-research`, surfacing strong-fit funding leads while job and truck lanes still lacked strong-fit results. PDF boxed-form lessons were captured, and Orisynx weekly repo briefing was converted from an assumption into a real Friday automation with a successful live send.
+- **2026-04-07:** Weekly consolidation was run again under the local-Ollama policy attempt; durable lessons were carried forward for live-workflow verification, honest reporting, gateway repair, AdugboInsure queue discipline, and Robin quality expectations. Robin remained a brittle in-progress integration that still required end-to-end verification.
+- **2026-04-08:** Orisynx repo-monitoring baseline was saved for future comparison: frontend active, backend quiet, with SHAs captured for both repos. Robin rollout reporting was corrected to distinguish partial setup from real delivered work. Networking events were confirmed as an explicit research lane, Robin's workspace-routing issue was identified, and a new browsing guardrail was added: do not trust shallow reads on dynamic sites until a live `agent-browser` check confirms them.
+
+### Distilled Long-Term Updates
+- Live execution remains the durable standard: workflows are only "working" when they actually run and write outputs back.
+- Research sourcing is real, but only funding has strong proof so far; jobs, trucks, partners/validators, and other lanes still need additional live passes.
+- School/application research remains MBA-forward.
+- AdugboInsure video generation should stay queue-aware rather than reflexively weekly.
+- Orisynx weekly repo briefing is a real installed automation, and repo checks now have a durable frontend-vs-backend baseline for future comparisons.
+- Robin should be treated as a serious research bot lane; do not claim success until receive → reason → reply is verified end-to-end.
+- Robin's current blocker is partly architectural: the private-chat listener still points at the main workspace context rather than the research workspace.
+- For dynamic/React-style websites, lightweight fetches are provisional; confirm suspiciously empty results with a live `agent-browser` pass.
+
+### 14-Day Compression Update
+- No new daily logs older than 14 days required separate compression this run; previously archived summaries already cover the eligible older daily-memory period.
+
+### Next Consolidation
+- Thursday, April 16, 2026
+
+---
+
+## Week of April 2 - April 8, 2026 - Weekly Consolidation Summary
+
+**Archive Date:** Wednesday, April 8, 2026 (17:00 UTC)  
+**Period:** Past 7 days (April 2 - April 8)  
+**Status:** ✅ Consolidated and archived
+
+### Consolidated Sessions (Compressed)
+- **2026-04-02:** Kolade clarified that Jarvis should not just send updates but also keep track so the work is actually done; school/application research should prioritize MBA routes plus business, innovation, entrepreneurship, technology, and credible bootcamps; AdugboInsure queue discipline stayed tight.
+- **2026-04-03:** The first real research pass remained the proof point that setup alone does not count; live outputs were written back into `workspace-research`, surfacing strong-fit funding leads while truck/job lanes still lacked strong-fit results. PDF boxed-form handling lessons were captured, and Orisynx weekly repo briefing was turned from an assumption into a real Friday automation with the first successful live send.
+- **2026-04-07:** Weekly memory consolidation was run; durable guardrails were carried forward for live-workflow verification and for saying plainly when no real automation exists. Kolade also clarified that Robin should work like a substantive research assistant rather than a lightweight bot, and the Robin integration was left as a brittle in-progress system needing end-to-end verification.
+- **2026-04-08:** Orisynx repo-check baseline was saved for future comparison: frontend active, backend quiet, with SHAs captured for both repos.
+
+### Distilled Long-Term Updates
+- Live execution remains the core standard: workflows are only "working" when they actually run and write outputs back.
+- Research-agent school/application work is durably MBA-forward.
+- AdugboInsure video generation should remain queue-aware rather than reflexively weekly.
+- Orisynx weekly repo briefing is now a real installed automation.
+- Robin should be treated as a serious research bot lane; do not claim success until receive → reason → reply is verified end-to-end.
+- Orisynx repo monitoring now has a durable baseline for future comparisons.
+
+### 14-Day Compression Update
+- **2026-03-13:** Identity baseline remains simple and durable: Jarvis name, calm vibe, 😇 emoji, Kolade in Africa/Lagos, and the initial time-based premium-model preference.
+- **2026-03-17:** Core access stack came online: Notion, NotebookLM, Zapier MCP, and direct Gmail/IMAP.
+- **2026-03-18:** Google Drive OAuth consent-screen gap was identified, secure credential storage under `.credentials/` was established, and agent-browser became the preferred browser path.
+- **2026-03-20:** Portfolio baseline was established at about $2k with a long-term 3x target and weekly tracking intent.
+- **2026-03-21:** Job-search system moved from idea to real infrastructure using RemoteOK + HN Jobs, with Orium as the first ready application.
+- **2026-03-23:** AdugboInsure script production could continue even while NotebookLM auth blocked video generation.
+- **2026-03-24:** CBHI educational content still shipped despite NotebookLM auth friction, reinforcing that posting can continue while video automation is blocked.
+
+### Next Consolidation
+- Wednesday, April 15, 2026
+
+---
+
+## Week of March 31 - April 7, 2026 - Weekly Consolidation Summary
+
+**Archive Date:** Tuesday, April 7, 2026 (17:00 UTC)  
+**Period:** Past 7 days (March 31 - April 7)  
+**Status:** ✅ Consolidated and archived
+
+### Consolidated Sessions (Compressed)
+- **2026-03-31:** Research workspace `research` was created and tested successfully; gateway bind mismatch was reduced by switching `gateway.bind` from `tailnet` to `auto`, but the remaining durable ops issue was traced to a gateway service entrypoint/runtime mismatch, with `openclaw doctor --fix` confirmed as the supported repair path.
+- **2026-04-01:** Weekly consolidation was run with the local Ollama policy; the research workspace gained stronger local-first/Ollama-first rules plus explicit Apify MCP guidance; Apify MCP worked through a local stdio launcher while the hosted bearer/OAuth path via `mcporter` failed; Apify credentials were saved privately and verification was healthy; a durable `save_credential()` index-update bug was documented.
+- **2026-04-02:** Kolade clarified an execution rule: Jarvis should not just send updates but also keep track so the work is actually done; school/application research should prioritize MBA routes plus business, innovation, entrepreneurship, and technology programs; AdugboInsure queue discipline stayed tightened.
+- **2026-04-03:** The first real research pass finally ran and wrote outputs back into `workspace-research`, producing strong-fit funding leads (Startup Innovation Challenge 2026, Nigeria Health Watch, PharmAccess) and several medium-priority leads; no strong-fit truck or job update surfaced in that pass. Boxed-PDF filling lessons were captured in a new skill scaffold. Orisynx weekly repo-briefing was fixed by installing a real Friday 13:00 UTC automation plus sender script and successfully sending the first live brief. A new operating rule was made explicit: say plainly when no actual mechanism exists instead of implying it does.
+
+### Distilled Long-Term Updates
+- Research-agent execution is now a proven workflow, not just a configured environment: setup alone does not count, and durable success means a live run actually executes and writes outputs back.
+- Research-agent sourcing is materially stronger: Apify MCP works through the local stdio path, and the first live pass produced credible funding leads while jobs/trucks still need more real runs.
+- School/application research is now durably MBA-forward, while still covering business, innovation, entrepreneurship, technology, and credible bootcamps.
+- Orisynx weekly repo reporting is now a real installed automation, not an assumed one.
+- Durable communication rule added: if no real automation/mechanism exists yet, say so clearly.
+- Durable implementation lesson added for boxed bank PDFs: use calibration-first, per-character, box-aware placement; generic PDF fill flows are unreliable.
+- Gateway health improved somewhat, but the supported remaining fix is still `openclaw doctor --fix`.
+- AdugboInsure queue rule remains durable: only generate when approved coverage drops below the target buffer.
+- Credential handling lesson worth retaining: after `save_credential()`, verify both the file and the JSON index because the expiry=`null` path can partially fail.
+
+### External Waits & Blockers
+1. **Gateway repair:** Run `openclaw doctor --fix` to repair the service entrypoint/runtime mismatch fully.
+2. **NotebookLM auth:** Fresh private authentication is still needed before the next AdugboInsure generation/download run.
+3. **Truck / job sourcing:** More live research passes are still needed because the first pass produced no strong-fit truck or job update.
+4. **Orium job link / fuller truck specs / ClickUp workspace link:** Still waiting on Kolade for these blocking inputs.
+
+### 14-Day Compression Update
+- **2026-03-20 to 2026-03-23:** Earlier daily logs are now represented durably by existing archive summaries covering the portfolio baseline, job-search system launch, infrastructure checkpoint, and the early NotebookLM auth blocker; no separate full-fidelity retention is needed in active daily memory.
+
+### Next Consolidation
+- Tuesday, April 14, 2026
+
+---
+
+## Week of March 27 - April 2, 2026 - Weekly Consolidation Summary
+
+**Archive Date:** Thursday, April 2, 2026 (17:00 UTC)  
+**Period:** Past 7 days (March 27 - April 2)  
+**Status:** ✅ Consolidated and archived
+
+### Consolidated Sessions (Compressed)
+- **2026-03-27:** Anthropic instability kept the server default model on `openai-codex/gpt-5.4`; remote browser-control failures were traced to loopback-only gateway binding; safe cache cleanup recovered about 6.2 GB; broken `openclaw` launcher path was repaired.
+- **2026-03-28:** Fresh NotebookLM cookies received privately re-authenticated `nlm`; three AdugboInsure videos were generated successfully; durable rules were reinforced: private-cookie-only handling, sequential generation, and immediate download/export when possible.
+- **2026-03-29:** GitHub secret scanning blocked an unsafe push and confirmed the no-secrets guardrail; AdugboInsure's approved branding/upload workflow was finalized further; two corrected YouTube uploads were confirmed (`84Gs3aWNJEc`, `QXT6pZ7c2n8`); truck max age remained updated to 15 years.
+- **2026-03-30:** New coverage script and Telegram draft were prepared, but NotebookLM auth had already expired again on real notebook commands, confirming fresh auth at execution time is still the active blocker.
+- **2026-03-31:** Research agent setup completed successfully with a separate workspace plus Codex inheritance; gateway service entrypoint mismatch was diagnosed; supported fix remains `openclaw doctor --fix`.
+- **2026-04-01:** Weekly memory consolidation was run with the local Ollama policy; the research workspace gained durable Apify MCP support via a local stdio launcher; Kolade's Apify token was saved and credentials verification returned healthy; durable instructions were added for broader job, truck, and funding searches.
+- **2026-04-02:** AdugboInsure queue discipline tightened: do not generate a fresh weekly video when the current approved batch already covers the posting window; the research-agent school lane was clarified to prioritize business, innovation, entrepreneurship, technology, and especially MBA options, with credible bootcamps included when useful.
+
+### Distilled Long-Term Updates
+- AdugboInsure media operations remain materially stronger operationally: private-cookie re-auth can work, generation works when auth is fresh, approved branding and upload rules are stable, and two corrected YouTube uploads are now durable reference points.
+- The remaining AdugboInsure automation gap is still narrow and specific: reliable fresh auth at run time plus tighter upload-result parsing so the one-command pipeline returns the real YouTube link/ID without manual retry.
+- Durable AdugboInsure queue rule added: check remaining approved content coverage before generating anything new, and only refill the queue when the planned posting buffer is genuinely low.
+- Research agent readiness improved materially: Apify MCP works in the research workspace, credentials are healthy, and durable guidance now covers job, truck, funding, and school/MBA research.
+- School-application research is now a durable lane: prioritize programs in business, innovation, entrepreneurship, and technology, with MBA options treated as a major path.
+- Infrastructure readiness improved, but gateway repair via `openclaw doctor --fix` is still an active ops blocker for some workflows.
+- GitHub secret hygiene remains a hard rule proven in practice by secret scanning.
+- Truck sourcing criteria remain durable: acceptable vehicle age is up to 15 years.
+
+### External Waits & Blockers
+1. **Gateway repair:** Run `openclaw doctor --fix` to repair the service entrypoint mismatch.
+2. **NotebookLM auth:** Fresh private authentication is still needed before the next AdugboInsure generation/download run.
+3. **Orium job link:** Still needed for first application submission.
+4. **ClickUp workspace link / fuller truck specs:** Still needed to unblock Orisynx ticketing and truck monitoring.
+5. **Research-agent rollout:** After gateway repair, continue the expanded sourcing plan across jobs, trucks, funding, and school/MBA options.
+
+### 14-Day Compression Update
+- **2026-03-18:** Google Drive OAuth consent-screen gap was identified, agent-browser was confirmed as the primary working browser, and persistent credential storage under `.credentials/` was established as a durable operating pattern.
+
+### Next Consolidation
+- Thursday, April 9, 2026
+
+---
+
+## Week of March 26 - April 1, 2026 - Weekly Consolidation Summary
+
+**Archive Date:** Wednesday, April 1, 2026 (17:00 UTC)  
+**Period:** Past 7 days (March 26 - April 1)  
+**Status:** ✅ Consolidated and archived
+
+### Consolidated Sessions (Compressed)
+- **2026-03-26:** Local Mac OpenClaw + NotebookLM browser workflow was validated end-to-end; the key operating lesson was to re-snapshot immediately before each action because NotebookLM refs become stale quickly.
+- **2026-03-27:** Anthropic instability forced the server default model back to `openai-codex/gpt-5.4`; remote browser-control issues were traced to loopback-only gateway bind; safe cache cleanup recovered about 6.2 GB; broken `openclaw` launcher path was repaired.
+- **2026-03-28:** Fresh NotebookLM cookies received privately re-authenticated `nlm`; three new AdugboInsure videos were generated successfully; durable rules were reinforced: private-cookie-only handling, sequential generation, and download/export as soon as possible.
+- **2026-03-29:** GitHub secret scanning blocked an unsafe push and confirmed the no-secrets guardrail; AdugboInsure's approved branding/upload workflow was finalized further; two corrected YouTube uploads were confirmed (`84Gs3aWNJEc`, `QXT6pZ7c2n8`); truck max age updated from 10 to 15 years.
+- **2026-03-30:** New coverage script and Telegram draft were prepared, but NotebookLM auth had already expired again on real notebook commands, confirming fresh auth at run time is still the active blocker.
+- **2026-03-31:** Research agent setup completed successfully with separate workspace + Codex inheritance; gateway service entrypoint mismatch was diagnosed; supported fix is `openclaw doctor --fix`.
+
+### Distilled Long-Term Updates
+- AdugboInsure media operations are now much stronger operationally: local Mac browser control is proven, cookie-based `nlm` auth can work when fresh, sequential generation is required, approved branding is fixed, and two successful corrected YouTube uploads are logged.
+- The remaining AdugboInsure automation gap is now narrow and specific: improve final upload-result parsing so the one-command pipeline returns the real YouTube link/ID without manual retry.
+- Durable NotebookLM rules are now explicit: accept cookies only privately, never in group chat; generate sequentially; and download/export completed outputs immediately to reduce token-expiry risk.
+- Infrastructure readiness improved: the research agent is configured and healthy, but gateway repair via `openclaw doctor --fix` is still needed before moving further on some agent workflows.
+- GitHub secret hygiene was not just a rule this week; it was tested in practice by secret scanning and must remain a hard guardrail.
+- Truck sourcing criteria changed durably: acceptable vehicle age is now up to 15 years.
+
+### External Waits & Blockers
+1. **Gateway repair:** Run `openclaw doctor --fix` to repair the service entrypoint mismatch.
+2. **NotebookLM auth:** Fresh private authentication is still needed before the next AdugboInsure generation/download run.
+3. **Research-agent rollout:** After gateway repair, define instructions for job search, truck monitoring, and funding scans.
+4. **Orium job link:** Still needed for first application submission.
+5. **ClickUp workspace link / fuller truck specs:** Still needed to unblock Orisynx ticketing and truck monitoring.
+
+### 14-Day Compression Update
+- **2026-03-17:** Core access stack was established early: Notion, NotebookLM, Zapier MCP, and direct Gmail/IMAP were all brought online, while Yahoo import and GitHub/OAuth setup remained pending.
+
+### Next Consolidation
+- Wednesday, April 8, 2026
+
+---
+
 ## Week of March 25-31, 2026 - Weekly Consolidation Summary
 
 **Archive Date:** Tuesday, March 31, 2026 (17:00 UTC)  

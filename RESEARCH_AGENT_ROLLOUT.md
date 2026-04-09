@@ -6,7 +6,7 @@ Daily source of truth for the research-agent rollout status.
 ## Current Status
 - **Overall status:** active
 - **Current phase:** Phase 3 — Operational rollout
-- **Last updated (UTC):** 2026-04-03 16:58
+- **Last updated (UTC):** 2026-04-09 08:33
 
 ## Phases
 
@@ -33,8 +33,9 @@ Daily source of truth for the research-agent rollout status.
 ### Phase 3 — Operational rollout
 - Status: in_progress
 - Notes:
-  - Daily user-facing progress updates being added
-  - Reporting layer was missing; this file + cron-based DM fixes that
+  - Approved lane cadence is now defined and saved in the research workspace heartbeat file
+  - A lane only counts as active if it runs on schedule, is logged the same day, and produces a visible update when due
+  - Reporting must reflect real lane activity, not just setup/automation changes
 
 ### Phase 4 — Stable automation
 - Status: pending
@@ -47,16 +48,19 @@ Daily source of truth for the research-agent rollout status.
 - Fixed the missing reporting path for rollout updates
 - Added a dedicated rollout tracker file
 - Added a daily DM cron path for rollout summaries
+- Approved and saved a real pipeline schedule for jobs, funding, school/MBA, immigration, community sponsors, networking events, and trucks
+- Saved the core rollout rule that planned cadence does not count without same-day logging and visible updates
+- Backfilled a fresh research note (`workspace-research/memory/2026-04-09.md`) so status checks now reflect recent work
 
 ## Current Blockers
-- Need more consistent, durable reporting on actual research runs and outputs
-- Some workflows still depend on broader gateway health / follow-through
+- Execution, logging, and delivery still need to stay in sync consistently over time
+- Some scheduled lanes still need recurring automation or reliable prompting to prove the cadence is real in practice
 
 ## Next Action
-- Start sending daily rollout summaries automatically to Kolade
+- Make the approved lane schedule observable in actual recurring updates and verify that each due pass creates a same-day research note
 
 ## Daily Update Template Inputs
-- **Today status:** Reporting path is now being automated
-- **What completed today:** tracker + sender + cron wiring
-- **Main blocker:** rollout updates were not being pushed proactively
-- **Next action:** monitor first automated send and refine content if needed
+- **Today status:** Rollout schedule approved and saved; stale logging gap corrected
+- **What completed today:** schedule locked, core rule saved, fresh research note written, activity status corrected
+- **Main blocker:** recurring execution still needs to prove itself on schedule, not just exist on paper
+- **Next action:** monitor the next due lane runs and ensure each one logs and reports on the same day

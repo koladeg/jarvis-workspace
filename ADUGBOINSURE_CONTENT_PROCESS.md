@@ -17,15 +17,17 @@ AdugboInsure has a **3-part automated content workflow** for agent education vid
 
 **Current Status:**
 - ✅ NotebookLM cookie-based auth was refreshed successfully on 2026-03-28
-- ✅ 3 new videos were generated successfully for Claims, Testimonials, and Benefits
+- ✅ 3 new videos were generated successfully for Claims, Testimonials, and Benefits to cover the next 3 weeks
 - ✅ FFmpeg branding scripts and YouTube upload script exist in workspace
 - ⚠️ Workflow rule updated: generate videos sequentially, one at a time
+- ⚠️ New guardrail: do **not** generate a fresh video if the current approved batch still covers the planned posting window
 - ⚠️ Remaining execution gap: export/download generated MP4s into local files before branding/upload
 
-**What needs to happen before tomorrow's run:**
-1. Refresh NotebookLM authentication with a live Google session
-2. Test NotebookLM video generation
-3. Schedule content creation automation for Tuesday 01:34 UTC
+**What needs to happen before the next real generation run:**
+1. Check remaining approved video coverage first
+2. Only generate new content if the remaining queue drops below the target buffer
+3. If generation is actually needed, refresh NotebookLM authentication with a live Google session
+4. Test NotebookLM video generation
 
 ---
 
@@ -243,21 +245,23 @@ If auth is fixed TODAY, tomorrow we can:
 
 ---
 
-## Recommended Schedule (If Auth Fixed Today)
+## Recommended Schedule & Guardrail
 
-**Today (2026-03-23):**
-- Refresh NotebookLM auth (5 min)
-- Test NotebookLM video generation (10 min)
+**Before any scheduled run:**
+- Check how many approved/publishable AdugboInsure videos are already available
+- Confirm which week in the current batch is next
+- If the existing batch still covers the upcoming posting window, do **not** generate a new video
 
-**Tomorrow (2026-03-24) 01:34 UTC:**
-- Auto-run content creation:
-  1. Generate video from coverage script
-  2. Brand with FFmpeg
-  3. Post to Jarvis-AdugboInsure
-  4. (Manual) Share link to agents
+**Only when coverage is low:**
+1. Refresh NotebookLM auth if needed
+2. Generate the next video sequentially
+3. Brand with FFmpeg
+4. Upload/publish through the approved path
+5. Update the coverage count so the buffer stays visible
 
-**Every Tuesday thereafter:**
-- Same automation with next week's script
+**Cadence rule:**
+- The automation schedule must not blindly create one video per trigger.
+- It should preserve a rolling coverage buffer and only generate when the remaining queue drops below the target buffer.
 
 ---
 

@@ -10,13 +10,12 @@ Escalate to stronger models only when necessary.
 Use this priority order whenever possible:
 
 1. **Ollama `llama3.2:3b`** (FREE - local) — lightweight checks, git status, quick summaries, log analysis
-2. `anthropic/claude-haiku-4-5` — routine tasks, simple analysis
-3. `openai/gpt-5-mini` — inexpensive coding, structured output
-4. `openai/gpt-5.1` — stronger reasoning
-5. `anthropic/claude-sonnet-4-6` — nuanced work, complex reasoning
-6. `openai-codex/gpt-5.4` — code-heavy, automation tasks
-7. `openai/gpt-5.4` — difficult reasoning, high-stakes
-8. `anthropic/claude-opus-4-6` — only for hardest problems
+2. `openai/gpt-5-mini` — inexpensive coding, structured output
+3. `openai/gpt-5.1` — stronger reasoning
+4. `anthropic/claude-sonnet-4-6` — nuanced work, complex reasoning
+5. `openai-codex/gpt-5.4` — code-heavy, automation tasks
+6. `openai/gpt-5.4` — difficult reasoning, high-stakes
+7. `anthropic/claude-opus-4-6` — only for hardest problems
 
 **New Rule (2026-03-23):**
 - Use Ollama first for **any lightweight routine task** (no cost, instant)
@@ -148,7 +147,6 @@ Premium models should **not be used for routine follow-up tasks**.
 
 For coding tasks:
 
-- start with `openai/gpt-5-mini` for small edits
 - use `openai-codex/gpt-5.4` for serious development work
 - use `openai/gpt-5.4` when code and deep reasoning are both required
 - use `claude-opus-4-6` only if other models fail
@@ -592,12 +590,6 @@ When cost pressure is high:
 - reduce unnecessary context
 - summarize intermediate outputs instead of carrying them forward in full
 - avoid premium models for routine follow-up
-
-When both cost and reliability matter:
-- prefer `anthropic/claude-haiku-4-5`
-- if Anthropic fails, prefer `openai/gpt-5-mini`
-- escalate only when necessary
-
 ---
 
 ## Search budget discipline
@@ -696,6 +688,14 @@ Always:
 - fall back intelligently
 - notify at thresholds
 - stop before costs run away
+
+## Web Browsing Guardrail
+
+For website checks, especially job boards, listings pages, and modern app-like sites:
+- treat shallow page reads as provisional when the result looks suspiciously thin, contradictory, or unexpectedly empty
+- assume dynamic/React-style rendering may hide the real page state from lightweight extraction
+- before concluding that a page has no useful content, confirm with a live `agent-browser` pass
+- do not report a page as empty unless the live browser view also shows it that way
 
 # SOUL.md - Who You Are
 
