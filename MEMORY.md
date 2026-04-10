@@ -1,29 +1,30 @@
 # MEMORY.md
 
-## Weekly Consolidation & Progress (2026-04-09)
+## Weekly Consolidation & Progress (2026-04-10)
 
-**Last consolidated:** Thursday, April 9, 2026 (17:00 UTC)  
+**Last consolidated:** Friday, April 10, 2026 (17:00 UTC)  
 **Archive location:** `memory/ARCHIVE.md` (historical consolidations)  
-**Next consolidation:** Thursday, April 16, 2026
+**Next consolidation:** Friday, April 17, 2026
 
-**Status Summary (Week of April 3 - April 9):**
+**Status Summary (Week of April 4 - April 10):**
 - ✅ Research execution remains the core operating rule: setup, schedules, or heartbeats do **not** count as done unless a live workflow actually runs and writes outputs back.
-- ✅ The first real research pass remains the proof point for the lane: it surfaced strong-fit funding leads, while jobs, trucks, and other lanes still need more real runs before they should be treated as working.
+- ✅ The first real research pass remains the proof point for the lane: it surfaced strong-fit funding leads, while jobs, trucks, partners/validators, and other lanes still need more real runs before they should be treated as working.
 - 🎓 School/application research remains durably MBA-forward, with additional focus on business, innovation, entrepreneurship, technology, and credible bootcamps.
+- 🤝 Networking events are now an explicit durable research lane alongside funding, jobs, trucks, partners/validators, and school/MBA work.
 - ✅ AdugboInsure queue discipline remains durable: do not generate a fresh weekly video while approved content already covers the posting window; refill only when coverage drops below the target buffer.
 - ✅ Orisynx weekly repo briefing remains a real installed automation, not an assumed workflow.
-- 📊 Orisynx repo-monitoring baseline is now durable and comparison-ready: as of 2026-04-08 the frontend was active while the backend had no new visible commits in the prior 7 days.
-- ⚠️ Communication guardrail remains explicit: distinguish clearly between planned cadence and verified executed work, and say plainly when no real mechanism or automation exists yet.
+- 📊 Orisynx repo-monitoring baseline is durable and comparison-ready: as of 2026-04-08 the frontend was active while the backend had no new visible commits in the prior 7 days.
+- ⚠️ Communication guardrails remain explicit: distinguish clearly between planned cadence and verified executed work, and say plainly when no real mechanism or automation exists yet.
 - 📄 Durable implementation lesson retained: boxed PDF bank forms need calibration-first, per-character box-aware placement, and signature-line-only placement; generic fill approaches are unreliable.
 - 🔧 **Gateway repair is still a live ops issue:** the durable remaining fix is still `openclaw doctor --fix` for the gateway service entrypoint/runtime mismatch.
-- 🤖 Robin research-bot standard is now sharper: Kolade wants Robin to reason at Jarvis quality, and success should only be claimed after end-to-end receive → reason → reply is verified.
-- 🧭 Robin workspace-routing lesson is now durable: Robin's private-chat path is still tied to the main workspace context, so updating `workspace-research` alone does not change Robin behavior; if reworked later, move the listener to a new research-backed session/workspace instead of overwriting the current one.
-- 🌐 Durable browsing guardrail added: for dynamic/React-style sites, shallow fetches can falsely look empty; do not conclude a page has no useful content until a live `agent-browser` pass confirms it.
+- 🤖 Robin research-bot standard remains sharp: Kolade wants Robin to reason at Jarvis quality, and success should only be claimed after end-to-end receive → reason → reply is verified.
+- 🧭 Robin workspace-routing lesson remains durable: Robin's private-chat path is still tied to the main workspace context, so updating `workspace-research` alone does not change Robin behavior; if reworked later, move the listener to a new research-backed session/workspace instead of overwriting the current one.
+- 🌐 Durable browsing guardrail remains in force: for dynamic/React-style sites, shallow fetches can falsely look empty; do not conclude a page has no useful content until a live `agent-browser` pass confirms it.
 - ⏳ Still waiting on key external inputs from Kolade: Orium job link, fuller truck specifications beyond the updated age limit, and ClickUp workspace link.
 
-**Critical Next Steps (April 9 - April 16):**
+**Critical Next Steps (April 10 - April 17):**
 1. **Ops:** Run `openclaw doctor --fix`, then re-test the research agent under the repaired gateway.
-2. **Research Agent:** Continue live runs that write outputs back, especially for funding, networking events, school/MBA, jobs, and trucks.
+2. **Research Agent:** Continue live runs that write outputs back, especially for funding, networking events, school/MBA, jobs, trucks, and partners/validators.
 3. **AdugboInsure Queue Discipline:** Check approved video coverage before generating anything new.
 4. **AdugboInsure Access:** Refresh NotebookLM authentication privately before the next generation/download run.
 5. **Robin:** Finish stabilizing the private-chat research bot, fix the workspace-routing issue safely, and verify full end-to-end reply behavior before claiming success.

@@ -12,28 +12,15 @@ TZ_WAT="Africa/Lagos"
 
 mkdir -p "$STATE_DIR" "${WORKSPACE}/logs"
 
-if [ ! -f "$BOT_TOKEN_FILE" ]; then
-  echo "Bot token file not found: $BOT_TOKEN_FILE" >&2
-  exit 1
-fi
-
-if [ ! -f "$ROLLOUT_FILE" ]; then
-  echo "Rollout file not found: $ROLLOUT_FILE" >&2
-  exit 1
-fi
+[ -f "$BOT_TOKEN_FILE" ] || { echo "Bot token file not found: $BOT_TOKEN_FILE" >&2; exit 1; }
+[ -f "$ROLLOUT_FILE" ] || { echo "Rollout file not found: $ROLLOUT_FILE" >&2; exit 1; }
 
 TELEGRAM_BOT_TOKEN=$(cat "$BOT_TOKEN_FILE")
-
-if [ -z "${TELEGRAM_BOT_TOKEN:-}" ]; then
-  echo "TELEGRAM_BOT_TOKEN missing" >&2
-  exit 1
-fi
+[ -n "${TELEGRAM_BOT_TOKEN:-}" ] || { echo "TELEGRAM_BOT_TOKEN missing" >&2; exit 1; }
 
 CURRENT_HASH=$(sha256sum "$ROLLOUT_FILE" | awk '{print $1}')
 LAST_HASH=""
-if [ -f "$STATE_FILE" ]; then
-  LAST_HASH=$(cat "$STATE_FILE")
-fi
+[ -f "$STATE_FILE" ] && LAST_HASH=$(cat "$STATE_FILE")
 
 UTC_NOW=$(date -u '+%Y-%m-%d %H:%M UTC')
 WAT_NOW=$(TZ="$TZ_WAT" date '+%Y-%m-%d %H:%M WAT')
@@ -63,6 +50,56 @@ else
   CHANGE_LINE="The rollout tracker changed since the previous update."
 fi
 
+lane_summary() {
+  local label="$1"
+  local file="$2"
+  [ -f "$file" ] || { printf 'No %s summary captured' "$label"; return; }
+  python3 - "$label" "$file" <<'PY'
+import sys,re
+label=sys.argv[1]
+path=sys.argv[2]
+text=open(path,'r',encoding='utf-8').read()
+patterns={
+  'Jobs':[r'## Jobs lane quality test.*?(?=\n## |\Z)', r'## Jobs scheduled run.*?(?=\n## |\Z)'],
+  'Funding':[r'## Funding lane quality test.*?(?=\n## |\Z)', r'## Funding scheduled run.*?(?=\n## |\Z)'],
+  'Events':[r'## Networking events lane quality test.*?(?=\n## |\Z)', r'## Networking events scheduled run.*?(?=\n## |\Z)'],
+  'Trucks':[r'## Trucks lane quality test.*?(?=\n## |\Z)', r'## Trucks scheduled run.*?(?=\n## |\Z)'],
+  'Partners':[r'## Community sponsors lane.*?(?=\n## |\Z)', r'## Community sponsors scheduled run.*?(?=\n## |\Z)'],
+}
+block=''
+for pat in patterns.get(label,[]):
+    matches=re.findall(pat,text,re.S)
+    if matches:
+        block=matches[-1]
+        break
+if not block:
+    print(f'No {label.lower()} summary captured')
+    raise SystemExit
+lines=[ln.strip('- ').strip() for ln in block.splitlines()[1:] if ln.strip()]
+status=''
+useful=[]
+for ln in lines:
+    low=ln.lower()
+    if low.startswith('status:'):
+        status=ln.split(':',1)[1].strip()
+    elif any(low.startswith(prefix) for prefix in ['1-2 useful','1-2 strongest','2 retained','strongest roles','what happened','live-source condition','source quality notes','honest result','quality judgment','useful outcome']):
+        useful.append(ln)
+summary=status or (useful[0] if useful else '')
+if not summary:
+    # prefer first non-empty content line
+    summary=lines[0] if lines else f'No {label.lower()} summary captured'
+summary=summary.replace('Status: ','').replace('status: ','')
+summary=re.sub(r'\s+',' ',summary).strip()
+print(summary[:180])
+PY
+}
+
+JOBS_SUMMARY=$(lane_summary "Jobs" "$LATEST_RESEARCH_FILE")
+EVENTS_SUMMARY=$(lane_summary "Events" "$LATEST_RESEARCH_FILE")
+FUNDING_SUMMARY=$(lane_summary "Funding" "$LATEST_RESEARCH_FILE")
+PARTNERS_SUMMARY=$(lane_summary "Partners" "$LATEST_RESEARCH_FILE")
+TRUCKS_SUMMARY=$(lane_summary "Trucks" "$LATEST_RESEARCH_FILE")
+
 MESSAGE=$(cat <<EOF
 🔎 Research Agent Rollout
 
@@ -71,6 +108,13 @@ Overall status: ${OVERALL_STATUS}
 Current phase: ${CURRENT_PHASE}
 Rollout tracker last updated: ${LAST_UPDATED}
 Latest research note seen: ${LATEST_RESEARCH_BASENAME}
+
+Pipeline snapshot
+- Jobs: ${JOBS_SUMMARY}
+- Events: ${EVENTS_SUMMARY}
+- Funding: ${FUNDING_SUMMARY}
+- Partners: ${PARTNERS_SUMMARY}
+- Trucks: ${TRUCKS_SUMMARY}
 
 What this means
 - ${CHANGE_LINE}

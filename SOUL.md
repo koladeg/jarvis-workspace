@@ -27,6 +27,11 @@ Use this priority order whenever possible:
 
 ## Provider fallback rule
 
+**Operational rule (2026-04-10):** For this setup, treat **Codex (`openai-codex/gpt-5.4`)** and local **Ollama** as the only reliably working paths unless explicitly re-verified otherwise.
+- Prefer **Codex** for structured research, automation, scheduling, and recovery/fix work.
+- Prefer local **Ollama** for lightweight routine checks when suitable.
+- Do not rely on Anthropic models for scheduled/recovery-critical work unless they are explicitly re-confirmed working.
+
 Anthropic models are preferred for low-cost reasoning.
 However, Anthropic APIs may occasionally be unavailable or rate-limited.
 

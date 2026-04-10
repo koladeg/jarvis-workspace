@@ -29,6 +29,32 @@
 
 ---
 
+## Week of April 4 - April 10, 2026 - Weekly Consolidation Summary
+
+**Archive Date:** Friday, April 10, 2026 (17:00 UTC)  
+**Period:** Past 7 days (April 4 - April 10)  
+**Status:** ✅ Consolidated and archived
+
+### Consolidated Sessions (Compressed)
+- **2026-04-07:** Weekly consolidation was run again; durable lessons were carried forward for live-workflow verification, honest reporting, gateway repair, AdugboInsure queue discipline, and Robin quality expectations. Robin remained a brittle in-progress integration that still required end-to-end verification.
+- **2026-04-08:** Orisynx repo-monitoring baseline was reaffirmed for future comparison: frontend active, backend quiet, with SHAs captured for both repos. Robin rollout reporting was corrected to distinguish partial setup from real delivered work. Networking events were confirmed as an explicit research lane, Robin's workspace-routing issue was identified clearly, and the browsing guardrail for dynamic sites was reinforced.
+- **Carry-forward from the latest real research run:** funding remains the only lane with strong proof from live outputs, while jobs, trucks, partners/validators, and other lanes still need more real runs before they should be treated as working.
+
+### Distilled Long-Term Updates
+- Live execution remains the durable standard: workflows are only "working" when they actually run and write outputs back.
+- Networking events should now be treated as a durable research lane alongside funding, jobs, trucks, partners/validators, and school/MBA research.
+- Robin should be treated as a serious research-bot lane; do not claim success until receive → reason → reply is verified end-to-end.
+- Robin's current blocker is partly architectural: the private-chat listener still points at the main workspace context rather than the research workspace.
+- For dynamic/React-style websites, lightweight fetches are provisional; confirm suspiciously empty results with a live `agent-browser` pass.
+
+### 14-Day Compression Update
+- **2026-03-13 to 2026-03-26 daily logs:** older daily-memory state remains compressed into existing archive summaries covering identity setup, infrastructure bring-up, portfolio baseline, job-search launch, NotebookLM/auth lessons, Orisynx legal milestone, and early AdugboInsure/research-agent operating rules. No new full-fidelity retention is needed in active daily memory.
+
+### Next Consolidation
+- Friday, April 17, 2026
+
+---
+
 ## Week of April 2 - April 8, 2026 - Weekly Consolidation Summary
 
 **Archive Date:** Wednesday, April 8, 2026 (17:00 UTC)  
