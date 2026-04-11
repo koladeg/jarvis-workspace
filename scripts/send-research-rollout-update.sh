@@ -7,6 +7,7 @@ BOT_TOKEN_FILE="${WORKSPACE}/.credentials/telegram_research_agent_bot_token.txt"
 ROLLOUT_FILE="${WORKSPACE}/RESEARCH_AGENT_ROLLOUT.md"
 STATE_DIR="${WORKSPACE}/.state"
 STATE_FILE="${STATE_DIR}/research-rollout-last-hash.txt"
+MESSAGE_HASH_FILE="${STATE_DIR}/research-rollout-last-message-hash.txt"
 CHAT_ID="${CHAT_ID:-7101554375}"
 TZ_WAT="Africa/Lagos"
 
@@ -125,9 +126,18 @@ What this means
 EOF
 )
 
+MESSAGE_HASH=$(printf '%s' "$MESSAGE" | sha256sum | awk '{print $1}')
+LAST_MESSAGE_HASH=""
+[ -f "$MESSAGE_HASH_FILE" ] && LAST_MESSAGE_HASH=$(cat "$MESSAGE_HASH_FILE")
+if [ "$MESSAGE_HASH" = "$LAST_MESSAGE_HASH" ]; then
+  echo "Research rollout update skipped (duplicate message)"
+  exit 0
+fi
+
 curl -sS -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
   -d "chat_id=${CHAT_ID}" \
   --data-urlencode "text=${MESSAGE}" >/dev/null
 
 echo "$CURRENT_HASH" > "$STATE_FILE"
+echo "$MESSAGE_HASH" > "$MESSAGE_HASH_FILE"
 echo "Research rollout update sent to ${CHAT_ID}"

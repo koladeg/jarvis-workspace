@@ -1,5 +1,32 @@
 # Memory Archive - Historical Consolidations
 
+## Week of April 5 - April 11, 2026 - Weekly Consolidation Summary
+
+**Archive Date:** Saturday, April 11, 2026 (17:00 UTC)  
+**Period:** Past 7 days (April 5 - April 11)  
+**Status:** ✅ Consolidated and archived
+
+### Consolidated Sessions (Compressed)
+- **2026-04-07:** Weekly consolidation carried forward the durable rules around live execution, honest reporting, gateway repair, AdugboInsure queue discipline, Robin quality expectations, and the need to verify end-to-end bot behavior before claiming success.
+- **2026-04-08:** Robin rollout reporting was corrected again to distinguish partial setup from real delivered work; networking events were confirmed as a durable research lane; Robin's workspace-routing issue was clarified; and the dynamic-site browsing guardrail was reinforced.
+- **2026-04-10:** The prior weekly consolidation was refreshed, and older daily-log state remained safely represented by existing archive summaries; a best-effort local Ollama attempt failed for memory reasons, so the consolidation work still had to be completed manually.
+- **2026-04-11:** Kolade corrected the Orisynx repo references; the durable monitoring set is now `Orisynx/backend`, `Orisynx/frontend`, and `Orisynx/bootstrap`, with `Orisynx/Orisynx-backend` downgraded to legacy/secondary. Authenticated `gh` checks also confirmed that private GitHub access must be verified through auth, not inferred from browser 404s.
+
+### Distilled Long-Term Updates
+- Orisynx monitoring is now anchored to the corrected private repos: `backend`, `frontend`, and `bootstrap`.
+- `Orisynx/backend` should be treated as the primary modern backend, while `Orisynx/Orisynx-backend` is legacy unless Kolade says otherwise.
+- `Orisynx/frontend` is already a substantial product shell with active backend wiring, but it still carries legacy local-data paths and some MVP-grade technical risks worth remembering.
+- The GitHub access lesson is durable: unauthenticated browser 404s do not prove lack of access for private repos; verify with authenticated `gh` or API calls first.
+- Robin and research-agent guardrails remain unchanged: claim success only after live end-to-end execution, and keep planned cadence separate from verified work.
+
+### 14-Day Compression Update
+- **2026-03-13 to 2026-03-26 daily logs:** older daily-memory state remains safely compressed in existing archive summaries; no new full-fidelity retention is needed in active daily memory.
+
+### Next Consolidation
+- Saturday, April 18, 2026
+
+---
+
 ## Week of April 3 - April 9, 2026 - Weekly Consolidation Summary
 
 **Archive Date:** Thursday, April 9, 2026 (17:00 UTC)  

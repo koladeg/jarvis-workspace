@@ -1,43 +1,48 @@
 # MEMORY.md
 
-## Weekly Consolidation & Progress (2026-04-10)
+## Weekly Consolidation & Progress (2026-04-11)
 
-**Last consolidated:** Friday, April 10, 2026 (17:00 UTC)  
+**Last consolidated:** Saturday, April 11, 2026 (17:00 UTC)  
 **Archive location:** `memory/ARCHIVE.md` (historical consolidations)  
-**Next consolidation:** Friday, April 17, 2026
+**Next consolidation:** Saturday, April 18, 2026
 
-**Status Summary (Week of April 4 - April 10):**
-- ✅ Research execution remains the core operating rule: setup, schedules, or heartbeats do **not** count as done unless a live workflow actually runs and writes outputs back.
-- ✅ The first real research pass remains the proof point for the lane: it surfaced strong-fit funding leads, while jobs, trucks, partners/validators, and other lanes still need more real runs before they should be treated as working.
+**Status Summary (Week of April 5 - April 11):**
+- ✅ Research execution remains the durable standard: setup, schedules, or heartbeats do **not** count unless a live workflow actually runs and writes outputs back.
 - 🎓 School/application research remains durably MBA-forward, with additional focus on business, innovation, entrepreneurship, technology, and credible bootcamps.
-- 🤝 Networking events are now an explicit durable research lane alongside funding, jobs, trucks, partners/validators, and school/MBA work.
+- 🤝 Networking events remain an explicit research lane alongside funding, jobs, trucks, partners/validators, and school/MBA work.
 - ✅ AdugboInsure queue discipline remains durable: do not generate a fresh weekly video while approved content already covers the posting window; refill only when coverage drops below the target buffer.
 - ✅ Orisynx weekly repo briefing remains a real installed automation, not an assumed workflow.
-- 📊 Orisynx repo-monitoring baseline is durable and comparison-ready: as of 2026-04-08 the frontend was active while the backend had no new visible commits in the prior 7 days.
+- 📊 **Orisynx repo-monitoring baseline is corrected and updated:** the primary repos to track going forward are `Orisynx/backend`, `Orisynx/frontend`, and `Orisynx/bootstrap`.
+- 🏗️ Durable Orisynx architecture note: `Orisynx/backend` is the primary newer NestJS + GraphQL + MongoDB backend; `Orisynx/Orisynx-backend` is legacy/secondary unless Kolade says otherwise.
+- 🧪 Durable frontend status note: `Orisynx/frontend` is already a substantial product shell actively wiring into live backend/auth flows, but it still carries legacy local/mock paths plus risks around ignored TS/ESLint build errors, MVP-grade token storage, and stale docs.
 - ⚠️ Communication guardrails remain explicit: distinguish clearly between planned cadence and verified executed work, and say plainly when no real mechanism or automation exists yet.
 - 📄 Durable implementation lesson retained: boxed PDF bank forms need calibration-first, per-character box-aware placement, and signature-line-only placement; generic fill approaches are unreliable.
 - 🔧 **Gateway repair is still a live ops issue:** the durable remaining fix is still `openclaw doctor --fix` for the gateway service entrypoint/runtime mismatch.
 - 🤖 Robin research-bot standard remains sharp: Kolade wants Robin to reason at Jarvis quality, and success should only be claimed after end-to-end receive → reason → reply is verified.
 - 🧭 Robin workspace-routing lesson remains durable: Robin's private-chat path is still tied to the main workspace context, so updating `workspace-research` alone does not change Robin behavior; if reworked later, move the listener to a new research-backed session/workspace instead of overwriting the current one.
 - 🌐 Durable browsing guardrail remains in force: for dynamic/React-style sites, shallow fetches can falsely look empty; do not conclude a page has no useful content until a live `agent-browser` pass confirms it.
+- 🔐 Durable GitHub access lesson: do not infer private repo access from unauthenticated browser 404s; verify with authenticated `gh`/API first.
 - ⏳ Still waiting on key external inputs from Kolade: Orium job link, fuller truck specifications beyond the updated age limit, and ClickUp workspace link.
 
-**Critical Next Steps (April 10 - April 17):**
+**Critical Next Steps (April 11 - April 18):**
 1. **Ops:** Run `openclaw doctor --fix`, then re-test the research agent under the repaired gateway.
 2. **Research Agent:** Continue live runs that write outputs back, especially for funding, networking events, school/MBA, jobs, trucks, and partners/validators.
 3. **AdugboInsure Queue Discipline:** Check approved video coverage before generating anything new.
 4. **AdugboInsure Access:** Refresh NotebookLM authentication privately before the next generation/download run.
 5. **Robin:** Finish stabilizing the private-chat research bot, fix the workspace-routing issue safely, and verify full end-to-end reply behavior before claiming success.
-6. **External Inputs:** Collect the Orium link, fuller truck specs, and ClickUp workspace link so blocked workflows can progress.
+6. **Orisynx Monitoring:** Use `backend` / `frontend` / `bootstrap` as the durable comparison set going forward.
+7. **External Inputs:** Collect the Orium link, fuller truck specs, and ClickUp workspace link so blocked workflows can progress.
 
 ---
 
-## Orisynx Repo Check Baseline (2026-04-08)
+## Orisynx Repo Check Baseline (2026-04-11)
 
-- **Backend (`Orisynx/Orisynx-backend`):** no new commits visible in the previous 7 days as of 2026-04-08; latest visible `main` SHA `060a219`.
-- **Frontend (`Audit-IS/fe`):** active changes visible from 2026-04-02 through 2026-04-06; latest visible `main` SHA `d7c73b0`.
-- **Durable comparison note:** frontend is moving strongly (UI/data wiring, cleanup, usability improvements) while backend is currently quiet.
-- **Use:** compare future repo checks against this baseline instead of treating each check as standalone.
+- **Primary repos to monitor:** `Orisynx/backend`, `Orisynx/frontend`, `Orisynx/bootstrap`.
+- **Backend (`Orisynx/backend`):** latest visible `main` SHA `9c46d48` (`chore: add types script, pre-commit check, and CI step (#14)`) — pushed 2026-04-10 22:12 UTC.
+- **Frontend (`Orisynx/frontend`):** latest visible `main` SHA `d7c73b0` (`feat: wire detail pages and forms to live GraphQL backend (#14)`) — pushed 2026-04-10 21:41 UTC.
+- **Bootstrap (`Orisynx/bootstrap`):** latest visible `main` SHA `bd2973d` (`chore: fix TypeScript errors in bootstrap (#11)`) — pushed 2026-04-06 06:16 UTC.
+- **Legacy note:** `Orisynx/Orisynx-backend` is an older Express-based repo with latest visible `060a219` from 2026-03-12; treat it as legacy/secondary unless Kolade says otherwise.
+- **Durable comparison note:** frontend is active, backend is active, and bootstrap is a quieter orchestration repo; compare future checks against this corrected three-repo baseline instead of the older mixed baseline.
 
 ---
 

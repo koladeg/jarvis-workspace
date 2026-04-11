@@ -55,6 +55,7 @@ Daily source of truth for the research-agent rollout status.
 ## Current Blockers
 - Execution, logging, and delivery still need to stay in sync consistently over time
 - Some scheduled lanes still need recurring automation or reliable prompting to prove the cadence is real in practice
+- Robin-direct Telegram cron delivery is not yet fully proven; future Robin schedule jobs should use the explicitly working delivery path until that is resolved
 
 ## Next Action
 - Make the approved lane schedule observable in actual recurring updates and verify that each due pass creates a same-day research note
