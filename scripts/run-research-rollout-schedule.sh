@@ -3,7 +3,11 @@ set -euo pipefail
 
 MODE="${1:-full}"
 WORKSPACE="${WORKSPACE:-/home/claw/.openclaw/workspace}"
-RESEARCH_WORKSPACE="${RESEARCH_WORKSPACE:-/home/claw/.openclaw/workspace-research}"
+DEFAULT_RESEARCH_WORKSPACE="$WORKSPACE/workspace-research"
+if [ ! -d "$DEFAULT_RESEARCH_WORKSPACE" ]; then
+  DEFAULT_RESEARCH_WORKSPACE="/home/claw/.openclaw/workspace-research"
+fi
+RESEARCH_WORKSPACE="${RESEARCH_WORKSPACE:-$DEFAULT_RESEARCH_WORKSPACE}"
 MEMORY_DIR="$RESEARCH_WORKSPACE/memory"
 LOG_DIR="$WORKSPACE/logs"
 STATE_DIR="$WORKSPACE/.state"
@@ -19,6 +23,20 @@ touch "$RUN_LOG"
 
 log() {
   printf '%s %s\n' "$(date -u '+%Y-%m-%dT%H:%M:%SZ')" "$*" | tee -a "$RUN_LOG" >&2
+}
+
+send_rollout_update() {
+  local send_script="$WORKSPACE/scripts/send-research-rollout-update.sh"
+  if [ ! -x "$send_script" ]; then
+    log "Rollout update send skipped: script not executable at $send_script"
+    return 0
+  fi
+  if "$send_script" >> "$WORKSPACE/logs/research-rollout.log" 2>&1; then
+    log "Triggered rollout update send after scheduled run"
+  else
+    log "Rollout update send failed after scheduled run"
+    return 1
+  fi
 }
 
 ensure_note_header() {
@@ -116,12 +134,55 @@ run_immigration() {
 
 run_weekly_roundup() {
   local marker="## Weekly roundup scheduled run (${TODAY_UTC} ${RUN_STAMP})"
-  section_exists "$marker" || append_section "${marker}
+  if section_exists "$marker"; then return; fi
+  local roundup
+  roundup=$(python3 - "$RESEARCH_WORKSPACE" <<'PY'
+import sys,re,glob,os
+root=sys.argv[1]
+files=sorted(glob.glob(os.path.join(root,'memory','20*.md')))[-7:]
+text='\n'.join(open(f,'r',encoding='utf-8').read() for f in files if os.path.exists(f))
+patterns=[
+ ('Funding',[r'## Funding lane quality test.*?(?=\n## |\Z)']),
+ ('Events',[r'## Networking events lane quality test.*?(?=\n## |\Z)']),
+ ('Trucks',[r'## Trucks lane quality test.*?(?=\n## |\Z)']),
+ ('Jobs',[r'## Jobs lane quality test.*?(?=\n## |\Z)']),
+ ('School/MBA',[r'## School / MBA lane quality test.*?(?=\n## |\Z)', r'## School-MBA scheduled run.*?(?=\n## |\Z)']),
+ ('Immigration',[r'## Immigration lane quality test.*?(?=\n## |\Z)']),
+ ('Community sponsors',[r'## Community sponsors lane.*?(?=\n## |\Z)']),
+ ('Stocks/crypto',[r'## Stocks / crypto lane quality test.*?(?=\n## |\Z)']),
+]
+out=[]
+for label,pats in patterns:
+    block=''
+    for pat in pats:
+        matches=re.findall(pat,text,re.S)
+        if matches:
+            block=matches[-1]
+            break
+    if not block:
+        continue
+    lines=[ln.strip('- ').strip() for ln in block.splitlines()[1:] if ln.strip()]
+    summary=''
+    for ln in lines:
+        low=ln.lower()
+        if low.startswith('status:'):
+            summary=ln.split(':',1)[1].strip(); break
+    if not summary:
+        for ln in lines:
+            if any(ln.lower().startswith(p) for p in ['1-2 useful','1-2 strongest','2 retained','strongest roles','useful outcome','quality judgment','honest result']):
+                summary=ln; break
+    if not summary and lines:
+        summary=lines[0]
+    if summary:
+        out.append(f'- {label}: {re.sub(r"\\s+"," ",summary)[:180]}')
+print('\n'.join(out))
+PY
+)
+  append_section "${marker}
 - Status: due today under the approved schedule
-- What was actually checked: scheduled weekly-roundup trigger recorded
-- Change state: no compiled cross-lane summary was generated inside this scheduler step
-- Follow-up: compare strongest findings, blockers, and next actions across active lanes
-- Honest note: this confirms the roundup slot exists; the useful summary still has to be produced"
+- What was actually checked: compiled cross-lane roundup from the latest research-note content across recent days
+${roundup:-- No lane summaries were available to compile}
+- Follow-up: compare strongest findings, blockers, and next actions across active lanes"
 }
 
 run_mistake_review() {
@@ -153,3 +214,4 @@ case "$ISO_DOW" in
 esac
 
 log "Scheduled research rollout pass recorded in $NOTE_FILE"
+send_rollout_update

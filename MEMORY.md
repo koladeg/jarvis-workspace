@@ -1,20 +1,20 @@
 # MEMORY.md
 
-## Weekly Consolidation & Progress (2026-04-12)
+## Weekly Consolidation & Progress (2026-04-13)
 
-**Last consolidated:** Sunday, April 12, 2026 (17:00 UTC)  
+**Last consolidated:** Monday, April 13, 2026 (17:00 UTC)  
 **Archive location:** `memory/ARCHIVE.md` (historical consolidations)  
-**Next consolidation:** Sunday, April 19, 2026
+**Next consolidation:** Monday, April 20, 2026
 
-**Status Summary (Week of April 6 - April 12):**
+**Status Summary (Week of April 7 - April 13):**
 - ✅ Research execution remains the durable standard: setup, schedules, or heartbeats do **not** count unless a live workflow actually runs and writes outputs back.
 - 🎓 School/application research remains durably MBA-forward, with additional focus on business, innovation, entrepreneurship, technology, and credible bootcamps.
 - 🤝 Networking events remain an explicit research lane alongside funding, jobs, trucks, partners/validators, and school/MBA work.
 - ✅ AdugboInsure queue discipline remains durable: do not generate a fresh weekly video while approved content already covers the posting window; refill only when coverage drops below the target buffer.
-- 🎬 New AdugboInsure weekly content output was prepared on 2026-04-12: a fresh POS-agent benefits script plus a branded final video export are ready locally for upload/posting.
-- 🔐 NotebookLM remains the current AdugboInsure bottleneck: saved-cookie login can report success while real notebook commands still fail with `Authentication expired`, so auth must be re-verified at execution time.
+- 🎬 New AdugboInsure weekly content output prepared on 2026-04-12 remains ready locally for later upload/posting: a fresh POS-agent benefits script, Telegram post draft, and branded final video export.
+- 🔐 NotebookLM remains the current AdugboInsure bottleneck: saved-cookie login can report success while real notebook commands still fail with `Authentication expired`, so auth must be re-verified with a real notebook command at execution time.
 - ✅ Orisynx weekly repo briefing remains a real installed automation, not an assumed workflow.
-- 📊 **Corrected Orisynx monitoring baseline is now durable:** the primary repos to track are `Orisynx/backend`, `Orisynx/frontend`, and `Orisynx/bootstrap`.
+- 📊 **Corrected Orisynx monitoring baseline is durable:** the primary repos to track are `Orisynx/backend`, `Orisynx/frontend`, and `Orisynx/bootstrap`.
 - 🏗️ Durable Orisynx architecture note: `Orisynx/backend` is the primary newer NestJS + GraphQL + MongoDB backend; `Orisynx/Orisynx-backend` is legacy/secondary unless Kolade says otherwise.
 - 🧪 Durable frontend status note: `Orisynx/frontend` is already a substantial product shell actively wiring into live backend/auth flows, but it still carries legacy local/mock paths plus risks around ignored TS/ESLint build errors, MVP-grade token storage, and stale docs.
 - ⚠️ Communication guardrails remain explicit: distinguish clearly between planned cadence and verified executed work, and say plainly when no real mechanism or automation exists yet.
@@ -23,10 +23,10 @@
 - 🤖 Robin research-bot standard remains sharp: Kolade wants Robin to reason at Jarvis quality, and success should only be claimed after end-to-end receive → reason → reply is verified.
 - 🧭 Robin workspace-routing lesson remains durable: Robin's private-chat path is still tied to the main workspace context, so updating `workspace-research` alone does not change Robin behavior; if reworked later, move the listener to a new research-backed session/workspace instead of overwriting the current one.
 - 🌐 Durable browsing guardrail remains in force: for dynamic/React-style sites, shallow fetches can falsely look empty; do not conclude a page has no useful content until a live `agent-browser` pass confirms it.
-- 🔐 Durable GitHub access lesson: do not infer private repo access from unauthenticated browser 404s; verify with authenticated `gh`/API first.
+- 🔐 Durable GitHub access lesson remains in force: do not infer private repo access from unauthenticated browser 404s; verify with authenticated `gh`/API first.
 - ⏳ Still waiting on key external inputs from Kolade: Orium job link, fuller truck specifications beyond the updated age limit, and ClickUp workspace link.
 
-**Critical Next Steps (April 12 - April 19):**
+**Critical Next Steps (April 13 - April 20):**
 1. **Ops:** Run `openclaw doctor --fix`, then re-test the research agent under the repaired gateway.
 2. **Research Agent:** Continue live runs that write outputs back, especially for funding, networking events, school/MBA, jobs, trucks, and partners/validators.
 3. **AdugboInsure Queue Discipline:** Check approved video coverage before generating anything new.

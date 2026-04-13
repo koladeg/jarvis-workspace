@@ -2,7 +2,11 @@
 set -euo pipefail
 
 MAIN_WORKSPACE="${MAIN_WORKSPACE:-/home/claw/.openclaw/workspace}"
-RESEARCH_WORKSPACE="${RESEARCH_WORKSPACE:-/home/claw/.openclaw/workspace-research}"
+DEFAULT_RESEARCH_WORKSPACE="$MAIN_WORKSPACE/workspace-research"
+if [ ! -d "$DEFAULT_RESEARCH_WORKSPACE" ]; then
+  DEFAULT_RESEARCH_WORKSPACE="/home/claw/.openclaw/workspace-research"
+fi
+RESEARCH_WORKSPACE="${RESEARCH_WORKSPACE:-$DEFAULT_RESEARCH_WORKSPACE}"
 BOT_TOKEN_FILE="${MAIN_WORKSPACE}/.credentials/telegram_research_agent_bot_token.txt"
 STATE_DIR="${MAIN_WORKSPACE}/.state"
 CHAT_ID="${CHAT_ID:-7101554375}"

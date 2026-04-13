@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 import json
 import os
+import re
 import subprocess
 import sys
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -34,8 +36,17 @@ def api_get(url: str):
 def api_post(url: str, data: dict):
     body = urllib.parse.urlencode(data).encode("utf-8")
     req = urllib.request.Request(url, data=body)
-    with urllib.request.urlopen(req, timeout=30) as r:
-        return json.loads(r.read().decode("utf-8"))
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            return json.loads(r.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        detail = ""
+        try:
+            payload = e.read().decode("utf-8", errors="replace")
+            detail = f" | body={payload}"
+        except Exception:
+            pass
+        raise RuntimeError(f"telegram api POST failed: HTTP {e.code} {e.reason}{detail}") from e
 
 
 def get_token() -> str:
@@ -54,11 +65,25 @@ def set_offset(offset: int):
     OFFSET_FILE.write_text(str(offset))
 
 
+def strip_reply_tag(text: str) -> str:
+    return re.sub(r"^\[\[\s*reply_to[^\]]*\]\]\s*", "", text, count=1, flags=re.IGNORECASE).strip()
+
+
 def send_message(token: str, chat_id: str, text: str, reply_to_message_id: int | None = None):
-    data = {"chat_id": chat_id, "text": text[:3500]}
+    clean_text = strip_reply_tag(text)[:3500] or "OK"
+    data = {"chat_id": chat_id, "text": clean_text}
     if reply_to_message_id:
         data["reply_to_message_id"] = str(reply_to_message_id)
-    return api_post(f"https://api.telegram.org/bot{token}/sendMessage", data)
+    try:
+        return api_post(f"https://api.telegram.org/bot{token}/sendMessage", data)
+    except Exception as e:
+        if reply_to_message_id:
+            fallback = {"chat_id": chat_id, "text": clean_text}
+            try:
+                return api_post(f"https://api.telegram.org/bot{token}/sendMessage", fallback)
+            except Exception:
+                pass
+        raise e
 
 
 def extract_reply_text(data: dict) -> str:
