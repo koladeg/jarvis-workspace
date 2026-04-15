@@ -143,7 +143,7 @@ def generate_reply_via_openclaw(user_text: str) -> str:
         "User message: " + user_text
     )
     cmd = [
-        "openclaw",
+        "/home/claw/.npm-global/bin/openclaw",
         "agent",
         "--session-id",
         SESSION_ID,

@@ -1,40 +1,40 @@
 # MEMORY.md
 
-## Weekly Consolidation & Progress (2026-04-13)
+## Weekly Consolidation & Progress (2026-04-15)
 
-**Last consolidated:** Monday, April 13, 2026 (17:00 UTC)  
+**Last consolidated:** Wednesday, April 15, 2026 (17:00 UTC)  
 **Archive location:** `memory/ARCHIVE.md` (historical consolidations)  
-**Next consolidation:** Monday, April 20, 2026
+**Next consolidation:** Wednesday, April 22, 2026
 
-**Status Summary (Week of April 7 - April 13):**
+**Status Summary (Week of April 8 - April 15):**
 - ✅ Research execution remains the durable standard: setup, schedules, or heartbeats do **not** count unless a live workflow actually runs and writes outputs back.
 - 🎓 School/application research remains durably MBA-forward, with additional focus on business, innovation, entrepreneurship, technology, and credible bootcamps.
 - 🤝 Networking events remain an explicit research lane alongside funding, jobs, trucks, partners/validators, and school/MBA work.
 - ✅ AdugboInsure queue discipline remains durable: do not generate a fresh weekly video while approved content already covers the posting window; refill only when coverage drops below the target buffer.
-- 🎬 New AdugboInsure weekly content output prepared on 2026-04-12 remains ready locally for later upload/posting: a fresh POS-agent benefits script, Telegram post draft, and branded final video export.
-- 🔐 NotebookLM remains the current AdugboInsure bottleneck: saved-cookie login can report success while real notebook commands still fail with `Authentication expired`, so auth must be re-verified with a real notebook command at execution time.
-- ✅ Orisynx weekly repo briefing remains a real installed automation, not an assumed workflow.
-- 📊 **Corrected Orisynx monitoring baseline is durable:** the primary repos to track are `Orisynx/backend`, `Orisynx/frontend`, and `Orisynx/bootstrap`.
+- 🎬 **New AdugboInsure content this week (2026-04-15):** POS-agent coverage script prepared (`outputs/scripts/adugboinsure_pos_agents_video_script_2026-04-15_coverage.md`) and Telegram post draft ready. Video pipeline still blocked on NLM auth.
+- 🎬 Previous ready artifact from 2026-04-12: POS-agent benefits script, Telegram post draft, and branded final video export (`AdugboInsure_POS_Agents_Benefits_2026-04-12_branded_final.mp4`, 14 MB, ~348.5 s) remain locally ready for upload/posting.
+- 🔐 **NotebookLM remains blocked:** NLM CLI returns `Authentication expired` — Kolade needs to provide fresh NotebookLM cookies. Cookie-based login can report success while actual notebook commands still fail; always verify with a real notebook command, not the login response.
+- ✅ Orisynx weekly repo briefing remains a real installed automation.
+- 📊 **Corrected Orisynx monitoring baseline is durable:** primary repos to track are `Orisynx/backend`, `Orisynx/frontend`, and `Orisynx/bootstrap`.
 - 🏗️ Durable Orisynx architecture note: `Orisynx/backend` is the primary newer NestJS + GraphQL + MongoDB backend; `Orisynx/Orisynx-backend` is legacy/secondary unless Kolade says otherwise.
-- 🧪 Durable frontend status note: `Orisynx/frontend` is already a substantial product shell actively wiring into live backend/auth flows, but it still carries legacy local/mock paths plus risks around ignored TS/ESLint build errors, MVP-grade token storage, and stale docs.
-- ⚠️ Communication guardrails remain explicit: distinguish clearly between planned cadence and verified executed work, and say plainly when no real mechanism or automation exists yet.
-- 📄 Durable implementation lesson retained: boxed PDF bank forms need calibration-first, per-character box-aware placement, and signature-line-only placement; generic fill approaches are unreliable.
-- 🔧 **Gateway repair is still a live ops issue:** the durable remaining fix is still `openclaw doctor --fix` for the gateway service entrypoint/runtime mismatch.
-- 🤖 Robin research-bot standard remains sharp: Kolade wants Robin to reason at Jarvis quality, and success should only be claimed after end-to-end receive → reason → reply is verified.
-- 🧭 Robin workspace-routing lesson remains durable: Robin's private-chat path is still tied to the main workspace context, so updating `workspace-research` alone does not change Robin behavior; if reworked later, move the listener to a new research-backed session/workspace instead of overwriting the current one.
-- 🌐 Durable browsing guardrail remains in force: for dynamic/React-style sites, shallow fetches can falsely look empty; do not conclude a page has no useful content until a live `agent-browser` pass confirms it.
-- 🔐 Durable GitHub access lesson remains in force: do not infer private repo access from unauthenticated browser 404s; verify with authenticated `gh`/API first.
-- ⏳ Still waiting on key external inputs from Kolade: Orium job link, fuller truck specifications beyond the updated age limit, and ClickUp workspace link.
+- 🧪 Durable frontend status note: `Orisynx/frontend` is a substantial product shell actively wiring into live backend/auth flows, but still carries legacy local/mock paths and risks around ignored TS/ESLint build errors, MVP-grade token storage, and stale docs.
+- ⚠️ Communication guardrails remain explicit: distinguish clearly between planned cadence and verified executed work.
+- 📄 Durable implementation lesson retained: boxed PDF bank forms need calibration-first, per-character box-aware placement; generic fill approaches are unreliable.
+- 🔧 **Gateway repair is still a live ops issue:** `openclaw doctor --fix` still needed for gateway service entrypoint/runtime mismatch.
+- 🤖 Robin research-bot standard remains sharp: claim success only after end-to-end receive → reason → reply is verified.
+- 🧭 Robin workspace-routing lesson: Robin's private-chat path is tied to the main workspace context; updating `workspace-research` alone does not change Robin behavior.
+- 🌐 Durable browsing guardrail: for dynamic/React-style sites, shallow fetches can falsely look empty; confirm with `agent-browser` before concluding a page has no content.
+- 🔐 Durable GitHub access lesson: do not infer private repo access from unauthenticated browser 404s; verify with authenticated `gh`/API first.
+- ⏳ Still waiting on key external inputs from Kolade: Orium job link, fuller truck specifications, ClickUp workspace link, and fresh NotebookLM cookies.
 
-**Critical Next Steps (April 13 - April 20):**
-1. **Ops:** Run `openclaw doctor --fix`, then re-test the research agent under the repaired gateway.
-2. **Research Agent:** Continue live runs that write outputs back, especially for funding, networking events, school/MBA, jobs, trucks, and partners/validators.
-3. **AdugboInsure Queue Discipline:** Check approved video coverage before generating anything new.
-4. **AdugboInsure Access:** Refresh NotebookLM authentication privately before the next true generation/download run, and verify with a real notebook command rather than trusting login success alone.
-5. **AdugboInsure Publishing:** Upload/post the 2026-04-12 branded POS-agent benefits video when the queue window calls for it.
-6. **Robin:** Finish stabilizing the private-chat research bot, fix the workspace-routing issue safely, and verify full end-to-end reply behavior before claiming success.
-7. **Orisynx Monitoring:** Use `backend` / `frontend` / `bootstrap` as the durable comparison set going forward.
-8. **External Inputs:** Collect the Orium link, fuller truck specs, and ClickUp workspace link so blocked workflows can progress.
+**Critical Next Steps (April 15 - April 22):**
+1. **NotebookLM:** Kolade needs to provide fresh NLM cookies — video pipeline is fully blocked without this.
+2. **AdugboInsure Publishing:** Upload/post the 2026-04-12 branded POS-agent benefits video when the queue window calls for it.
+3. **Ops:** Run `openclaw doctor --fix`, then re-test the research agent under the repaired gateway.
+4. **Research Agent:** Continue live runs writing outputs back, especially for funding, networking events, school/MBA, jobs, trucks, and partners/validators.
+5. **Robin:** Finish stabilizing the private-chat research bot, fix the workspace-routing issue safely, and verify full end-to-end reply behavior before claiming success.
+6. **Orisynx Monitoring:** Use `backend` / `frontend` / `bootstrap` as the durable comparison set going forward.
+7. **External Inputs:** Collect the Orium link, fuller truck specs, and ClickUp workspace link so blocked workflows can progress.
 
 ---
 

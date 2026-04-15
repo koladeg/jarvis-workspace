@@ -1,5 +1,36 @@
 # Memory Archive - Historical Consolidations
 
+## Week of April 8 - April 15, 2026 - Weekly Consolidation Summary
+
+**Archive Date:** Wednesday, April 15, 2026 (17:00 UTC)  
+**Period:** Past 7 days (April 8 - April 15)  
+**Status:** ✅ Consolidated and archived
+
+### Consolidated Sessions (Compressed)
+- **2026-04-08:** Robin rollout reporting corrected again; networking events confirmed as explicit research lane; Robin workspace-routing issue clarified; dynamic-site browsing guardrail reinforced; `agent-browser` confirmed as the required web tool.
+- **2026-04-10:** Prior weekly consolidation refreshed; Ollama attempt again failed under host memory constraints; consolidation completed manually.
+- **2026-04-11:** Kolade corrected Orisynx repo references; durable monitoring set is now `Orisynx/backend`, `Orisynx/frontend`, `Orisynx/bootstrap`; `Orisynx/Orisynx-backend` downgraded to legacy. Authenticated `gh` access confirmed for all four private repos. Frontend reviewed as substantial product shell with active backend wiring but legacy local-data paths and MVP risks.
+- **2026-04-12:** Fresh AdugboInsure POS-agent benefits script, Telegram post draft, and branded final video export prepared locally. NotebookLM false-positive login pattern confirmed again.
+- **2026-04-13:** Weekly consolidation ran; same durable priorities retained; no new activity beyond consolidation.
+- **2026-04-15:** AdugboInsure POS-agent coverage script prepared for week rotation. NLM CLI still returning `Authentication expired`; Kolade needs fresh NotebookLM cookies to unblock the video pipeline.
+
+### Distilled Long-Term Updates
+- AdugboInsure has two locally ready artifacts: 2026-04-12 branded POS-agent benefits video export (14 MB, ~348.5 s) and 2026-04-15 coverage script, both pending NLM auth resolution for live video generation.
+- NotebookLM is a persistent blocker requiring fresh cookies from Kolade; login success ≠ notebook access — verify with a real command.
+- Orisynx frontend (`Orisynx/frontend`) is a substantial product shell with active backend wiring, but carry forward the durable risks: ignored TS/ESLint build errors, MVP-grade token storage, and stale documentation.
+- Orisynx monitoring is anchored to `backend`, `frontend`, `bootstrap`. Legacy `Orisynx/Orisynx-backend` remains secondary.
+- GitHub access guardrail remains durable: unauthenticated 404s do not prove no access; use authenticated `gh` for private repos.
+- Ollama local consolidation has consistently failed due to host memory constraints (~2.1 GiB available vs ~2.3 GiB required for `llama3.2:3b`); consolidations have been completed manually.
+
+### 14-Day Compression Update
+- **2026-04-01.md, 2026-04-02.md, 2026-04-03.md:** These daily logs (now ≥14 days old) are now safely represented by this archive block and existing archive summaries. Key content: April 1 — Ollama-assisted weekly consolidation, Apify MCP setup with local stdio path, Apify API token saved, `save_credential()` JSON index bug noted, research-agent guidance updated for jobs/trucks/funding. April 2-3 — no significant events recorded in those files beyond routine tracking.
+- **2026-03-13 to 2026-03-31 daily logs:** remain compressed by prior archive summaries.
+
+### Next Consolidation
+- Wednesday, April 22, 2026
+
+---
+
 ## Week of April 7 - April 13, 2026 - Weekly Consolidation Summary
 
 **Archive Date:** Monday, April 13, 2026 (17:00 UTC)  
