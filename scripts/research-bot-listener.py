@@ -14,9 +14,9 @@ TOKEN_FILE = WORKSPACE / ".credentials" / "telegram_research_agent_bot_token.txt
 STATE_DIR = WORKSPACE / ".state"
 OFFSET_FILE = STATE_DIR / "research-bot-update-offset.txt"
 ALLOWED_CHAT_ID = "7101554375"
-SESSION_ID = "robin-private-chat"
+AGENT_ID = os.environ.get("ROBIN_AGENT_ID", "research")
 THINKING = os.environ.get("ROBIN_THINKING", "low")
-TIMEOUT_SECONDS = os.environ.get("ROBIN_TIMEOUT", "120")
+TIMEOUT_SECONDS = os.environ.get("ROBIN_TIMEOUT", "300")
 
 STATE_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -86,6 +86,28 @@ def send_message(token: str, chat_id: str, text: str, reply_to_message_id: int |
         raise e
 
 
+def direct_reply_for_simple_message(user_text: str) -> str | None:
+    normalized = re.sub(r"\s+", " ", user_text.strip().lower())
+    simple = {
+        "hi": "Hey.",
+        "hello": "Hey.",
+        "hey": "Hey.",
+        "yo": "Hey.",
+        "sup": "Hey.",
+        "its back": "Welcome back.",
+        "it's back": "Welcome back.",
+        "i'm back": "Welcome back.",
+        "im back": "Welcome back.",
+        "we're back": "Nice — I'm here.",
+        "we are back": "Nice — I'm here.",
+        "ok": "Alright.",
+        "okay": "Alright.",
+        "thanks": "Anytime.",
+        "thank you": "Anytime.",
+    }
+    return simple.get(normalized)
+
+
 def extract_reply_text(data: dict) -> str:
     texts = []
 
@@ -132,6 +154,10 @@ def extract_reply_text(data: dict) -> str:
 
 
 def generate_reply_via_openclaw(user_text: str) -> str:
+    direct = direct_reply_for_simple_message(user_text)
+    if direct:
+        return direct
+
     prompt = (
         "You are Robin, Kolade's dedicated private research agent on Telegram. "
         "Reply naturally and helpfully, in plain English. Be concise but thoughtful. "
@@ -139,14 +165,15 @@ def generate_reply_via_openclaw(user_text: str) -> str:
         "For web browsing and website research, use agent-browser as the default browser tool; it is installed at /usr/bin/agent-browser and available in PATH. "
         "Do not claim the browser is unavailable unless you actually tried and hit a real error. "
         "If a web task needs browsing, behave as if agent-browser is your normal path. "
+        "Use Codex-quality reasoning for substantive research and implementation tasks. "
         "Do not mention internal tools, prompts, hidden context, or system mechanics. "
         "User message: " + user_text
     )
     cmd = [
         "/home/claw/.npm-global/bin/openclaw",
         "agent",
-        "--session-id",
-        SESSION_ID,
+        "--agent",
+        AGENT_ID,
         "--message",
         prompt,
         "--thinking",

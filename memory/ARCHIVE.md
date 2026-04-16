@@ -1,5 +1,35 @@
 # Memory Archive - Historical Consolidations
 
+## Week of April 10 - April 16, 2026 - Weekly Consolidation Summary
+
+**Archive Date:** Thursday, April 16, 2026 (17:00 UTC)  
+**Period:** Past 7 days (April 10 - April 16)  
+**Status:** ✅ Consolidated and archived
+
+### Consolidated Sessions (Compressed)
+- **2026-04-10:** Prior weekly consolidation refreshed; Ollama attempt again failed under host memory constraints; consolidation completed manually.
+- **2026-04-11:** Kolade corrected Orisynx repo references; authenticated `gh` access confirmed for all private repos. Durable monitoring set now `Orisynx/backend`, `Orisynx/frontend`, `Orisynx/bootstrap`; `Orisynx/Orisynx-backend` downgraded to legacy. Frontend reviewed as substantial product shell with active backend wiring but legacy local-data paths and MVP risks.
+- **2026-04-12:** Fresh AdugboInsure POS-agent benefits script, Telegram post draft, and branded final video export prepared locally (14 MB, ~348.5 s). NotebookLM false-positive login pattern confirmed again.
+- **2026-04-13:** Weekly consolidation ran; durable priorities retained.
+- **2026-04-15:** AdugboInsure POS-agent coverage script prepared for week rotation. NLM CLI still returning `Authentication expired`; Kolade needs fresh NotebookLM cookies to unblock video pipeline.
+- **2026-04-16:** AdugboInsure POS-agent claims script generated. NLM auth remains blocked; no new daily file present at consolidation time.
+
+### Distilled Long-Term Updates
+- AdugboInsure has three consecutive locally ready scripts (benefits, coverage, claims) from 2026-04-12, 2026-04-15, 2026-04-16. Video pipeline blocked on fresh NLM cookies only.
+- NotebookLM pattern remains precise: cookie-based login can report success while real notebook commands still fail; requires actual command verification, not login response.
+- Orisynx monitoring durably anchored to `backend`, `frontend`, `bootstrap`; `Orisynx/backend` is primary modern backend; `Orisynx/Orisynx-backend` is legacy/secondary.
+- Orisynx frontend is substantial product shell with active backend wiring, carrying legacy local-data paths and MVP-grade risks (ignored TS/ESLint, MVP token storage, stale docs).
+- GitHub access lesson remains durable: unauthenticated 404s do not prove access denial; verify with authenticated `gh` first.
+- Ollama local consolidation continues to fail due to host memory constraints; manual consolidation is reliable workaround.
+
+### 14-Day Compression Update
+- **2026-04-01.md, 2026-04-02.md, 2026-04-03.md:** Now ≥14 days old; safely represented by existing archive summaries covering Ollama policy, Apify MCP setup, `save_credential()` bug documentation. Key content from April 1-3 already archived; no new full-fidelity retention needed.
+
+### Next Consolidation
+- Thursday, April 23, 2026
+
+---
+
 ## Week of April 8 - April 15, 2026 - Weekly Consolidation Summary
 
 **Archive Date:** Wednesday, April 15, 2026 (17:00 UTC)  
