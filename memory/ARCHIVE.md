@@ -1,5 +1,37 @@
 # Memory Archive - Historical Consolidations
 
+## Week of April 11 - April 17, 2026 - Weekly Consolidation Summary
+
+**Archive Date:** Friday, April 17, 2026 (17:00 UTC)  
+**Period:** Past 7 days (April 11 - April 17)  
+**Status:** ✅ Consolidated and archived
+
+### Consolidated Sessions (Compressed)
+- **2026-04-11:** Kolade corrected the Orisynx monitoring references. Authenticated `gh` verification confirmed admin access to the private Orisynx repos, and the durable monitoring set remained `Orisynx/backend`, `Orisynx/frontend`, `Orisynx/bootstrap`. The backend/frontend/bootstrap roles were clarified further, with `Orisynx/Orisynx-backend` retained as legacy/secondary.
+- **2026-04-12:** AdugboInsure benefits script and Telegram draft were prepared, and a branded final video export was produced locally (`AdugboInsure_POS_Agents_Benefits_2026-04-12_branded_final.mp4`, 14 MB, ~348.5 s). NotebookLM login again showed the false-positive pattern where login can report success while real notebook commands still fail.
+- **2026-04-13:** Weekly consolidation ran and refreshed long-term memory. Missing daily files for 2026-04-09 and 2026-04-13 were noted at that time.
+- **2026-04-14:** No daily file present.
+- **2026-04-15:** AdugboInsure coverage script and Telegram draft were prepared locally. Video generation/download remained blocked because NLM CLI still returned `Authentication expired`.
+- **2026-04-16:** AdugboInsure claims script and Telegram draft were prepared locally. Video generation/download remained blocked on the same NotebookLM auth issue.
+- **2026-04-17:** Weekly consolidation ran again for April 11-17. No daily file was present for 2026-04-17 at consolidation time. A best-effort local Ollama synthesis attempt failed again because available host memory was below `llama3.2:3b` requirements, so final edits were completed manually from the reviewed notes.
+
+### Distilled Long-Term Updates
+- AdugboInsure now has a stronger local publishing queue: the 2026-04-12 branded benefits video export plus 2026-04-15 coverage and 2026-04-16 claims script packages are ready locally.
+- NotebookLM remains the narrow active blocker for AdugboInsure video generation: login success does not prove notebook access, so auth must always be verified with a real command.
+- Orisynx monitoring remains durably anchored to `backend`, `frontend`, and `bootstrap`; `backend` is the primary modern service, while `Orisynx/Orisynx-backend` remains legacy/secondary.
+- The frontend durability note remains worth keeping: it is a substantial product shell with active backend integration, but still has legacy local-data paths and MVP-grade risks around ignored build errors, token storage, and stale docs.
+- The GitHub access guardrail remains durable: do not infer private-repo access from unauthenticated browser 404s; verify with authenticated `gh`/API first.
+- Ollama local weekly consolidation was attempted again as requested, but host memory remains insufficient for full-prompt `llama3.2:3b` runs; manual consolidation is still the reliable fallback on this machine.
+
+### 14-Day Compression Update
+- **2026-04-02.md:** Older daily memory remains safely represented by archive summaries: AdugboInsure queue discipline tightened, school/application research was clarified as MBA-forward, and execution/reporting standards were reinforced.
+- **2026-04-03.md:** Older daily memory remains safely represented by archive summaries: the first real research pass wrote outputs back, Apify-backed sourcing proved useful, boxed-PDF handling lessons were captured, and Orisynx weekly repo reporting became a real installed automation.
+
+### Next Consolidation
+- Friday, April 24, 2026
+
+---
+
 ## Week of April 10 - April 16, 2026 - Weekly Consolidation Summary
 
 **Archive Date:** Thursday, April 16, 2026 (17:00 UTC)  
