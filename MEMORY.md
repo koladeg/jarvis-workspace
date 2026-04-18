@@ -1,20 +1,20 @@
 # MEMORY.md
 
-## Weekly Consolidation & Progress (2026-04-17)
+## Weekly Consolidation & Progress (2026-04-18)
 
-**Last consolidated:** Friday, April 17, 2026 (17:00 UTC)  
+**Last consolidated:** Saturday, April 18, 2026 (17:00 UTC)  
 **Archive location:** `memory/ARCHIVE.md` (historical consolidations)  
-**Next consolidation:** Friday, April 24, 2026
+**Next consolidation:** Saturday, April 25, 2026
 
-**Status Summary (Week of April 11 - April 17):**
+**Status Summary (Week of April 12 - April 18):**
 - ✅ Research execution remains the durable standard: setup, schedules, or heartbeats do **not** count unless a live workflow actually runs and writes outputs back.
 - 🎓 School/application research remains durably MBA-forward, with added focus on business, innovation, entrepreneurship, technology, and credible bootcamps.
 - 🤝 Networking events remain an explicit research lane alongside funding, jobs, trucks, partners/validators, and school/MBA work.
 - ✅ AdugboInsure queue discipline remains durable: do not generate a fresh weekly video while approved content already covers the posting window; refill only when coverage drops below the target buffer.
-- 🎬 **AdugboInsure weekly content state is stronger:**
+- 🎬 **AdugboInsure weekly content queue remains the main actionable asset:**
   - 2026-04-12 benefits script + Telegram draft + branded final video export remain locally ready for upload/posting.
-  - 2026-04-15 coverage script + Telegram draft are ready locally.
-  - 2026-04-16 claims script + Telegram draft are ready locally.
+  - 2026-04-15 coverage script + Telegram draft remain ready locally.
+  - 2026-04-16 claims script + Telegram draft remain ready locally.
 - 🔐 **NotebookLM remains the active blocker:** `nlm login` can report success while real notebook commands still fail with `Authentication expired`; always verify auth with a real notebook command. Fresh NotebookLM cookies from Kolade are still required.
 - ✅ Orisynx weekly repo briefing remains a real installed automation.
 - 📊 **Corrected Orisynx monitoring baseline remains durable:** primary repos to track are `Orisynx/backend`, `Orisynx/frontend`, and `Orisynx/bootstrap`.
@@ -27,9 +27,10 @@
 - 🧭 Robin workspace-routing lesson: Robin's private-chat path is tied to the main workspace context; updating `workspace-research` alone does not change Robin behavior.
 - 🌐 Durable browsing guardrail: for dynamic/React-style sites, shallow fetches can falsely look empty; confirm with `agent-browser` before concluding a page has no content.
 - 🔐 Durable GitHub access lesson: do not infer private repo access from unauthenticated browser 404s; verify with authenticated `gh`/API first.
+- 🧠 Durable consolidation ops note: local Ollama remains the preferred zero-cost path for memory consolidation, but this host still lacks enough free RAM for `llama3.2:3b` full-prompt runs; manual finalization is the current fallback.
 - ⏳ Still waiting on key external inputs from Kolade: Orium job link, fuller truck specifications, ClickUp workspace link, and fresh NotebookLM cookies.
 
-**Critical Next Steps (April 17 - April 24):**
+**Critical Next Steps (April 18 - April 25):**
 1. **NotebookLM:** Kolade needs to provide fresh NLM cookies — AdugboInsure video generation/download remains blocked without them.
 2. **AdugboInsure Publishing:** Use the existing ready queue first — especially the 2026-04-12 branded benefits video — before generating new weekly content.
 3. **Ops:** Run `openclaw doctor --fix`, then re-test the research agent under the repaired gateway.
