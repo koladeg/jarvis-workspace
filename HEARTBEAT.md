@@ -7,6 +7,41 @@ Run every ~30 minutes. Uses `ollama/llama3.2:3b` (free, local) for lightweight c
 - Check git status in workspace (any uncommitted changes?)
 - Note: Add email/calendar checks when needed
 
+## Jarvis Mistake Review
+
+Run a lightweight self-audit once daily during heartbeat, or immediately after a clear mistake.
+
+### Goal
+- Quietly capture real lessons
+- Update guardrails when a repeated pattern appears
+- Stay silent unless there is something actionable
+
+### Trigger rules
+- Run at most **once per day** during heartbeat unless a fresh notable error happened
+- Also run after mistakes involving:
+  - wrong assumptions about access/auth
+  - repeating the same workflow mistake
+  - group-chat judgment failures
+  - claiming work was done/blocked before verifying
+
+### Process
+1. Review only the current session / recent work
+2. If there was no meaningful mistake or pattern, do nothing
+3. If there was a meaningful mistake:
+   - append a concise entry to `memory/mistakes-log.md`
+   - if useful, tighten the relevant local rule/checklist
+4. Only alert Kolade if there is a **new durable guardrail** or a **repeated pattern** worth knowing
+
+### Logging command
+```bash
+python3 /home/claw/.openclaw/workspace/scripts/analyze-mistake.py \
+  --mistake "short description" \
+  --context "where it happened" \
+  --root-cause "why it happened" \
+  --guardrail "mechanical prevention rule" \
+  --pattern "optional pattern note"
+```
+
 ## Scheduled Reminders
 
 **Saturdays at 08:00 WAT (07:00 UTC)** — RECURRING

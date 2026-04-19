@@ -1,0 +1,67 @@
+{
+  "title": "AdugboInsure Pitch Deck",
+  "slides": [
+    {
+      "layout": "cover",
+      "title": "AdugboInsure",
+      "body": "Transforming Communities with Affordable Health Insurance",
+      "drive_file_id": "YOUR_LOGO_FILE_ID"
+    },
+    {
+      "layout": "problem",
+      "title": "The Problem",
+      "bullets": [
+        "Millions of Nigerians still pay for healthcare out of pocket.",
+        "Health insurance adoption remains low, especially in underserved communities.",
+        "Low awareness, low trust, and irregular income reduce uptake.",
+        "Communities around PHCs need affordable and accessible coverage options."
+      ],
+      "drive_file_id": "FIRST_PROBLEM_IMAGE_ID",
+      "drive_file_id_2": "SECOND_PROBLEM_IMAGE_ID"
+    },
+    {
+      "layout": "solution",
+      "title": "Our Solution",
+      "body": "AdugboInsure distributes community health insurance through trusted local POS agents, using a simple e-form, flexible payment support, and community-based distribution channels.",
+      "drive_file_id": "SOLUTION_IMAGE_ID"
+    },
+    {
+      "layout": "market",
+      "title": "Target Customer",
+      "bullets": [
+        "Low-income households in rural and underserved urban communities.",
+        "Farmers, traders, merchants, artisans, and small business owners.",
+        "People living or working around primary health centres.",
+        "Initial market focus: Oyo State."
+      ],
+      "drive_file_id": "MARKET_IMAGE_ID"
+    },
+    {
+      "layout": "traction",
+      "title": "Prototype and Traction",
+      "body": "Pre-revenue pilot-stage venture with a defined e-form workflow, an active 13-agent distribution network, and community rollout assets already in use.",
+      "drive_file_id": "TRACTION_IMAGE_ID"
+    },
+    {
+      "layout": "default",
+      "title": "Customers and Revenue",
+      "bullets": [
+        "Current users: 0",
+        "Paying customers: 0",
+        "Revenue so far: 0",
+        "Current stage: pre-revenue pilot / distribution setup"
+      ]
+    },
+    {
+      "layout": "team",
+      "title": "Team",
+      "bullets": [
+        "Kolade — Founder",
+        "Olorunfemi Ojo — Co-Founder, Software Developer",
+        "Dr. Ajidahun Olusina — Partner, Health Sector Advisor",
+        "Core team: 3 | Agent network: 13"
+      ],
+      "drive_file_id": "OPTIONAL_TEAM_IMAGE_ID"
+    }
+  ]
+}
