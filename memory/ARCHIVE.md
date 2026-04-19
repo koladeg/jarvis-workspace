@@ -1,5 +1,35 @@
 # Memory Archive - Historical Consolidations
 
+## Week of April 13 - April 19, 2026 - Weekly Consolidation Summary
+
+**Archive Date:** Sunday, April 19, 2026 (17:00 UTC)  
+**Period:** Past 7 days (April 13 - April 19)  
+**Status:** ✅ Consolidated and archived
+
+### Consolidated Sessions (Compressed)
+- **2026-04-13:** Weekly consolidation refreshed long-term memory and archive state. At that time, there were no daily files for 2026-04-09 or 2026-04-13, and a best-effort local Ollama pass failed under low available RAM.
+- **2026-04-14:** No daily file present.
+- **2026-04-15:** AdugboInsure coverage script and Telegram draft were prepared locally. Video generation/download remained blocked because NotebookLM still returned `Authentication expired`. Weekly consolidation also refreshed memory and archive state and formally compressed April 1-3 logs.
+- **2026-04-16:** AdugboInsure claims script and Telegram draft were prepared locally. Video generation/download remained blocked on the same NotebookLM auth issue.
+- **2026-04-17:** No daily file present.
+- **2026-04-18:** Weekly consolidation refreshed the durable state again for the April 12-18 window and retained the same long-term priorities. Local Ollama again failed due to insufficient free memory, so manual edits were used.
+- **2026-04-19:** Weekly consolidation ran for April 13-19. No daily file was present yet for 2026-04-19 before this run. A fresh local Ollama attempt was made and failed again because `llama3.2:3b` needed more RAM than the host had available.
+
+### Distilled Long-Term Updates
+- No major new strategic direction changed this week; the durable state remains stable.
+- AdugboInsure's locally ready queue still matters most operationally: 2026-04-12 branded benefits video export plus the 2026-04-15 coverage and 2026-04-16 claims script packages remain ready locally.
+- NotebookLM remains the narrow active blocker for further AdugboInsure video generation: a reported login success does **not** prove notebook access, so auth must always be verified with a real command.
+- Orisynx monitoring remains durably anchored to `backend`, `frontend`, and `bootstrap`; `Orisynx/backend` remains the primary modern service and `Orisynx/Orisynx-backend` remains legacy/secondary.
+- Local Ollama is still the preferred zero-cost consolidation path, but this host remains under-provisioned for `llama3.2:3b` full-prompt runs; manual consolidation is still the practical fallback.
+
+### 14-Day Compression Update
+- **Daily logs older than 14 days (before 2026-04-05):** already safely represented by prior archive summaries covering identity setup, infrastructure/integration bring-up, Orisynx governance, job-search baselines, portfolio baselines, NotebookLM auth lessons, research-agent rollout, truck criteria changes, and AdugboInsure queue/video workflow rules. No additional full-fidelity retention is needed in active daily memory.
+
+### Next Consolidation
+- Sunday, April 26, 2026
+
+---
+
 ## Week of April 12 - April 18, 2026 - Weekly Consolidation Summary
 
 **Archive Date:** Saturday, April 18, 2026 (17:00 UTC)  
