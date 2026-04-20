@@ -1,5 +1,34 @@
 # Memory Archive - Historical Consolidations
 
+## Week of April 14 - April 20, 2026 - Weekly Consolidation Summary
+
+**Archive Date:** Monday, April 20, 2026 (17:00 UTC)  
+**Period:** Past 7 days (April 14 - April 20)  
+**Status:** ✅ Consolidated and archived
+
+### Consolidated Sessions (Compressed)
+- **2026-04-14:** No daily file present.
+- **2026-04-15:** AdugboInsure coverage script and Telegram draft were prepared locally. Video generation/download remained blocked because NotebookLM still returned `Authentication expired`.
+- **2026-04-16:** AdugboInsure claims script and Telegram draft were prepared locally. Video generation/download remained blocked on the same NotebookLM auth issue.
+- **2026-04-17:** No daily file present.
+- **2026-04-18:** Weekly consolidation refreshed long-term memory and archive state again for the April 12-18 window.
+- **2026-04-19:** Weekly consolidation refreshed long-term memory and archive state again for the April 13-19 window.
+- **2026-04-20:** Weekly consolidation reviewed the recent notes again for the April 14-20 window. A fresh local Ollama attempt was made as requested and failed again because `llama3.2:3b` required about 2.3 GiB while only about 1.6 GiB was available.
+
+### Distilled Long-Term Updates
+- No major new strategic direction changed this week; most durable state remained stable.
+- AdugboInsure's ready local queue still matters most operationally: the 2026-04-12 branded benefits video export plus the 2026-04-15 coverage and 2026-04-16 claims script packages remain the practical content buffer.
+- NotebookLM remains the narrow active blocker for further AdugboInsure video generation: reported login success is not enough, and real notebook commands must still be used to verify auth.
+- Local Ollama remains the preferred zero-cost consolidation path in principle, but this host still does not have enough free RAM for `llama3.2:3b` full-prompt runs, so manual finalization remains necessary.
+
+### 14-Day Compression Update
+- **Daily logs older than 14 days (before 2026-04-06):** already safely represented by prior archive summaries covering identity setup, integrations, portfolio/job-search baselines, Orisynx governance, NotebookLM/auth lessons, research-agent rollout, truck criteria changes, and AdugboInsure queue/video workflow rules. No additional full-fidelity retention is needed in active daily memory.
+
+### Next Consolidation
+- Monday, April 27, 2026
+
+---
+
 ## Week of April 13 - April 19, 2026 - Weekly Consolidation Summary
 
 **Archive Date:** Sunday, April 19, 2026 (17:00 UTC)  
