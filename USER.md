@@ -6,7 +6,7 @@ _Learn about the person you're helping. Update this as you go._
 - **What to call them:** kolade
 - **Pronouns:** he/him
 - **Timezone:** Africa/Lagos (Nigeria)
-- **Notes:** First conversation: chose the assistant name Jarvis, prefers a calm vibe, picked 😇 as the signature emoji.
+- **Notes:** First conversation: chose the assistant name Jarvis, prefers a calm vibe, picked 😇 as the signature emoji. For sending deliverables, prefer email for personal files/results and GitHub for project/code/docs when Google Drive is awkward.
 
 ## Context
 
