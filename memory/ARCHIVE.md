@@ -1,5 +1,37 @@
 # Memory Archive - Historical Consolidations
 
+## Week of April 16 - April 22, 2026 - Weekly Consolidation Summary
+
+**Archive Date:** Wednesday, April 22, 2026 (17:00 UTC)  
+**Period:** Past 7 days (April 16 - April 22)  
+**Status:** ✅ Consolidated and archived
+
+### Consolidated Sessions (Compressed)
+- **2026-04-16:** AdugboInsure claims script and Telegram draft were prepared locally. Video generation/download remained blocked because NotebookLM still returned `Authentication expired`.
+- **2026-04-17:** No daily file present.
+- **2026-04-18:** Weekly consolidation refreshed long-term memory and archive state again for the April 12-18 window.
+- **2026-04-19:** Weekly consolidation refreshed long-term memory and archive state again for the April 13-19 window.
+- **2026-04-20:** Weekly consolidation refreshed long-term memory and archive state again for the April 14-20 window.
+- **2026-04-21:** Google Slides OAuth was repaired and validated; mhGAP/Indigo tablet debugging established the durable versionCode 10 vs 9 same-signature recovery pattern; direct Android extraction routes were exhausted; cron delivery targets were repaired for failing Robin/pipeline/AdugboInsure jobs; research workspace guardrails were tightened to forbid filler updates without same-day evidence.
+- **2026-04-22:** No daily file present yet at consolidation time; this run reviewed the same recent window to keep long-term memory current.
+
+### Distilled Long-Term Updates
+- No major new strategic direction changed this week; most durable state remained stable.
+- AdugboInsure's ready local queue still matters most operationally: the 2026-04-12 branded benefits video export plus the 2026-04-15 coverage and 2026-04-16 claims script packages remain the practical content buffer.
+- NotebookLM remains the narrow active blocker for further AdugboInsure video generation: reported login success is not enough, and real notebook commands must still be used to verify auth.
+- Google Slides OAuth is now repaired and healthy for `jarviskolademail@gmail.com`.
+- mhGAP/Indigo recovery should favor same-signed update/recovery APKs over further ADB-only extraction attempts on the problematic tablets.
+- Research/Robin reporting now has a stronger evidence-first guardrail: do not send filler lane updates sourced only from schedule/admin notes.
+- Local Ollama remains the preferred zero-cost consolidation path in principle, but this host still does not have enough free RAM for `llama3.2:3b` full-prompt runs; manual finalization remains necessary.
+
+### 14-Day Compression Update
+- **Daily logs older than 14 days (before 2026-04-08):** already safely represented by prior archive summaries covering identity setup, integrations, portfolio/job-search baselines, Orisynx governance, NotebookLM/auth lessons, research-agent rollout, truck criteria changes, AdugboInsure queue/video workflow rules, and the first live research-agent runs.
+
+### Next Consolidation
+- Wednesday, April 29, 2026
+
+---
+
 ## Week of April 15 - April 21, 2026 - Weekly Consolidation Summary
 
 **Archive Date:** Tuesday, April 21, 2026 (17:00 UTC)  

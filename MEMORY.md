@@ -1,12 +1,12 @@
 # MEMORY.md
 
-## Weekly Consolidation & Progress (2026-04-21)
+## Weekly Consolidation & Progress (2026-04-22)
 
-**Last consolidated:** Tuesday, April 21, 2026 (17:00 UTC)  
+**Last consolidated:** Wednesday, April 22, 2026 (17:00 UTC)  
 **Archive location:** `memory/ARCHIVE.md` (historical consolidations)  
-**Next consolidation:** Tuesday, April 28, 2026
+**Next consolidation:** Wednesday, April 29, 2026
 
-**Status Summary (Week of April 15 - April 21):**
+**Status Summary (Week of April 16 - April 22):**
 - 🔁 No major strategic direction changed this week; the durable state remains mostly stable.
 - ✅ Research execution remains the durable standard: setup, schedules, or heartbeats do **not** count unless a live workflow actually runs and writes outputs back.
 - 🎓 School/application research remains durably MBA-forward, with added focus on business, innovation, entrepreneurship, technology, and credible bootcamps.
@@ -26,17 +26,22 @@
 - 🔧 **Gateway repair is still a live ops issue:** `openclaw doctor --fix` is still needed for the gateway service entrypoint/runtime mismatch.
 - 🤖 Robin research-bot standard remains sharp: claim success only after end-to-end receive → reason → reply is verified.
 - 🧭 Robin workspace-routing lesson: Robin's private-chat path is tied to the main workspace context; updating `workspace-research` alone does not change Robin behavior.
+- 🛡️ **New durable research-output guardrail:** research workspace heartbeats and summaries must not send filler lane updates sourced only from schedule/admin notes; same-day evidence is required before reporting progress.
 - 🌐 Durable browsing guardrail: for dynamic/React-style sites, shallow fetches can falsely look empty; confirm with `agent-browser` before concluding a page has no content.
 - 🔐 Durable GitHub access lesson: do not infer private repo access from unauthenticated browser 404s; verify with authenticated `gh`/API first.
 - 🧠 Durable consolidation ops note: local Ollama remains the preferred zero-cost path for memory consolidation, but this host still lacks enough free RAM for `llama3.2:3b` full-prompt runs; manual finalization remains the fallback.
+- 📽️ **Google Slides OAuth is now repaired and validated** for `jarviskolademail@gmail.com`; smoke-test deck creation succeeded, so Slides automation is back in a healthy state.
+- 📱 **mhGAP/Indigo recovery lesson:** the working tablet is `com.koladegureje.indigo` versionCode 10, while the problematic tablets are same-signature versionCode 9; same-lineage update/recovery APKs should preserve app data better than raw extraction attempts.
+- 🔓 **Android extraction constraint is now explicit:** on the affected Indigo tablets, current-permission routes (`run-as`, no `su`, empty `adb backup`, empty shared storage) are exhausted, so recovery should prioritize signed update/recovery builds instead of ADB-only extraction.
+- 📬 **Cron delivery reliability improved:** failing Robin/pipeline/AdugboInsure cron jobs were repaired by adding explicit Telegram target `7101554375` in `/home/claw/.openclaw/cron/jobs.json`.
 - ⏳ Still waiting on key external inputs from Kolade: Orium job link, fuller truck specifications, ClickUp workspace link, and fresh NotebookLM cookies.
 
-**Critical Next Steps (April 21 - April 28):**
+**Critical Next Steps (April 22 - April 29):**
 1. **NotebookLM:** Kolade needs to provide fresh NLM cookies — AdugboInsure video generation/download remains blocked without them.
 2. **AdugboInsure Publishing:** Use the existing ready queue first — especially the 2026-04-12 branded benefits video — before generating new weekly content.
 3. **Ops:** Run `openclaw doctor --fix`, then re-test the research agent under the repaired gateway.
-4. **Research Agent:** Continue live runs writing outputs back, especially for funding, networking events, school/MBA, jobs, trucks, and partners/validators.
-5. **Robin:** Finish stabilizing the private-chat research bot, fix the workspace-routing issue safely, and verify full end-to-end reply behavior before claiming success.
+4. **Research Agent / Robin:** Keep the new evidence-first reporting guardrail in place and verify full end-to-end reply behavior before claiming success.
+5. **mhGAP/Indigo:** Prefer same-signed versionCode 10 update/recovery path over more ADB-only extraction attempts.
 6. **Orisynx Monitoring:** Keep using `backend` / `frontend` / `bootstrap` as the durable comparison set.
 7. **External Inputs:** Collect the Orium link, fuller truck specs, and ClickUp workspace link so blocked workflows can progress.
 
