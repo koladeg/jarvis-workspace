@@ -1,5 +1,37 @@
 # Memory Archive - Historical Consolidations
 
+## Week of April 18 - April 24, 2026 - Weekly Consolidation Summary
+
+**Archive Date:** Friday, April 24, 2026 (17:00 UTC)  
+**Period:** Past 7 days (April 18 - April 24)  
+**Status:** ✅ Consolidated and archived
+
+### Consolidated Sessions (Compressed)
+- **2026-04-18:** Weekly consolidation refreshed long-term memory and archive state again for the April 12-18 window.
+- **2026-04-19:** Weekly consolidation refreshed long-term memory and archive state again for the April 13-19 window.
+- **2026-04-20:** Weekly consolidation refreshed long-term memory and archive state again for the April 14-20 window.
+- **2026-04-21:** Google Slides OAuth was repaired and validated; mhGAP/Indigo tablet debugging established the durable versionCode 10 vs 9 same-signature recovery pattern; direct Android extraction routes were exhausted; cron delivery targets were repaired for failing Robin/pipeline/AdugboInsure jobs; research workspace guardrails were tightened to forbid filler updates without same-day evidence.
+- **2026-04-22:** No daily file present.
+- **2026-04-23:** Weekly consolidation refreshed long-term memory and archive state again for the April 17-23 window. A best-effort local Ollama attempt was retried and failed because `llama3.2:3b` required about 2.3 GiB while only about 1.1 GiB was available.
+- **2026-04-24:** No daily file present before this consolidation run. A fresh local Ollama attempt was made again as requested and failed because `llama3.2:3b` still required about 2.3 GiB while only about 1.0 GiB was available.
+
+### Distilled Long-Term Updates
+- No major strategic direction changed this week; the durable state remains mostly stable.
+- Google Slides OAuth repair and validation remain a durable healthy state for `jarviskolademail@gmail.com`.
+- mhGAP/Indigo recovery should continue to prioritize same-signed versionCode 10 update/recovery APKs over more ADB-only extraction attempts.
+- Android extraction routes on the affected Indigo tablets remain exhausted under current permissions.
+- Robin/research reporting must continue to forbid filler lane updates sourced only from schedule or admin notes; same-day evidence remains required.
+- Cron delivery reliability remains improved via explicit Telegram target `7101554375` on the repaired failing jobs.
+- Local Ollama remains the preferred zero-cost consolidation path in principle, but this host still does not have enough free RAM for `llama3.2:3b` full-prompt runs; manual finalization remains necessary.
+
+### 14-Day Compression Update
+- **Daily logs older than 14 days (before 2026-04-10):** already safely represented by prior archive summaries covering identity setup, integrations, portfolio/job-search baselines, Orisynx governance, NotebookLM/auth lessons, research-agent rollout, truck criteria changes, AdugboInsure queue/video workflow rules, and early Robin/research-agent operating guardrails.
+
+### Next Consolidation
+- Friday, May 1, 2026
+
+---
+
 ## Week of April 17 - April 23, 2026 - Weekly Consolidation Summary
 
 **Archive Date:** Thursday, April 23, 2026 (17:00 UTC)  
