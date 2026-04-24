@@ -1,7 +1,7 @@
 # AdugboInsure Project Memory
 
-**Last Updated:** 2026-03-21 18:48 UTC  
-**Status:** Automation Live (Funding Radar + Agent Dashboard launching Sunday Mar 23)
+**Last Updated:** 2026-04-20 11:48 UTC  
+**Status:** Plug and Play submission completed; pitch deck + registration-flow variant generated and exported
 
 ---
 
@@ -69,6 +69,30 @@
 - ⏳ Enrollment tracking (when pilot data available)
 
 ---
+
+## April 2026 Submission Record
+
+### Plug and Play / Pitch Deck Flow (Completed 2026-04-20)
+- ✅ Google Slides access verified with OAuth account `jarviskolademail@gmail.com`
+- ✅ Main deck created: `AdugboInsure Pitch Deck`
+  - Slides: https://docs.google.com/presentation/d/17LTGi4Vwd1yW6TnHdLG1tiwuWaTNG_0JB66dIp9EgTI/edit
+  - PDF: `outputs/adugboinsure_pitch_deck_final.pdf`
+  - Spec: `outputs/adugboinsure_pitch_deck_final.json`
+- ✅ Registration-flow update deck created after Kolade shared the flow image
+  - Slides: https://docs.google.com/presentation/d/12DMEET465RPQWPAu1kZhMZvqaCgOYia5qT8Apk7Prvs/edit
+  - PDF: `outputs/adugboinsure_pitch_deck_with_registration_flow.pdf`
+  - Spec: `outputs/adugboinsure_pitch_deck_with_registration_flow.json`
+- ✅ Registration flow added as a dedicated slide with cleaner presentation wording
+- ✅ Kolade confirmed the submission was finished successfully
+
+### Reuse Notes
+- Use the registration-flow deck variant as the better starting point for future investor/application deck edits
+- If a future deck is needed, current Google Slides auth is working through the `google-slides-safe` workflow
+- The registration flow message is simple and strong:
+  1. enroll with agent
+  2. make first payment
+  3. get covered
+  4. continue payments anywhere
 
 ## Important Notes
 

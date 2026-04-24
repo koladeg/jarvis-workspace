@@ -1,5 +1,65 @@
 # Orisynx - Internal Audit SaaS / GRC Platform
 
+## Robin Durable Summary (2026-04-23)
+
+### What Orisynx actually does
+Orisynx is a workflow-driven internal audit / GRC platform for organizations that need to plan audits, run audit programs, collect and review evidence, write reports, and track findings/CAPAs in one system. The product is designed to replace fragmented Word/Excel/manual audit operations with a structured audit workspace and management dashboard.
+
+### Exact business model
+- **Model:** B2B SaaS
+- **Revenue:** subscription software fees
+- **Pricing direction:** positioned as a much more affordable local alternative to expensive foreign GRC suites; durable current pricing target is **under ₦3M/year**
+- **Commercial logic:** win on affordability + workflow fit for Nigerian audit teams, then expand by organization size / seat count / sector over time
+
+### Target customers
+**Primary initial customers:**
+- Microfinance banks
+- Finance companies
+- Internal audit teams
+- Internal control/compliance/risk teams inside regulated organizations
+
+**Secondary/expansion customers:**
+- Other Nigerian and African organizations with formal audit/compliance workflows
+- Sectors mentioned as later expansion lanes include manufacturing and healthcare
+
+### Geography
+- **Primary go-to-market:** Nigeria
+- **Expansion geography:** broader Africa after proving fit locally
+
+### Product type
+- Workflow software / B2B SaaS
+- Internal audit management platform
+- GRC / compliance operations software
+- Multi-layer product structure:
+  1. Planner
+  2. Audit Program
+  3. Workspace
+  4. Dashboard
+
+### Stage
+- Early-stage startup
+- Company/legal structure exists and Orisynx is being formalized as a real company
+- Product is in **MVP build / refinement stage**, not mature scale stage
+- Codebase and core screens exist, but major MVP gaps are still being clarified and prioritized
+- Durable current understanding: this is an **active build-stage B2B SaaS**, not yet a polished enterprise product
+
+### Strategic priorities
+1. **Nail the MVP for real audit teams** rather than overbuilding
+2. **Focus first on microfinance/financial organizations in Nigeria** where pain is sharp and budgets are tighter
+3. **Make audit work structured and collaborative**: audit plans, work programs, evidence, reviews, findings, CAPA tracking
+4. **Ship the missing high-priority foundations:**
+   - CSV/Excel import for audit programs
+   - downloadable templates
+   - workspace isolation + team access control
+   - local approvals with post-sign-off locking
+   - granular roles/permissions
+5. **Clarify the product architecture and UX** around Planner / Audit Program / Workspace / Dashboard
+6. **Stay cost-effective vs foreign GRC tools** while still looking enterprise-credible
+7. **Use Nigeria as the proving ground**, then expand across Africa
+
+### Short version for Robin
+Orisynx is an early-stage Nigerian B2B SaaS company building a workflow-driven internal audit/GRC platform for regulated organizations—starting with microfinance banks and finance companies. It replaces Word/Excel-based audit operations with a structured system for audit planning, work programs, evidence collection, reporting, approvals, and CAPA tracking. The commercial angle is: local fit + much lower price than foreign enterprise GRC suites, with Nigeria-first go-to-market and Africa expansion later.
+
 ## Core Business Model
 
 **Company Name:** Orisynx (Oversight Sync)

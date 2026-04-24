@@ -1,0 +1,26 @@
+# Bank document reminders - every 6 hours (today + tomorrow: 10:00, 16:00, 22:00 WAT / 09:00, 15:00, 21:00 UTC)
+
+# Thursday sync-up reminder - Thu 09:00 WAT (08:00 UTC)
+*/5 * * * * cd /home/claw/.openclaw/workspace && bash /home/claw/.openclaw/workspace/scripts/reminder-daemon.sh >> /home/claw/.openclaw/workspace/logs/reminder-daemon.log 2>&1
+30 6 * * 1-5 cd /home/claw/.openclaw/workspace && bash /home/claw/.openclaw/workspace/scripts/send-morning-brief.sh >> /home/claw/.openclaw/workspace/logs/morning-brief.log 2>&1
+0 13 * * 5 bash /home/claw/.openclaw/workspace/scripts/send-orisynx-weekly-brief.sh >> /home/claw/.openclaw/workspace/logs/orisynx-weekly-brief.log 2>&1
+# --- Robin research rollout schedule (managed) START ---
+# Mon 08:05 & 18:05 UTC — jobs + funding + networking
+5 7,17 * * 1 cd /home/claw/.openclaw/workspace && bash /home/claw/.openclaw/workspace/scripts/run-research-rollout-schedule.sh >> /home/claw/.openclaw/workspace/logs/research-rollout-schedule.log 2>&1
+# Wed 08:05 & 18:05 UTC — jobs + trucks + school/MBA
+5 7,17 * * 3 cd /home/claw/.openclaw/workspace && bash /home/claw/.openclaw/workspace/scripts/run-research-rollout-schedule.sh >> /home/claw/.openclaw/workspace/logs/research-rollout-schedule.log 2>&1
+# Fri 08:05 & 18:05 UTC — funding + networking + trucks
+5 7,17 * * 5 cd /home/claw/.openclaw/workspace && bash /home/claw/.openclaw/workspace/scripts/run-research-rollout-schedule.sh >> /home/claw/.openclaw/workspace/logs/research-rollout-schedule.log 2>&1
+# Sun 08:05 UTC — weekly roundup
+5 7 * * 0 cd /home/claw/.openclaw/workspace && bash /home/claw/.openclaw/workspace/scripts/run-research-rollout-schedule.sh >> /home/claw/.openclaw/workspace/logs/research-rollout-schedule.log 2>&1
+# Every other Tue 08:05 UTC — community sponsors (script handles even-week gating)
+5 7 * * 2 cd /home/claw/.openclaw/workspace && bash /home/claw/.openclaw/workspace/scripts/run-research-rollout-schedule.sh >> /home/claw/.openclaw/workspace/logs/research-rollout-schedule.log 2>&1
+# Every other Thu 08:05 UTC — immigration (script handles even-week gating)
+5 7 * * 4 cd /home/claw/.openclaw/workspace && bash /home/claw/.openclaw/workspace/scripts/run-research-rollout-schedule.sh >> /home/claw/.openclaw/workspace/logs/research-rollout-schedule.log 2>&1
+# Every 3 hours — mistake review / improvement loop
+0 0,3,6,9,12,15,18,21 * * * cd /home/claw/.openclaw/workspace && bash /home/claw/.openclaw/workspace/scripts/run-research-rollout-schedule.sh mistake-only >> /home/claw/.openclaw/workspace/logs/research-rollout-schedule.log 2>&1
+# --- Robin research rollout schedule (managed) END ---
+# Robin research rollout summary — twice daily
+# Daily safe git push (docs + Robin safe files)
+30 22 * * * cd /home/claw/.openclaw/workspace && bash /home/claw/.openclaw/workspace/scripts/auto-safe-push.sh >> /home/claw/.openclaw/workspace/logs/auto-safe-push.log 2>&1
+@reboot /home/claw/.openclaw/workspace/.state/robin-listener-startup.sh > /dev/null 2>&1 &

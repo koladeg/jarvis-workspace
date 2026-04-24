@@ -1,9 +1,221 @@
 # Job Search Tracking - Jarvis-Job-Search Channel
 
-**Last Updated:** 2026-03-21 14:52 UTC
+**Last Updated:** 2026-04-21 05:00 UTC
 **Schedule:** Every 3-5 days
-**Sources:** RemoteOK, Hacker News Jobs
-**Target:** React/React Native roles, worldwide, remote-only
+**Sources:** RemoteOK, Hacker News Jobs, LinkedIn, direct company pages, curated manual shortlist
+**Target:** React / React Native / Frontend / strong remote or visa-relocation paths
+
+## Master Application Tracker (Merged Queue)
+
+This is now the single source of truth for the active job application schedule.
+Older roles from the March pipeline are kept as backlog/parallel options unless re-promoted.
+
+### ACTIVE PRIORITY QUEUE
+
+#### Tier 1 — Apply First
+
+1. **nsave — Front-End Engineer (React Native) — London**
+- Priority: P1
+- Status: LIVE APPLICATION LINK CONFIRMED
+- Fit: Best fit; React Native + TypeScript
+- Visa/Relocation: Explicit visa sponsorship
+- Link: https://app.screenloop.com/careers/nsave/job_posts/8355?sl_source=organic-posting-network&tab=application_form&igbTracker=902990383
+- CV: React Native / frontend version needed
+- Cover Letter: Needed
+- Notes: Highest current-priority practical role; Screenloop application page provided by Kolade on 2026-04-21
+
+2. **KWAN — Frontend Developer — Lisbon / Portugal**
+- Priority: P1
+- Status: READY TO REVIEW / APPLY
+- Fit: Strong frontend / TypeScript fit
+- Visa/Relocation: Relocation + visa sponsorship
+- Link: https://pt.linkedin.com/jobs/view/frontend-developer-at-kwan-4398288339
+- CV: Frontend / TypeScript version needed
+- Cover Letter: Needed
+- Notes: Strong relocation path
+
+3. **KWAN — Frontend Developer (React.js) — Portugal**
+- Priority: P1
+- Status: READY TO REVIEW / APPLY
+- Fit: Similar lane, still solid
+- Visa/Relocation: Needs confirmation from live page
+- Link: https://www.careerjet.pt/jobad/pt020a1ad72cd6eff0e8083919f50dd8ce
+- CV: Frontend / React version needed
+- Cover Letter: Needed
+- Notes: Keep grouped with the other KWAN role
+
+#### Tier 2 — Strong but Less Clear
+
+4. **Mistral AI — Cloud Software Engineer, Fullstack/Frontend — Germany**
+- Priority: P2
+- Status: READY TO REVIEW / APPLY
+- Fit: Strong company, good stack fit
+- Visa/Relocation: Sponsorship less explicit than aggregator suggested
+- Link: https://de.linkedin.com/jobs/view/mistral-cloud-software-engineer-fullstack-frontend-at-mistral-ai-4402204271
+- CV: Frontend / fullstack version needed
+- Cover Letter: Needed
+- Notes: Good swing if eligibility still checks out
+
+5. **Mistral AI — Cloud Software Engineer, Fullstack/Frontend — London**
+- Priority: P2
+- Status: READY TO REVIEW / APPLY
+- Fit: Strong company, UK path attractive
+- Visa/Relocation: Same caution on relocation clarity
+- Link: https://uk.linkedin.com/jobs/view/mistral-cloud-software-engineer-fullstack-frontend-at-mistral-ai-4402204270
+- CV: Frontend / fullstack version needed
+- Cover Letter: Needed
+- Notes: Pair with Germany application pack where possible
+
+6. **Anthropic — Software Engineer, Safeguards Infrastructure — London**
+- Priority: P2
+- Status: READY TO REVIEW / APPLY
+- Fit: Stretch role; less direct than RN/frontend roles
+- Visa/Relocation: Real visa route
+- Link: https://job-boards.greenhouse.io/anthropic/jobs/5074908008
+- CV: Reliability / infrastructure leaning version needed
+- Cover Letter: Needed
+- Notes: Worth one clean, high-quality attempt
+
+7. **Certa — Senior Frontend Engineer (SDE III) — Remote only**
+- Priority: P2
+- Status: ADDED TO QUEUE
+- Fit: Strong frontend / React / TypeScript fit; less React Native-specific than nsave
+- Visa/Relocation: Remote-only posting; location flexibility still worth confirming
+- Link: https://cutshort.io/job/Senior-Frontend-Engineer-SDE-III-Certa-UEKFbfDd
+- CV: Frontend / React / TypeScript version needed
+- Cover Letter: Needed
+- Notes: 4-8 yrs; skills include React.js, TypeScript, accessibility, responsive design; must-haves mention enterprise-grade frontend, testing, design systems, performance, mentoring, and remote-team experience
+
+8. **Headway — Senior React Native Developer — Remote**
+- Priority: P1
+- Status: LIVE APPLICATION LINK CONFIRMED
+- Fit: Strongest current React Native match from today's pass
+- Visa/Relocation: Remote role; salary shown at $130k-$200k on the RemoteOK mirror
+- Link: https://headway.bamboohr.com/careers/39?source=aWQ9MjQ=
+- CV: React Native / mobile-first version needed
+- Cover Letter: Likely needed / check BambooHR form
+- Notes: High-priority practical target; strongest RN alignment in the current batch; direct BambooHR application link provided by Kolade on 2026-04-21
+
+#### Tier 3 — Opportunistic / Conditional
+
+9. **Alinea — Product Engineer (iOS) — Hybrid NYC**
+- Priority: P3
+- Status: ADDED TO QUEUE
+- Fit: Near-fit / weaker fit; more Swift / iOS-first than React Native
+- Visa/Relocation: Positive signal on sponsorship, but hybrid NYC adds friction
+- Link: https://www.ycombinator.com/companies/alinea/jobs/2GVRUn2-product-engineer-ios
+- CV: iOS / mobile product version only if pursued
+- Cover Letter: Needed if pursued
+- Notes: Keep as a stretch/conditional option rather than a frontline target
+
+7. **Holepunch — remote but Argentina-tagged**
+- Priority: P3
+- Status: CONDITIONAL
+- Fit: Worth trying if location restriction is soft
+- Visa/Relocation: Unclear
+- Link: [to confirm]
+- CV: TBD
+- Cover Letter: TBD
+- Notes: Location risk
+
+8. **Charted Sea — remote**
+- Priority: P3
+- Status: CONDITIONAL
+- Fit: Real remote, but niche reverse-engineering role
+- Visa/Relocation: Not the point; remote fit matters more
+- Link: [to confirm]
+- CV: Specialized version only if pursuing
+- Cover Letter: TBD
+- Notes: Lower fit than core frontend targets
+
+9. **Kochanet — Nigeria-friendly, part-time**
+- Priority: P3
+- Status: PENDING LIVE LINK
+- Fit: Useful fallback
+- Visa/Relocation: Nigeria-friendly
+- Link: [pending recovery]
+- CV: General frontend / fullstack version
+- Cover Letter: Optional / TBD
+- Notes: Apply once actual application page is recovered
+
+10. **Aha! — worth checking again**
+- Priority: P3
+- Status: ELIGIBILITY CHECK NEEDED
+- Fit: Potentially good, but region restriction uncertain
+- Visa/Relocation: Unclear
+- Link: [to confirm]
+- CV: TBD
+- Cover Letter: TBD
+- Notes: Only proceed if region flexibility is confirmed
+
+### BACKLOG / PARALLEL QUEUE (OLDER PIPELINE)
+
+11. **Orium — Senior React Native Developer (Canada)**
+- Priority: B1
+- Status: READY TO SUBMIT
+- Link: [pending live link confirmation]
+- CV: `CV_Orium_SeniorReactNativeDeveloper.md`
+- Cover Letter: `CoverLetter_Orium_SeniorReactNativeDeveloper.txt`
+- Notes: Previously prepared; older priority queue, still viable if role is live
+
+12. **Ubicloud — Software Engineer**
+- Priority: B2
+- Status: PREP CV + COVER LETTER NEXT IF RE-PROMOTED
+- Link: [to confirm]
+- CV: Not yet created
+- Cover Letter: Not yet created
+- Notes: Strong YC / infrastructure target; now backlog unless reprioritized
+
+13. **LiteLLM — Founding Reliability Engineer**
+- Priority: B2
+- Status: PREP CV + COVER LETTER IF RE-PROMOTED
+- Link: [to confirm]
+- CV: Not yet created
+- Cover Letter: Not yet created
+- Notes: High-upside startup role; not currently front of queue
+
+14. **SigNoz — Engineering Roles**
+- Priority: B3
+- Status: BACKLOG
+- Link: [to confirm]
+- CV: TBD
+- Cover Letter: TBD
+- Notes: Keep as a sponsor-friendly fallback
+
+15. **Bluelight Consulting — React Native Developer**
+- Priority: B3
+- Status: BACKLOG
+- Link: [to confirm]
+- CV: RN consulting version
+- Cover Letter: TBD
+- Notes: Direct fit, but below current shortlist
+
+### ACTIVE APPLICATION SCHEDULE
+
+**Day 1 — High-fit practical roles**
+- nsave
+- KWAN (Lisbon)
+- KWAN (React.js)
+
+**Day 2 — Strong swings**
+- Mistral Germany
+- Mistral London
+
+**Day 3 — Stretch / conditional**
+- Anthropic
+- Holepunch
+
+**Fallback batch**
+- Charted Sea
+- Kochanet (when live link is found)
+- Aha! (if eligibility checks out)
+- Orium / Ubicloud / LiteLLM can be reinserted here or promoted case-by-case
+
+### RULES FOR GOING FORWARD
+- Use this merged tracker instead of the old Orium-first queue by default.
+- Old pipeline roles remain valid but are not assumed to be the current priority.
+- When a new curated shortlist is provided, merge it here and mark whether it replaces or supplements the prior queue.
+- Always log: status, link, CV state, cover-letter state, submitted date, and follow-up date.
 
 ## Current Pulls
 
