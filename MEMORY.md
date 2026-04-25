@@ -1,12 +1,12 @@
 # MEMORY.md
 
-## Weekly Consolidation & Progress (2026-04-24)
+## Weekly Consolidation & Progress (2026-04-25)
 
-**Last consolidated:** Friday, April 24, 2026 (17:00 UTC)  
+**Last consolidated:** Saturday, April 25, 2026 (17:00 UTC)  
 **Archive location:** `memory/ARCHIVE.md` (historical consolidations)  
-**Next consolidation:** Friday, May 1, 2026
+**Next consolidation:** Saturday, May 2, 2026
 
-**Status Summary (Week of April 17 - April 23):**
+**Status Summary (Week of April 18 - April 24):**
 - 🔁 No major strategic direction changed this week; the durable state remains mostly stable.
 - ✅ Research execution remains the durable standard: setup, schedules, or heartbeats do **not** count unless a live workflow actually runs and writes outputs back.
 - 🎓 School/application research remains durably MBA-forward, with added focus on business, innovation, entrepreneurship, technology, and credible bootcamps.
@@ -36,7 +36,7 @@
 - 📬 **Cron delivery reliability improved:** failing Robin/pipeline/AdugboInsure cron jobs were repaired by adding explicit Telegram target `7101554375` in `/home/claw/.openclaw/cron/jobs.json`.
 - ⏳ Still waiting on key external inputs from Kolade: Orium job link, fuller truck specifications, ClickUp workspace link, and fresh NotebookLM cookies.
 
-**Critical Next Steps (April 23 - April 30):**
+**Critical Next Steps (April 25 - May 2):**
 1. **NotebookLM:** Kolade needs to provide fresh NLM cookies — AdugboInsure video generation/download remains blocked without them.
 2. **AdugboInsure Publishing:** Use the existing ready queue first — especially the 2026-04-12 branded benefits video — before generating new weekly content.
 3. **Ops:** Run `openclaw doctor --fix`, then re-test the research agent under the repaired gateway.
@@ -46,7 +46,6 @@
 7. **External Inputs:** Collect the Orium link, fuller truck specs, and ClickUp workspace link so blocked workflows can progress.
 
 ---
-
 ## Orisynx Repo Check Baseline (2026-04-11)
 
 - **Primary repos to monitor:** `Orisynx/backend`, `Orisynx/frontend`, `Orisynx/bootstrap`.
