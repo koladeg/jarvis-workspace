@@ -42,6 +42,15 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 - `~/\.openclaw/workspace/scripts/model-switch toggle` → flip between the two
 - `~/\.openclaw/workspace/scripts/model-switch status` → show current default model
 
+## Resume / Email Delivery
+
+- **Job application email path exists and should be checked first**
+  - Primary sender account: `jarviskolademail@gmail.com`
+  - Existing workspace automation env: `/home/claw/.openclaw/workspace/job_automation/.env`
+  - App password file: `/home/claw/.openclaw/workspace/.credentials/gmail_app_password.txt`
+  - Before saying email delivery is unavailable, first check whether the requested file can be sent through this existing Gmail/SMTP path.
+  - For resume/CV deliverables, default behavior should be: generate file → verify file exists → use existing email route if user asked for email delivery.
+
 ## Research / Browsing Tools
 
 - **agent-browser**
