@@ -1,6 +1,6 @@
 # Job Search Tracking - Jarvis-Job-Search Channel
 
-**Last Updated:** 2026-04-21 05:00 UTC
+**Last Updated:** 2026-04-27 17:31 UTC
 **Schedule:** Every 3-5 days
 **Sources:** RemoteOK, Hacker News Jobs, LinkedIn, direct company pages, curated manual shortlist
 **Target:** React / React Native / Frontend / strong remote or visa-relocation paths
@@ -16,13 +16,13 @@ Older roles from the March pipeline are kept as backlog/parallel options unless 
 
 1. **nsave — Front-End Engineer (React Native) — London**
 - Priority: P1
-- Status: LIVE APPLICATION LINK CONFIRMED
+- Status: SUBMITTED
 - Fit: Best fit; React Native + TypeScript
 - Visa/Relocation: Explicit visa sponsorship
 - Link: https://app.screenloop.com/careers/nsave/job_posts/8355?sl_source=organic-posting-network&tab=application_form&igbTracker=902990383
-- CV: React Native / frontend version needed
-- Cover Letter: Needed
-- Notes: Highest current-priority practical role; Screenloop application page provided by Kolade on 2026-04-21
+- CV: Submitted
+- Cover Letter: Not requested in form
+- Notes: Submitted by Kolade on 2026-04-27; highest current-priority practical role; Screenloop application page provided by Kolade on 2026-04-21
 
 2. **KWAN — Frontend Developer — Lisbon / Portugal**
 - Priority: P1
@@ -91,14 +91,56 @@ Older roles from the March pipeline are kept as backlog/parallel options unless 
 - Status: LIVE APPLICATION LINK CONFIRMED
 - Fit: Strongest current React Native match from today's pass
 - Visa/Relocation: Remote role; salary shown at $130k-$200k on the RemoteOK mirror
-- Link: https://headway.bamboohr.com/careers/39?source=aWQ9MjQ=
+- Link: https://headway.bamboohr.com/careers/39?source=aWQ9MjQ%3D&utm_source=remoteok.com&rid=RMTAyLjg5LjIyLjI0Mg==&ref=remoteok.com
 - CV: React Native / mobile-first version needed
 - Cover Letter: Likely needed / check BambooHR form
 - Notes: High-priority practical target; strongest RN alignment in the current batch; direct BambooHR application link provided by Kolade on 2026-04-21
 
+9. **Tether — Senior React Native Mobile Developer WDK — Worldwide**
+- Priority: P1
+- Status: ADDED TO QUEUE
+- Fit: Best pure React Native fit from the new shortlist; strongest worldwide signal in this batch
+- Visa/Relocation: Worldwide / remote-friendly signal
+- Link: https://careers.tether.io/o/senior-react-native-mobile-developer-wdk-hackernews
+- CV: React Native / mobile-first version needed
+- Cover Letter: Needed
+- Notes: Promoted as top lead from Kolade's 2026-04-27 shortlist
+
+#### Tier 2 — Strong but Less Clear (continued)
+
+10. **SuperPlane — Product Engineer — Remote**
+- Priority: P2
+- Status: ADDED TO QUEUE
+- Fit: Strong TypeScript / React / ownership fit; product-engineer lane rather than pure mobile
+- Visa/Relocation: Async / distributed remote signal
+- Link: https://remoteok.com/remote-jobs/remote-product-engineer-superplane-1131228
+- CV: Frontend / product-engineer version needed
+- Cover Letter: Needed
+- Notes: Strong generalist/product build role from the 2026-04-27 shortlist
+
+11. **Ashby — Product Engineer roles — Careers page**
+- Priority: P2
+- Status: ADDED TO QUEUE / ROLE SELECTION NEEDED
+- Fit: Strong near-fit depending on the exact product-engineer opening
+- Visa/Relocation: Needs live-page confirmation per role
+- Link: https://www.ashbyhq.com/careers
+- CV: Product engineer / frontend version likely needed
+- Cover Letter: Needed if pursued
+- Notes: Good near-strong fit; must choose the most relevant opening from careers page
+
+12. **Featurebase — Full-stack Product Engineer — Careers page**
+- Priority: P2
+- Status: ADDED TO QUEUE
+- Fit: Good near-strong fit; TypeScript / React / product orientation likely relevant
+- Visa/Relocation: Needs live-page confirmation
+- Link: https://www.featurebase.app/careers
+- CV: Full-stack / product engineer version needed
+- Cover Letter: Needed if pursued
+- Notes: Keep just behind SuperPlane unless the live role turns out to be a stronger fit than expected
+
 #### Tier 3 — Opportunistic / Conditional
 
-9. **Alinea — Product Engineer (iOS) — Hybrid NYC**
+13. **Alinea — Product Engineer (iOS) — Hybrid NYC**
 - Priority: P3
 - Status: ADDED TO QUEUE
 - Fit: Near-fit / weaker fit; more Swift / iOS-first than React Native
@@ -108,7 +150,7 @@ Older roles from the March pipeline are kept as backlog/parallel options unless 
 - Cover Letter: Needed if pursued
 - Notes: Keep as a stretch/conditional option rather than a frontline target
 
-7. **Holepunch — remote but Argentina-tagged**
+14. **Holepunch — remote but Argentina-tagged**
 - Priority: P3
 - Status: CONDITIONAL
 - Fit: Worth trying if location restriction is soft
@@ -118,7 +160,7 @@ Older roles from the March pipeline are kept as backlog/parallel options unless 
 - Cover Letter: TBD
 - Notes: Location risk
 
-8. **Charted Sea — remote**
+15. **Charted Sea — remote**
 - Priority: P3
 - Status: CONDITIONAL
 - Fit: Real remote, but niche reverse-engineering role
@@ -128,7 +170,7 @@ Older roles from the March pipeline are kept as backlog/parallel options unless 
 - Cover Letter: TBD
 - Notes: Lower fit than core frontend targets
 
-9. **Kochanet — Nigeria-friendly, part-time**
+16. **Kochanet — Nigeria-friendly, part-time**
 - Priority: P3
 - Status: PENDING LIVE LINK
 - Fit: Useful fallback
@@ -138,7 +180,7 @@ Older roles from the March pipeline are kept as backlog/parallel options unless 
 - Cover Letter: Optional / TBD
 - Notes: Apply once actual application page is recovered
 
-10. **Aha! — worth checking again**
+17. **Aha! — worth checking again**
 - Priority: P3
 - Status: ELIGIBILITY CHECK NEEDED
 - Fit: Potentially good, but region restriction uncertain
@@ -192,24 +234,33 @@ Older roles from the March pipeline are kept as backlog/parallel options unless 
 
 ### ACTIVE APPLICATION SCHEDULE
 
-**Day 1 — High-fit practical roles**
+**Day 1 — Highest-fit React Native / practical roles**
 - nsave
+- Headway
+- Tether
+
+**Day 2 — Strong relocation / frontend roles**
 - KWAN (Lisbon)
 - KWAN (React.js)
+- SuperPlane
 
-**Day 2 — Strong swings**
+**Day 3 — Strong swings**
 - Mistral Germany
 - Mistral London
+- Ashby
 
-**Day 3 — Stretch / conditional**
+**Day 4 — Near-strong / stretch**
+- Featurebase
 - Anthropic
 - Holepunch
 
 **Fallback batch**
+- Alinea
 - Charted Sea
 - Kochanet (when live link is found)
 - Aha! (if eligibility checks out)
-- Orium / Ubicloud / LiteLLM can be reinserted here or promoted case-by-case
+- Certa can be advanced into Day 2/3 if a cleaner frontend-only batch is preferred
+- Orium / Ubicloud / LiteLLM remain backlog unless re-promoted
 
 ### RULES FOR GOING FORWARD
 - Use this merged tracker instead of the old Orium-first queue by default.

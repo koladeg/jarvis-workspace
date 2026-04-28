@@ -160,7 +160,15 @@ def build_track_doc(data: dict, track_key: str, output_dir: Path, export_pdf: bo
     candidate = data["candidate"]
     style = data.get("style", {})
     latin_font = style.get("latin_font", "Times New Roman")
-    cjk_font = style.get("cjk_font", "宋体")
+    cjk_font = style.get("cjk_font", latin_font)
+    section_titles = {
+        "summary": "Professional Summary",
+        "experience": "Professional Experience",
+        "education": "Education",
+        "projects": "Projects",
+        "skills": "Skills & Certifications",
+    }
+    section_titles.update(style.get("section_titles", {}))
     track = data["tracks"][track_key]
     exp_index = experience_map(data)
 
@@ -171,10 +179,10 @@ def build_track_doc(data: dict, track_key: str, output_dir: Path, export_pdf: bo
     add_title(doc, track["title"], latin_font=latin_font, cjk_font=cjk_font)
     add_contact(doc, candidate["contact_line"], latin_font=latin_font, cjk_font=cjk_font)
 
-    add_section(doc, "个人简介", latin_font=latin_font, cjk_font=cjk_font)
+    add_section(doc, section_titles["summary"], latin_font=latin_font, cjk_font=cjk_font)
     add_text(doc, track["summary"], latin_font=latin_font, cjk_font=cjk_font, after=6)
 
-    add_section(doc, "工作经历", latin_font=latin_font, cjk_font=cjk_font)
+    add_section(doc, section_titles["experience"], latin_font=latin_font, cjk_font=cjk_font)
     overrides = track.get("experience_overrides", {})
     for exp_key in track.get("experience_order", []):
         base = exp_index[exp_key]
@@ -186,7 +194,7 @@ def build_track_doc(data: dict, track_key: str, output_dir: Path, export_pdf: bo
         for bullet in bullets:
             add_bullet(doc, bullet, latin_font=latin_font, cjk_font=cjk_font)
 
-    add_section(doc, "教育背景", latin_font=latin_font, cjk_font=cjk_font)
+    add_section(doc, section_titles["education"], latin_font=latin_font, cjk_font=cjk_font)
     for edu in data.get("education", []):
         add_header_line(doc, edu["left"], edu["right"], latin_font=latin_font, cjk_font=cjk_font)
         for bullet in edu.get("bullets", []):
@@ -194,14 +202,14 @@ def build_track_doc(data: dict, track_key: str, output_dir: Path, export_pdf: bo
 
     campus_items = track.get("campus_items", data.get("campus", []))
     if campus_items:
-        add_section(doc, "项目与校园经历", latin_font=latin_font, cjk_font=cjk_font)
+        add_section(doc, section_titles["projects"], latin_font=latin_font, cjk_font=cjk_font)
         for item in campus_items:
             add_header_line(doc, item["left"], item["right"], latin_font=latin_font, cjk_font=cjk_font)
             for bullet in item.get("bullets", []):
                 add_bullet(doc, bullet, latin_font=latin_font, cjk_font=cjk_font)
 
     if track.get("skills_lines"):
-        add_section(doc, "技能与证书", latin_font=latin_font, cjk_font=cjk_font)
+        add_section(doc, section_titles["skills"], latin_font=latin_font, cjk_font=cjk_font)
         for line in track["skills_lines"]:
             add_text(doc, line, latin_font=latin_font, cjk_font=cjk_font, after=2)
 

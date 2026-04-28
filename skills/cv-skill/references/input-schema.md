@@ -11,7 +11,14 @@ Use a JSON file with this structure.
   },
   "style": {
     "latin_font": "Times New Roman",
-    "cjk_font": "宋体"
+    "cjk_font": "Times New Roman",
+    "section_titles": {
+      "summary": "Professional Summary",
+      "experience": "Professional Experience",
+      "education": "Education",
+      "projects": "Projects",
+      "skills": "Skills & Certifications"
+    }
   },
   "education": [
     {

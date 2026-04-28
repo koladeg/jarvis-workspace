@@ -24,3 +24,11 @@
 - **Guardrail**: When a user is blocked on a live application or form, finish the minimum viable deliverable first; defer tooling/tracker improvements until after the artifact is sent
 - **Status**: logged
 
+## 2026-04-27 18:07 UTC: Claimed email send path was unavailable before verifying
+- **What**: Claimed email send path was unavailable before verifying
+- **Context**: Headway resume delivery during job-application support in Jarvis-Job-Search
+- **Root cause**: I relied on an assumption about tool/access availability instead of checking the existing workspace automation/email path first.
+- **Pattern**: Wrong assumptions about access/auth or delivery capability need verification before claiming blocked/unavailable.
+- **Guardrail**: Before saying an external delivery path is unavailable, first check for existing workspace scripts/configs/credentials that already implement it, then test the smallest safe path.
+- **Status**: logged
+

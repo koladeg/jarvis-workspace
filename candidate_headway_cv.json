@@ -1,0 +1,174 @@
+{
+  "candidate": {
+    "name": "Kolade Gureje",
+    "contact_line": "koladegureje@gmail.com | +234 8079366207 | Lagos, Nigeria | Portfolio: https://koladeg.github.io/ | GitHub: github.com/koladeg | LinkedIn: linkedin.com/in/kolade-gureje",
+    "base_summary": "React Native developer with 4+ years building production mobile applications across healthcare, logistics, and digital product environments."
+  },
+  "style": {
+    "latin_font": "Times New Roman",
+    "cjk_font": "Times New Roman"
+  },
+  "education": [
+    {
+      "left": "Bachelor of Computer Science & Information Technology | Bowen University",
+      "right": "2010 - 2014",
+      "bullets": []
+    },
+    {
+      "left": "Ironhack Bootcamp | Full-Stack Web Development",
+      "right": "Jun 2020 - Aug 2020",
+      "bullets": []
+    },
+    {
+      "left": "Cloud DevOps Nanodegree | Udacity",
+      "right": "Jun 2022 - Aug 2022",
+      "bullets": [
+        "Focused on infrastructure as code, CI/CD, and containerization workflows."
+      ]
+    },
+    {
+      "left": "ALX Founder Academy Program",
+      "right": "Mar 2024 - Jun 2024",
+      "bullets": [
+        "Startup leadership and product development training."
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "key": "sifax",
+      "default_left": "Software Developer / Deputy Manager | SIFAX",
+      "default_right": "Jan 2020 - Present",
+      "default_bullets": [
+        "Built and maintained cross-platform mobile applications using React Native for enterprise and operational use cases.",
+        "Integrated REST APIs and Redux-based state management for data-heavy workflows and user-facing features.",
+        "Improved application reliability through structured testing, debugging, and iterative delivery practices.",
+        "Mentored junior developers on React Native implementation patterns and maintainable front-end structure."
+      ]
+    },
+    {
+      "key": "uch_lead",
+      "default_left": "Project Lead Developer | University College Hospital (UCH)",
+      "default_right": "Sep 2024 - Nov 2024",
+      "default_bullets": [
+        "Led a 3-person team to develop a React Native mental health application for the INTREPID III study.",
+        "Delivered mobile data-capture workflows that recorded 250+ patient visits with 98% data accuracy over 6 months.",
+        "Built dynamic forms and API-connected workflows to support reporting and operational visibility."
+      ]
+    },
+    {
+      "key": "uch_pm",
+      "default_left": "Project Manager & Mobile Developer | University College Hospital (UCH)",
+      "default_right": "Mar 2023 - Sep 2023",
+      "default_bullets": [
+        "Managed a cross-functional team delivering a mobile intervention application from planning through execution.",
+        "Improved field data collection efficiency by 40% through mobile-first workflow design.",
+        "Coordinated stakeholder expectations, sprint priorities, and delivery timelines across the project lifecycle."
+      ]
+    },
+    {
+      "key": "neighbortailor",
+      "default_left": "Front-End Developer | NeighborTailor.com",
+      "default_right": "Nov 2019 - Nov 2022",
+      "default_bullets": [
+        "Developed React Native components and user-facing flows for an e-commerce platform.",
+        "Improved app load speed by 35% through front-end optimization work.",
+        "Collaborated remotely with backend teams on feature implementation and API-connected product updates."
+      ]
+    }
+  ],
+  "campus": [
+    {
+      "left": "Selected Project | ReportPrep AI",
+      "right": "Product Build",
+      "bullets": [
+        "Built product features for faster document generation and workflow automation using Next.js, TypeScript, Firebase, and Gemini AI.",
+        "Supported a workflow that generated 500+ documents monthly."
+      ]
+    },
+    {
+      "left": "Selected Project | GoTruck",
+      "right": "Logistics Mobile App",
+      "bullets": [
+        "Developed mobile workflows for logistics operations and real-time tracking.",
+        "Contributed to an operational app supporting 50+ daily shipments."
+      ]
+    }
+  ],
+  "tracks": {
+    "headway": {
+      "title": "Senior React Native Developer",
+      "summary": "React Native developer with 4+ years building production mobile applications across healthcare, logistics, and product environments. Experienced in TypeScript and JavaScript, API integrations, state management, and shipping reliable cross-platform mobile features for real users. Strong in remote collaboration, feature ownership, and building clean, maintainable mobile experiences with performance and usability in mind.",
+      "experience_order": [
+        "sifax",
+        "uch_lead",
+        "neighbortailor",
+        "uch_pm"
+      ],
+      "experience_overrides": {
+        "sifax": {
+          "left": "Software Developer / Deputy Manager | SIFAX",
+          "right": "Jan 2020 - Present",
+          "bullets": [
+            "Built and maintained cross-platform mobile applications with React Native for enterprise and operational use cases.",
+            "Integrated REST APIs and Redux-based state management for data-heavy workflows and user-facing mobile features.",
+            "Improved application reliability through structured testing, debugging, and iterative refinement.",
+            "Collaborated across product, technical, and stakeholder teams and mentored junior developers on maintainable mobile architecture."
+          ]
+        },
+        "uch_lead": {
+          "left": "Project Lead Developer | University College Hospital (UCH)",
+          "right": "Sep 2024 - Nov 2024",
+          "bullets": [
+            "Led a 3-person team to develop a React Native mental health application used in real healthcare operations.",
+            "Delivered mobile data-capture workflows supporting 250+ patient visits with 98% data accuracy.",
+            "Built dynamic forms, integrated APIs, and improved operational visibility for field use in a high-impact environment."
+          ]
+        },
+        "neighbortailor": {
+          "left": "Front-End Developer | NeighborTailor.com",
+          "right": "Nov 2019 - Nov 2022",
+          "bullets": [
+            "Developed React Native components and user-facing flows for an e-commerce platform on a remote team.",
+            "Improved app load speed by 35% through front-end optimization and performance-focused refinement.",
+            "Worked with backend teams to deliver API-connected mobile features and product updates."
+          ]
+        },
+        "uch_pm": {
+          "left": "Project Manager & Mobile Developer | University College Hospital (UCH)",
+          "right": "Mar 2023 - Sep 2023",
+          "bullets": [
+            "Managed a cross-functional team delivering a mobile intervention application from planning through execution.",
+            "Improved field data collection efficiency by 40% through mobile-first workflow design.",
+            "Coordinated stakeholders, sprint priorities, and delivery timelines across the project lifecycle."
+          ]
+        }
+      },
+      "campus_items": [
+        {
+          "left": "Selected Project | mhGAP Replica",
+          "right": "Mental Health Intervention Platform",
+          "bullets": [
+            "Built a React Native application used in a clinical research setting and helped digitize workflows previously handled on paper.",
+            "Recorded 250+ patient visits with 98% data accuracy using React Native, Redux, Formik, Firebase, and REST APIs."
+          ]
+        },
+        {
+          "left": "Selected Project | GoTruck",
+          "right": "Logistics Mobile App",
+          "bullets": [
+            "Developed mobile workflows for logistics operations and real-time tracking.",
+            "Contributed to an operational app supporting 50+ daily shipments."
+          ]
+        }
+      ],
+      "skills_lines": [
+        "Mobile: React Native, Expo, React Navigation, TypeScript, JavaScript, Redux, Formik.",
+        "Integrations: REST APIs, Firebase, MongoDB, Node.js, client-side state management.",
+        "Delivery: debugging, performance optimization, cross-platform Android/iOS delivery, remote collaboration, agile execution.",
+        "Certification: AWS Certified Solutions Architect – Associate (Nov 2022, expires Nov 2025, score 920/1000).",
+        "Location: Based in Lagos, Nigeria; open to fully remote international roles."
+      ]
+    }
+  }
+}
