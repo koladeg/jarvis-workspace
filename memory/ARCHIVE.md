@@ -1,5 +1,38 @@
 # Memory Archive - Historical Consolidations
 
+## Week of April 22 - April 28, 2026 - Weekly Consolidation Summary
+
+**Archive Date:** Tuesday, April 28, 2026 (17:00 UTC)  
+**Period:** Past 7 days (April 22 - April 28)  
+**Status:** ✅ Consolidated and archived
+
+### Consolidated Sessions (Compressed)
+- **2026-04-22:** No daily file present.
+- **2026-04-23:** Weekly consolidation refreshed long-term memory and archive state again for the April 17-23 window. A best-effort local Ollama attempt was retried and failed because `llama3.2:3b` required about 2.3 GiB while only about 1.1 GiB was available.
+- **2026-04-24:** Weekly consolidation refreshed long-term memory and archive state again for the April 18-24 window. No major durable state changed beyond carrying forward the 2026-04-21 lessons.
+- **2026-04-25:** Weekly consolidation refreshed long-term memory and archive state again for the April 19-25 window. `2026-04-10.md` was confirmed as safely represented by archive summaries.
+- **2026-04-26:** Weekly consolidation refreshed long-term memory and archive state again for the April 20-26 window. `2026-04-11.md` was confirmed as safely represented by archive summaries; no major durable state changed beyond carrying forward the 2026-04-21 lessons and corrected Orisynx repo-monitoring baselines.
+- **2026-04-27:** Weekly consolidation refreshed long-term memory and archive state again for the April 21-27 window. `2026-04-12.md` was confirmed as safely represented by archive summaries; no major durable state changed beyond carrying forward the 2026-04-21 lessons and corrected Orisynx repo-monitoring baselines.
+- **2026-04-28:** No daily file present before this consolidation run. A fresh local Ollama attempt was made again as requested and failed because `llama3.2:3b` still required about 2.3 GiB while only about 940.4 MiB was available.
+
+### Distilled Long-Term Updates
+- No major strategic direction changed this week; the durable state remains mostly stable.
+- Google Slides OAuth repair and validation remain a durable healthy state for `jarviskolademail@gmail.com`.
+- mhGAP/Indigo recovery should continue to prioritize same-signed versionCode 10 update/recovery APKs over more ADB-only extraction attempts.
+- Android extraction routes on the affected Indigo tablets remain exhausted under current permissions.
+- Robin/research reporting must continue to forbid filler lane updates sourced only from schedule or admin notes; same-day evidence remains required.
+- Cron delivery reliability remains improved via explicit Telegram target `7101554375` on the repaired failing jobs.
+- Corrected Orisynx monitoring remains durably anchored to `backend`, `frontend`, and `bootstrap`, with authenticated `gh` checks preferred over unauthenticated browser reads for private repo access.
+- Local Ollama remains the preferred zero-cost consolidation path in principle, but this host still does not have enough free RAM for `llama3.2:3b` full-prompt runs; manual finalization remains necessary.
+
+### 14-Day Compression Update
+- **2026-04-13.md:** no daily file existed, so there was nothing new to compress for that date.
+- **Daily logs older than 14 days (before 2026-04-14):** are now safely represented by prior archive summaries and no longer need active full-fidelity retention.
+
+### Next Consolidation
+- Tuesday, May 5, 2026
+
+
 ## Week of April 21 - April 27, 2026 - Weekly Consolidation Summary
 
 **Archive Date:** Monday, April 27, 2026 (17:00 UTC)  
