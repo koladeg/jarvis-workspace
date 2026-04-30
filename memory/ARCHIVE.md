@@ -1,5 +1,39 @@
 # Memory Archive - Historical Consolidations
 
+## Week of April 24 - April 30, 2026 - Weekly Consolidation Summary
+
+**Archive Date:** Thursday, April 30, 2026 (17:00 UTC)  
+**Period:** Past 7 days (April 24 - April 30)  
+**Status:** ✅ Consolidated and archived
+
+### Consolidated Sessions (Compressed)
+- **2026-04-24:** Weekly consolidation refreshed long-term memory and archive state again for the April 18-24 window. No major durable state changed beyond carrying forward the 2026-04-21 lessons.
+- **2026-04-25:** Weekly consolidation refreshed long-term memory and archive state again for the April 19-25 window. `2026-04-10.md` was confirmed as safely represented by archive summaries.
+- **2026-04-26:** Weekly consolidation refreshed long-term memory and archive state again for the April 20-26 window. `2026-04-11.md` was confirmed as safely represented by archive summaries; corrected Orisynx repo-monitoring baselines continued to hold.
+- **2026-04-27:** Weekly consolidation refreshed long-term memory and archive state again for the April 21-27 window. `2026-04-12.md` was confirmed as safely represented by archive summaries.
+- **2026-04-28:** Weekly consolidation refreshed long-term memory and archive state again for the April 22-28 window. Daily logs older than 14 days before `2026-04-14` were already safely represented by earlier archive summaries.
+- **2026-04-29:** A new AdugboInsure testimonials content package was produced locally: script, Telegram post draft, and branded final video export. NotebookLM login still showed the false-positive pattern where login can report success while real notebook/video commands fail with `Authentication expired`.
+- **2026-04-30:** No daily file existed before this consolidation run. A best-effort local Ollama attempt was made again as requested and failed because `llama3.2:3b` still required about 2.3 GiB while only about 900.6 MiB was available.
+
+### Distilled Long-Term Updates
+- No major strategic direction changed this week; the durable state remains mostly stable.
+- AdugboInsure's ready local queue remains the most actionable asset, now including the 2026-04-29 testimonials package alongside the existing benefits, coverage, and claims assets.
+- NotebookLM remains the active narrow blocker for further video generation/download: reported login success is still not enough, and real notebook/video commands must verify auth.
+- Google Slides OAuth repair and validation remain a durable healthy state for `jarviskolademail@gmail.com`.
+- mhGAP/Indigo recovery should continue to prioritize same-signed versionCode 10 update/recovery APKs over more ADB-only extraction attempts.
+- Android extraction routes on the affected Indigo tablets remain exhausted under current permissions.
+- Robin/research reporting must continue to forbid filler lane updates sourced only from schedule or admin notes; same-day evidence remains required.
+- Cron delivery reliability remains improved via explicit Telegram target `7101554375` on the repaired failing jobs.
+- Corrected Orisynx monitoring remains durably anchored to `backend`, `frontend`, and `bootstrap`, with authenticated `gh` checks preferred over unauthenticated browser reads for private repo access.
+- Local Ollama remains the preferred zero-cost consolidation path in principle, but this host still does not have enough free RAM for `llama3.2:3b` full-prompt runs; manual finalization remains necessary.
+
+### 14-Day Compression Update
+- **Daily logs older than 14 days (before 2026-04-16):** are already safely represented by prior archive summaries; no new full-fidelity daily logs needed additional compression in this run.
+
+### Next Consolidation
+- Thursday, May 7, 2026
+
+
 ## Week of April 23 - April 29, 2026 - Weekly Consolidation Summary
 
 **Archive Date:** Wednesday, April 29, 2026 (17:00 UTC)  

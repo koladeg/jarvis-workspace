@@ -1,13 +1,13 @@
 # MEMORY.md
 
-## Weekly Consolidation & Progress (2026-04-29)
+## Weekly Consolidation & Progress (2026-04-30)
 
-**Last consolidated:** Wednesday, April 29, 2026 (17:00 UTC)  
+**Last consolidated:** Thursday, April 30, 2026 (17:00 UTC)  
 **Archive location:** `memory/ARCHIVE.md` (historical consolidations)  
-**Next consolidation:** Wednesday, May 6, 2026
+**Next consolidation:** Thursday, May 7, 2026
 
-**Status Summary (Week of April 23 - April 29):**
-- 🔁 No major strategic direction changed this week; the durable state remains mostly stable.
+**Status Summary (Week of April 24 - April 30):**
+- 🔁 No major strategic direction changed this week; the durable operating state remains largely stable.
 - ✅ Research execution remains the durable standard: setup, schedules, or heartbeats do **not** count unless a live workflow actually runs and writes outputs back.
 - 🎓 School/application research remains durably MBA-forward, with added focus on business, innovation, entrepreneurship, technology, and credible bootcamps.
 - 🤝 Networking events remain an explicit research lane alongside funding, jobs, trucks, partners/validators, and school/MBA work.
@@ -16,7 +16,7 @@
   - 2026-04-12 benefits script + Telegram draft + branded final video export remain locally ready for upload/posting.
   - 2026-04-15 coverage script + Telegram draft remain ready locally.
   - 2026-04-16 claims script + Telegram draft remain ready locally.
-  - 2026-04-29 testimonials script + Telegram draft + branded final video export are now also locally ready.
+  - 2026-04-29 testimonials script + Telegram draft + branded final video export remain locally ready.
 - 🔐 **NotebookLM remains the active blocker:** `nlm login` can report success while real notebook/video commands still fail with `Authentication expired`; always verify auth with a real command. Fresh NotebookLM cookies from Kolade are still required.
 - ✅ Orisynx weekly repo briefing remains a real installed automation.
 - 📊 **Corrected Orisynx monitoring baseline remains durable:** primary repos to track are `Orisynx/backend`, `Orisynx/frontend`, and `Orisynx/bootstrap`.
@@ -37,9 +37,9 @@
 - 📬 **Cron delivery reliability improved:** failing Robin/pipeline/AdugboInsure cron jobs were repaired by adding explicit Telegram target `7101554375` in `/home/claw/.openclaw/cron/jobs.json`.
 - ⏳ Still waiting on key external inputs from Kolade: Orium job link, fuller truck specifications, ClickUp workspace link, and fresh NotebookLM cookies.
 
-**Critical Next Steps (April 29 - May 6):**
+**Critical Next Steps (April 30 - May 7):**
 1. **NotebookLM:** Kolade needs to provide fresh NLM cookies — AdugboInsure video generation/download remains blocked without them.
-2. **AdugboInsure Publishing:** Use the existing ready queue first, including the new 2026-04-29 testimonials package, before generating more weekly content.
+2. **AdugboInsure Publishing:** Use the existing ready queue first, including the 2026-04-29 testimonials package, before generating more weekly content.
 3. **Ops:** Run `openclaw doctor --fix`, then re-test the research agent under the repaired gateway.
 4. **Research Agent / Robin:** Keep the evidence-first reporting guardrail in place and verify full end-to-end reply behavior before claiming success.
 5. **mhGAP/Indigo:** Prefer same-signed versionCode 10 update/recovery path over more ADB-only extraction attempts.
