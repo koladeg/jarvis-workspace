@@ -7,6 +7,7 @@ import sys
 import urllib.error
 import urllib.parse
 import urllib.request
+from datetime import datetime, timezone
 from pathlib import Path
 
 WORKSPACE = Path("/home/claw/.openclaw/workspace")
@@ -17,6 +18,7 @@ ALLOWED_CHAT_ID = "7101554375"
 AGENT_ID = os.environ.get("ROBIN_AGENT_ID", "research")
 THINKING = os.environ.get("ROBIN_THINKING", "low")
 TIMEOUT_SECONDS = os.environ.get("ROBIN_TIMEOUT", "300")
+SESSION_ROLLOVER = os.environ.get("ROBIN_SESSION_ROLLOVER", "daily").strip().lower()
 
 STATE_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -104,8 +106,39 @@ def direct_reply_for_simple_message(user_text: str) -> str | None:
         "okay": "Alright.",
         "thanks": "Anytime.",
         "thank you": "Anytime.",
+        "can you hear me": "Yes — I can hear you.",
+        "can you hear me?": "Yes — I can hear you.",
+        "do you hear me": "Yes — I can hear you.",
+        "do you hear me?": "Yes — I can hear you.",
+        "are you there": "Yes — I'm here.",
+        "are you there?": "Yes — I'm here.",
+        "let me know if any issues": "No issues right now.",
+        "let me know if there are any issues": "No issues right now.",
+        "test": "I'm here.",
+        "testing": "I'm here.",
+        "test?": "I'm here.",
+        "testing?": "I'm here.",
     }
-    return simple.get(normalized)
+    if normalized in simple:
+        return simple[normalized]
+    if re.fullmatch(r"(can|do) you hear me\??", normalized):
+        return "Yes — I can hear you."
+    if re.fullmatch(r"are you there\??", normalized):
+        return "Yes — I'm here."
+    return None
+
+
+def current_session_id() -> str:
+    now = datetime.now(timezone.utc)
+    if SESSION_ROLLOVER == "per_message":
+        return f"robin-private-{AGENT_ID}-{now.strftime('%Y%m%dT%H%M%S')}"
+    if SESSION_ROLLOVER == "weekly":
+        iso_year, iso_week, _ = now.isocalendar()
+        return f"robin-private-{AGENT_ID}-{iso_year}-W{iso_week:02d}"
+    if SESSION_ROLLOVER == "monthly":
+        return f"robin-private-{AGENT_ID}-{now.strftime('%Y-%m')}"
+    # default: daily rollover keeps short continuity without letting the chat bloat forever.
+    return f"robin-private-{AGENT_ID}-{now.strftime('%Y-%m-%d')}"
 
 
 def extract_reply_text(data: dict) -> str:
@@ -174,6 +207,8 @@ def generate_reply_via_openclaw(user_text: str) -> str:
         "agent",
         "--agent",
         AGENT_ID,
+        "--session-id",
+        current_session_id(),
         "--message",
         prompt,
         "--thinking",
