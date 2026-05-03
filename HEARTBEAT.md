@@ -9,7 +9,7 @@ Run every ~30 minutes. Uses `ollama/llama3.2:3b` (free, local) for lightweight c
 
 ## Jarvis Mistake Review
 
-Run a lightweight self-audit once daily during heartbeat, or immediately after a clear mistake.
+Run a lightweight self-audit on a 12-hour cadence during heartbeat — 7:00 AM WAT and 7:00 PM WAT — or immediately after a clear mistake.
 
 ### Goal
 - Quietly capture real lessons
@@ -17,7 +17,7 @@ Run a lightweight self-audit once daily during heartbeat, or immediately after a
 - Stay silent unless there is something actionable
 
 ### Trigger rules
-- Run at most **once per day** during heartbeat unless a fresh notable error happened
+- Run at most **twice per day** during heartbeat on the 12-hour schedule above unless a fresh notable error happened
 - Also run after mistakes involving:
   - wrong assumptions about access/auth
   - repeating the same workflow mistake
@@ -58,6 +58,11 @@ python3 /home/claw/.openclaw/workspace/scripts/analyze-mistake.py \
   - If any REQUIRED creds missing: tell Kolade immediately, ask to re-provide
   - If any creds expiring in < 7 days: warn Kolade to refresh
   - Format: "🔐 Weekly Creds Check: X/Y present. [list any issues]"
+
+**Robin News Lane (cron-owned):**
+- Tuesday — 7:05 PM WAT
+- Saturday — 9:05 AM WAT
+- Status: ✅ Present in `/home/claw/.openclaw/cron/jobs.json`
 
 **ACTIVE CRON JOBS (Set 2026-03-25 10:06 UTC):**
 

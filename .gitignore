@@ -12,7 +12,13 @@ logs/*.log
 tmp/
 tmp_*.txt
 consolidation-input.txt
+memory/consolidation-input-*.txt
+workspace-research/memory/consolidation-input-*.txt
 auto,
+
+# Generated deliverables / bulky outputs
+output/
+workspace-research/output/
 
 # Python cache
 __pycache__/

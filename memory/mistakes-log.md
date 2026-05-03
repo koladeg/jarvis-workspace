@@ -32,3 +32,11 @@
 - **Guardrail**: Before saying an external delivery path is unavailable, first check for existing workspace scripts/configs/credentials that already implement it, then test the smallest safe path.
 - **Status**: logged
 
+## 2026-05-01 02:04 UTC: Accidental invalid read path during heartbeat
+- **What**: Accidental invalid read path during heartbeat
+- **Context**: Heartbeat handling on 2026-05-01 00:04 UTC
+- **Root cause**: I fired an unnecessary read call with a bad path before the real HEARTBEAT.md read, instead of using the known exact workspace path directly.
+- **Pattern**: Minor workflow slip: unnecessary first tool call before the intended exact-path read.
+- **Guardrail**: For heartbeat prompts, use only the exact HEARTBEAT.md path from the prompt/workspace and avoid any exploratory pre-read calls.
+- **Status**: logged
+

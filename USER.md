@@ -6,7 +6,7 @@ _Learn about the person you're helping. Update this as you go._
 - **What to call them:** kolade
 - **Pronouns:** he/him
 - **Timezone:** Africa/Lagos (Nigeria)
-- **Notes:** First conversation: chose the assistant name Jarvis, prefers a calm vibe, picked 😇 as the signature emoji. For sending deliverables, prefer email for personal files/results and GitHub for project/code/docs when Google Drive is awkward.
+- **Notes:** First conversation: chose the assistant name Jarvis, prefers a calm vibe, picked 😇 as the signature emoji. For sending deliverables, prefer email for personal files/results and GitHub for project/code/docs when Google Drive is awkward. For Anthropic usage, prefer Haiku as the default and use Sonnet only for bigger tasks. For Codex/OpenAI usage, keep the rollout conservative: stay on GPT-5.4 as the normal Codex path for now, and only use GPT-5.5 deliberately for testing or clearly harder tasks.
 
 ## Context
 
