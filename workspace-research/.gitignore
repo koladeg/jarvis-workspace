@@ -1,0 +1,7 @@
+# Research workspace scratch / generated noise
+memory/consolidation-input-*.txt
+output/
+logs/
+tmp/
+__pycache__/
+*.pyc
