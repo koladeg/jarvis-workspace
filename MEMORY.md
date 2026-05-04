@@ -1,10 +1,10 @@
-## Weekly Consolidation & Progress (2026-05-03)
+## Weekly Consolidation & Progress (2026-05-04)
 
-**Last consolidated:** Sunday, May 3, 2026 (17:00 UTC)  
+**Last consolidated:** Monday, May 4, 2026 (17:00 UTC)  
 **Archive location:** `memory/ARCHIVE.md` (historical consolidations)  
-**Next consolidation:** Sunday, May 10, 2026
+**Next consolidation:** Monday, May 11, 2026
 
-**Status Summary (Week of April 27 - May 3):**
+**Status Summary (Week of April 28 - May 4):**
 - 🔁 No major strategic direction changed this week; the durable operating state remains largely stable.
 - ✅ Research execution remains the durable standard: setup, schedules, heartbeats, or listener changes do **not** count unless a live workflow actually runs and writes outputs back.
 - ✅ AdugboInsure queue discipline remains durable: do not generate a fresh weekly video while approved content already covers the posting window; refill only when coverage drops below the target buffer.
@@ -14,7 +14,7 @@
   - 2026-04-16 claims script + Telegram draft remain ready locally.
   - 2026-04-29 testimonials script + Telegram draft + branded final video export remain locally ready.
 - 🔐 **NotebookLM remains the active blocker:** `nlm login` can report success while real notebook/video commands still fail with `Authentication expired`; always verify auth with a real command. Core credentials remain present, but NotebookLM cookies are expired and still need fresh replacement from Kolade.
-- 🤖 **Robin reliability lessons remain the main new durable operational update:**
+- 🤖 **Robin reliability lessons remain the main recent durable operational update:**
   - Private-chat handling now uses rolling fresh `research` agent sessions instead of endlessly reusing one bloated session.
   - Lightweight check-ins now use a direct fast-path so greetings / “can you hear me” style messages do not trigger the heavy agent path.
   - The concrete outage pattern from 2026-05-01 is durable: session bloat can cause long agent timeouts, and Telegram `HTTP 409 Conflict` errors mean another poller may still be competing for the same bot token/session path.
@@ -30,7 +30,7 @@
 - 🧠 Durable consolidation ops note remains: local Ollama is still the preferred zero-cost path for memory consolidation, but this host still lacks enough free RAM for `llama3.2:3b` full-prompt runs; manual finalization remains the fallback after a best-effort local attempt.
 - ⏳ Still waiting on key external inputs from Kolade: Orium job link, fuller truck specifications, ClickUp workspace link, and fresh NotebookLM cookies.
 
-**Critical Next Steps (May 3 - May 10):**
+**Critical Next Steps (May 4 - May 11):**
 1. **NotebookLM:** Kolade needs to provide fresh NLM cookies — AdugboInsure video generation/download and Sunday automation remain blocked without them.
 2. **AdugboInsure Publishing:** Use the existing ready queue first, including the 2026-04-29 testimonials package, before generating more weekly content.
 3. **Robin:** If `HTTP 409 Conflict` errors recur after the local listener restart, check for another active poller using the same Robin bot token.

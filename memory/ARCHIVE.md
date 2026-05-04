@@ -1,5 +1,37 @@
 # Memory Archive - Historical Consolidations
 
+## Week of April 28 - May 4, 2026 - Weekly Consolidation Summary
+
+**Archive Date:** Monday, May 4, 2026 (17:00 UTC)  
+**Period:** Past 7 days (April 28 - May 4)  
+**Status:** ✅ Consolidated and archived
+
+### Consolidated Sessions (Compressed)
+- **2026-04-28:** Weekly consolidation refreshed long-term memory and archive state for the April 22-28 window. No major durable change beyond carrying forward the stable operating lessons.
+- **2026-04-29:** A new AdugboInsure testimonials package was produced locally: script, Telegram post draft, and branded final video export. NotebookLM login still showed the false-positive pattern where login can report success while real notebook/video commands fail with `Authentication expired`.
+- **2026-04-30:** Weekly consolidation refreshed long-term memory and archive state for the April 24-30 window. No major durable state changed beyond carrying forward the existing operating guardrails and the new testimonials package.
+- **2026-05-01:** Robin private-chat reliability work established the durable operating pattern: use rolling fresh `research` agent sessions instead of one bloated long-lived session; add a direct fast-path for lightweight check-in messages; and treat Telegram `HTTP 409 Conflict` errors as evidence of another competing poller unless proven otherwise. Friday credential verification also confirmed core credentials present, while NotebookLM cookies were expired.
+- **2026-05-02:** Verified Robin-reported schedule updates had not landed in the main workspace, then manually aligned `HEARTBEAT.md` with the intended 7:00 AM / 7:00 PM WAT mistake-review cadence and the Tuesday/Saturday Robin news-lane entries. Confirmed the separate cron layer already had the matching enabled Robin news-lane jobs targeting Telegram `7101554375`.
+- **2026-05-03:** Weekly memory consolidation refreshed long-term memory and archive state again for the April 27 - May 3 window. No major durable state changed beyond preserving the AdugboInsure ready queue, Robin reliability lessons, schedule-alignment correction, and existing operating guardrails.
+- **2026-05-04:** No daily file was present before this consolidation run. A best-effort local Ollama attempt was made again as requested and failed because `llama3.2:3b` required about 2.3 GiB while only about 1.8 GiB was available. Final consolidation edits were completed manually from the reviewed notes.
+
+### Distilled Long-Term Updates
+- No major strategic direction changed this week; the durable state remains mostly stable.
+- AdugboInsure's locally ready queue remains the most actionable content buffer, including the 2026-04-29 testimonials package alongside the benefits, coverage, and claims assets.
+- NotebookLM remains the active narrow blocker: reported login success still does not prove notebook access, and fresh cookies from Kolade are required again.
+- Robin reliability now has sharper durable rules: avoid long-lived bloated agent sessions, fast-path trivial check-ins, and treat Telegram `409 Conflict` errors as a concrete competing-poller signal.
+- Schedule/admin updates reported by Robin should be verified against the actual main-workspace files before being trusted as complete.
+- Cron delivery reliability remains improved via explicit Telegram target `7101554375`, with Robin news-lane jobs confirmed present and enabled.
+- Local Ollama remains the preferred zero-cost consolidation path in principle, but this host still lacks enough free RAM for `llama3.2:3b` full-prompt runs; manual consolidation remained necessary after a best-effort local attempt.
+
+### 14-Day Compression Update
+- No new daily logs crossed the >14-day compression threshold in this run; daily logs older than 2026-04-20 were already safely represented by prior archive summaries.
+
+### Next Consolidation
+- Monday, May 11, 2026
+
+
+
 ## Week of April 27 - May 3, 2026 - Weekly Consolidation Summary
 
 **Archive Date:** Sunday, May 3, 2026 (17:00 UTC)  
