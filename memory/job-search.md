@@ -10,43 +10,128 @@
 This is now the single source of truth for the active job application schedule.
 Older roles from the March pipeline are kept as backlog/parallel options unless re-promoted.
 
-### ACTIVE PRIORITY QUEUE
+### CURRENT APPLY SCHEDULE — 2026-05-05
 
-#### Tier 1 — Apply First
+**Submitted / removed from active queue:**
+- nsave — Front-End Engineer (React Native) — London — **SUBMITTED 2026-04-27**
 
-1. **nsave — Front-End Engineer (React Native) — London**
+#### Kolade — Apply Now
+
+1. **KWAN — Frontend Developer — Lisbon / Portugal**
 - Priority: P1
-- Status: SUBMITTED
-- Fit: Best fit; React Native + TypeScript
-- Visa/Relocation: Explicit visa sponsorship
-- Link: https://app.screenloop.com/careers/nsave/job_posts/8355?sl_source=organic-posting-network&tab=application_form&igbTracker=902990383
-- CV: Submitted
-- Cover Letter: Not requested in form
-- Notes: Submitted by Kolade on 2026-04-27; highest current-priority practical role; Screenloop application page provided by Kolade on 2026-04-21
-
-2. **KWAN — Frontend Developer — Lisbon / Portugal**
-- Priority: P1
-- Status: READY TO REVIEW / APPLY
+- Status: IN PROGRESS / APPLY NOW
 - Fit: Strong frontend / TypeScript fit
 - Visa/Relocation: Relocation + visa sponsorship
 - Link: https://pt.linkedin.com/jobs/view/frontend-developer-at-kwan-4398288339
 - CV: Frontend / TypeScript version needed
 - Cover Letter: Needed
-- Notes: Strong relocation path
+- Notes: Active manual application target
 
-3. **KWAN — Frontend Developer (React.js) — Portugal**
+2. **KWAN — Frontend Developer (React.js) — Portugal**
 - Priority: P1
-- Status: READY TO REVIEW / APPLY
+- Status: READY AFTER MAIN KWAN ROLE
 - Fit: Similar lane, still solid
 - Visa/Relocation: Needs confirmation from live page
 - Link: https://www.careerjet.pt/jobad/pt020a1ad72cd6eff0e8083919f50dd8ce
 - CV: Frontend / React version needed
 - Cover Letter: Needed
-- Notes: Keep grouped with the other KWAN role
+- Notes: Secondary KWAN lane; link looked flaky during quick check
 
-#### Tier 2 — Strong but Less Clear
+3. **Headway — Senior React Native Developer — Remote**
+- Priority: P1
+- Status: READY TO APPLY
+- Fit: Strongest current React Native match from the earlier batch
+- Visa/Relocation: Remote role; salary shown at $130k-$200k on the RemoteOK mirror
+- Link: https://headway.bamboohr.com/careers/39?source=aWQ9MjQ%3D&utm_source=remoteok.com&rid=RMTAyLjg5LjIyLjI0Mg==&ref=remoteok.com
+- CV: React Native / mobile-first version needed
+- Cover Letter: Likely needed / check BambooHR form
+- Notes: High-priority practical target
 
-4. **Mistral AI — Cloud Software Engineer, Fullstack/Frontend — Germany**
+4. **Tether — Senior React Native Mobile Developer WDK — Worldwide**
+- Priority: P1
+- Status: READY TO APPLY
+- Fit: Best pure React Native fit from the shortlist
+- Visa/Relocation: Worldwide / remote-friendly signal
+- Link: https://careers.tether.io/o/senior-react-native-mobile-developer-wdk-hackernews
+- CV: React Native / mobile-first version needed
+- Cover Letter: Needed
+- Notes: Strong worldwide signal
+
+5. **Paperpile — Senior Full Stack Engineer — Worldwide Remote**
+- Priority: P1
+- Status: NEW / READY TO REVIEW
+- Fit: Strong React + TypeScript fit with explicit React Native adjacency
+- Visa/Relocation: Worldwide remote
+- Link: https://remoteok.com/remote-jobs/remote-senior-full-stack-engineer-paperpile-1131381
+- CV: Full-stack / React / TypeScript version needed
+- Cover Letter: Needed
+- Notes: Best same-day fit from the new additions
+
+#### Jarvis Lane — Direct / Company-Site First
+
+6. **Anthropic — Software Engineer, Safeguards Infrastructure — London**
+- Priority: P1
+- Status: PREP / APPLY PATH
+- Fit: Stretch role; less direct than RN/frontend roles
+- Visa/Relocation: Real visa route
+- Link: https://job-boards.greenhouse.io/anthropic/jobs/5074908008
+- CV: Reliability / infrastructure leaning version needed
+- Cover Letter: Needed
+- Notes: One clean, high-quality attempt
+
+7. **Featurebase — Full-stack Product Engineer — Careers page**
+- Priority: P1
+- Status: PREP / ROLE CONFIRMATION NEEDED
+- Fit: Good near-strong fit; TypeScript / React / product orientation likely relevant
+- Visa/Relocation: Needs live-page confirmation
+- Link: https://www.featurebase.app/careers
+- CV: Full-stack / product engineer version needed
+- Cover Letter: Needed if pursued
+- Notes: In the agreed direct-apply batch
+
+8. **Holepunch — remote but Argentina-tagged**
+- Priority: P2
+- Status: LINK RECOVERY / ELIGIBILITY CHECK
+- Fit: Worth trying if location restriction is soft
+- Visa/Relocation: Unclear
+- Link: [to confirm]
+- CV: TBD
+- Cover Letter: TBD
+- Notes: In agreed direct-apply batch; location risk
+
+9. **Certa — Senior Frontend Engineer (SDE III) — Remote only**
+- Priority: P2
+- Status: READY TO REVIEW / APPLY
+- Fit: Strong frontend / React / TypeScript fit
+- Visa/Relocation: Remote-only posting; location flexibility still worth confirming
+- Link: https://cutshort.io/job/Senior-Frontend-Engineer-SDE-III-Certa-UEKFbfDd
+- CV: Frontend / React / TypeScript version needed
+- Cover Letter: Needed
+- Notes: Strong fallback from agreed batch
+
+#### Strong Additions / Next Up
+
+10. **Buffer — Senior Growth Engineer — Remote / Async**
+- Priority: P2
+- Status: NEW / READY TO REVIEW
+- Fit: Strong React + TypeScript fit, but more growth/web than React Native
+- Visa/Relocation: Remote / async
+- Link: https://jobs.ashbyhq.com/buffer/6ee07995-2738-4cee-b16d-fc8967674346
+- CV: Frontend / product-growth version needed
+- Cover Letter: Needed
+- Notes: Strong company and clean remote setup
+
+11. **Lemon.io — Senior Full-stack React Developer**
+- Priority: P2
+- Status: NEW / READY TO REVIEW
+- Fit: Solid React fit
+- Visa/Relocation: Remote signal
+- Link: https://remoteok.com/remote-jobs/remote-senior-full-stack-react-developer-lemon-io-1131339
+- CV: Full-stack React version needed
+- Cover Letter: Needed
+- Notes: Worth keeping active
+
+12. **Mistral AI — Cloud Software Engineer, Fullstack/Frontend — Germany**
 - Priority: P2
 - Status: READY TO REVIEW / APPLY
 - Fit: Strong company, good stack fit
@@ -56,7 +141,7 @@ Older roles from the March pipeline are kept as backlog/parallel options unless 
 - Cover Letter: Needed
 - Notes: Good swing if eligibility still checks out
 
-5. **Mistral AI — Cloud Software Engineer, Fullstack/Frontend — London**
+13. **Mistral AI — Cloud Software Engineer, Fullstack/Frontend — London**
 - Priority: P2
 - Status: READY TO REVIEW / APPLY
 - Fit: Strong company, UK path attractive
@@ -66,99 +151,17 @@ Older roles from the March pipeline are kept as backlog/parallel options unless 
 - Cover Letter: Needed
 - Notes: Pair with Germany application pack where possible
 
-6. **Anthropic — Software Engineer, Safeguards Infrastructure — London**
-- Priority: P2
-- Status: READY TO REVIEW / APPLY
-- Fit: Stretch role; less direct than RN/frontend roles
-- Visa/Relocation: Real visa route
-- Link: https://job-boards.greenhouse.io/anthropic/jobs/5074908008
-- CV: Reliability / infrastructure leaning version needed
-- Cover Letter: Needed
-- Notes: Worth one clean, high-quality attempt
+#### Fallback Batch
 
-7. **Certa — Senior Frontend Engineer (SDE III) — Remote only**
-- Priority: P2
-- Status: ADDED TO QUEUE
-- Fit: Strong frontend / React / TypeScript fit; less React Native-specific than nsave
-- Visa/Relocation: Remote-only posting; location flexibility still worth confirming
-- Link: https://cutshort.io/job/Senior-Frontend-Engineer-SDE-III-Certa-UEKFbfDd
-- CV: Frontend / React / TypeScript version needed
-- Cover Letter: Needed
-- Notes: 4-8 yrs; skills include React.js, TypeScript, accessibility, responsive design; must-haves mention enterprise-grade frontend, testing, design systems, performance, mentoring, and remote-team experience
-
-8. **Headway — Senior React Native Developer — Remote**
-- Priority: P1
-- Status: LIVE APPLICATION LINK CONFIRMED
-- Fit: Strongest current React Native match from today's pass
-- Visa/Relocation: Remote role; salary shown at $130k-$200k on the RemoteOK mirror
-- Link: https://headway.bamboohr.com/careers/39?source=aWQ9MjQ%3D&utm_source=remoteok.com&rid=RMTAyLjg5LjIyLjI0Mg==&ref=remoteok.com
-- CV: React Native / mobile-first version needed
-- Cover Letter: Likely needed / check BambooHR form
-- Notes: High-priority practical target; strongest RN alignment in the current batch; direct BambooHR application link provided by Kolade on 2026-04-21
-
-9. **Tether — Senior React Native Mobile Developer WDK — Worldwide**
-- Priority: P1
-- Status: ADDED TO QUEUE
-- Fit: Best pure React Native fit from the new shortlist; strongest worldwide signal in this batch
-- Visa/Relocation: Worldwide / remote-friendly signal
-- Link: https://careers.tether.io/o/senior-react-native-mobile-developer-wdk-hackernews
-- CV: React Native / mobile-first version needed
-- Cover Letter: Needed
-- Notes: Promoted as top lead from Kolade's 2026-04-27 shortlist
-
-#### Tier 2 — Strong but Less Clear (continued)
-
-10. **SuperPlane — Product Engineer — Remote**
-- Priority: P2
-- Status: ADDED TO QUEUE
-- Fit: Strong TypeScript / React / ownership fit; product-engineer lane rather than pure mobile
-- Visa/Relocation: Async / distributed remote signal
-- Link: https://remoteok.com/remote-jobs/remote-product-engineer-superplane-1131228
-- CV: Frontend / product-engineer version needed
-- Cover Letter: Needed
-- Notes: Strong generalist/product build role from the 2026-04-27 shortlist
-
-11. **Ashby — Product Engineer roles — Careers page**
-- Priority: P2
-- Status: ADDED TO QUEUE / ROLE SELECTION NEEDED
-- Fit: Strong near-fit depending on the exact product-engineer opening
-- Visa/Relocation: Needs live-page confirmation per role
-- Link: https://www.ashbyhq.com/careers
-- CV: Product engineer / frontend version likely needed
-- Cover Letter: Needed if pursued
-- Notes: Good near-strong fit; must choose the most relevant opening from careers page
-
-12. **Featurebase — Full-stack Product Engineer — Careers page**
-- Priority: P2
-- Status: ADDED TO QUEUE
-- Fit: Good near-strong fit; TypeScript / React / product orientation likely relevant
-- Visa/Relocation: Needs live-page confirmation
-- Link: https://www.featurebase.app/careers
-- CV: Full-stack / product engineer version needed
-- Cover Letter: Needed if pursued
-- Notes: Keep just behind SuperPlane unless the live role turns out to be a stronger fit than expected
-
-#### Tier 3 — Opportunistic / Conditional
-
-13. **Alinea — Product Engineer (iOS) — Hybrid NYC**
+14. **Alinea — Product Engineer (iOS) — Hybrid NYC**
 - Priority: P3
-- Status: ADDED TO QUEUE
+- Status: CONDITIONAL
 - Fit: Near-fit / weaker fit; more Swift / iOS-first than React Native
 - Visa/Relocation: Positive signal on sponsorship, but hybrid NYC adds friction
 - Link: https://www.ycombinator.com/companies/alinea/jobs/2GVRUn2-product-engineer-ios
 - CV: iOS / mobile product version only if pursued
 - Cover Letter: Needed if pursued
-- Notes: Keep as a stretch/conditional option rather than a frontline target
-
-14. **Holepunch — remote but Argentina-tagged**
-- Priority: P3
-- Status: CONDITIONAL
-- Fit: Worth trying if location restriction is soft
-- Visa/Relocation: Unclear
-- Link: [to confirm]
-- CV: TBD
-- Cover Letter: TBD
-- Notes: Location risk
+- Notes: Stretch/conditional option
 
 15. **Charted Sea — remote**
 - Priority: P3
@@ -189,6 +192,16 @@ Older roles from the March pipeline are kept as backlog/parallel options unless 
 - CV: TBD
 - Cover Letter: TBD
 - Notes: Only proceed if region flexibility is confirmed
+
+18. **Join — Full Stack Staff Engineer**
+- Priority: P3
+- Status: WATCHLIST
+- Fit: Potentially strong, but staff scope may be a stretch
+- Visa/Relocation: Remote signal
+- Link: https://remoteok.com/remote-jobs/remote-full-stack-staff-engineer-join-1131413
+- CV: Senior/staff-leaning full-stack version only if promoted
+- Cover Letter: TBD
+- Notes: Watchlist only for now
 
 ### BACKLOG / PARALLEL QUEUE (OLDER PIPELINE)
 
