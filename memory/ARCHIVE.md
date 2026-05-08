@@ -1,5 +1,36 @@
 # Memory Archive - Historical Consolidations
 
+## Week of May 2 - May 8, 2026 - Weekly Consolidation Summary
+
+**Archive Date:** Friday, May 8, 2026 (17:00 UTC)  
+**Period:** Past 7 days (May 2 - May 8)  
+**Status:** ✅ Consolidated and archived
+
+### Consolidated Sessions (Compressed)
+- **2026-05-02:** Verified Robin-reported schedule updates had not landed in the main workspace, then manually aligned `HEARTBEAT.md` with the intended 7:00 AM / 7:00 PM WAT mistake-review cadence and the Tuesday/Saturday Robin news-lane entries. Confirmed the separate cron layer already had the matching enabled Robin news-lane jobs targeting Telegram `7101554375`.
+- **2026-05-03:** Weekly memory consolidation refreshed long-term memory and archive state again for the April 27 - May 3 window. No major durable state changed beyond preserving the AdugboInsure ready queue, Robin reliability lessons, schedule-alignment correction, and existing operating guardrails.
+- **2026-05-04:** No daily file was present in this review window.
+- **2026-05-05:** Weekly memory consolidation refreshed long-term memory and archive state for the April 29 - May 5 window. No major durable state changed beyond preserving the existing operating guardrails.
+- **2026-05-06:** No daily file was present in this review window.
+- **2026-05-07:** No daily file was present in this review window.
+- **2026-05-08:** AdugboInsure executive details were clarified: Olorunfemi Ojo is the CTO and Ajidahun Olusina is Partner, Health Sector Advisor. Kolade also confirmed that UNICEF Venture Fund – Climate and Health 2026 and Visa Africa FinTech Accelerator Program 6 had already been submitted, so both items were moved from fresh-application tracking to follow-up status.
+
+### Distilled Long-Term Updates
+- No major strategic direction changed this week; the durable state remains mostly stable.
+- Robin schedule/admin updates should still be verified against actual main-workspace files before being trusted as complete; heartbeat guidance and cron state are aligned again.
+- Robin reliability lessons remain durable: use rolling fresh `research` sessions, fast-path trivial check-ins, and treat Telegram `409 Conflict` errors as a concrete competing-poller signal.
+- AdugboInsure's locally ready queue remains the main actionable content buffer, and NotebookLM remains the narrow blocker requiring fresh cookies from Kolade.
+- AdugboInsure reference data is now more accurate: Olorunfemi Ojo is the confirmed CTO, Ajidahun Olusina is Partner/Health Sector Advisor, and the UNICEF + Visa May opportunities are already in submitted/follow-up state.
+- Local Ollama remains the preferred zero-cost consolidation path in principle, but this host still lacks enough free RAM for `llama3.2:3b` full-prompt runs; this week's best-effort attempt failed again with roughly 2.1 GiB available versus about 2.3 GiB required.
+
+### 14-Day Compression Update
+- **2026-04-21.md:** now old enough to compress safely; its durable content is already represented by prior archive summaries covering Google Slides OAuth repair, mhGAP/Indigo recovery lessons, cron delivery target repair, and the evidence-first research-output guardrail.
+- **Daily logs older than 14 days (before 2026-04-22):** are now safely represented by prior archive summaries and no longer need active full-fidelity retention.
+
+### Next Consolidation
+- Friday, May 15, 2026
+
+
 ## Week of April 29 - May 5, 2026 - Weekly Consolidation Summary
 
 **Archive Date:** Tuesday, May 5, 2026 (17:00 UTC)  
