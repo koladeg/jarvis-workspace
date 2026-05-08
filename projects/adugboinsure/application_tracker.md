@@ -24,7 +24,14 @@ Use this file to track every funding, accelerator, partnership, or opportunity a
 
 | Opportunity | Type | Link | Date Submitted | Status | Confirmation Evidence | Next Follow-Up | Owner | Notes |
 |---|---|---|---|---|---|---|---|---|
-| Acumen – Grow your business | Investor intake / lead form | https://acumen.org/entrepreneurs/ | 2026-04-07 | SUBMITTED | Success state on page: "Thanks for joining!" | 2026-04-14 | Jarvis | Submitted with supported facts only; legal entity country left blank because not verified |
+| Acumen – Grow your business | Investor intake / lead form | https://acumen.org/entrepreneurs/ | 2026-04-07 | FOLLOW_UP_DUE | Success state on page: "Thanks for joining!" | 2026-04-14 | Jarvis | Submitted with supported facts only; legal entity country left blank because not verified |
+| UNICEF Venture Fund – Climate and Health 2026 | Venture fund / health innovation | https://www.unicef.org/innovation/call-for-application-climate-and-health-2026 | 2026-05-08 | FOLLOW_UP_DUE | Submitted per Kolade confirmation | 2026-05-15 | Jarvis | Submitted already; move to follow-up bucket and confirm any receipt / next-step email |
+| Visa Africa FinTech Accelerator Program 6 | Accelerator / fintech | https://vc4a.com/visa/visa-africa-fintech-accelerator-program-6/ | 2026-05-08 | FOLLOW_UP_DUE | Submitted per Kolade confirmation | 2026-05-15 | Jarvis | Submitted already; move to follow-up bucket and confirm any receipt / platform status |
+| Startup Innovation Challenge 2026 (Nigeria) | Challenge / equity-free support | https://fundsforcompanies.fundsforngos.org/awards-and-prizes/submissions-open-for-startup-innovation-challenge-2026-nigeria/ | — | NEW | — | — | Jarvis | High-priority fresh application; Nigeria-relevant, HealthTech included |
+| DayOne Accelerator Program for Healthtech Startups | Accelerator / healthtech | https://fundsforcompanies.fundsforngos.org/training-and-mentorship/dayone-accelerator-program-for-healthtech-startups/ | — | NEW | — | — | Jarvis | Medium priority; requires fresh validation before drafting/submission |
+| World Bank JJ/WBGSP Window #2 | Scholarship / school funding | https://www.worldbank.org/en/programs/scholarships/jj-wbgsp | — | DORMANT | — | — | Jarvis | Separate school-funding lane; only actionable after unconditional admission to a participating programme |
+| Village Capital Future of Aging 2026 | Accelerator | https://vilcap.com/programs/the-future-of-aging-2026 | — | REJECTED | — | — | Jarvis | Low-fit / US-only from prior pass |
+| ACT Foundation 2026 Grant Application | Grant | https://actrustfoundation.org/grant_application | — | DORMANT | — | — | Jarvis | Conflicting date signals; do not treat as live unless directly revalidated |
 
 ---
 
@@ -94,6 +101,35 @@ Run this once a week:
 ---
 
 ## Current Open Opportunities
+
+### Follow-up list
+- **Acumen – Grow your business**
+  - Status: `FOLLOW_UP_DUE`
+  - Next action: send follow-up
+  - Why: already submitted; should be moved from passive waiting to active follow-up
+- **UNICEF Venture Fund – Climate and Health 2026**
+  - Status: `FOLLOW_UP_DUE`
+  - Next action: confirm receipt / check for any response window or next-step email
+  - Why: Kolade confirmed it has already been submitted
+- **Visa Africa FinTech Accelerator Program 6**
+  - Status: `FOLLOW_UP_DUE`
+  - Next action: confirm receipt / check platform status or response email
+  - Why: Kolade confirmed it has already been submitted
+
+### Fresh applications to start
+1. **Startup Innovation Challenge 2026 (Nigeria)**
+   - Status: `NEW`
+   - Priority: high
+   - Why: Nigeria-relevant, HealthTech included, equity-free support
+2. **DayOne Accelerator Program for Healthtech Startups**
+   - Status: `NEW`
+   - Priority: medium
+   - Why: healthtech-specific, but must be revalidated fresh before effort
+
+### Hold / separate lane / skip
+- **World Bank JJ/WBGSP Window #2** — school-funding lane only; actionable after unconditional admission
+- **Village Capital Future of Aging 2026** — reject / low fit
+- **ACT Foundation 2026 Grant Application** — hold until directly revalidated
 
 ### Acumen – Grow your business
 - **Type:** investor intake / lead form

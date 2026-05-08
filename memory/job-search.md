@@ -23,49 +23,75 @@ Older roles from the March pipeline are kept as backlog/parallel options unless 
 - Fit: Strong frontend / TypeScript fit
 - Visa/Relocation: Relocation + visa sponsorship
 - Link: https://pt.linkedin.com/jobs/view/frontend-developer-at-kwan-4398288339
-- CV: Frontend / TypeScript version needed
-- Cover Letter: Needed
-- Notes: Active manual application target
+- CV: KWAN custom pack created and sent
+- Cover Letter: KWAN custom pack created and sent
+- Notes: Current manual application in progress
 
-2. **KWAN — Frontend Developer (React.js) — Portugal**
+2. **Paperpile — Senior Full Stack Engineer — Worldwide Remote**
 - Priority: P1
-- Status: READY AFTER MAIN KWAN ROLE
+- Status: NEXT UP / PACK IN PREP
+- Fit: Strong React + TypeScript fit with explicit React Native adjacency
+- Visa/Relocation: Worldwide remote
+- Link: https://remoteok.com/remote-jobs/remote-senior-full-stack-engineer-paperpile-1131381
+- CV: Paperpile-specific PDF requested
+- Cover Letter: Paperpile-specific version requested
+- Notes: Next role after KWAN
+
+3. **Buffer — Senior Growth Engineer — Remote / Async**
+- Priority: P2
+- Status: READY AFTER PAPERPILE
+- Fit: Strong React + TypeScript fit, but more growth/web than React Native
+- Visa/Relocation: Remote / async
+- Link: https://jobs.ashbyhq.com/buffer/6ee07995-2738-4cee-b16d-fc8967674346
+- CV: Frontend / product-growth version needed
+- Cover Letter: Needed
+- Notes: Strong company and clean remote setup
+
+4. **Lemon.io — Senior Full-stack React Developer**
+- Priority: P2
+- Status: READY AFTER BUFFER
+- Fit: Solid React fit
+- Visa/Relocation: Remote signal
+- Link: https://remoteok.com/remote-jobs/remote-senior-full-stack-react-developer-lemon-io-1131339
+- CV: Full-stack React version needed
+- Cover Letter: Needed
+- Notes: Worth keeping active
+
+5. **Mistral AI — Cloud Software Engineer, Fullstack/Frontend — Germany**
+- Priority: P2
+- Status: READY AFTER LEMON.IO
+- Fit: Strong company, good stack fit
+- Visa/Relocation: Sponsorship less explicit than aggregator suggested
+- Link: https://de.linkedin.com/jobs/view/mistral-cloud-software-engineer-fullstack-frontend-at-mistral-ai-4402204271
+- CV: Frontend / fullstack version needed
+- Cover Letter: Needed
+- Notes: Good swing if eligibility still checks out
+
+6. **Mistral AI — Cloud Software Engineer, Fullstack/Frontend — London**
+- Priority: P2
+- Status: READY AFTER MISTRAL DE
+- Fit: Strong company, UK path attractive
+- Visa/Relocation: Same caution on relocation clarity
+- Link: https://uk.linkedin.com/jobs/view/mistral-cloud-software-engineer-fullstack-frontend-at-mistral-ai-4402204270
+- CV: Frontend / fullstack version needed
+- Cover Letter: Needed
+- Notes: Pair with Germany application pack where possible
+
+#### Kolade — Already Submitted
+
+- **nsave — Front-End Engineer (React Native) — London**
+- **Headway — Senior React Native Developer — Remote**
+- **Tether — Senior React Native Mobile Developer WDK — Worldwide**
+
+7. **KWAN — Frontend Developer (React.js) — Portugal**
+- Priority: P1
+- Status: OPTIONAL SECOND KWAN LANE
 - Fit: Similar lane, still solid
 - Visa/Relocation: Needs confirmation from live page
 - Link: https://www.careerjet.pt/jobad/pt020a1ad72cd6eff0e8083919f50dd8ce
 - CV: Frontend / React version needed
 - Cover Letter: Needed
 - Notes: Secondary KWAN lane; link looked flaky during quick check
-
-3. **Headway — Senior React Native Developer — Remote**
-- Priority: P1
-- Status: READY TO APPLY
-- Fit: Strongest current React Native match from the earlier batch
-- Visa/Relocation: Remote role; salary shown at $130k-$200k on the RemoteOK mirror
-- Link: https://headway.bamboohr.com/careers/39?source=aWQ9MjQ%3D&utm_source=remoteok.com&rid=RMTAyLjg5LjIyLjI0Mg==&ref=remoteok.com
-- CV: React Native / mobile-first version needed
-- Cover Letter: Likely needed / check BambooHR form
-- Notes: High-priority practical target
-
-4. **Tether — Senior React Native Mobile Developer WDK — Worldwide**
-- Priority: P1
-- Status: READY TO APPLY
-- Fit: Best pure React Native fit from the shortlist
-- Visa/Relocation: Worldwide / remote-friendly signal
-- Link: https://careers.tether.io/o/senior-react-native-mobile-developer-wdk-hackernews
-- CV: React Native / mobile-first version needed
-- Cover Letter: Needed
-- Notes: Strong worldwide signal
-
-5. **Paperpile — Senior Full Stack Engineer — Worldwide Remote**
-- Priority: P1
-- Status: NEW / READY TO REVIEW
-- Fit: Strong React + TypeScript fit with explicit React Native adjacency
-- Visa/Relocation: Worldwide remote
-- Link: https://remoteok.com/remote-jobs/remote-senior-full-stack-engineer-paperpile-1131381
-- CV: Full-stack / React / TypeScript version needed
-- Cover Letter: Needed
-- Notes: Best same-day fit from the new additions
 
 #### Jarvis Lane — Direct / Company-Site First
 

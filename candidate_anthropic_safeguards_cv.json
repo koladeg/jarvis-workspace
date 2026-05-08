@@ -1,0 +1,205 @@
+{
+  "candidate": {
+    "name": "Kolade Gureje",
+    "contact_line": "koladegureje@gmail.com | +234 8079366207 | Lagos, Nigeria | Portfolio: https://koladeg.github.io/ | GitHub: github.com/koladeg | LinkedIn: linkedin.com/in/kolade-gureje",
+    "base_summary": "Software engineer with 4+ years delivering production software across mobile applications, operational workflows, and healthcare data systems. Experience spans React Native, TypeScript, JavaScript, Python, REST APIs, Firebase, and AWS-oriented DevOps training, with repeated ownership of reliability, debugging, structured testing, and real-world delivery in operational environments."
+  },
+  "style": {
+    "latin_font": "Times New Roman",
+    "cjk_font": "Times New Roman",
+    "section_titles": {
+      "summary": "Professional Summary",
+      "experience": "Professional Experience",
+      "education": "Education",
+      "projects": "Selected Projects",
+      "skills": "Skills & Certifications"
+    }
+  },
+  "education": [
+    {
+      "left": "Bachelor of Computer Science & Information Technology | Bowen University",
+      "right": "2010 - 2014",
+      "bullets": []
+    },
+    {
+      "left": "University of Ibadan | Africa Regional Centre for Information Science",
+      "right": "Nov 2017 - Jan 2019",
+      "bullets": []
+    },
+    {
+      "left": "Ironhack Bootcamp | Full-Stack Web Development",
+      "right": "Jun 2020 - Aug 2020",
+      "bullets": []
+    },
+    {
+      "left": "Cloud DevOps Nanodegree | Udacity",
+      "right": "Jun 2022 - Aug 2022",
+      "bullets": [
+        "Focused on infrastructure as code, CI/CD, and containerization workflows."
+      ]
+    },
+    {
+      "left": "ALX Founder Academy Program",
+      "right": "Mar 2024 - Jun 2024",
+      "bullets": [
+        "Startup leadership and product development training."
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "key": "adugboinsure",
+      "default_left": "Founder | AdugboInsure",
+      "default_right": "Nov 2024 - Present",
+      "default_bullets": [
+        "Building platforms that support State Health Insurance Agencies and community-based health insurance workflows.",
+        "Working at the intersection of product design, software delivery, and operational healthcare systems."
+      ]
+    },
+    {
+      "key": "sifax",
+      "default_left": "Software Developer / Deputy Manager | SIFAX",
+      "default_right": "Jan 2020 - Present",
+      "default_bullets": [
+        "Developed cross-platform mobile applications using React Native and integrated RESTful APIs for operational workflows.",
+        "Conducted unit tests to improve code robustness and troubleshoot application issues in production-oriented environments.",
+        "Supported maintainable delivery practices across implementation, debugging, and ongoing operational software needs."
+      ]
+    },
+    {
+      "key": "uch_pm",
+      "default_left": "Project Manager & Mobile Application Developer | University College Hospital (UCH)",
+      "default_right": "Mar 2023 - Sep 2023",
+      "default_bullets": [
+        "Directed a team of 5 to develop mhGAP mobile app replicas, recording 250+ patient visits in six months.",
+        "Streamlined API integrations for real-time analytics and improved healthcare data collection workflows."
+      ]
+    },
+    {
+      "key": "neighbortailor",
+      "default_left": "Front-End Developer | NeighborTailor.com",
+      "default_right": "Nov 2019 - Nov 2022",
+      "default_bullets": [
+        "Built and improved user-facing front-end product functionality in a remote team environment.",
+        "Contributed to performance and product delivery work across production software surfaces."
+      ]
+    },
+    {
+      "key": "uch_lead",
+      "default_left": "Project Lead Developer | University College Hospital (UCH)",
+      "default_right": "Sep 2024 - Nov 2024",
+      "default_bullets": [
+        "Developed eForms using React Native and integrated secure APIs, replacing paper-based data collection methods for the INTREPID III study.",
+        "Helped deliver dependable data-capture workflows in a sensitive healthcare setting with strong accuracy requirements."
+      ]
+    }
+  ],
+  "campus": [
+    {
+      "left": "Selected Project | ReportPrep AI",
+      "right": "AI-Assisted Reporting Platform",
+      "bullets": [
+        "Built a voice-assisted workflow for generating, validating, and storing professional reports.",
+        "Used Next.js, TypeScript, Firebase, Zod, Gemini, ElevenLabs, and Deepgram in an AI-enabled product context."
+      ]
+    },
+    {
+      "left": "Selected Project | GoTruck",
+      "right": "Logistics Mobile Application",
+      "bullets": [
+        "Built mobile workflows for on-demand freight transport using React Native, Redux, and REST APIs.",
+        "Worked on operational product behavior tied to real-world logistics use."
+      ]
+    },
+    {
+      "left": "Selected Project | e-mhGAP",
+      "right": "WHO-guided Mental Health Intervention App",
+      "bullets": [
+        "Built mobile workflows for non-specialized health settings using React Native, Redux, Formik, Yup, and Firebase.",
+        "Contributed to dependable digital data collection in a healthcare delivery context."
+      ]
+    }
+  ],
+  "tracks": {
+    "anthropic_safeguards_infrastructure": {
+      "title": "Software Engineer, Safeguards Infrastructure",
+      "summary": "Software engineer with 4+ years delivering production software for operational and healthcare environments where reliability, correct data flow, and maintainability matter. Brings hands-on experience with JavaScript, TypeScript, Python, REST APIs, Firebase, structured testing, and AWS-oriented DevOps training, plus leadership on real-world systems used by clinical and operational teams. Particularly motivated by infrastructure and safety-adjacent engineering work that improves oversight, dependable behavior, and scalable internal tooling.",
+      "experience_order": [
+        "sifax",
+        "uch_lead",
+        "uch_pm",
+        "adugboinsure",
+        "neighbortailor"
+      ],
+      "experience_overrides": {
+        "sifax": {
+          "left": "Software Developer / Deputy Manager | SIFAX",
+          "right": "Jan 2020 - Present",
+          "bullets": [
+            "Built and maintained production software for operational workflows, integrating REST APIs and supporting day-to-day reliability of user-facing systems.",
+            "Used structured testing and debugging to improve code robustness and address issues in live application environments.",
+            "Worked across implementation, maintenance, and operational support with an emphasis on dependable delivery and maintainable software."
+          ]
+        },
+        "uch_lead": {
+          "left": "Project Lead Developer | University College Hospital (UCH)",
+          "right": "Sep 2024 - Nov 2024",
+          "bullets": [
+            "Developed secure API-connected eForms that replaced paper-based data collection for the INTREPID III study.",
+            "Delivered higher-integrity data-capture workflows in a healthcare setting where accuracy, privacy, and dependable system behavior mattered."
+          ]
+        },
+        "uch_pm": {
+          "left": "Project Manager & Mobile Application Developer | University College Hospital (UCH)",
+          "right": "Mar 2023 - Sep 2023",
+          "bullets": [
+            "Led a 5-person team to deliver mhGAP mobile app replicas supporting 250+ patient visits in six months.",
+            "Improved API-connected analytics and data collection workflows, strengthening reporting and operational visibility in a clinical context."
+          ]
+        },
+        "adugboinsure": {
+          "left": "Founder | AdugboInsure",
+          "right": "Nov 2024 - Present",
+          "bullets": [
+            "Building software platforms for health-insurance operations, requiring product judgment, execution ownership, and attention to practical workflow reliability.",
+            "Working closely on system design choices that affect operational trust and day-to-day usage."
+          ]
+        },
+        "neighbortailor": {
+          "left": "Front-End Developer | NeighborTailor.com",
+          "right": "Nov 2019 - Nov 2022",
+          "bullets": [
+            "Built and improved user-facing product features in a remote team, with attention to performance and maintainable implementation.",
+            "Collaborated across product delivery work that required reliable API-connected frontend behavior."
+          ]
+        }
+      },
+      "campus_items": [
+        {
+          "left": "Selected Project | ReportPrep AI",
+          "right": "AI-Assisted Reporting Platform",
+          "bullets": [
+            "Built a voice-assisted workflow for generating, validating, and storing professional reports using modern AI services.",
+            "Shows practical experience working near AI-enabled product behavior, integrations, and user-facing safeguards around data workflows."
+          ]
+        },
+        {
+          "left": "Selected Project | e-mhGAP",
+          "right": "WHO-guided Mental Health Intervention App",
+          "bullets": [
+            "Contributed to a healthcare workflow platform where data integrity, structured forms, and dependable behavior were essential.",
+            "Used React Native, Redux, Formik, Yup, and Firebase to support sensitive real-world operations."
+          ]
+        }
+      ],
+      "skills_lines": [
+        "Languages: JavaScript, TypeScript, Python.",
+        "Application Engineering: React Native, React.js, Next.js, Redux, REST APIs, Firebase, MongoDB, Convex.",
+        "Reliability & Delivery: unit testing, debugging, TDD, CircleCI, Sentry, Git, production support.",
+        "Cloud & Tools: AWS, Docker, S3, Socket.IO, Cloudinary.",
+        "Credentials: AWS Certified Solutions Architect – Associate (Nov 2022 - Nov 2025); Cloud DevOps Nanodegree (Udacity).",
+        "Location: Based in Lagos, Nigeria; requires UK visa sponsorship and would need to satisfy Anthropic's London hybrid attendance expectation."
+      ]
+    }
+  }
+}

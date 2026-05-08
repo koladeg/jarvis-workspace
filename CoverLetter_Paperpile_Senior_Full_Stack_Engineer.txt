@@ -1,0 +1,18 @@
+Kolade Gureje
+Lagos, Nigeria
+koladegureje@gmail.com | +234 8079366207
+Portfolio: https://koladeg.github.io/ | GitHub: https://github.com/koladeg
+
+Dear Paperpile Hiring Team,
+
+I am applying for the Senior Full Stack Engineer role because it closely matches the kind of product-focused engineering work I have been doing across mobile, frontend, and API-connected applications over the past four-plus years. My background combines hands-on delivery in React Native, React, JavaScript, and TypeScript environments with experience building reliable user-facing software in healthcare, logistics, and digital product settings.
+
+In my current role at SIFAX, I build and maintain production applications, integrate REST APIs, manage complex state and workflow logic, and improve reliability through structured debugging and iterative delivery. I have also led development work on healthcare applications at University College Hospital, where I coordinated a small team and helped ship mobile workflows that supported 250+ patient visits with 98% data accuracy. Earlier, at NeighborTailor, I worked on customer-facing product flows and improved application performance by 35% through front-end optimization.
+
+What draws me to Paperpile is the combination of product depth, engineering ownership, and the opportunity to work across user-facing experiences that matter daily to researchers. I would bring strong React and TypeScript foundations, meaningful React Native experience, practical end-to-end product delivery habits, and a calm bias toward building software that is dependable, useful, and maintainable over time. I am especially comfortable in environments that value autonomy, clear thinking, and high-quality execution.
+
+Thank you for your time and consideration. I would be glad to discuss how my background could support Paperpile’s product and engineering goals.
+
+Sincerely,
+
+Kolade Gureje

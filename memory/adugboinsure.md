@@ -15,7 +15,7 @@
 
 ### Credentials Saved
 - ✅ **Notion API key:** `/home/claw/.openclaw/workspace/.credentials/notion_api_key.txt`
-  - Token: `ntn_x1517655162aymT1uxlUcAUVg9PzeEORi8fEkxRyUKDeSY`
+  - Token: `[REDACTED — stored only in credential file]`
   - Synced pages:
     - AdugboInsure agents: https://www.notion.so/AdugboInsure-agents-23505a75947a80318298fb6d09906d9b
     - OYSHIA tasks: https://www.notion.so/OYSHIA-AdugboInsure-Tasks-19d05a75947a80da87f0c45d5ebe4787
@@ -48,6 +48,20 @@
 - Target: $5,000 USD (near-term expansion)
 - Timeline: 3 months (Mar-May 2026)
 - Model: Community-based health insurance via POS agents
+
+**Company status:**
+- ✅ Incorporated
+- **Legal company name:** ADUGBOINSURE LIMITED
+- **RC Number:** 8514972
+- **Date of registration:** May 26, 2025
+- **Company type:** PRIVATE COMPANY LIMITED BY SHARES
+- **Registered address:** 5, NO 5, BISHOP CROWTHER STREET OFF AKERELE, LAGOS, LAGOS STATE, NIGERIA
+- **Head office address:** NIL
+- **Post code:** 101283
+- **Company email:** KOLADEGUREJE@ADUGBOINSURE.COM
+- **Status:** ACTIVE
+- **Principal business activity:** TECHNOLOGY SOLUTIONS DEVELOPMENT, DEPLOYMENT, AND MANAGEMENT OF TECHNOLOGY PLATFORMS FOR HEALTH, ENROLLMENT AND ADMINISTRATION.
+- **Share capital / ordinary shares note:** Total ORDINARY 1,000,000 (One Million Naira)
 
 ---
 
@@ -96,6 +110,9 @@
 
 ## Important Notes
 
+- **Default application answer:** For forms asking whether AdugboInsure is incorporated, the answer is **Yes**.
+- **Default legal entity answer:** Use **ADUGBOINSURE LIMITED** unless a form explicitly asks for the brand/startup name, in which case use **AdugboInsure**.
+- **Default registration country answer:** Nigeria.
 - **Content creation:** Weekly POS agent education scripts → available from NotebookLM notebook + existing YouTube videos
 - **Agent engagement:** Weak on Apete (only 3-5 respond), need activation work on Abe Emu
 - **OYSHIA relationship:** Strong (MOU exists), critical for scaling

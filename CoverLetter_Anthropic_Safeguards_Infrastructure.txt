@@ -1,0 +1,23 @@
+Subject: Application for Software Engineer, Safeguards Infrastructure — Kolade Gureje
+
+Dear Anthropic Hiring Team,
+
+I’m applying for the Software Engineer, Safeguards Infrastructure role in London. Anthropic’s focus on building reliable, interpretable, and steerable AI systems is compelling to me, especially because this role sits at the point where engineering quality directly affects safety, oversight, and user trust.
+
+My background is not a traditional trust-and-safety profile, but I do bring relevant experience building production software for operational and healthcare environments where reliability, correct data flow, and maintainable systems matter. At SIFAX, I have built and maintained production applications integrated with REST APIs, while taking responsibility for debugging, structured testing, and day-to-day application robustness. In healthcare work with University College Hospital, I helped deliver secure, API-connected workflows that replaced paper processes and supported 250+ patient visits, where accuracy and dependable behavior were essential. I also completed AWS-focused DevOps training and hold the AWS Certified Solutions Architect – Associate certification, which strengthened my interest in infrastructure-oriented engineering.
+
+I’m especially interested in this role because it combines infrastructure, evaluation systems, internal tooling, and operational rigor. That mix aligns with how I like to work: building systems that are practical, maintainable, and useful to the teams depending on them every day. I also have hands-on experience with Python, JavaScript, and TypeScript, and I’m comfortable working across product and technical boundaries when the goal is to improve reliability and system behavior.
+
+I understand this is a stretch from my recent React Native–heavy work, and I want to be direct about that. What I would bring is strong ownership, fast learning, real production accountability, and experience delivering software in environments where poor system behavior has real consequences. I would be excited to contribute that mindset to Anthropic’s safeguards work and grow deeper in infrastructure and safety-focused engineering.
+
+I am based in Lagos, Nigeria and would require UK visa sponsorship. I understand Anthropic supports visas where feasible, and I would be glad to discuss relocation and hybrid attendance requirements.
+
+Thank you for your consideration.
+
+Best regards,
+Kolade Gureje
++234 8079366207
+koladegureje@gmail.com
+Portfolio: https://koladeg.github.io/
+GitHub: github.com/koladeg
+LinkedIn: linkedin.com/in/kolade-gureje

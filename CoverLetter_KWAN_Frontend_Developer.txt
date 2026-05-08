@@ -1,0 +1,18 @@
+Kolade Gureje
+Lagos, Nigeria
+koladegureje@gmail.com | +234 8079366207
+Portfolio: https://koladeg.github.io/ | GitHub: https://github.com/koladeg
+
+Dear KWAN Hiring Team,
+
+I am applying for the Frontend Developer role because it aligns well with the work I have been doing across product, mobile, and frontend engineering over the past four-plus years. My background combines hands-on delivery in React Native and JavaScript/TypeScript environments with experience building reliable user-facing applications in healthcare, logistics, and digital product settings.
+
+In my current role at SIFAX, I build and maintain production applications, integrate APIs, manage complex front-end flows, and improve reliability through structured debugging and iterative delivery. I have also led development work on healthcare applications at University College Hospital, where I coordinated a small team and helped ship mobile workflows that supported 250+ patient visits with 98% data accuracy. Across these roles, I have developed a practical approach to building interfaces that are clear, dependable, and useful in real operational environments.
+
+I am particularly interested in KWAN because the role sits at the intersection of frontend craft, product thinking, and international growth. I would bring strong React and TypeScript foundations, experience collaborating across teams, and a builder mindset shaped by both engineering and delivery responsibility. I am also open to relocation to Portugal and excited by the chance to contribute in a fast-moving team where ownership and quality matter.
+
+Thank you for your time and consideration. I would be glad to discuss how my background could support KWAN's frontend team.
+
+Sincerely,
+
+Kolade Gureje

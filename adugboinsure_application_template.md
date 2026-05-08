@@ -18,6 +18,19 @@ POS agents (widespread in Nigeria, handle ₦18 trillion/year in transactions) a
 ## 2. CURRENT STAGE & TRACTION
 
 - **Stage:** 3-month pilot (completed or running)
+- **Incorporation status:** Yes — AdugboInsure is incorporated
+- **Legal company name:** ADUGBOINSURE LIMITED
+- **RC Number:** 8514972
+- **Date of registration:** May 26, 2025
+- **Company type:** PRIVATE COMPANY LIMITED BY SHARES
+- **Registered country:** Nigeria
+- **Registered address:** 5, NO 5, BISHOP CROWTHER STREET OFF AKERELE, LAGOS, LAGOS STATE, NIGERIA
+- **Head office address:** NIL
+- **Post code:** 101283
+- **Company email:** KOLADEGUREJE@ADUGBOINSURE.COM
+- **Status:** ACTIVE
+- **Principal business activity:** TECHNOLOGY SOLUTIONS DEVELOPMENT, DEPLOYMENT, AND MANAGEMENT OF TECHNOLOGY PLATFORMS FOR HEALTH, ENROLLMENT AND ADMINISTRATION.
+- **Share capital / ordinary shares note:** Total ORDINARY 1,000,000 (One Million Naira)
 - **Locations:** 2 urban PHCs — Apete PHC & Aba Emu PHC (Oyo State)
 - **Target Metrics:**
   - 500 enrollees per PHC (short-term pilot)

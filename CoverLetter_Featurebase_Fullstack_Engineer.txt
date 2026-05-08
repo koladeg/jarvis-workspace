@@ -1,0 +1,19 @@
+Dear Featurebase team,
+
+I’m applying for the Full-stack Engineer role listed on your careers page.
+
+What stood out to me about Featurebase is the combination of product ambition and team sharpness: a small, profitable, no-bureaucracy company where engineers can own meaningful product work end to end. That kind of environment fits how I work best. I enjoy taking features from idea to shipped experience, iterating quickly, and improving quality through practical engineering discipline rather than process overhead.
+
+I’m a frontend-leaning full-stack engineer and React Native developer with 4+ years of experience building production applications across healthcare, logistics, and digital product environments. Most of my hands-on work has been in JavaScript/TypeScript ecosystems, building user-facing applications, integrating REST APIs, managing complex state, and improving reliability in products used in real operational settings.
+
+At SIFAX, I built and maintained production applications for operational teams, working on API-connected workflows, debugging, iterative delivery, and maintainable application structure. At University College Hospital, I led a 3-person team on a React Native health application that supported 250+ patient visits with 98% data accuracy, which strengthened my ability to ship carefully in high-trust environments. I have also worked remotely with backend collaborators to deliver customer-facing product flows and improve performance.
+
+I know this role is a stretch in one specific sense: my strongest production depth is on the frontend/mobile side rather than a pure web-SaaS full-stack background. But I think I match the parts that matter most for a company like Featurebase: product ownership, speed, good judgment, strong JavaScript foundations, user empathy, and comfort working independently in a lean team. I also bring startup-minded energy and real interest in building software that users interact with every day.
+
+I’d be glad to discuss how my background could translate into Featurebase’s product engineering environment.
+
+Best regards,
+Kolade Gureje
+koladegureje@gmail.com
++234 8079366207
+https://koladeg.github.io/
