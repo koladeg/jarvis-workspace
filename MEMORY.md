@@ -1,10 +1,10 @@
-## Weekly Consolidation & Progress (2026-05-08)
+## Weekly Consolidation & Progress (2026-05-09)
 
-**Last consolidated:** Friday, May 8, 2026 (17:00 UTC)  
+**Last consolidated:** Saturday, May 9, 2026 (17:00 UTC)  
 **Archive location:** `memory/ARCHIVE.md` (historical consolidations)  
-**Next consolidation:** Friday, May 15, 2026
+**Next consolidation:** Saturday, May 16, 2026
 
-**Status Summary (Week of May 2 - May 8):**
+**Status Summary (Week of May 3 - May 9):**
 - 🔁 No major strategic direction changed this week; the durable operating state remains stable.
 - ✅ Research execution remains the durable standard: setup, schedules, heartbeats, or listener changes do **not** count unless a live workflow actually runs and writes outputs back.
 - ✅ AdugboInsure queue discipline remains durable: do not generate a fresh weekly video while approved content already covers the posting window; refill only when coverage drops below the target buffer.
@@ -21,9 +21,10 @@
 - 🛡️ **Research-output guardrail remains durable:** research workspace heartbeats and summaries must not send filler lane updates sourced only from schedule/admin notes; same-day evidence is required before reporting progress.
 - ⏰ **Schedule-alignment lesson remains durable:** Robin-reported schedule changes should be verified in the main workspace before trusting them. On 2026-05-02 the heartbeat file still lagged behind until manually updated; heartbeat guidance and cron state are aligned again.
 - 📬 **Cron delivery reliability remains improved:** the Robin news-lane jobs already exist in `/home/claw/.openclaw/cron/jobs.json`, enabled and delivering to Telegram target `7101554375`.
-- 🧾 **AdugboInsure executive reference was clarified this week:**
+- 🧾 **AdugboInsure executive reference is now clearer:**
   - Olorunfemi Ojo — CTO — phone `0092348094399450` — LinkedIn confirmed.
   - Ajidahun Olusina (`@the_bearded_doctor_sina`) — Partner, Health Sector Advisor.
+- 🧭 **AdugboInsure positioning clarification is worth keeping:** the insurance product itself comes from OYSHIA; AdugboInsure is the community access, awareness, trust-building, enrollment, and payment-support channel that helps people access OYSHIA coverage more easily.
 - 📤 **AdugboInsure opportunity tracking was corrected:** UNICEF Venture Fund – Climate and Health 2026 and Visa Africa FinTech Accelerator Program 6 were already submitted as of 2026-05-08 and should now be treated as follow-up items, not fresh applications.
 - ✅ Orisynx weekly repo briefing remains a real installed automation.
 - 📊 **Corrected Orisynx monitoring baseline remains durable:** primary repos to track are `Orisynx/backend`, `Orisynx/frontend`, and `Orisynx/bootstrap`.
@@ -34,7 +35,7 @@
 - 🧠 Durable consolidation ops note remains: local Ollama is still the preferred zero-cost path for memory consolidation, but this host still lacks enough free RAM for `llama3.2:3b` full-prompt runs; manual finalization remains the fallback after a best-effort local attempt.
 - ⏳ Still waiting on key external inputs from Kolade: Orium job link, fuller truck specifications, ClickUp workspace link, and fresh NotebookLM cookies.
 
-**Critical Next Steps (May 8 - May 15):**
+**Critical Next Steps (May 9 - May 16):**
 1. **NotebookLM:** Kolade needs to provide fresh NLM cookies — AdugboInsure video generation/download and Sunday automation remain blocked without them.
 2. **AdugboInsure Publishing:** Use the existing ready queue first, including the 2026-04-29 testimonials package, before generating more weekly content.
 3. **AdugboInsure Follow-ups:** Treat UNICEF Venture Fund and Visa Africa FinTech Accelerator as submitted opportunities and track follow-up timing rather than re-applying.
