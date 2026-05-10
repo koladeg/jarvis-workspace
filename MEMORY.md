@@ -1,10 +1,10 @@
-## Weekly Consolidation & Progress (2026-05-09)
+## Weekly Consolidation & Progress (2026-05-10)
 
-**Last consolidated:** Saturday, May 9, 2026 (17:00 UTC)  
+**Last consolidated:** Sunday, May 10, 2026 (17:00 UTC)  
 **Archive location:** `memory/ARCHIVE.md` (historical consolidations)  
-**Next consolidation:** Saturday, May 16, 2026
+**Next consolidation:** Sunday, May 17, 2026
 
-**Status Summary (Week of May 3 - May 9):**
+**Status Summary (Week of May 4 - May 10):**
 - 🔁 No major strategic direction changed this week; the durable operating state remains stable.
 - ✅ Research execution remains the durable standard: setup, schedules, heartbeats, or listener changes do **not** count unless a live workflow actually runs and writes outputs back.
 - ✅ AdugboInsure queue discipline remains durable: do not generate a fresh weekly video while approved content already covers the posting window; refill only when coverage drops below the target buffer.
@@ -13,7 +13,8 @@
   - 2026-04-15 coverage script + Telegram draft remain ready locally.
   - 2026-04-16 claims script + Telegram draft remain ready locally.
   - 2026-04-29 testimonials script + Telegram draft + branded final video export remain locally ready.
-- 🔐 **NotebookLM remains the active blocker:** `nlm login` can report success while real notebook/video commands still fail with `Authentication expired`; always verify auth with a real command. Core credentials remain present, but NotebookLM cookies are expired and still need fresh replacement from Kolade.
+  - 2026-05-10 benefits script + Telegram draft + branded local final video export now also exist locally.
+- 🔐 **NotebookLM remains the active blocker:** `nlm login` can report success while real notebook/video commands still fail with `Authentication expired`; always verify auth with a real command. The 2026-05-10 cron run confirmed the false-positive login pattern again, so fresh NotebookLM cookies from Kolade are still required.
 - 🤖 **Robin reliability lessons remain the main recent durable operational update:**
   - Private-chat handling uses rolling fresh `research` agent sessions instead of endlessly reusing one bloated session.
   - Lightweight check-ins use a direct fast-path so greetings and similar pings do not trigger the heavy agent path.
@@ -32,12 +33,12 @@
 - 📱 **mhGAP/Indigo recovery lesson remains unchanged:** prefer same-signed versionCode 10 update/recovery builds over more ADB-only extraction attempts; current-permission extraction routes on the affected tablets are exhausted.
 - 🌐 Durable browsing guardrail remains: for dynamic/React-style sites, shallow fetches can falsely look empty; confirm with `agent-browser` before concluding a page has no content.
 - 🔐 Durable GitHub access lesson remains: do not infer private repo access from unauthenticated browser 404s; verify with authenticated `gh`/API first.
-- 🧠 Durable consolidation ops note remains: local Ollama is still the preferred zero-cost path for memory consolidation, but this host still lacks enough free RAM for `llama3.2:3b` full-prompt runs; manual finalization remains the fallback after a best-effort local attempt.
+- 🧠 Durable consolidation ops note remains: local Ollama is still the preferred zero-cost path for memory consolidation, but this host still lacks enough free RAM for `llama3.2:3b` full-prompt runs; this run made a real local Ollama attempt again and it failed at about 1.9 GiB available vs about 2.3 GiB required, so manual finalization remained necessary.
 - ⏳ Still waiting on key external inputs from Kolade: Orium job link, fuller truck specifications, ClickUp workspace link, and fresh NotebookLM cookies.
 
-**Critical Next Steps (May 9 - May 16):**
+**Critical Next Steps (May 10 - May 17):**
 1. **NotebookLM:** Kolade needs to provide fresh NLM cookies — AdugboInsure video generation/download and Sunday automation remain blocked without them.
-2. **AdugboInsure Publishing:** Use the existing ready queue first, including the 2026-04-29 testimonials package, before generating more weekly content.
+2. **AdugboInsure Publishing:** Use the existing ready queue first, including the 2026-04-29 testimonials package and the new 2026-05-10 branded local benefits export, before generating more weekly content.
 3. **AdugboInsure Follow-ups:** Treat UNICEF Venture Fund and Visa Africa FinTech Accelerator as submitted opportunities and track follow-up timing rather than re-applying.
 4. **Robin:** If `HTTP 409 Conflict` errors recur after the local listener restart, check for another active poller using the same Robin bot token.
 5. **Research Agent / Robin:** Keep the evidence-first reporting guardrail in place and verify full end-to-end reply behavior before claiming success.
