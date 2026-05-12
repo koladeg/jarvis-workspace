@@ -1,5 +1,35 @@
 # Memory Archive - Historical Consolidations
 
+## Week of May 6 - May 12, 2026 - Weekly Consolidation Summary
+
+**Archive Date:** Tuesday, May 12, 2026 (17:00 UTC)  
+**Period:** Past 7 days (May 6 - May 12)  
+**Status:** ✅ Consolidated and archived
+
+### Consolidated Sessions (Compressed)
+- **2026-05-06:** No daily file was present in this review window.
+- **2026-05-07:** No daily file was present in this review window.
+- **2026-05-08:** AdugboInsure executive details stayed clarified: Olorunfemi Ojo is CTO with confirmed phone/LinkedIn, and Ajidahun Olusina is Partner, Health Sector Advisor. Kolade also confirmed that UNICEF Venture Fund – Climate and Health 2026 and Visa Africa FinTech Accelerator Program 6 had already been submitted, so both remain follow-up items rather than fresh applications. AdugboInsure positioning remained clarified as the community-access layer around OYSHIA's insurance product.
+- **2026-05-09:** Weekly memory consolidation refreshed long-term memory and archive state for the May 3 - May 9 window, preserving the same durable operating picture.
+- **2026-05-10:** AdugboInsure cron work produced a fresh POS-agents benefits script, Telegram post draft, and branded local final video export. NotebookLM auth still showed the same false-positive pattern: login could report success while real checks still failed with `Authentication expired`.
+- **2026-05-11:** Weekly memory consolidation refreshed long-term memory and archive state for the May 5 - May 11 window without materially changing the durable state.
+- **2026-05-12:** No daily file was present before this consolidation run. This pass mainly refreshed dates, reconfirmed the current durable state, and advanced archive coverage.
+
+### Distilled Long-Term Updates
+- No major strategic direction changed this week; the durable state remains mostly stable.
+- AdugboInsure's locally ready queue remains the main actionable content buffer and still includes the 2026-05-10 branded local benefits video export plus its script and Telegram draft.
+- NotebookLM remains the active narrow blocker: reported login success still does not prove notebook/video access, and the 2026-05-10 cron run remains the latest strong confirmation of the false-positive auth pattern.
+- AdugboInsure executive reference data remains worth keeping: Olorunfemi Ojo is the confirmed CTO, Ajidahun Olusina is Partner/Health Sector Advisor, UNICEF + Visa May opportunities are already in submitted/follow-up state, and AdugboInsure itself should be remembered as the community-access layer around OYSHIA's insurance product.
+- Robin reliability lessons, research-output guardrails, schedule-alignment verification, and cron-delivery notes remain in force without major change.
+- Local Ollama remains the preferred zero-cost consolidation path in principle, but this host still lacks enough free RAM for `llama3.2:3b` full-prompt runs; this run made a real local attempt again and it failed at about 1.8 GiB available versus about 2.3 GiB required, so manual finalization remained necessary.
+
+### 14-Day Compression Update
+- **2026-04-27.md:** now old enough to compress safely; its durable content is already represented by prior archive summaries covering the stable operating guardrails, the corrected Orisynx monitoring baseline, the research evidence-first reporting rule, and the current AdugboInsure/NotebookLM operating picture.
+- **Daily logs older than 14 days (before 2026-04-28):** are now safely represented by prior archive summaries and no longer need active full-fidelity retention.
+
+### Next Consolidation
+- Tuesday, May 19, 2026
+
 ## Week of May 5 - May 11, 2026 - Weekly Consolidation Summary
 
 **Archive Date:** Monday, May 11, 2026 (17:00 UTC)  
