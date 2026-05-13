@@ -36,7 +36,7 @@
 - 🧠 Durable consolidation ops note remains: local Ollama is still the preferred zero-cost path for memory consolidation, but this host still lacks enough free RAM for `llama3.2:3b` full-prompt runs; this run made a real local Ollama attempt again and it failed at about 1.8 GiB available vs about 2.3 GiB required, so manual finalization remained necessary.
 - ⏳ Still waiting on key external inputs from Kolade: Orium job link, fuller truck specifications, ClickUp workspace link, and fresh NotebookLM cookies.
 
-**Critical Next Steps (May 12 - May 19):**
+**Critical Next Steps (May 13 - May 20):**
 1. **NotebookLM:** Kolade needs to provide fresh NLM cookies — AdugboInsure video generation/download and Sunday automation remain blocked without them.
 2. **AdugboInsure Publishing:** Use the existing ready queue first, including the 2026-04-29 testimonials package and the 2026-05-10 branded local benefits export, before generating more weekly content.
 3. **AdugboInsure Follow-ups:** Treat UNICEF Venture Fund and Visa Africa FinTech Accelerator as submitted opportunities and track follow-up timing rather than re-applying.
@@ -675,3 +675,4 @@ Auth → Create audit → Audit view → Task manager → Task view → Calendar
   - **Search Platforms:** AutoScout24, eBay Motors, TrucksCorner, Autoline, Truck1.eu, Truck7 (Germany/UK/Netherlands)
   - **Deliverables:** Filtered listings with direct links → Notion database + `Jarvis-Truck-Listings` Telegram group
   - **Posting Time:** Past midnight WAT (11:00 PM WAT, Codex automation)
+on)
