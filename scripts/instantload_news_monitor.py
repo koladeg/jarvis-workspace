@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import json, re, sys, time, urllib.parse, urllib.request, xml.etree.ElementTree as ET
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
+from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 BASE = Path('/home/claw/.openclaw/workspace/monitoring/instantload')
@@ -26,6 +27,20 @@ MATERIAL_KEYWORDS = [
     'prepaid', 'smart meter', 'remote token', 'sts 2.0', 'vending', 'licence',
     'permit', 'ministry of power', 'power minister', 'electricity act'
 ]
+
+STRONG_KEYWORDS = [
+    'nerc', 'ikeja electric', 'eko electric', 'abuja electric', 'mojec',
+    'remote token', 'sts 2.0', 'vending', 'smart meter', 'prepaid meter'
+]
+
+EXCLUDE_TITLE_PATTERNS = [
+    r'\bhow to\b',
+    r'\bhelpful guide\b',
+    r'\bdetailed guide\b',
+    r'\bexplains how to get\b',
+]
+
+MAX_AGE_DAYS = 120
 
 
 def load_json(path, default):
@@ -68,12 +83,44 @@ def parse_items(xml_bytes):
     return items
 
 
+def parse_pub_date(pub):
+    try:
+        dt = parsedate_to_datetime(pub)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return dt.astimezone(timezone.utc)
+    except Exception:
+        return None
+
+
+def is_recent_enough(item):
+    dt = parse_pub_date(item.get('pubDate', ''))
+    if not dt:
+        return False
+    return dt >= datetime.now(timezone.utc) - timedelta(days=MAX_AGE_DAYS)
+
+
+def is_excluded_title(title):
+    t = title.lower()
+    return any(re.search(p, t) for p in EXCLUDE_TITLE_PATTERNS)
+
+
+def normalized_title(title):
+    t = re.sub(r'\s+', ' ', title.lower()).strip()
+    t = re.sub(r'[^a-z0-9 ]+', '', t)
+    return t
+
+
 def score_item(item):
     hay = (item['title'] + ' ' + item.get('source', '')).lower()
     score = 0
     for kw in MATERIAL_KEYWORDS:
         if kw in hay:
             score += 1
+    if any(kw in hay for kw in STRONG_KEYWORDS):
+        score += 2
+    if is_recent_enough(item):
+        score += 2
     return score
 
 
@@ -92,18 +139,27 @@ def main():
             errors.append(f'{q}: {e}')
         time.sleep(1)
 
-    # dedupe by link
+    # dedupe by link and near-duplicate title; drop stale/generic guide content
     uniq = []
-    used = set()
+    used_links = set()
+    used_titles = set()
     for item in found:
-        if item['link'] in used:
+        if item['link'] in used_links:
             continue
-        used.add(item['link'])
+        if is_excluded_title(item['title']):
+            continue
+        if not is_recent_enough(item):
+            continue
+        nt = normalized_title(item['title'])
+        if nt in used_titles:
+            continue
+        used_links.add(item['link'])
+        used_titles.add(nt)
         item['score'] = score_item(item)
         uniq.append(item)
 
-    uniq.sort(key=lambda x: (-x['score'], x['title']))
-    material = [i for i in uniq if i['score'] >= 2]
+    uniq.sort(key=lambda x: (-x['score'], x.get('pubDate', ''), x['title']))
+    material = [i for i in uniq if i['score'] >= 4]
 
     ts = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')
     with LOG_PATH.open('a') as f:

@@ -40,3 +40,11 @@
 - **Guardrail**: For heartbeat prompts, use only the exact HEARTBEAT.md path from the prompt/workspace and avoid any exploratory pre-read calls.
 - **Status**: logged
 
+## 2026-05-14 08:03 UTC: Sent a scheduled reminder before its actual due time
+- **What**: Sent a scheduled reminder before its actual due time
+- **Context**: Heartbeat handling for Thursday dev sync reminder
+- **Root cause**: I matched the reminder to the day but failed to verify the exact scheduled UTC time before replying
+- **Pattern**: TBD
+- **Guardrail**: For heartbeat reminders, compare the current UTC timestamp against the exact scheduled UTC time before sending any reminder
+- **Status**: logged
+
