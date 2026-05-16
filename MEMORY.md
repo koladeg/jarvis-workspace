@@ -1,10 +1,10 @@
-## Weekly Consolidation & Progress (2026-05-15)
+## Weekly Consolidation & Progress (2026-05-16)
 
-**Last consolidated:** Friday, May 15, 2026 (17:00 UTC)  
+**Last consolidated:** Saturday, May 16, 2026 (17:00 UTC)  
 **Archive location:** `memory/ARCHIVE.md` (historical consolidations)  
-**Next consolidation:** Friday, May 22, 2026
+**Next consolidation:** Saturday, May 23, 2026
 
-**Status Summary (Week of May 9 - May 15):**
+**Status Summary (Week of May 10 - May 16):**
 - 🔁 No major strategic direction changed this week; the durable operating state remains stable.
 - ✅ Research execution remains the durable standard: setup, schedules, heartbeats, or listener changes do **not** count unless a live workflow actually runs and writes outputs back.
 - ✅ AdugboInsure queue discipline remains durable: do not generate a fresh weekly video while approved content already covers the posting window; refill only when coverage drops below the target buffer.
@@ -33,10 +33,10 @@
 - 📱 **mhGAP/Indigo recovery lesson remains unchanged:** prefer same-signed versionCode 10 update/recovery builds over more ADB-only extraction attempts; current-permission extraction routes on the affected tablets are exhausted.
 - 🌐 Durable browsing guardrail remains: for dynamic/React-style sites, shallow fetches can falsely look empty; confirm with `agent-browser` before concluding a page has no content.
 - 🔐 Durable GitHub access lesson remains: do not infer private repo access from unauthenticated browser 404s; verify with authenticated `gh`/API first.
-- 🧠 Durable consolidation ops note remains: local Ollama is still the preferred zero-cost path for memory consolidation, but this host still lacks enough free RAM for `llama3.2:3b` full-prompt runs; this run made a real local Ollama attempt again and it failed at about 849.3 MiB available vs about 2.3 GiB required, so manual finalization remained necessary.
+- 🧠 Durable consolidation ops note remains: local Ollama is still the preferred zero-cost path for memory consolidation, but this host still lacks enough free RAM for `llama3.2:3b` full-prompt runs; this run made a real local Ollama attempt again and it failed at about 2.1 GiB available vs about 2.3 GiB required, so manual finalization remained necessary.
 - ⏳ Still waiting on key external inputs from Kolade: Orium job link, fuller truck specifications, ClickUp workspace link, and fresh NotebookLM cookies.
 
-**Critical Next Steps (May 14 - May 21):**
+**Critical Next Steps (May 16 - May 23):**
 1. **NotebookLM:** Kolade needs to provide fresh NLM cookies — AdugboInsure video generation/download and Sunday automation remain blocked without them.
 2. **AdugboInsure Publishing:** Use the existing ready queue first, including the 2026-04-29 testimonials package and the 2026-05-10 branded local benefits export, before generating more weekly content.
 3. **AdugboInsure Follow-ups:** Treat UNICEF Venture Fund and Visa Africa FinTech Accelerator as submitted opportunities and track follow-up timing rather than re-applying.
