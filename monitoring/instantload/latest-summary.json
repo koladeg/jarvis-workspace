@@ -1,16 +1,33 @@
 {
-  "timestamp": "2026-05-14 09:20 UTC",
-  "new_items": 1,
-  "material_items": 0,
-  "material": [],
+  "timestamp": "2026-05-15 07:15 UTC",
+  "new_items": 2,
+  "material_items": 1,
+  "material": [
+    {
+      "title": "NERC directs DisCos to pay N20bn outstanding meter refunds to customers within 12 months - nigerianeye.com",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE0wajBqQ1JhSmNvcmYxY1hCdTBfSzctODhhWGR4UTlEZ2YwRDByZUJ4b2t1LVFHSzBEWGc2RUo1RGhKYXpkejB4Q1hRbDVWYXo5eTJ5dE5KcWwtU2NtX1NvTnExekNlTmtHd2lQbW9qXzBOWEtmWFNlU3ozcHctdw?oc=5",
+      "pubDate": "Wed, 04 Mar 2026 08:00:00 GMT",
+      "source": "nigerianeye.com",
+      "query": "Nigeria electricity vending meter smart meter",
+      "score": 6
+    }
+  ],
   "top_items": [
     {
-      "title": "Electricity consumers laud Aba Power for exceeding 2025-meter rollout target - Business News Nigeria",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQQm5IM1NhZkgxZWJuTUdRa28zTjFPeWs2OVk2MVNKRGtmS3M2bnV6Mllja2lhUVAyUzBLUkJEMUhoelZUZ281dTE4Z1ZrNkR4MmZDb2doa3plWlNzWG5hdGY5OHQ4OFFOYlRrZTdrTEhiWkNrTHcxSVZPaldibnpRZ2ZBLTBRczJ4VlZmWDBkQkZmV3ZOOXFQWmJXR3ZFSHJBMUFkVnkyZTJkQTlCRjJhWXYxbw?oc=5",
-      "pubDate": "Sun, 18 Jan 2026 08:00:00 GMT",
-      "source": "Business News Nigeria",
+      "title": "NERC directs DisCos to pay N20bn outstanding meter refunds to customers within 12 months - nigerianeye.com",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE0wajBqQ1JhSmNvcmYxY1hCdTBfSzctODhhWGR4UTlEZ2YwRDByZUJ4b2t1LVFHSzBEWGc2RUo1RGhKYXpkejB4Q1hRbDVWYXo5eTJ5dE5KcWwtU2NtX1NvTnExekNlTmtHd2lQbW9qXzBOWEtmWFNlU3ozcHctdw?oc=5",
+      "pubDate": "Wed, 04 Mar 2026 08:00:00 GMT",
+      "source": "nigerianeye.com",
       "query": "Nigeria electricity vending meter smart meter",
-      "score": 3
+      "score": 6
+    },
+    {
+      "title": "Darkness reigns in Lagos community five years after buying transformer - Business News Nigeria",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNeEhsNUFSLV9hcWhTeWNFLXVVamtGdXhVWWZTOHhhT3hlVHk2WnY4dnJzNFQ1T1RGdl9GcmMybTRNeXN0S0VUcmtuZmw0M0hrMDd2Nm1HWFpCb09qN0hLS2FlaXFDSEJPT0hFN0NLUm92cVg5Nzdwc2VWZHNlbWk3dDRfdnBYWEpfUGd0TW1iVHloc2VVRmtwUXh1ZEYwaklSNk9pblpnSDhDbHExalE?oc=5",
+      "pubDate": "Mon, 16 Feb 2026 08:00:00 GMT",
+      "source": "Business News Nigeria",
+      "query": "Lagos power licence metering contractor Nigeria",
+      "score": 2
     }
   ],
   "errors": []

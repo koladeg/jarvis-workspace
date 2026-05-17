@@ -28,3 +28,7 @@
 
 ## Run 2026-05-14 09:20 UTC
 - [Electricity consumers laud Aba Power for exceeding 2025-meter rollout target - Business News Nigeria](https://news.google.com/rss/articles/CBMiswFBVV95cUxQQm5IM1NhZkgxZWJuTUdRa28zTjFPeWs2OVk2MVNKRGtmS3M2bnV6Mllja2lhUVAyUzBLUkJEMUhoelZUZ281dTE4Z1ZrNkR4MmZDb2doa3plWlNzWG5hdGY5OHQ4OFFOYlRrZTdrTEhiWkNrTHcxSVZPaldibnpRZ2ZBLTBRczJ4VlZmWDBkQkZmV3ZOOXFQWmJXR3ZFSHJBMUFkVnkyZTJkQTlCRjJhWXYxbw?oc=5) — Business News Nigeria | query: `Nigeria electricity vending meter smart meter` | score: 3
+
+## Run 2026-05-15 07:15 UTC
+- [NERC directs DisCos to pay N20bn outstanding meter refunds to customers within 12 months - nigerianeye.com](https://news.google.com/rss/articles/CBMifkFVX3lxTE0wajBqQ1JhSmNvcmYxY1hCdTBfSzctODhhWGR4UTlEZ2YwRDByZUJ4b2t1LVFHSzBEWGc2RUo1RGhKYXpkejB4Q1hRbDVWYXo5eTJ5dE5KcWwtU2NtX1NvTnExekNlTmtHd2lQbW9qXzBOWEtmWFNlU3ozcHctdw?oc=5) — nigerianeye.com | query: `Nigeria electricity vending meter smart meter` | score: 6
+- [Darkness reigns in Lagos community five years after buying transformer - Business News Nigeria](https://news.google.com/rss/articles/CBMirgFBVV95cUxNeEhsNUFSLV9hcWhTeWNFLXVVamtGdXhVWWZTOHhhT3hlVHk2WnY4dnJzNFQ1T1RGdl9GcmMybTRNeXN0S0VUcmtuZmw0M0hrMDd2Nm1HWFpCb09qN0hLS2FlaXFDSEJPT0hFN0NLUm92cVg5Nzdwc2VWZHNlbWk3dDRfdnBYWEpfUGd0TW1iVHloc2VVRmtwUXh1ZEYwaklSNk9pblpnSDhDbHExalE?oc=5) — Business News Nigeria | query: `Lagos power licence metering contractor Nigeria` | score: 2
