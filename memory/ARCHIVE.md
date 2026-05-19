@@ -1,5 +1,37 @@
 # Memory Archive - Historical Consolidations
 
+## Week of May 13 - May 19, 2026 - Weekly Consolidation Summary
+
+**Archive Date:** Tuesday, May 19, 2026 (17:00 UTC)  
+**Period:** Past 7 days (May 13 - May 19)  
+**Status:** ✅ Consolidated and archived
+
+### Consolidated Sessions (Compressed)
+- **2026-05-13:** No daily file was present in this review window.
+- **2026-05-14:** No daily file was present in this review window.
+- **2026-05-15:** Weekly memory consolidation refreshed long-term memory and archive state for the May 9 - May 15 window without materially changing the durable state.
+- **2026-05-16:** Weekly memory consolidation refreshed long-term memory and archive state for the May 10 - May 16 window and added two durable Orisynx references: a conflict-resolution framework plus a ClickUp working-memory snapshot.
+- **2026-05-17:** Weekly memory consolidation refreshed long-term memory and archive state for the May 11 - May 17 window without materially changing the durable state beyond carrying forward the new Orisynx references.
+- **2026-05-18:** Weekly memory consolidation refreshed long-term memory and archive state for the May 12 - May 18 window without materially changing the durable state.
+- **2026-05-19:** No daily file was present before this consolidation run. A real local Ollama attempt was made again for the weekly synthesis, but `llama3.2:3b` failed because it required about 2.3 GiB of free system memory while only about 1.5 GiB was available, so final consolidation edits were completed manually.
+
+### Distilled Long-Term Updates
+- No major strategic direction changed this week; the durable state remains mostly stable.
+- AdugboInsure's locally ready queue remains the main actionable content buffer and still includes the 2026-05-10 branded local benefits video export plus its script and Telegram draft.
+- NotebookLM remains the active narrow blocker: reported login success still does not prove notebook/video access, and the 2026-05-10 cron run remains the latest strong confirmation of the false-positive auth pattern.
+- Robin reliability lessons, research-output guardrails, schedule-alignment verification, cron-delivery notes, and AdugboInsure/OYSHIA positioning all remain in force without major change.
+- The meaningful recent Orisynx durable additions remain active: `ORISYNX_CONFLICT_RESOLUTION_FRAMEWORK.md` and `memory/orisynx.md` should continue to be reused rather than reconstructed.
+- Local Ollama remains the preferred zero-cost consolidation path in principle, but this host still lacks enough free RAM for `llama3.2:3b` full-prompt runs; manual finalization remained necessary again in this cycle.
+
+### 14-Day Compression Update
+- **2026-05-05.md:** now old enough to compress safely; its durable content is already represented by prior archive summaries covering the stable operating guardrails, AdugboInsure ready queue, Robin reliability lessons, and the continuing NotebookLM auth blocker.
+- **Daily logs older than 14 days (before 2026-05-06):** are now safely represented by prior archive summaries and no longer need active full-fidelity retention.
+
+### Next Consolidation
+- Tuesday, May 26, 2026
+
+
+
 ## Week of May 12 - May 18, 2026 - Weekly Consolidation Summary
 
 **Archive Date:** Monday, May 18, 2026 (17:00 UTC)  
