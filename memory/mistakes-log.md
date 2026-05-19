@@ -48,3 +48,11 @@
 - **Guardrail**: For heartbeat reminders, compare the current UTC timestamp against the exact scheduled UTC time before sending any reminder
 - **Status**: logged
 
+## 2026-05-19 19:50 UTC: Treated the first-class browser tool as unavailable and switched messaging to 'cannot submit' before checking the local agent-browser path
+- **What**: Treated the first-class browser tool as unavailable and switched messaging to 'cannot submit' before checking the local agent-browser path
+- **Context**: Job application automation during Anthropic/Holepunch application work on 2026-05-19
+- **Root cause**: I anchored on one browser path failing and claimed a capability limitation before checking the alternative local browser path already documented in TOOLS.md
+- **Pattern**: Same family as wrong assumptions about access/capability before verification
+- **Guardrail**: When browser automation appears unavailable, verify the documented local browser path (agent-browser) before telling Kolade submission cannot be automated
+- **Status**: logged
+

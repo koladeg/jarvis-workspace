@@ -125,6 +125,11 @@ Orisynx is an early-stage Nigerian B2B SaaS company building a workflow-driven i
 
 ### ClickUp
 - **Workspace:** "Orisynx's Workspace"
+- **Workspace ID:** `9017801638`
+- **Space:** `GRCS Platform`
+- **Space ID:** `90173715286`
+- **List:** `Backlogs`
+- **List ID:** `901710220051`
 - **Channels:**
   - **Management** 🔒 (private) — Company registration, legal docs
   - **dev** — Development tasks, technical planning
@@ -134,6 +139,32 @@ Orisynx is an early-stage Nigerian B2B SaaS company building a workflow-driven i
 - **Access:** Zapier endpoint: https://mcp.zapier.com/api/v1/connect
 - **Token stored:** `.zapier-mcp-config` (bearer token configured)
 - **Team members (DMs):** Props Account, Kolade Gureje, FO, Dayo, Orisynx
+- **Workspace members + ClickUp user IDs (saved for retrieval when ClickUp access is flaky):**
+  - **Frops** — `138077566` — admin
+  - **Dayo** — `95309010` — member
+  - **Orisynx** — `192129476` — owner
+  - **Femi Ojo** — `95308970` — member
+  - **Kolade Gureje** — `72028020` — member
+- **Permission signal (current understanding):** fetched D-tasks returned `permission_level: "create"`, which suggests likely write-capable access, but assignee mutation is **not hard-confirmed** until a real write test succeeds.
+- **Current Backlogs task snapshot (keep until completed/cleared):**
+  1. **D8. Expand frontend coverage to all page-client files**
+     - Task ID: `86e0uu4w6`
+     - Status: `to do`
+     - Priority: `high`
+     - Current assignee: **Femi Ojo** (`95308970`)
+     - URL: https://app.clickup.com/t/86e0uu4w6
+  2. **D7. Seed standard audit templates to the database**
+     - Task ID: `86e0uu4rz`
+     - Status: `to do`
+     - Priority: `normal`
+     - Current assignee: **Femi Ojo** (`95308970`)
+     - URL: https://app.clickup.com/t/86e0uu4rz
+  3. **Dashboard Widgets and Customization**
+     - Task ID: `86e0gkdpu`
+     - Status: `to do`
+     - Priority: `normal`
+     - Current assignee: **none**
+     - URL: https://app.clickup.com/t/86e0gkdpu
 
 ### NotebookLM
 - **Notebook:** "AuditBoard GRC Application Technical Proposal for FMDQ"

@@ -10,7 +10,7 @@
 This is now the single source of truth for the active job application schedule.
 Older roles from the March pipeline are kept as backlog/parallel options unless re-promoted.
 
-### CURRENT APPLY SCHEDULE — 2026-05-05
+### CURRENT APPLY SCHEDULE — 2026-05-18
 
 **Submitted / removed from active queue:**
 - nsave — Front-End Engineer (React Native) — London — **SUBMITTED 2026-04-27**
@@ -19,23 +19,23 @@ Older roles from the March pipeline are kept as backlog/parallel options unless 
 
 1. **KWAN — Frontend Developer — Lisbon / Portugal**
 - Priority: P1
-- Status: IN PROGRESS / APPLY NOW
+- Status: SUBMITTED
 - Fit: Strong frontend / TypeScript fit
 - Visa/Relocation: Relocation + visa sponsorship
 - Link: https://pt.linkedin.com/jobs/view/frontend-developer-at-kwan-4398288339
-- CV: KWAN custom pack created and sent
-- Cover Letter: KWAN custom pack created and sent
-- Notes: Current manual application in progress
+- CV: KWAN custom pack used
+- Cover Letter: KWAN custom pack used
+- Notes: Applied by Kolade
 
 2. **Paperpile — Senior Full Stack Engineer — Worldwide Remote**
 - Priority: P1
-- Status: NEXT UP / PACK IN PREP
+- Status: SUBMITTED
 - Fit: Strong React + TypeScript fit with explicit React Native adjacency
 - Visa/Relocation: Worldwide remote
 - Link: https://remoteok.com/remote-jobs/remote-senior-full-stack-engineer-paperpile-1131381
-- CV: Paperpile-specific PDF requested
-- Cover Letter: Paperpile-specific version requested
-- Notes: Next role after KWAN
+- CV: Paperpile-specific PDF used
+- Cover Letter: Submitted
+- Notes: Applied by Kolade
 
 3. **Buffer — Senior Growth Engineer — Remote / Async**
 - Priority: P2
@@ -83,16 +83,6 @@ Older roles from the March pipeline are kept as backlog/parallel options unless 
 - **Headway — Senior React Native Developer — Remote**
 - **Tether — Senior React Native Mobile Developer WDK — Worldwide**
 
-7. **KWAN — Frontend Developer (React.js) — Portugal**
-- Priority: P1
-- Status: OPTIONAL SECOND KWAN LANE
-- Fit: Similar lane, still solid
-- Visa/Relocation: Needs confirmation from live page
-- Link: https://www.careerjet.pt/jobad/pt020a1ad72cd6eff0e8083919f50dd8ce
-- CV: Frontend / React version needed
-- Cover Letter: Needed
-- Notes: Secondary KWAN lane; link looked flaky during quick check
-
 #### Jarvis Lane — Direct / Company-Site First
 
 6. **Anthropic — Software Engineer, Safeguards Infrastructure — London**
@@ -134,6 +124,48 @@ Older roles from the March pipeline are kept as backlog/parallel options unless 
 - CV: Frontend / React / TypeScript version needed
 - Cover Letter: Needed
 - Notes: Strong fallback from agreed batch
+
+#### Fresh Additions — 2026-05-18
+
+18. **Orium — Senior React Native Developer**
+- Priority: P2
+- Status: NEW / ADD TO APPLY SCHEDULE
+- Fit: Strongest React Native match from today’s pass
+- Visa/Relocation: Canada listing; work authorisation and 6-month fixed-term detail need checking
+- Link: https://remoteok.com/remote-jobs/remote-senior-react-native-developer-orium-1129706
+- CV: React Native / mobile-focused version needed
+- Cover Letter: Needed
+- Notes: Add to UAM list; medium priority until geography clears
+
+19. **Bluelight Consulting — React Native Developer**
+- Priority: P2
+- Status: NEW / ADD TO APPLY SCHEDULE
+- Fit: Clean React Native + JavaScript/TypeScript match
+- Visa/Relocation: International eligibility still unclear from visible listing
+- Link: https://remoteok.com/remote-jobs/remote-react-native-developer-bluelight-consulting-1130182
+- CV: React Native / TypeScript version needed
+- Cover Letter: Needed
+- Notes: Medium-priority RN lane; verify international eligibility before pushing higher
+
+20. **Creative Chaos — Senior Software Engineer React**
+- Priority: P2
+- Status: NEW / ADD TO APPLY SCHEDULE
+- Fit: Strong React/Redux frontend fit, but more web than mobile
+- Visa/Relocation: Needs eligibility/location check from full listing/company page
+- Link: https://remoteok.com/remote-jobs/remote-senior-software-engineer-react-creative-chaos-1130645
+- CV: Frontend / React / Redux version needed
+- Cover Letter: Needed
+- Notes: Near-core fit; keep active but below the RN-first roles
+
+21. **Lemon.io — Senior Full-stack React Developer**
+- Priority: P2
+- Status: KEEP ACTIVE / NEAR-FIT
+- Fit: Good compensation signal and solid React fit, but more marketplace/full-stack than direct React Native
+- Visa/Relocation: Remote signal
+- Link: https://remoteok.com/remote-jobs/remote-senior-full-stack-react-developer-lemon-io-1131339
+- CV: Full-stack React version needed
+- Cover Letter: Needed
+- Notes: Keep in the list, but not a top keep versus the RN-first roles
 
 #### Strong Additions / Next Up
 
