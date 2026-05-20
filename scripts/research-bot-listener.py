@@ -14,6 +14,8 @@ WORKSPACE = Path("/home/claw/.openclaw/workspace")
 TOKEN_FILE = WORKSPACE / ".credentials" / "telegram_research_agent_bot_token.txt"
 STATE_DIR = WORKSPACE / ".state"
 OFFSET_FILE = STATE_DIR / "research-bot-update-offset.txt"
+RESEARCH_SESSIONS_DIR = Path("/home/claw/.openclaw/agents/research/sessions")
+RESEARCH_SESSIONS_INDEX = RESEARCH_SESSIONS_DIR / "sessions.json"
 ALLOWED_CHAT_ID = "7101554375"
 AGENT_ID = os.environ.get("ROBIN_AGENT_ID", "research")
 THINKING = os.environ.get("ROBIN_THINKING", "low")
@@ -186,6 +188,81 @@ def extract_reply_text(data: dict) -> str:
     return "\n\n".join(t for t in texts if t).strip()
 
 
+def extract_text_from_content(content) -> str:
+    texts = []
+    if isinstance(content, str):
+        texts.append(content.strip())
+    elif isinstance(content, list):
+        for item in content:
+            if isinstance(item, dict):
+                value = item.get("text")
+                if isinstance(value, str) and value.strip():
+                    texts.append(value.strip())
+    return "\n\n".join(t for t in texts if t).strip()
+
+
+def resolve_session_file(session_id: str) -> Path | None:
+    direct = RESEARCH_SESSIONS_DIR / f"{session_id}.jsonl"
+    if direct.exists():
+        return direct
+
+    try:
+        index = json.loads(RESEARCH_SESSIONS_INDEX.read_text())
+    except Exception:
+        return None
+
+    for value in index.values():
+        if not isinstance(value, dict):
+            continue
+        if value.get("sessionId") == session_id:
+            session_file = value.get("sessionFile")
+            if isinstance(session_file, str) and session_file:
+                path = Path(session_file)
+                if path.exists():
+                    return path
+    return None
+
+
+def find_reply_in_session_history(session_id: str, user_text: str) -> str | None:
+    session_file = resolve_session_file(session_id)
+    if not session_file:
+        return None
+
+    waiting_for_reply = False
+    latest_assistant = None
+    try:
+        with session_file.open() as fh:
+            for raw_line in fh:
+                raw_line = raw_line.strip()
+                if not raw_line:
+                    continue
+                try:
+                    entry = json.loads(raw_line)
+                except json.JSONDecodeError:
+                    continue
+
+                message = entry.get("message")
+                if not isinstance(message, dict):
+                    continue
+
+                role = message.get("role")
+                content_text = extract_text_from_content(message.get("content"))
+                if not content_text:
+                    continue
+
+                if role == "user" and user_text in content_text:
+                    waiting_for_reply = True
+                    latest_assistant = None
+                    continue
+
+                if waiting_for_reply and role == "assistant":
+                    latest_assistant = content_text
+    except OSError:
+        return None
+
+    return latest_assistant
+
+
 def generate_reply_via_openclaw(user_text: str) -> str:
     direct = direct_reply_for_simple_message(user_text)
     if direct:
@@ -217,13 +294,28 @@ def generate_reply_via_openclaw(user_text: str) -> str:
         TIMEOUT_SECONDS,
         "--json",
     ]
-    result = subprocess.run(cmd, capture_output=True, text=True, timeout=int(TIMEOUT_SECONDS) + 30)
+    session_id = current_session_id()
+    cmd[5] = session_id
+    try:
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=int(TIMEOUT_SECONDS) + 30)
+    except subprocess.TimeoutExpired as e:
+        recovered = find_reply_in_session_history(session_id, user_text)
+        if recovered:
+            return recovered
+        raise RuntimeError(f"{cmd!r} timed out after {e.timeout} seconds") from e
+
     if result.returncode != 0:
+        recovered = find_reply_in_session_history(session_id, user_text)
+        if recovered:
+            return recovered
         stderr = (result.stderr or result.stdout or "").strip()
         raise RuntimeError(f"openclaw agent failed: {stderr}")
 
     stdout = (result.stdout or "").strip()
     if not stdout:
+        recovered = find_reply_in_session_history(session_id, user_text)
+        if recovered:
+            return recovered
         raise RuntimeError("openclaw agent returned empty stdout")
 
     try:
@@ -232,6 +324,9 @@ def generate_reply_via_openclaw(user_text: str) -> str:
         start = stdout.find("{")
         end = stdout.rfind("}")
         if start == -1 or end == -1 or end <= start:
+            recovered = find_reply_in_session_history(session_id, user_text)
+            if recovered:
+                return recovered
             raise RuntimeError(f"openclaw agent returned non-JSON output: {stdout[:400]}")
         data = json.loads(stdout[start:end+1])
 
