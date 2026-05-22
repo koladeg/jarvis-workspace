@@ -7,6 +7,7 @@ import sys
 import urllib.error
 import urllib.parse
 import urllib.request
+import fcntl
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -14,6 +15,8 @@ WORKSPACE = Path("/home/claw/.openclaw/workspace")
 TOKEN_FILE = WORKSPACE / ".credentials" / "telegram_research_agent_bot_token.txt"
 STATE_DIR = WORKSPACE / ".state"
 OFFSET_FILE = STATE_DIR / "research-bot-update-offset.txt"
+LOCK_FILE = STATE_DIR / "research-bot-listener.lock"
+ASYNC_RUNNER = WORKSPACE / "scripts" / "research-bot-runner.py"
 RESEARCH_SESSIONS_DIR = Path("/home/claw/.openclaw/agents/research/sessions")
 RESEARCH_SESSIONS_INDEX = RESEARCH_SESSIONS_DIR / "sessions.json"
 ALLOWED_CHAT_ID = "7101554375"
@@ -33,8 +36,17 @@ def read_text(path: Path, default: str = "") -> str:
 
 
 def api_get(url: str):
-    with urllib.request.urlopen(url, timeout=90) as r:
-        return json.loads(r.read().decode("utf-8"))
+    try:
+        with urllib.request.urlopen(url, timeout=90) as r:
+            return json.loads(r.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        detail = ""
+        try:
+            payload = e.read().decode("utf-8", errors="replace")
+            detail = f" | body={payload}"
+        except Exception:
+            pass
+        raise RuntimeError(f"telegram api GET failed: HTTP {e.code} {e.reason}{detail}") from e
 
 
 def api_post(url: str, data: dict):
@@ -67,6 +79,18 @@ def get_offset() -> int:
 
 def set_offset(offset: int):
     OFFSET_FILE.write_text(str(offset))
+
+
+def acquire_single_instance_lock():
+    handle = LOCK_FILE.open("w")
+    try:
+        fcntl.flock(handle.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+    except OSError:
+        handle.close()
+        raise RuntimeError("another local Robin listener instance is already running")
+    handle.write(str(os.getpid()))
+    handle.flush()
+    return handle
 
 
 def strip_reply_tag(text: str) -> str:
@@ -128,6 +152,41 @@ def direct_reply_for_simple_message(user_text: str) -> str | None:
     if re.fullmatch(r"are you there\??", normalized):
         return "Yes — I'm here."
     return None
+
+
+def should_run_async(user_text: str) -> bool:
+    normalized = re.sub(r"\s+", " ", user_text.strip().lower())
+    markers = (
+        "run them",
+        "i need results",
+        "i don't expect results now",
+        "i dont expect results now",
+        "even in 30 minutes",
+        "lanes should not take more than 2 hours",
+        "run the lanes",
+        "run all lanes",
+        "do the lanes",
+    )
+    return any(marker in normalized for marker in markers)
+
+
+def spawn_background_run(user_text: str, chat_id: str, reply_to_message_id: int | None):
+    cmd = [
+        sys.executable,
+        str(ASYNC_RUNNER),
+        "--chat-id",
+        chat_id,
+        "--message",
+        user_text,
+    ]
+    if reply_to_message_id:
+        cmd.extend(["--reply-to", str(reply_to_message_id)])
+    subprocess.Popen(
+        cmd,
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL,
+        start_new_session=True,
+    )
 
 
 def current_session_id() -> str:
@@ -352,6 +411,15 @@ def handle_update(token: str, update: dict):
     if not text:
         send_message(token, chat_id, "Send me a text question and I’ll help.", message.get("message_id"))
         return
+    if should_run_async(text):
+        send_message(
+            token,
+            chat_id,
+            "Understood. I’m running that in the background now and I’ll send the results when it finishes.",
+            message.get("message_id"),
+        )
+        spawn_background_run(text, chat_id, message.get("message_id"))
+        return
     try:
         reply = generate_reply_via_openclaw(text)
     except Exception as e:
@@ -382,6 +450,7 @@ def run_once():
 
 if __name__ == "__main__":
     try:
+        _lock_handle = acquire_single_instance_lock()
         run_once()
     except Exception as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
