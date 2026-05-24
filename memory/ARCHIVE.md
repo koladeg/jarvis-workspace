@@ -1,5 +1,37 @@
 # Memory Archive - Historical Consolidations
 
+## Week of May 18 - May 24, 2026 - Weekly Consolidation Summary
+
+**Archive Date:** Sunday, May 24, 2026 (17:00 UTC)  
+**Period:** Past 7 days (May 18 - May 24)  
+**Status:** Consolidated and archived
+
+### Consolidated Sessions (Compressed)
+- **2026-05-18:** Weekly memory consolidation refreshed long-term memory and archive state for the May 12 - May 18 window without materially changing the durable state.
+- **2026-05-19:** Weekly memory consolidation refreshed long-term memory and archive state for the May 13 - May 19 window, and added durable job-application automation notes from the Anthropic, Featurebase, Holepunch, and Buffer work.
+- **2026-05-20:** No daily file was present in this review window.
+- **2026-05-21:** No daily file was present in this review window.
+- **2026-05-22:** Cron automation recovery work found two causes behind the missed check-ins: blocked `ollama/llama3.2:3b` allowlist usage in cron and separate provider/network failures on some cloud-model jobs. `jobs.json` was updated to use explicit OpenAI models, Robin got a local single-instance lock plus clearer Telegram GET errors, long lane requests moved onto an asynchronous background-run path, and the unused local `n8n` install was removed.
+- **2026-05-23:** AdugboInsure work produced a new POS-agents coverage script, posted it to Telegram, confirmed NotebookLM auth was still expired on a real command, and produced a verified branded local final video export for the coverage topic.
+- **2026-05-24:** AdugboInsure work produced a new POS-agents claims script, posted it to Telegram, reconfirmed the same NotebookLM false-positive auth pattern on a real `nlm video create` attempt, produced a branded local claims video export, and added a local hardened `skills/docx-safe/` fork for DOCX handling.
+
+### Distilled Long-Term Updates
+- No major strategic direction changed this week; the durable state remains mostly stable.
+- AdugboInsure's locally ready queue gained a new `2026-05-24` branded claims export, while the `2026-05-23` branded coverage export and older ready packages remain the main actionable content buffer.
+- NotebookLM remains the active narrow blocker: reported login success still does not prove notebook/video access, and the `2026-05-24` retry reconfirmed the same false-positive auth pattern.
+- Robin reliability improved materially: a local single-instance lock now prevents duplicate local listeners, and long multi-lane requests now acknowledge quickly and complete through `scripts/research-bot-runner.py` instead of timing out in the listener.
+- Cron reliability also improved: blocked Ollama-backed cron jobs were moved onto explicit OpenAI models after the allowlist breakage was identified, and vague model aliases were normalized.
+- Job-application automation kept the new durable examples worth reusing: Anthropic and Featurebase both submitted successfully, Holepunch reached a prepared-but-manual-final-send state, and direct DOM state synchronization remains a valid fallback when normal form validation paths misbehave.
+- A hardened local DOCX skill fork now exists at `skills/docx-safe/` and should be reused for future Word-document tasks requiring macro/layout safety.
+- Local Ollama remains the preferred zero-cost consolidation path in principle, but this host still lacks enough free RAM for `llama3.2:3b` full-prompt runs; this run made a real local attempt again and it failed at about `1.3 GiB` available versus about `2.3 GiB` required, so manual finalization remained necessary.
+
+### 14-Day Compression Update
+- **2026-05-09.md:** now old enough to compress safely; its durable content is already represented by prior archive summaries covering the AdugboInsure/OYSHIA positioning clarification, the executive-reference corrections, and the submitted/follow-up state of the UNICEF and Visa opportunities.
+- **Daily logs older than 14 days (before 2026-05-10):** are now safely represented by archive summaries and no longer need active full-fidelity retention.
+
+### Next Consolidation
+- Sunday, May 31, 2026
+
 ## Week of May 17 - May 23, 2026 - Weekly Consolidation Summary
 
 **Archive Date:** Saturday, May 23, 2026 (17:00 UTC)  

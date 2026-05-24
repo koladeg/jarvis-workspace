@@ -1,58 +1,60 @@
-## Weekly Consolidation & Progress (2026-05-23)
+## Weekly Consolidation & Progress (2026-05-24)
 
-**Last consolidated:** Saturday, May 23, 2026 (17:00 UTC)  
+**Last consolidated:** Sunday, May 24, 2026 (17:00 UTC)  
 **Archive location:** `memory/ARCHIVE.md` (historical consolidations)  
-**Next consolidation:** Saturday, May 30, 2026
+**Next consolidation:** Sunday, May 31, 2026
 
-**Status Summary (Week of May 17 - May 23):**
-- 🔁 No major strategic direction changed this week; the durable operating state remains stable.
-- ✅ Research execution remains the durable standard: setup, schedules, heartbeats, or listener changes do **not** count unless a live workflow actually runs and writes outputs back.
-- ✅ AdugboInsure queue discipline remains durable: do not generate a fresh weekly video while approved content already covers the posting window; refill only when coverage drops below the target buffer.
-- 🎬 **AdugboInsure ready queue remains the main actionable asset:**
-  - 2026-04-12 benefits script + Telegram draft + branded final video export remain locally ready.
-  - 2026-04-15 coverage script + Telegram draft remain ready locally.
-  - 2026-04-16 claims script + Telegram draft remain ready locally.
-  - 2026-04-29 testimonials script + Telegram draft + branded final video export remain locally ready.
-  - 2026-05-10 benefits script + Telegram draft + branded local final video export remain locally ready.
-  - 2026-05-23 coverage script + branded local final video export are now also ready locally.
-- 🔐 **NotebookLM remains the active blocker:** `nlm login` can report success while real notebook/video commands still fail with `Authentication expired`; both the 2026-05-10 and 2026-05-23 checks confirmed the same false-positive auth pattern, so fresh NotebookLM cookies from Kolade are still required.
-- 🤖 **Robin reliability lessons remain the main recent durable operational update:**
+**Status Summary (Week of May 18 - May 24):**
+- No major strategic direction changed this week; the durable operating state remains stable.
+- Research execution remains the durable standard: setup, schedules, heartbeats, or listener changes do **not** count unless a live workflow actually runs and writes outputs back.
+- AdugboInsure queue discipline remains durable: do not generate a fresh weekly video while approved content already covers the posting window; refill only when coverage drops below the target buffer.
+- **AdugboInsure ready queue remains the main actionable asset:**
+  - `2026-04-12` benefits script + Telegram draft + branded final video export remain locally ready.
+  - `2026-04-15` coverage script + Telegram draft remain ready locally.
+  - `2026-04-16` claims script + Telegram draft remain ready locally.
+  - `2026-04-29` testimonials script + Telegram draft + branded final video export remain locally ready.
+  - `2026-05-10` benefits script + Telegram draft + branded local final video export remain locally ready.
+  - `2026-05-23` coverage script + branded local final video export remain locally ready.
+  - `2026-05-24` claims script + branded local final video export are now also ready locally.
+- **NotebookLM remains the active blocker:** `nlm login` can report success while real notebook/video commands still fail with `Authentication expired`; the `2026-05-10`, `2026-05-23`, and `2026-05-24` checks all confirmed the same false-positive auth pattern, so fresh NotebookLM cookies from Kolade are still required.
+- **Robin reliability remains the main recent durable operational update:**
   - Private-chat handling uses rolling fresh `research` agent sessions instead of endlessly reusing one bloated session.
   - Lightweight check-ins use a direct fast-path so greetings and similar pings do not trigger the heavy agent path.
   - A local single-instance lock now prevents duplicate local listener launches, and long multi-lane requests now acknowledge immediately and execute asynchronously via `scripts/research-bot-runner.py` instead of timing out in the foreground listener path.
-  - The concrete outage pattern from 2026-05-01 remains durable: session bloat can cause long agent timeouts, and Telegram `HTTP 409 Conflict` errors mean another poller may still be competing for the same bot token/session path.
-- 🛡️ **Research-output guardrail remains durable:** research workspace heartbeats and summaries must not send filler lane updates sourced only from schedule/admin notes; same-day evidence is required before reporting progress.
-- ⏰ **Schedule-alignment lesson remains durable:** Robin-reported schedule changes should be verified in the main workspace before trusting them. On 2026-05-02 the heartbeat file still lagged behind until manually updated; heartbeat guidance and cron state are aligned again.
-- 📬 **Cron delivery reliability remains improved:** the Robin news-lane jobs already exist in `/home/claw/.openclaw/cron/jobs.json`, enabled and delivering to Telegram target `7101554375`, and the blocked Ollama-backed cron jobs were moved to explicit OpenAI model names after the allowlist breakage discovered on 2026-05-22.
-- 🧾 **AdugboInsure executive reference remains clarified:**
-  - Olorunfemi Ojo — CTO — phone `0092348094399450` — LinkedIn confirmed.
-  - Ajidahun Olusina (`@the_bearded_doctor_sina`) — Partner, Health Sector Advisor.
-- 🧭 **AdugboInsure positioning clarification remains worth keeping:** the insurance product itself comes from OYSHIA; AdugboInsure is the community access, awareness, trust-building, enrollment, and payment-support channel that helps people access OYSHIA coverage more easily.
-- 📤 **AdugboInsure opportunity tracking remains corrected:** UNICEF Venture Fund – Climate and Health 2026 and Visa Africa FinTech Accelerator Program 6 were already submitted as of 2026-05-08 and should be treated as follow-up items, not fresh applications.
-- 🧰 **Job-application automation added new durable examples:** Anthropic and Featurebase submissions succeeded through live site automation, while the Holepunch Recruitee flow reached a prepared-but-not-submitted state; when site validation looks flaky, keep `agent-browser` in play and consider direct DOM state synchronization before declaring automation blocked.
-- ✅ Orisynx weekly repo briefing remains a real installed automation.
-- 📊 **Corrected Orisynx monitoring baseline remains durable:** primary repos to track are `Orisynx/backend`, `Orisynx/frontend`, and `Orisynx/bootstrap`.
-- 🧩 **New Orisynx durable references remain active:**
+  - The concrete outage pattern from `2026-05-01` remains durable: session bloat can cause long agent timeouts, and Telegram `HTTP 409 Conflict` errors mean another poller may still be competing for the same bot token/session path.
+- **Research-output guardrail remains durable:** research workspace heartbeats and summaries must not send filler lane updates sourced only from schedule/admin notes; same-day evidence is required before reporting progress.
+- **Schedule-alignment lesson remains durable:** Robin-reported schedule changes should be verified in the main workspace before trusting them. On `2026-05-02` the heartbeat file still lagged behind until manually updated; heartbeat guidance and cron state are aligned again.
+- **Cron delivery reliability remains improved:** the Robin news-lane jobs already exist in `/home/claw/.openclaw/cron/jobs.json`, enabled and delivering to Telegram target `7101554375`, and the blocked Ollama-backed cron jobs were moved to explicit OpenAI model names after the allowlist breakage discovered on `2026-05-22`.
+- **AdugboInsure executive reference remains clarified:**
+  - Olorunfemi Ojo - CTO - phone `0092348094399450` - LinkedIn confirmed.
+  - Ajidahun Olusina (`@the_bearded_doctor_sina`) - Partner, Health Sector Advisor.
+- **AdugboInsure positioning clarification remains worth keeping:** the insurance product itself comes from OYSHIA; AdugboInsure is the community access, awareness, trust-building, enrollment, and payment-support channel that helps people access OYSHIA coverage more easily.
+- **AdugboInsure opportunity tracking remains corrected:** UNICEF Venture Fund - Climate and Health 2026 and Visa Africa FinTech Accelerator Program 6 were already submitted as of `2026-05-08` and should be treated as follow-up items, not fresh applications.
+- **Job-application automation keeps the new durable examples:** Anthropic and Featurebase submissions succeeded through live site automation, while the Holepunch Recruitee flow reached a prepared-but-not-submitted state; when site validation looks flaky, keep `agent-browser` in play and consider direct DOM state synchronization before declaring automation blocked.
+- **Docx handling now has a local hardened skill fork:** `skills/docx-safe/` exists as a workspace-local fork with stronger macro/untrusted-file guardrails and a bundled local render helper.
+- Orisynx weekly repo briefing remains a real installed automation.
+- **Corrected Orisynx monitoring baseline remains durable:** primary repos to track are `Orisynx/backend`, `Orisynx/frontend`, and `Orisynx/bootstrap`.
+- **New Orisynx durable references remain active:**
   - `ORISYNX_CONFLICT_RESOLUTION_FRAMEWORK.md` captures a reusable written process for founder/team disagreement handling.
   - `memory/orisynx.md` preserves a ClickUp working-memory snapshot: workspace/space/list IDs, visible members and user IDs, current backlog tasks, assignees, and the current write-likelihood note.
-- 📽️ **Google Slides OAuth remains repaired and healthy** for `jarviskolademail@gmail.com`.
-- 📱 **mhGAP/Indigo recovery lesson remains unchanged:** prefer same-signed versionCode 10 update/recovery builds over more ADB-only extraction attempts; current-permission extraction routes on the affected tablets are exhausted.
-- 🌐 Durable browsing guardrail remains: for dynamic/React-style sites, shallow fetches can falsely look empty; confirm with `agent-browser` before concluding a page has no content.
-- 🔐 Durable GitHub access lesson remains: do not infer private repo access from unauthenticated browser 404s; verify with authenticated `gh`/API first.
-- 🧠 Durable consolidation ops note remains: local Ollama is still the preferred zero-cost path for memory consolidation, but this host still lacks enough free RAM for `llama3.2:3b` full-prompt runs; this run made another real local Ollama attempt and it failed at about 1.2 GiB available vs about 2.3 GiB required, so manual finalization remained necessary.
-- ⏳ Still waiting on key external inputs from Kolade: Orium job link, fuller truck specifications, ClickUp workspace link, and fresh NotebookLM cookies.
+- Google Slides OAuth remains repaired and healthy for `jarviskolademail@gmail.com`.
+- **mhGAP/Indigo recovery lesson remains unchanged:** prefer same-signed versionCode `10` update/recovery builds over more ADB-only extraction attempts; current-permission extraction routes on the affected tablets are exhausted.
+- Durable browsing guardrail remains: for dynamic/React-style sites, shallow fetches can falsely look empty; confirm with `agent-browser` before concluding a page has no content.
+- Durable GitHub access lesson remains: do not infer private repo access from unauthenticated browser `404`s; verify with authenticated `gh`/API first.
+- **Durable consolidation ops note remains:** local Ollama is still the preferred zero-cost path for memory consolidation, but this host still lacks enough free RAM for `llama3.2:3b` full-prompt runs; this run made another real local Ollama attempt and it failed at about `1.3 GiB` available vs about `2.3 GiB` required, so manual finalization remained necessary.
+- Still waiting on key external inputs from Kolade: Orium job link, fuller truck specifications, ClickUp workspace link, and fresh NotebookLM cookies.
 
-**Critical Next Steps (May 23 - May 30):**
-1. **NotebookLM:** Kolade needs to provide fresh NLM cookies — AdugboInsure video generation/download and Sunday automation remain blocked without them.
-2. **AdugboInsure Publishing:** Use the existing ready queue first, including the 2026-04-29 testimonials package, the 2026-05-10 branded local benefits export, and the new 2026-05-23 branded coverage export, before generating more weekly content.
+**Critical Next Steps (May 24 - May 31):**
+1. **NotebookLM:** Kolade needs to provide fresh NLM cookies - AdugboInsure video generation/download and Sunday automation remain blocked without them.
+2. **AdugboInsure Publishing:** Use the existing ready queue first, including the `2026-04-29` testimonials package, the `2026-05-10` branded local benefits export, the `2026-05-23` branded coverage export, and the new `2026-05-24` branded claims export, before generating more weekly content.
 3. **AdugboInsure Follow-ups:** Treat UNICEF Venture Fund and Visa Africa FinTech Accelerator as submitted opportunities and track follow-up timing rather than re-applying.
 4. **Robin:** If `HTTP 409 Conflict` errors recur after the local listener restart, check for another active poller using the same Robin bot token.
 5. **Research Agent / Robin:** Keep the evidence-first reporting guardrail in place and verify full end-to-end reply behavior before claiming success, especially on long multi-lane requests now routed through the background runner.
 6. **Cron/Ops:** Keep cron model names explicit and recheck any job that still depends on a blocked local model allowlist entry.
 7. **Job Applications:** Reuse the successful Anthropic/Featurebase answer patterns and the Buffer draft pack; the Holepunch submission likely needs one manual `Send` click to finish.
-8. **mhGAP/Indigo:** Prefer same-signed versionCode 10 update/recovery path over more ADB-only extraction attempts.
-9. **Orisynx:** Reuse the conflict-resolution framework and ClickUp working-memory snapshot instead of reconstructing those references from scratch.
-10. **External Inputs:** Collect the Orium link, fuller truck specs, and ClickUp workspace link so blocked workflows can progress.
+8. **DOCX Workflows:** Reuse the local `skills/docx-safe/` fork for future Word-document tasks instead of rebuilding macro/layout guardrails from scratch.
+9. **mhGAP/Indigo:** Prefer same-signed versionCode `10` update/recovery path over more ADB-only extraction attempts.
+10. **Orisynx / External Inputs:** Reuse the conflict-resolution framework and ClickUp working-memory snapshot, and collect the Orium link, fuller truck specs, and ClickUp workspace link so blocked workflows can progress.
 
 ---
 ## Orisynx Repo Check Baseline (2026-04-11)
