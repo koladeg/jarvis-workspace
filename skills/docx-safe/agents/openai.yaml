@@ -1,0 +1,4 @@
+interface:
+  display_name: "DOCX Safe"
+  short_description: "Create, edit, and visually review docx files"
+  default_prompt: "Edit or review this .docx file, preserve layout, and return the updated file plus a concise summary of changes and any layout risks."
