@@ -12,6 +12,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 WORKSPACE = Path("/home/claw/.openclaw/workspace")
+RESEARCH_WORKSPACE = Path("/home/claw/.openclaw/workspace-research")
 TOKEN_FILE = WORKSPACE / ".credentials" / "telegram_research_agent_bot_token.txt"
 STATE_DIR = WORKSPACE / ".state"
 OFFSET_FILE = STATE_DIR / "research-bot-update-offset.txt"
@@ -166,8 +167,14 @@ def should_run_async(user_text: str) -> bool:
         "run the lanes",
         "run all lanes",
         "do the lanes",
+        "run todays lanes",
+        "run today's lanes",
     )
-    return any(marker in normalized for marker in markers)
+    if any(marker in normalized for marker in markers):
+        return True
+    # Catch close variants like "run today's funding lanes" without
+    # requiring every phrasing to be hardcoded.
+    return bool(re.search(r"\b(run|do)\b.*\blanes?\b", normalized))
 
 
 def spawn_background_run(user_text: str, chat_id: str, reply_to_message_id: int | None):
@@ -183,6 +190,7 @@ def spawn_background_run(user_text: str, chat_id: str, reply_to_message_id: int 
         cmd.extend(["--reply-to", str(reply_to_message_id)])
     subprocess.Popen(
         cmd,
+        cwd=str(RESEARCH_WORKSPACE),
         stdout=subprocess.DEVNULL,
         stderr=subprocess.DEVNULL,
         start_new_session=True,
@@ -356,7 +364,13 @@ def generate_reply_via_openclaw(user_text: str) -> str:
     session_id = current_session_id()
     cmd[5] = session_id
     try:
-        result = subprocess.run(cmd, capture_output=True, text=True, timeout=int(TIMEOUT_SECONDS) + 30)
+        result = subprocess.run(
+            cmd,
+            capture_output=True,
+            text=True,
+            timeout=int(TIMEOUT_SECONDS) + 30,
+            cwd=str(RESEARCH_WORKSPACE),
+        )
     except subprocess.TimeoutExpired as e:
         recovered = find_reply_in_session_history(session_id, user_text)
         if recovered:
