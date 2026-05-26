@@ -1,5 +1,35 @@
 # Memory Archive - Historical Consolidations
 
+## Week of May 20 - May 26, 2026 - Weekly Consolidation Summary
+
+**Archive Date:** Tuesday, May 26, 2026 (17:00 UTC)
+**Period:** Past 7 days (May 20 - May 26)
+**Status:** Consolidated and archived
+
+### Consolidated Sessions (Compressed)
+- **2026-05-20:** No daily file was present in this review window.
+- **2026-05-21:** No daily file was present in this review window.
+- **2026-05-22:** Cron failures were traced to blocked `ollama/llama3.2:3b` allowlist usage plus separate provider/network issues; the affected cron jobs were moved to explicit OpenAI models, Robin gained a local single-instance lock with clearer Telegram GET errors, long multi-lane requests moved onto the asynchronous `scripts/research-bot-runner.py` path, and the unused local `n8n` install was removed.
+- **2026-05-23:** AdugboInsure work produced a branded coverage fallback export, posted the script to Telegram, and reconfirmed that a real NotebookLM command still failed with `Authentication expired`.
+- **2026-05-24:** AdugboInsure work produced a branded claims fallback export, reconfirmed the same NotebookLM false-positive auth pattern on a real `nlm video create` call, and added a local hardened `skills/docx-safe/` fork for DOCX handling.
+- **2026-05-25:** Job-search tracking was corrected to mark Buffer, Lemon.io, Anthropic, Featurebase, and Certa as submitted; Trust Wallet was removed after the live form showed no visa sponsorship; and the active top queue narrowed to Dash0, Orium, and Bluelight.
+- **2026-05-26:** A Dash0-specific resume packet was generated, locally verified, and emailed through the existing Gmail route; the live Dash0 form requirements were captured; AdugboInsure produced a branded testimonials fallback export; and trimming a stale `agent-browser`/Chrome tree materially recovered RAM and swap headroom.
+
+### Distilled Long-Term Updates
+- Robin's hardening on `2026-05-22` is durable: the local single-instance lock and async background-run path should remain the standard handling for heavier multi-lane requests.
+- Cron now has a durable guardrail: use explicit provider/model IDs in `jobs.json`, because local Ollama model identifiers and vague aliases should not be assumed to survive cron allowlists.
+- AdugboInsure's locally ready queue gained a new `2026-05-26` branded testimonials export alongside the `2026-05-23` coverage and `2026-05-24` claims exports and the older prepared packages.
+- NotebookLM remains the active narrow blocker: reported login success still does not prove notebook/video access, and the latest real checks still fail with `Authentication expired`.
+- Memory hygiene on this `2 GiB` host is now even more clearly durable: stale `agent-browser`/Chrome trees can consume enough RAM and swap to starve local Ollama or heavier browser work, so trimming them should be part of first-line recovery.
+- The existing Gmail delivery route remains operational for resume handoff; the Dash0 tailored DOCX was successfully sent through it on `2026-05-26`.
+
+### 14-Day Compression Update
+- **2026-05-11.md:** now old enough to compress safely; its content was another weekly consolidation pass with no major strategic change, mainly reconfirming the durable AdugboInsure queue, the NotebookLM auth blocker, the Robin reliability rules, and the existing opportunity/submission state.
+- **Daily logs older than 14 days (before `2026-05-12`):** are now safely represented by archive summaries and no longer need active full-fidelity retention.
+
+### Next Consolidation
+- Tuesday, June 2, 2026
+
 ## Week of May 18 - May 24, 2026 - Weekly Consolidation Summary
 
 **Archive Date:** Sunday, May 24, 2026 (17:00 UTC)  
