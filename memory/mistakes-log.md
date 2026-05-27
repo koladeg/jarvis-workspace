@@ -56,3 +56,27 @@
 - **Guardrail**: When browser automation appears unavailable, verify the documented local browser path (agent-browser) before telling Kolade submission cannot be automated
 - **Status**: logged
 
+## 2026-05-22 17:51 UTC: Robin long-running requests timed out in foreground
+- **What**: Robin long-running requests timed out in foreground
+- **Context**: Private Robin listener handling substantive 'run the lanes' requests on 2026-05-22
+- **Root cause**: The listener routed long-running research work through the short foreground path with a 300s timeout instead of acknowledging immediately and delegating to a longer background runner
+- **Pattern**: Avoid using the same synchronous reply path for both lightweight chat and substantive multi-lane execution
+- **Guardrail**: Any request likely to exceed quick-reply latency must be acknowledged first and moved to a background worker with lane-appropriate timeout before the reply path starts the heavy work
+- **Status**: logged
+
+## 2026-05-24 19:51 UTC: Used ambiguous portfolio screenshot columns as if they were verified position values
+- **What**: Used ambiguous portfolio screenshot columns as if they were verified position values
+- **Context**: US stock update sent after reading a Bamboo screenshot on 2026-05-24
+- **Root cause**: I inferred market values and ranking from unclear screenshot columns instead of first reconstructing explicit ticker, market value, and portfolio-percent fields
+- **Pattern**: Same family as acting on unverified structure from screenshots or UI summaries
+- **Guardrail**: For portfolio screenshots, do not send allocation or rebalance guidance until each row is mapped to explicit ticker, market value, and weight columns; if any column meaning is ambiguous, label the summary provisional and ask for the raw screenshot or cleaner data
+- **Status**: logged
+
+## 2026-05-25 13:51 UTC: Claimed browser automation was unavailable before fully verifying the documented agent-browser path
+- **What**: Claimed browser automation was unavailable before fully verifying the documented agent-browser path
+- **Context**: Germany visa portal research and Robin follow-up on 2026-05-24/25
+- **Root cause**: I treated one browser route failing on this host as a capability limit and let that shape the user-facing message before exhausting the documented local browser path and its constraints
+- **Pattern**: Repeat of the browser-capability assumption family already logged on 2026-05-19
+- **Guardrail**: When a web task is blocked by one browser path, verify the documented local agent-browser route and report the exact failing step before saying browsing or submission is unavailable
+- **Status**: logged
+
