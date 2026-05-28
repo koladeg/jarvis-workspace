@@ -6,7 +6,7 @@ Archive:
 - Full pre-trim snapshot saved to `memory/MEMORY.pre-trim-2026-05-25.md`
 - Keep this file lean so OpenClaw does not inject unnecessary history into every request
 
-## Current durable state (2026-05-27)
+## Current durable state (2026-05-28)
 
 - AdugboInsure queue discipline: use already-prepared content before generating fresh weekly videos.
 - AdugboInsure ready assets still include the `2026-04-12`, `2026-04-15`, `2026-04-16`, `2026-04-29`, `2026-05-10`, `2026-05-23`, `2026-05-24`, `2026-05-26`, and `2026-05-27` packages.
@@ -22,6 +22,7 @@ Archive:
 - Local Ollama remains preferred for lightweight routine tasks, but this host often lacks enough free RAM for `llama3.2:3b` when the system is under load.
 - RAM hygiene lesson from `2026-05-26`: stale `agent-browser`/Chrome trees can exhaust RAM and swap; trim them before blaming local-model or browser failures.
 - Gmail resume delivery remains operational; the Dash0 tailored DOCX was successfully sent through `jarviskolademail@gmail.com` on `2026-05-26`.
+- GitHub CLI auth on this machine was repaired on `2026-05-28`; `gh` is authenticated again as `koladeg` after refreshing the saved token.
 
 ## Active blockers
 

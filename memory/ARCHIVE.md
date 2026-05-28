@@ -1,5 +1,35 @@
 # Memory Archive - Historical Consolidations
 
+## Week of May 22 - May 28, 2026 - Weekly Consolidation Summary
+
+**Archive Date:** Thursday, May 28, 2026 (17:00 UTC)
+**Period:** Past 7 days (May 22 - May 28)
+**Status:** Consolidated and archived
+
+### Consolidated Sessions (Compressed)
+- **2026-05-22:** Cron failures were traced to blocked `ollama/llama3.2:3b` allowlist usage plus provider/network issues; affected cron jobs were moved to explicit OpenAI model IDs, Robin gained a local single-instance lock plus an async background-run path for heavy multi-lane requests, and the unused local `n8n` install was removed.
+- **2026-05-23:** AdugboInsure work produced a branded coverage fallback export, posted the script to Telegram, and reconfirmed that a real NotebookLM command still failed with `Authentication expired`.
+- **2026-05-24:** AdugboInsure work produced a branded claims fallback export, reconfirmed the same NotebookLM false-positive auth pattern on a real `nlm video create` call, and added the local hardened `skills/docx-safe/` fork.
+- **2026-05-25:** Job-search tracking was corrected and the active application queue narrowed to Dash0, Orium, and Bluelight after Trust Wallet was removed for lack of visa sponsorship.
+- **2026-05-26:** A Dash0-specific resume packet was generated, locally verified, and emailed through the existing Gmail route; AdugboInsure produced a branded testimonials fallback export; and trimming a stale `agent-browser`/Chrome tree materially recovered RAM and swap headroom.
+- **2026-05-27:** AdugboInsure work produced a branded benefits fallback export, posted the script to Telegram, and confirmed that NotebookLM remained blocked because both real notebook access and `nlm login --force` still failed.
+- **2026-05-28:** GitHub CLI auth was repaired by refreshing the saved token, and `gh auth status` returned to a valid authenticated state as `koladeg`; the weekly consolidation also attempted local `ollama run llama3.2:3b` twice, but the model could not load because it required about `2.3 GiB` of RAM while only about `2.0 GiB` was available after cleanup, so final edits were completed from the verified notes.
+
+### Distilled Long-Term Updates
+- The durable operating state remains mostly stable this week; the main additions are restored GitHub CLI auth and another confirmed NotebookLM failure path (`nlm login --force` still cannot recover locally because no supported browser is available).
+- Robin hardening from `2026-05-22` remains durable: keep the local single-instance lock, clearer Telegram GET errors, and the async background-run path for heavier multi-lane requests.
+- Cron still needs explicit provider/model IDs; the blocked Ollama allowlist incident remains the durable reason.
+- AdugboInsure's ready local queue still includes the recent `2026-05-23`, `2026-05-24`, `2026-05-26`, and `2026-05-27` branded exports alongside the older prepared packages.
+- The existing Gmail delivery route remains operational for resume handoff, and GitHub CLI access is now healthy again after the 2026-05-28 token refresh.
+- Memory hygiene on this `2 GiB` host remains critical: stale `agent-browser`/Chrome trees can consume enough RAM and swap to starve local-model or browser work, so trimming them should stay part of first-line recovery.
+
+### 14-Day Compression Update
+- **2026-05-13.md:** no daily file existed, so there was nothing new to compress for that date.
+- **Daily logs older than 14 days (before `2026-05-14`):** are now safely represented by archive summaries and no longer need active full-fidelity retention.
+
+### Next Consolidation
+- Thursday, June 4, 2026
+
 ## Week of May 21 - May 27, 2026 - Weekly Consolidation Summary
 
 **Archive Date:** Wednesday, May 27, 2026 (17:00 UTC)
