@@ -6,11 +6,11 @@ Archive:
 - Full pre-trim snapshot saved to `memory/MEMORY.pre-trim-2026-05-25.md`
 - Keep this file lean so OpenClaw does not inject unnecessary history into every request
 
-## Current durable state (2026-05-28)
+## Current durable state (2026-06-01)
 
 - AdugboInsure queue discipline: use already-prepared content before generating fresh weekly videos.
-- AdugboInsure ready assets still include the `2026-04-12`, `2026-04-15`, `2026-04-16`, `2026-04-29`, `2026-05-10`, `2026-05-23`, `2026-05-24`, `2026-05-26`, and `2026-05-27` packages.
-- NotebookLM remains blocked by expired/false-positive auth; fresh cookies are still required, and local recovery is still limited because `nlm login --force` currently fails with `No supported browser found`.
+- AdugboInsure ready assets still include the `2026-04-12`, `2026-04-15`, `2026-04-16`, `2026-04-29`, `2026-05-10`, `2026-05-23`, `2026-05-24`, `2026-05-26`, `2026-05-27`, `2026-05-29`, `2026-05-30`, and `2026-05-31` packages.
+- NotebookLM remains blocked by expired/false-positive auth; fresh cookies are still required, and repeated checks through `2026-05-31` still ended with `Authentication expired` while `nlm login --force` failed with `No supported browser found`.
 - Robin reliability lesson remains durable: session bloat and listener/runtime queueing can break responsiveness; evidence-first reporting and lightweight fast-path replies should stay in place.
 - Robin listener hardening on `2026-05-22`: keep the local single-instance lock and async background-run path for long multi-lane requests.
 - Robin direct-chat fix on `2026-05-25`: the research listener/runner must launch from `/home/claw/.openclaw/workspace-research`, not the heavy main workspace.

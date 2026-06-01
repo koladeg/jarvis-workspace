@@ -1,5 +1,33 @@
 # Memory Archive - Historical Consolidations
 
+## Week of May 26 - June 1, 2026 - Weekly Consolidation Summary
+
+**Archive Date:** Monday, June 1, 2026 (17:00 UTC)
+**Period:** Past 7 days (May 26 - June 1)
+**Status:** Consolidated and archived
+
+### Consolidated Sessions (Compressed)
+- **2026-05-26:** A Dash0-specific resume packet was generated, locally verified, and emailed through the existing Gmail route; AdugboInsure produced a branded testimonials fallback export; and trimming a stale `agent-browser`/Chrome tree materially recovered RAM and swap headroom.
+- **2026-05-27:** AdugboInsure work produced a branded benefits fallback export, posted the script to Telegram, and confirmed that NotebookLM remained blocked because both real notebook access and `nlm login --force` still failed.
+- **2026-05-28:** GitHub CLI auth was repaired by refreshing the saved token, and `gh auth status` returned to a valid authenticated state as `koladeg`.
+- **2026-05-29:** AdugboInsure work produced a branded coverage fallback export and reconfirmed that manual NotebookLM cookie import still did not restore real access.
+- **2026-05-30:** AdugboInsure work produced a branded claims fallback export and reconfirmed that the local browser-backed NotebookLM recovery path is still unavailable.
+- **2026-05-31:** AdugboInsure work produced another branded testimonials fallback export and reconfirmed the same NotebookLM failure pattern on real access attempts.
+- **2026-06-01:** No daily file was present before this consolidation run. A real local `ollama run llama3.2:3b` attempt was made again for this synthesis, but the model could not load because it required about `2.3 GiB` of system memory while only about `1.2 GiB` was available, so the final edits were completed from the verified notes.
+
+### Distilled Long-Term Updates
+- The durable operating state remains mostly stable this week; the main additions are the expanded AdugboInsure ready queue through `2026-05-31` and the revalidated `gh` authenticated state as `koladeg`.
+- NotebookLM remains the active blocker: repeated checks through `2026-05-31` still ended with `Authentication expired`, and `nlm login --force` still cannot recover locally because no supported browser is available.
+- The Gmail resume-delivery route remains operational for personal-file handoff, with the Dash0 tailored DOCX successfully sent on `2026-05-26`.
+- RAM hygiene on this `2 GiB` host remains a first-line operational rule: stale `agent-browser`/Chrome trees can materially reduce swap and free memory, and `llama3.2:3b` still cannot be assumed to load successfully under normal pressure.
+
+### 14-Day Compression Update
+- **2026-05-17.md:** now old enough to compress safely; its durable content was another consolidation pass that mainly reaffirmed the existing AdugboInsure queue, NotebookLM blocker, Robin reliability lessons, and Orisynx reference state.
+- **Daily logs older than 14 days (before `2026-05-18`):** are now safely represented by archive summaries and no longer need active full-fidelity retention.
+
+### Next Consolidation
+- Monday, June 8, 2026
+
 ## Week of May 22 - May 28, 2026 - Weekly Consolidation Summary
 
 **Archive Date:** Thursday, May 28, 2026 (17:00 UTC)
