@@ -20,6 +20,8 @@
 - **Cinemark, Equinix, Republic Services, AMD, TRX:** Supporting positions
 - **Referral Code:** kolade464617
 - **All-time returns:** +10.84%
+- **Source of truth:** `data/us-stock-watchlist.json`
+- **Ticker caution:** `Vector Acquisition` is currently tracked as a legacy label and likely maps to `RKLB` / old `VACQ`, but that still needs direct broker confirmation before automation treats it as exact.
 
 ### Crypto (Binance)
 - **PAXG (Pax Gold):** Gold hedge (~0.14 units, ~$130)

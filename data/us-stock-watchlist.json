@@ -1,0 +1,68 @@
+{
+  "as_of": "2026-05-24",
+  "broker": "Bamboo",
+  "notes": [
+    "Use this file as the source of truth for US stock updates.",
+    "Do not silently normalize broker labels to tickers when the mapping is uncertain.",
+    "Confirm unresolved symbols directly from Bamboo before automating trades or portfolio calculations."
+  ],
+  "holdings": [
+    {
+      "broker_label": "NVIDIA",
+      "ticker": "NVDA",
+      "status": "confirmed",
+      "portfolio_weight_pct": 32.08
+    },
+    {
+      "broker_label": "Vector Acquisition",
+      "ticker": null,
+      "likely_ticker": "RKLB",
+      "legacy_symbol": "VACQ",
+      "status": "assumed_from_old_name",
+      "portfolio_weight_pct": 23.26,
+      "note": "Vector Acquisition Corp merged into Rocket Lab. Confirm the live Bamboo holding label before using RKLB in automation."
+    },
+    {
+      "broker_label": "Bank of America",
+      "ticker": "BAC",
+      "status": "confirmed",
+      "portfolio_weight_pct": 7.88
+    },
+    {
+      "broker_label": "Netflix",
+      "ticker": "NFLX",
+      "status": "confirmed",
+      "portfolio_weight_pct": 6.52
+    },
+    {
+      "broker_label": "Cinemark",
+      "ticker": null,
+      "likely_ticker": "CNK",
+      "status": "needs_confirmation",
+      "note": "Older workspace note used 'CNM', which is not the standard Cinemark ticker."
+    },
+    {
+      "broker_label": "Equinix",
+      "ticker": null,
+      "likely_ticker": "EQIX",
+      "status": "needs_confirmation",
+      "note": "Older workspace note used 'EQX', which looks like shorthand rather than the exchange ticker."
+    },
+    {
+      "broker_label": "Republic Services",
+      "ticker": "RSG",
+      "status": "confirmed"
+    },
+    {
+      "broker_label": "AMD",
+      "ticker": "AMD",
+      "status": "confirmed"
+    },
+    {
+      "broker_label": "TRX",
+      "ticker": null,
+      "status": "needs_confirmation",
+      "note": "Broker label or ticker is ambiguous in current notes."
+    }
+  ]
+}

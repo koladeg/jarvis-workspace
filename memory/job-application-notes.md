@@ -132,6 +132,21 @@ Some recurring challenges I faced were permissions management, platform-specific
   - remote collaboration
   - fintech-adjacent / operational product environments
 
+### Backpack
+- Good fit when the role emphasizes:
+  - React Native product delivery
+  - end-to-end mobile feature ownership
+  - bug fixing and release reliability
+  - high-ownership remote teams
+  - technically demanding product domains such as crypto/web3
+- Keep the positioning honest:
+  - strong on production mobile delivery, debugging, APIs, and state-heavy workflows
+  - curious and motivated about crypto/web3, but do not overclaim deep direct domain experience
+- Strong angle for "Why Backpack":
+  - the mobile app is central to the product experience
+  - the team appears to value speed, ownership, and quality
+  - the role combines direct user impact with engineering demands in a fast-moving market
+
 ## Reuse rule
 Before writing future application answers, check this file first for:
 - mobile / native module evidence

@@ -1,0 +1,174 @@
+{
+  "candidate": {
+    "name": "Kolade Gureje",
+    "contact_line": "koladegureje@gmail.com | +234 8079366207 | Lagos, Nigeria | Portfolio: https://koladeg.github.io/ | GitHub: github.com/koladeg | LinkedIn: linkedin.com/in/kolade-gureje",
+    "base_summary": "Product-minded mobile engineer with 5+ years building production applications across healthcare, logistics, and digital product environments."
+  },
+  "style": {
+    "latin_font": "Times New Roman",
+    "cjk_font": "Times New Roman"
+  },
+  "education": [
+    {
+      "left": "Bachelor of Computer Science & Information Technology | Bowen University",
+      "right": "2010 - 2014",
+      "bullets": []
+    },
+    {
+      "left": "Ironhack Bootcamp | Full-Stack Web Development",
+      "right": "Jun 2020 - Aug 2020",
+      "bullets": []
+    },
+    {
+      "left": "Cloud DevOps Nanodegree | Udacity",
+      "right": "Jun 2022 - Aug 2022",
+      "bullets": [
+        "Focused on infrastructure as code, CI/CD, cloud operations, and containerization workflows."
+      ]
+    },
+    {
+      "left": "ALX Founder Academy Program",
+      "right": "Mar 2024 - Jun 2024",
+      "bullets": [
+        "Startup leadership and product development training."
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "key": "sifax",
+      "default_left": "Software Developer / Deputy Manager | SIFAX",
+      "default_right": "Jan 2020 - Present",
+      "default_bullets": [
+        "Built and maintained production mobile applications using React Native, JavaScript, and API-connected workflows for operational teams.",
+        "Integrated REST APIs and Redux-based state management for complex, data-heavy user flows.",
+        "Improved product reliability through debugging, structured testing, and iterative release work.",
+        "Worked across technical and business stakeholders and mentored junior developers on maintainable application structure."
+      ]
+    },
+    {
+      "key": "uch_lead",
+      "default_left": "Project Lead Developer | University College Hospital (UCH)",
+      "default_right": "Sep 2024 - Nov 2024",
+      "default_bullets": [
+        "Led a 3-person team to develop a React Native mental health application for the INTREPID III study.",
+        "Delivered mobile data-capture workflows that recorded 250+ patient visits with 98% data accuracy.",
+        "Built dynamic forms and API-connected workflows to support reporting and operational visibility."
+      ]
+    },
+    {
+      "key": "uch_pm",
+      "default_left": "Project Manager & Mobile Developer | University College Hospital (UCH)",
+      "default_right": "Mar 2023 - Sep 2023",
+      "default_bullets": [
+        "Managed a cross-functional team delivering a mobile intervention application from planning through execution.",
+        "Improved field data collection efficiency by 40% through mobile-first workflow design.",
+        "Coordinated stakeholder expectations, sprint priorities, and delivery timelines across the project lifecycle."
+      ]
+    },
+    {
+      "key": "neighbortailor",
+      "default_left": "Front-End Developer | NeighborTailor.com",
+      "default_right": "Nov 2019 - Nov 2022",
+      "default_bullets": [
+        "Developed customer-facing product flows and reusable front-end components for an e-commerce platform.",
+        "Improved app load speed by 35% through front-end optimization work.",
+        "Collaborated remotely with backend teams on feature implementation and API-connected product updates."
+      ]
+    }
+  ],
+  "campus": [
+    {
+      "left": "Selected Project | mhGAP Replica",
+      "right": "Healthcare Application",
+      "bullets": [
+        "Built a React Native application used in a clinical research setting and helped digitize previously manual workflows.",
+        "Recorded 250+ patient visits with 98% data accuracy using React Native, Redux, Formik, Firebase, and REST APIs."
+      ]
+    },
+    {
+      "left": "Selected Project | ReportPrep AI",
+      "right": "Product Build",
+      "bullets": [
+        "Built product features for document generation and workflow automation using Next.js, TypeScript, Firebase, and Gemini AI.",
+        "Supported a workflow that generated 500+ documents monthly."
+      ]
+    }
+  ],
+  "tracks": {
+    "backpack_mobile_engineer": {
+      "title": "Mobile Engineer (React Native)",
+      "summary": "Product-minded mobile engineer with 5+ years building production applications across healthcare, logistics, and digital product environments. Strong experience shipping React Native features, integrating REST APIs, managing complex client state, and improving reliability through debugging and iterative delivery. Comfortable owning mobile work end to end and collaborating effectively in remote, high-ownership teams.",
+      "experience_order": [
+        "sifax",
+        "uch_lead",
+        "uch_pm",
+        "neighbortailor"
+      ],
+      "experience_overrides": {
+        "sifax": {
+          "left": "Software Developer / Deputy Manager | SIFAX",
+          "right": "Jan 2020 - Present",
+          "bullets": [
+            "Built and maintained production React Native applications for operational teams, shipping user-facing workflows used in day-to-day business operations.",
+            "Integrated REST APIs and Redux-based state management for complex, data-heavy mobile flows and feature delivery.",
+            "Improved app reliability through bug fixing, structured testing, and iterative enhancement of production releases.",
+            "Worked across technical and business stakeholders and mentored junior developers on maintainable architecture and delivery discipline."
+          ]
+        },
+        "uch_lead": {
+          "left": "Project Lead Developer | University College Hospital (UCH)",
+          "right": "Sep 2024 - Nov 2024",
+          "bullets": [
+            "Led a 3-person team to deliver a production React Native healthcare application used in real operational settings.",
+            "Built data-capture flows, forms, and reporting features that supported 250+ patient visits with 98% data accuracy.",
+            "Balanced end-user usability, data integrity, and delivery speed in a sensitive real-world mobile product."
+          ]
+        },
+        "uch_pm": {
+          "left": "Project Manager & Mobile Developer | University College Hospital (UCH)",
+          "right": "Mar 2023 - Sep 2023",
+          "bullets": [
+            "Managed delivery of a mobile intervention application from planning through execution with cross-functional coordination.",
+            "Improved field data collection efficiency by 40% through better workflow design, prioritization, and implementation.",
+            "Aligned stakeholders, sprint priorities, and release timelines across the project lifecycle."
+          ]
+        },
+        "neighbortailor": {
+          "left": "Front-End Developer | NeighborTailor.com",
+          "right": "Nov 2019 - Nov 2022",
+          "bullets": [
+            "Developed customer-facing flows and reusable front-end components for an e-commerce platform in a remote collaboration environment.",
+            "Improved app load speed by 35% through front-end optimization and performance-focused refinement.",
+            "Partnered with backend teams to deliver API-connected features and improve the end-to-end product experience."
+          ]
+        }
+      },
+      "campus_items": [
+        {
+          "left": "Selected Project | mhGAP Replica",
+          "right": "Healthcare Application",
+          "bullets": [
+            "Built a React Native application used in a clinical research setting and helped digitize previously manual workflows.",
+            "Recorded 250+ patient visits with 98% data accuracy using React Native, Redux, Formik, Firebase, and REST APIs."
+          ]
+        },
+        {
+          "left": "Selected Project | ReportPrep AI",
+          "right": "Product Build",
+          "bullets": [
+            "Built product features for document generation and workflow automation using Next.js, TypeScript, Firebase, and Gemini AI.",
+            "Supported a workflow that generated 500+ documents monthly."
+          ]
+        }
+      ],
+      "skills_lines": [
+        "Mobile: React Native, Expo, React Navigation, Redux, Formik, TypeScript, JavaScript.",
+        "APIs & Data: REST APIs, Firebase, MongoDB, Node.js, client-side state management.",
+        "Engineering Practice: debugging, testing, performance optimization, feature ownership, asynchronous collaboration, agile delivery.",
+        "Certification: AWS Certified Solutions Architect – Associate (Nov 2022, expires Nov 2025, score 920/1000).",
+        "Location: Based in Lagos, Nigeria; open to fully remote international mobile engineering roles."
+      ]
+    }
+  }
+}

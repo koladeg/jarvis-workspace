@@ -1,6 +1,6 @@
 # Job Search Tracking - Jarvis-Job-Search Channel
 
-**Last Updated:** 2026-04-27 17:31 UTC
+**Last Updated:** 2026-05-26 02:25 UTC
 **Schedule:** Every 3-5 days
 **Sources:** RemoteOK, Hacker News Jobs, LinkedIn, direct company pages, curated manual shortlist
 **Target:** React / React Native / Frontend / strong remote or visa-relocation paths
@@ -14,6 +14,11 @@ Older roles from the March pipeline are kept as backlog/parallel options unless 
 
 **Submitted / removed from active queue:**
 - nsave — Front-End Engineer (React Native) — London — **SUBMITTED 2026-04-27**
+- Buffer — Senior Growth Engineer — Remote / Async — **SUBMITTED**
+- Lemon.io — Senior Full-stack React Developer — **SUBMITTED**
+- Anthropic — Software Engineer, Safeguards Infrastructure — London — **SUBMITTED**
+- Featurebase — Full-stack Product Engineer — Careers page — **SUBMITTED**
+- Certa — Senior Frontend Engineer (SDE III) — Remote only — **SUBMITTED**
 
 #### Kolade — Apply Now
 
@@ -37,29 +42,9 @@ Older roles from the March pipeline are kept as backlog/parallel options unless 
 - Cover Letter: Submitted
 - Notes: Applied by Kolade
 
-3. **Buffer — Senior Growth Engineer — Remote / Async**
+3. **Mistral AI — Cloud Software Engineer, Fullstack/Frontend — Germany**
 - Priority: P2
-- Status: READY AFTER PAPERPILE
-- Fit: Strong React + TypeScript fit, but more growth/web than React Native
-- Visa/Relocation: Remote / async
-- Link: https://jobs.ashbyhq.com/buffer/6ee07995-2738-4cee-b16d-fc8967674346
-- CV: Frontend / product-growth version needed
-- Cover Letter: Needed
-- Notes: Strong company and clean remote setup
-
-4. **Lemon.io — Senior Full-stack React Developer**
-- Priority: P2
-- Status: READY AFTER BUFFER
-- Fit: Solid React fit
-- Visa/Relocation: Remote signal
-- Link: https://remoteok.com/remote-jobs/remote-senior-full-stack-react-developer-lemon-io-1131339
-- CV: Full-stack React version needed
-- Cover Letter: Needed
-- Notes: Worth keeping active
-
-5. **Mistral AI — Cloud Software Engineer, Fullstack/Frontend — Germany**
-- Priority: P2
-- Status: READY AFTER LEMON.IO
+- Status: READY TO REVIEW / APPLY
 - Fit: Strong company, good stack fit
 - Visa/Relocation: Sponsorship less explicit than aggregator suggested
 - Link: https://de.linkedin.com/jobs/view/mistral-cloud-software-engineer-fullstack-frontend-at-mistral-ai-4402204271
@@ -67,9 +52,9 @@ Older roles from the March pipeline are kept as backlog/parallel options unless 
 - Cover Letter: Needed
 - Notes: Good swing if eligibility still checks out
 
-6. **Mistral AI — Cloud Software Engineer, Fullstack/Frontend — London**
+4. **Mistral AI — Cloud Software Engineer, Fullstack/Frontend — London**
 - Priority: P2
-- Status: READY AFTER MISTRAL DE
+- Status: READY TO REVIEW / APPLY
 - Fit: Strong company, UK path attractive
 - Visa/Relocation: Same caution on relocation clarity
 - Link: https://uk.linkedin.com/jobs/view/mistral-cloud-software-engineer-fullstack-frontend-at-mistral-ai-4402204270
@@ -82,28 +67,10 @@ Older roles from the March pipeline are kept as backlog/parallel options unless 
 - **nsave — Front-End Engineer (React Native) — London**
 - **Headway — Senior React Native Developer — Remote**
 - **Tether — Senior React Native Mobile Developer WDK — Worldwide**
+- **Buffer — Senior Growth Engineer — Remote / Async**
+- **Lemon.io — Senior Full-stack React Developer**
 
 #### Jarvis Lane — Direct / Company-Site First
-
-6. **Anthropic — Software Engineer, Safeguards Infrastructure — London**
-- Priority: P1
-- Status: PREP / APPLY PATH
-- Fit: Stretch role; less direct than RN/frontend roles
-- Visa/Relocation: Real visa route
-- Link: https://job-boards.greenhouse.io/anthropic/jobs/5074908008
-- CV: Reliability / infrastructure leaning version needed
-- Cover Letter: Needed
-- Notes: One clean, high-quality attempt
-
-7. **Featurebase — Full-stack Product Engineer — Careers page**
-- Priority: P1
-- Status: PREP / ROLE CONFIRMATION NEEDED
-- Fit: Good near-strong fit; TypeScript / React / product orientation likely relevant
-- Visa/Relocation: Needs live-page confirmation
-- Link: https://www.featurebase.app/careers
-- CV: Full-stack / product engineer version needed
-- Cover Letter: Needed if pursued
-- Notes: In the agreed direct-apply batch
 
 8. **Holepunch — remote but Argentina-tagged**
 - Priority: P2
@@ -114,16 +81,6 @@ Older roles from the March pipeline are kept as backlog/parallel options unless 
 - CV: TBD
 - Cover Letter: TBD
 - Notes: In agreed direct-apply batch; location risk
-
-9. **Certa — Senior Frontend Engineer (SDE III) — Remote only**
-- Priority: P2
-- Status: READY TO REVIEW / APPLY
-- Fit: Strong frontend / React / TypeScript fit
-- Visa/Relocation: Remote-only posting; location flexibility still worth confirming
-- Link: https://cutshort.io/job/Senior-Frontend-Engineer-SDE-III-Certa-UEKFbfDd
-- CV: Frontend / React / TypeScript version needed
-- Cover Letter: Needed
-- Notes: Strong fallback from agreed batch
 
 #### Fresh Additions — 2026-05-18
 
@@ -157,57 +114,17 @@ Older roles from the March pipeline are kept as backlog/parallel options unless 
 - Cover Letter: Needed
 - Notes: Near-core fit; keep active but below the RN-first roles
 
-21. **Lemon.io — Senior Full-stack React Developer**
-- Priority: P2
-- Status: KEEP ACTIVE / NEAR-FIT
-- Fit: Good compensation signal and solid React fit, but more marketplace/full-stack than direct React Native
-- Visa/Relocation: Remote signal
-- Link: https://remoteok.com/remote-jobs/remote-senior-full-stack-react-developer-lemon-io-1131339
-- CV: Full-stack React version needed
-- Cover Letter: Needed
-- Notes: Keep in the list, but not a top keep versus the RN-first roles
+#### Fresh Additions — 2026-05-25
 
-#### Strong Additions / Next Up
-
-10. **Buffer — Senior Growth Engineer — Remote / Async**
+23. **Dash0 — Senior Product Engineer, Frontend**
 - Priority: P2
-- Status: NEW / READY TO REVIEW
-- Fit: Strong React + TypeScript fit, but more growth/web than React Native
-- Visa/Relocation: Remote / async
-- Link: https://jobs.ashbyhq.com/buffer/6ee07995-2738-4cee-b16d-fc8967674346
-- CV: Frontend / product-growth version needed
+- Status: NEW / ADD TO APPLY SCHEDULE
+- Fit: Strong React / TypeScript fit with product-heavy frontend scope
+- Visa/Relocation: EMEA remote
+- Link: https://jobs.ashbyhq.com/dash0/bb433d72-7241-49b4-acfb-a6a403f9422c
+- CV: Frontend / TypeScript / product-engineer version needed
 - Cover Letter: Needed
-- Notes: Strong company and clean remote setup
-
-11. **Lemon.io — Senior Full-stack React Developer**
-- Priority: P2
-- Status: NEW / READY TO REVIEW
-- Fit: Solid React fit
-- Visa/Relocation: Remote signal
-- Link: https://remoteok.com/remote-jobs/remote-senior-full-stack-react-developer-lemon-io-1131339
-- CV: Full-stack React version needed
-- Cover Letter: Needed
-- Notes: Worth keeping active
-
-12. **Mistral AI — Cloud Software Engineer, Fullstack/Frontend — Germany**
-- Priority: P2
-- Status: READY TO REVIEW / APPLY
-- Fit: Strong company, good stack fit
-- Visa/Relocation: Sponsorship less explicit than aggregator suggested
-- Link: https://de.linkedin.com/jobs/view/mistral-cloud-software-engineer-fullstack-frontend-at-mistral-ai-4402204271
-- CV: Frontend / fullstack version needed
-- Cover Letter: Needed
-- Notes: Good swing if eligibility still checks out
-
-13. **Mistral AI — Cloud Software Engineer, Fullstack/Frontend — London**
-- Priority: P2
-- Status: READY TO REVIEW / APPLY
-- Fit: Strong company, UK path attractive
-- Visa/Relocation: Same caution on relocation clarity
-- Link: https://uk.linkedin.com/jobs/view/mistral-cloud-software-engineer-fullstack-frontend-at-mistral-ai-4402204270
-- CV: Frontend / fullstack version needed
-- Cover Letter: Needed
-- Notes: Pair with Germany application pack where possible
+- Notes: Strong web/frontend lane role; below Trust Wallet because geography is narrower
 
 #### Fallback Batch
 
@@ -258,6 +175,24 @@ Older roles from the March pipeline are kept as backlog/parallel options unless 
 - Visa/Relocation: Remote signal
 - Link: https://remoteok.com/remote-jobs/remote-full-stack-staff-engineer-join-1131413
 - CV: Senior/staff-leaning full-stack version only if promoted
+
+#### Downgraded / Skip for Now
+
+- **Trust Wallet — Senior Frontend Engineer (Web3 - Trading)**
+- Priority: P1
+- Status: REMOVED / NO SPONSORSHIP
+- Fit: Strong technical fit, but not viable for the goal that drove the application
+- Visa/Relocation: Form explicitly says they cannot sponsor where the applicant is based
+- Link: https://jobs.ashbyhq.com/trust-wallet/c40c4c46-4855-476e-b479-b0b18599049f
+- Notes: Removed after checking the live application form on 2026-05-26
+
+- **Partyhat — Senior Frontend Engineer**
+- Priority: P3
+- Status: DOWNGRADED / DO NOT PRIORITIZE
+- Fit: Near-fit on frontend skillset, but weaker overall fit than the stronger fresh roles
+- Visa/Relocation: Hard country restrictions
+- Link: https://jobs.ashbyhq.com/partyhat/4b71470b-76ce-4818-8fae-98c3d5e16f6c
+- Notes: Downgraded because of country restrictions plus a 7-days-a-week on-call expectation
 - Cover Letter: TBD
 - Notes: Watchlist only for now
 
@@ -305,33 +240,37 @@ Older roles from the March pipeline are kept as backlog/parallel options unless 
 
 ### ACTIVE APPLICATION SCHEDULE
 
-**Day 1 — Highest-fit React Native / practical roles**
-- nsave
-- Headway
-- Tether
+**Next 3 targets**
+- Dash0 — Senior Product Engineer, Frontend
+- Orium — Senior React Native Developer
+- Bluelight Consulting — React Native Developer
 
-**Day 2 — Strong relocation / frontend roles**
-- KWAN (Lisbon)
-- KWAN (React.js)
-- SuperPlane
+**Day 1 — Highest-fit immediate applies**
+- Dash0
+- Orium
+- Bluelight Consulting
 
-**Day 3 — Strong swings**
-- Mistral Germany
-- Mistral London
-- Ashby
+**Day 2 — Strong follow-up batch**
+- Mistral AI — Germany
+- Mistral AI — London
+- Creative Chaos
 
-**Day 4 — Near-strong / stretch**
-- Featurebase
-- Anthropic
+**Day 3 — Good but lower-confidence roles**
 - Holepunch
+- Ubicloud
+- LiteLLM
+
+**Day 4 — Speculative / background queue**
+- SigNoz
+- Aha!
+- Charted Sea
 
 **Fallback batch**
 - Alinea
-- Charted Sea
 - Kochanet (when live link is found)
-- Aha! (if eligibility checks out)
-- Certa can be advanced into Day 2/3 if a cleaner frontend-only batch is preferred
-- Orium / Ubicloud / LiteLLM remain backlog unless re-promoted
+- Trust Wallet stays removed because the live form says no visa sponsorship
+- Partyhat stays downgraded because of country restrictions and 7-days-a-week on-call
+- Anthropic / Featurebase / Certa are submitted and stay out of the active queue
 
 ### RULES FOR GOING FORWARD
 - Use this merged tracker instead of the old Orium-first queue by default.
