@@ -1,5 +1,33 @@
 # Memory Archive - Historical Consolidations
 
+## Week of May 28 - June 3, 2026 - Weekly Consolidation Summary
+
+**Archive Date:** Wednesday, June 3, 2026 (17:00 UTC)
+**Period:** Past 7 days (May 28 - June 3)
+**Status:** Consolidated and archived
+
+### Consolidated Sessions (Compressed)
+- **2026-05-28:** GitHub CLI auth was revalidated after refreshing the saved token, and `gh auth status` confirmed the machine is authenticated again as `koladeg`.
+- **2026-05-29:** AdugboInsure work produced a branded coverage fallback export, posted the coverage script to Telegram, and reconfirmed that NotebookLM still reports expired auth on the first real notebook command.
+- **2026-05-30:** AdugboInsure work produced a branded claims fallback export, posted the claims script to Telegram, and reconfirmed that both manual cookie import and browser-backed NotebookLM login still fail to restore real access.
+- **2026-05-31:** AdugboInsure work produced a branded testimonials fallback export, posted the testimonials script to Telegram, and reconfirmed the same false-positive NotebookLM auth pattern.
+- **2026-06-01:** No daily file was present in this review window.
+- **2026-06-02:** AdugboInsure work produced a branded benefits fallback export, posted the benefits script to Telegram, and reconfirmed that NotebookLM still fails on real notebook access attempts.
+- **2026-06-03:** AdugboInsure work produced a branded enrollment fallback export, posted the enrollment script to Telegram, and reconfirmed that NotebookLM still returns `Authentication expired` on live notebook access.
+
+### Distilled Long-Term Updates
+- The durable operating state remains mostly stable this week; the main addition is the expanded AdugboInsure ready queue through `2026-06-03`.
+- GitHub CLI access remains healthy after the `2026-05-28` token refresh, so the repaired authenticated state as `koladeg` remains durable.
+- NotebookLM remains the active blocker: repeated live checks through `2026-06-03` still end with `Authentication expired`, and the local browser-backed login path still cannot recover access.
+- A real local `ollama run llama3.2:3b` attempt was made for this consolidation, but the model could not load because it required about `2.3 GiB` of system memory while only about `2.2 GiB` was available, so final edits were completed from the verified notes.
+
+### 14-Day Compression Update
+- **2026-05-19.md:** now old enough to compress safely; its durable content was another consolidation pass that mainly reaffirmed the stable AdugboInsure queue, the continuing NotebookLM blocker, the Orisynx durable references, and the low-RAM Ollama limitation.
+- **Daily logs older than 14 days (before `2026-05-20`):** are now safely represented by archive summaries and no longer need active full-fidelity retention.
+
+### Next Consolidation
+- Wednesday, June 10, 2026
+
 ## Week of May 27 - June 2, 2026 - Weekly Consolidation Summary
 
 **Archive Date:** Tuesday, June 2, 2026 (17:00 UTC)
