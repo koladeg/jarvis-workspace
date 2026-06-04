@@ -1,5 +1,36 @@
 # Memory Archive - Historical Consolidations
 
+## Week of May 29 - June 4, 2026 - Weekly Consolidation Summary
+
+**Archive Date:** Thursday, June 4, 2026 (17:00 UTC)
+**Period:** Past 7 days (May 29 - June 4)
+**Status:** Consolidated and archived
+
+### Consolidated Sessions (Compressed)
+- **2026-05-29:** AdugboInsure work produced a branded coverage fallback export, posted the coverage script to Telegram, and reconfirmed that NotebookLM manual cookie login still ends in expired auth on the first real notebook command.
+- **2026-05-30:** AdugboInsure work produced a branded claims fallback export, posted the claims script to Telegram, and reconfirmed that manual NotebookLM cookie login still fails to restore real access while `nlm login --force` still reports `No supported browser found`.
+- **2026-05-31:** AdugboInsure work produced a branded testimonials fallback export, posted the testimonials script to Telegram, and reconfirmed the same NotebookLM false-positive auth pattern on real notebook access.
+- **2026-06-01:** No daily file was present in this review window.
+- **2026-06-02:** AdugboInsure work produced a branded benefits fallback export, posted the benefits script to Telegram, and reconfirmed that NotebookLM still fails on real notebook access attempts.
+- **2026-06-03:** AdugboInsure work produced a branded enrollment fallback export, posted the enrollment script to Telegram, and reconfirmed that NotebookLM still returns `Authentication expired` on live notebook access.
+- **2026-06-04:** AdugboInsure work produced a fresh branded coverage fallback export, posted the coverage script to Telegram, and reconfirmed that both `nlm login --check` and `nlm list notebooks` still return `Authentication expired`.
+
+### Distilled Long-Term Updates
+- The durable operating state remains mostly stable this week; the main addition is the expanded AdugboInsure ready queue through `2026-06-04`.
+- NotebookLM remains the active blocker: repeated live checks through `2026-06-04` still end with `Authentication expired`, manual cookie import still does not restore real access, `nlm login --check` still fails, and `nlm login --force` still cannot recover locally because no supported browser is available.
+- No major durable operating rules changed beyond extending the verified evidence window on the existing NotebookLM blocker and the ready local AdugboInsure asset queue.
+
+### 14-Day Compression Update
+- **2026-05-19.md:** now old enough to compress safely; its durable content was another consolidation pass that mainly reaffirmed the stable AdugboInsure queue, the continuing NotebookLM blocker, the Orisynx durable references, and the low-RAM Ollama limitation.
+- **2026-05-20.md:** no daily file existed, so there was nothing new to compress for that date.
+- **Daily logs older than 14 days (before `2026-05-21`):** are now safely represented by archive summaries and no longer need active full-fidelity retention.
+
+### Local Ollama Attempt
+- A real local `ollama run llama3.2:3b` attempt was made for this consolidation, but it failed because the model required about `2.3 GiB` of system memory while only about `2.0 GiB` was available, so final edits were completed from the verified notes.
+
+### Next Consolidation
+- Thursday, June 11, 2026
+
 ## Week of May 28 - June 3, 2026 - Weekly Consolidation Summary
 
 **Archive Date:** Wednesday, June 3, 2026 (17:00 UTC)

@@ -6,11 +6,11 @@ Archive:
 - Full pre-trim snapshot saved to `memory/MEMORY.pre-trim-2026-05-25.md`
 - Keep this file lean so OpenClaw does not inject unnecessary history into every request
 
-## Current durable state (2026-06-03)
+## Current durable state (2026-06-04)
 
 - AdugboInsure queue discipline: use already-prepared content before generating fresh weekly videos.
-- AdugboInsure ready assets still include the `2026-04-12`, `2026-04-15`, `2026-04-16`, `2026-04-29`, `2026-05-10`, `2026-05-23`, `2026-05-24`, `2026-05-26`, `2026-05-27`, `2026-05-29`, `2026-05-30`, `2026-05-31`, `2026-06-02`, and `2026-06-03` packages.
-- NotebookLM remains blocked by expired/false-positive auth; repeated checks through `2026-06-03` still ended with `Authentication expired`, manual cookie import still did not restore real access, and `nlm login --force` still failed with `No supported browser found`.
+- AdugboInsure ready assets still include the `2026-04-12`, `2026-04-15`, `2026-04-16`, `2026-04-29`, `2026-05-10`, `2026-05-23`, `2026-05-24`, `2026-05-26`, `2026-05-27`, `2026-05-29`, `2026-05-30`, `2026-05-31`, `2026-06-02`, `2026-06-03`, and `2026-06-04` packages.
+- NotebookLM remains blocked by expired/false-positive auth; repeated checks through `2026-06-04` still ended with `Authentication expired`, manual cookie import still did not restore real access, `nlm login --check` still failed, and `nlm login --force` still failed with `No supported browser found`.
 - Robin reliability lesson remains durable: session bloat and listener/runtime queueing can break responsiveness; evidence-first reporting and lightweight fast-path replies should stay in place.
 - Robin listener hardening on `2026-05-22`: keep the local single-instance lock and async background-run path for long multi-lane requests.
 - Robin direct-chat fix on `2026-05-25`: the research listener/runner must launch from `/home/claw/.openclaw/workspace-research`, not the heavy main workspace.
