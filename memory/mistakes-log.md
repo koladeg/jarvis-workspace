@@ -80,3 +80,11 @@
 - **Guardrail**: When a web task is blocked by one browser path, verify the documented local agent-browser route and report the exact failing step before saying browsing or submission is unavailable
 - **Status**: logged
 
+## 2026-06-07 09:51 UTC: Robin foreground path retriggered a known research timeout pattern
+- **What**: Robin foreground path retriggered a known research timeout pattern
+- **Context**: Robin private research request on 2026-06-07 to run a news link and show results timed out after 330 seconds before the listener was patched
+- **Root cause**: The listener still allowed some run/check-this-link style research prompts onto the short-lived inline path instead of treating them as long-running work and delegating immediately
+- **Pattern**: Repeat of the Robin foreground-timeout family logged on 2026-05-22
+- **Guardrail**: Route any request to run, check, or inspect a link for substantive results through the background runner when browsing/research may exceed quick-reply latency; keep the inline path for lightweight chat only
+- **Status**: logged
+

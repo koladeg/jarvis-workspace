@@ -1,6 +1,6 @@
 # Job Search Tracking - Jarvis-Job-Search Channel
 
-**Last Updated:** 2026-05-26 02:25 UTC
+**Last Updated:** 2026-06-07 11:01 UTC
 **Schedule:** Every 3-5 days
 **Sources:** RemoteOK, Hacker News Jobs, LinkedIn, direct company pages, curated manual shortlist
 **Target:** React / React Native / Frontend / strong remote or visa-relocation paths
@@ -44,23 +44,23 @@ Older roles from the March pipeline are kept as backlog/parallel options unless 
 
 3. **Mistral AI — Cloud Software Engineer, Fullstack/Frontend — Germany**
 - Priority: P2
-- Status: READY TO REVIEW / APPLY
+- Status: EXPIRED LINK / REMOVE FROM ACTIVE APPLY
 - Fit: Strong company, good stack fit
 - Visa/Relocation: Sponsorship less explicit than aggregator suggested
 - Link: https://de.linkedin.com/jobs/view/mistral-cloud-software-engineer-fullstack-frontend-at-mistral-ai-4402204271
 - CV: Frontend / fullstack version needed
 - Cover Letter: Needed
-- Notes: Good swing if eligibility still checks out
+- Notes: LinkedIn URL redirected to an expired-job landing page on 2026-06-07
 
 4. **Mistral AI — Cloud Software Engineer, Fullstack/Frontend — London**
 - Priority: P2
-- Status: READY TO REVIEW / APPLY
+- Status: EXPIRED LINK / REMOVE FROM ACTIVE APPLY
 - Fit: Strong company, UK path attractive
 - Visa/Relocation: Same caution on relocation clarity
 - Link: https://uk.linkedin.com/jobs/view/mistral-cloud-software-engineer-fullstack-frontend-at-mistral-ai-4402204270
 - CV: Frontend / fullstack version needed
 - Cover Letter: Needed
-- Notes: Pair with Germany application pack where possible
+- Notes: LinkedIn URL redirected to an expired-job landing page on 2026-06-07
 
 #### Kolade — Already Submitted
 
@@ -86,45 +86,80 @@ Older roles from the March pipeline are kept as backlog/parallel options unless 
 
 18. **Orium — Senior React Native Developer**
 - Priority: P2
-- Status: NEW / ADD TO APPLY SCHEDULE
+- Status: CLOSED / REMOVE FROM ACTIVE APPLY
 - Fit: Strongest React Native match from today’s pass
 - Visa/Relocation: Canada listing; work authorisation and 6-month fixed-term detail need checking
 - Link: https://remoteok.com/remote-jobs/remote-senior-react-native-developer-orium-1129706
 - CV: React Native / mobile-focused version needed
 - Cover Letter: Needed
-- Notes: Add to UAM list; medium priority until geography clears
+- Notes: Agent-browser check on 2026-06-07 shows the rendered page marked `CLOSED` and says `Please do not apply`
 
 19. **Bluelight Consulting — React Native Developer**
 - Priority: P2
-- Status: NEW / ADD TO APPLY SCHEDULE
+- Status: LIVE LISTING / REVIEW ELIGIBILITY
 - Fit: Clean React Native + JavaScript/TypeScript match
 - Visa/Relocation: International eligibility still unclear from visible listing
 - Link: https://remoteok.com/remote-jobs/remote-react-native-developer-bluelight-consulting-1130182
 - CV: React Native / TypeScript version needed
 - Cover Letter: Needed
-- Notes: Medium-priority RN lane; verify international eligibility before pushing higher
+- Notes: Agent-browser check on 2026-06-07 shows `Apply now` / `Apply for this job`; verify international eligibility before pushing higher
 
 20. **Creative Chaos — Senior Software Engineer React**
 - Priority: P2
-- Status: NEW / ADD TO APPLY SCHEDULE
+- Status: CLOSED / REMOVE FROM ACTIVE APPLY
 - Fit: Strong React/Redux frontend fit, but more web than mobile
 - Visa/Relocation: Needs eligibility/location check from full listing/company page
 - Link: https://remoteok.com/remote-jobs/remote-senior-software-engineer-react-creative-chaos-1130645
 - CV: Frontend / React / Redux version needed
 - Cover Letter: Needed
-- Notes: Near-core fit; keep active but below the RN-first roles
+- Notes: Agent-browser check on 2026-06-07 shows the rendered page marked `CLOSED` and says `Please do not apply`
 
 #### Fresh Additions — 2026-05-25
 
 23. **Dash0 — Senior Product Engineer, Frontend**
 - Priority: P2
-- Status: NEW / ADD TO APPLY SCHEDULE
+- Status: SUBMITTED
 - Fit: Strong React / TypeScript fit with product-heavy frontend scope
 - Visa/Relocation: EMEA remote
 - Link: https://jobs.ashbyhq.com/dash0/bb433d72-7241-49b4-acfb-a6a403f9422c
 - CV: Frontend / TypeScript / product-engineer version needed
 - Cover Letter: Needed
-- Notes: Strong web/frontend lane role; below Trust Wallet because geography is narrower
+- Notes: Agent-browser check on 2026-06-07 showed `Apply for this Job`; Kolade confirmed application submitted later that day
+
+#### Fresh Additions — 2026-06-07
+
+24. **AccessOwl — AI-enabled Senior Software Engineer (TypeScript Focus)**
+- Priority: P1
+- Status: LIVE LISTING / REVIEW LOCATION FIT
+- Fit: Strong TypeScript / startup fit; web-heavy rather than React Native
+- Visa/Relocation: Explicitly says US citizenship/visa not required; location coverage includes Nigeria, but the role prefers candidates within Berlin +/- 3 hours
+- Link: https://www.ycombinator.com/companies/accessowl/jobs/hfWAhVp-ai-enabled-senior-software-engineer-typescript-focus
+- Compensation: EUR70,000-EUR90,000 plus equity
+- CV: TypeScript / frontend / product-engineer version needed
+- Cover Letter: Needed
+- Notes: Agent-browser check on 2026-06-07 shows `Apply to role`; high-priority add, but timezone/location preference needs a final pass before applying
+
+25. **Jiga — Full Stack Product Engineer — Remote/Europe**
+- Priority: P2
+- Status: LIVE LISTING / REVIEW LOCATION FIT
+- Fit: Good React + Node product fit with async-friendly tone; broader full-stack than the mobile/frontend-specialist target
+- Visa/Relocation: US citizenship/visa not required; Europe-focused rather than explicitly global
+- Link: https://www.ycombinator.com/companies/jiga/jobs/J4JEuXd-full-stack-product-engineer-remote-europe
+- Compensation: $80K-$140K plus equity
+- CV: Full-stack / React / Node / product-engineer version needed
+- Cover Letter: Needed
+- Notes: Agent-browser check on 2026-06-07 shows `Apply to role`; attractive product fit, but geography is more Europe-centric than the strongest keepers
+
+26. **Haystack — Full Stack Engineer**
+- Priority: P2
+- Status: LIVE LISTING / LOWER-COMP REVIEW
+- Fit: Remote role with React + TypeScript in the stack; more full-stack than mobile/frontend-specialist
+- Visa/Relocation: US citizenship/visa not required; explicit Europe/Asia timezone fit
+- Link: https://www.ycombinator.com/companies/haystack/jobs/NAHo0jO-full-stack-engineer
+- Compensation: $3K-$7K
+- CV: Full-stack / React / TypeScript version needed
+- Cover Letter: Needed
+- Notes: Agent-browser check on 2026-06-07 shows `Apply to role`; eligibility looks decent, but compensation is notably weaker than the stronger YC keepers
 
 #### Fallback Batch
 
@@ -136,7 +171,7 @@ Older roles from the March pipeline are kept as backlog/parallel options unless 
 - Link: https://www.ycombinator.com/companies/alinea/jobs/2GVRUn2-product-engineer-ios
 - CV: iOS / mobile product version only if pursued
 - Cover Letter: Needed if pursued
-- Notes: Stretch/conditional option
+- Notes: YC page still live with apply link on 2026-06-07; stretch/conditional option
 
 15. **Charted Sea — remote**
 - Priority: P3
@@ -170,11 +205,12 @@ Older roles from the March pipeline are kept as backlog/parallel options unless 
 
 18. **Join — Full Stack Staff Engineer**
 - Priority: P3
-- Status: WATCHLIST
+- Status: LIVE LISTING / WATCHLIST
 - Fit: Potentially strong, but staff scope may be a stretch
 - Visa/Relocation: Remote signal
 - Link: https://remoteok.com/remote-jobs/remote-full-stack-staff-engineer-join-1131413
 - CV: Senior/staff-leaning full-stack version only if promoted
+- Notes: Agent-browser check on 2026-06-07 shows `Apply for this job`
 
 #### Downgraded / Skip for Now
 
