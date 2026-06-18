@@ -606,3 +606,190 @@ Older roles from the March pipeline are kept as backlog/parallel options unless 
 - Tags: YC startup
 
 **Status:** Automated pull completed with tracked delivery results.
+
+## Pull #1781359201 - 2026-06-13 14:00 UTC - AUTOMATED CRON
+
+**Sources:**
+- RemoteOK React/React Native: ✅ Pulled (3 listings)
+- Hacker News Jobs: ✅ Pulled (8 listings)
+
+**Delivery Status:**
+- Telegram: OK - message_id=7855
+- Email send: OK - SMTP accepted message
+- Email verify: OK - inbox match count=1
+
+### RemoteOK Listings
+
+#### RemoteOK #1
+**E Commerce Sales Executive** — FoodMe Global / Dine Palace
+- Salary: Not listed
+- Location: Remote
+- Posted: 2026-06-11T14:10:01+00:00
+- Link: https://remoteOK.com/remote-jobs/remote-e-commerce-sales-executive-foodme-global-dine-palace-1133259
+- Tags: dev, junior, engineer, digital nomad, hr, data entry, exec, front end, design, react, react.js, infosec, docker, technical, customer support, testing, marketing, web dev, javascript, cloud, git, typescript, angular, stats, medical, recruiter, backend, payroll, admin, microsoft, ops, excel, legal, virtual assistant, teaching, education, senior, ecommerce, sales
+
+#### RemoteOK #2
+**Triage Paralegal** — General Legal (YC26)
+- Salary: Not listed
+- Location: Remote
+- Posted: 2026-06-11T07:12:36+00:00
+- Link: https://remoteOK.com/remote-jobs/remote-triage-paralegal-general-legal-yc26-1133241
+- Tags: education, technical, customer support, dev, testing, marketing, finance, video, sales, golang, medical, digital nomad, design, coordinator, exec, content writing, social media, engineer, senior, ops, excel, recruiter, react, sys admin, front end, travel, javascript, data entry, legal, full time
+
+#### RemoteOK #3
+**Virtual Data Entry** — Sundayy
+- Salary: Not listed
+- Location: Remote
+- Posted: 2026-06-11T07:11:09+00:00
+- Link: https://remoteOK.com/remote-jobs/remote-virtual-data-entry-sundayy-1133240
+- Tags: education, technical, customer support, dev, testing, marketing, finance, video, sales, golang, medical, digital nomad, design, coordinator, exec, content writing, social media, engineer, senior, ops, excel, recruiter, react, sys admin, front end, travel, javascript, data entry
+
+### Hacker News Listings
+
+#### Hacker News #1
+**a Full Stack Engineer** — Hazel
+- Salary: Not listed
+- Location: See listing
+- Posted: 1 day ago
+- Link: https://www.ycombinator.com/companies/hazel-2/jobs/3epPWgu-full-stack-engineer-ts-sci
+- Tags: YC startup
+
+#### Hacker News #2
+**a Founding Growth Marketer** — Emerge Career
+- Salary: Not listed
+- Location: See listing
+- Posted: 4 days ago
+- Link: https://www.ycombinator.com/companies/emerge-career/jobs/v0S1AEG-founding-growth-marketer
+- Tags: YC startup
+
+#### Hacker News #3
+**Back end Engineers** — GoGoGrandparent
+- Salary: Not listed
+- Location: See listing
+- Posted: 4 days ago
+- Link: https://www.ycombinator.com/companies/gogograndparent/jobs/2vbzAw8-backend-engineer
+- Tags: YC startup
+
+#### Hacker News #4
+**to building open source Codex** — Proliferate
+- Salary: Not listed
+- Location: See listing
+- Posted: 5 days ago
+- Link: https://www.ycombinator.com/companies/proliferate/jobs/L3copvK-founding-engineer
+- Tags: YC startup
+
+#### Hacker News #5
+**General role** — 9 Mothers (YC P26) Is Hiring
+- Salary: Not listed
+- Location: See listing
+- Posted: 6 days ago
+- Link: https://9mothers.com/careers
+- Tags: YC startup
+
+#### Hacker News #6
+**Founding Machine Learning Engineer (Robotics)** — Mbodi AI
+- Salary: Not listed
+- Location: See listing
+- Posted: 7 days ago
+- Link: https://www.ycombinator.com/companies/mbodi-ai/jobs/WYAcNkX-founding-machine-learning-engineer
+- Tags: YC startup
+
+#### Hacker News #7
+**staff back end engineers** — Nango
+- Salary: Not listed
+- Location: See listing
+- Posted: 8 days ago
+- Link: https://nango.dev/careers
+- Tags: YC startup
+
+#### Hacker News #8
+**Founding FPGA Engineers** — Zettascale
+- Salary: Not listed
+- Location: See listing
+- Posted: 8 days ago
+- Link: https://www.ycombinator.com/companies/zettascale/jobs/O9S1vqO-founding-engineer-fpga-rtl-asic-architect
+- Tags: YC startup
+
+**Status:** Automated pull completed with tracked delivery results.
+
+## Pull #1781618403 - 2026-06-16 14:00 UTC - AUTOMATED CRON
+
+**Sources:**
+- RemoteOK React/React Native: ✅ Pulled (0 listings)
+- Hacker News Jobs: ✅ Pulled (8 listings)
+
+**Delivery Status:**
+- Telegram: OK - message_id=7887
+- Email send: OK - SMTP accepted message
+- Email verify: OK - inbox match count=1
+
+### RemoteOK Listings
+- No matching RemoteOK listings found.
+
+### Hacker News Listings
+
+#### Hacker News #1
+**a Senior Software Engineer in Germany** — Dalus
+- Salary: Not listed
+- Location: See listing
+- Posted: 1 day ago
+- Link: https://www.ycombinator.com/companies/dalus/jobs/5IDmKJt-senior-software-frontend-engineer-germany-office
+- Tags: YC startup
+
+#### Hacker News #2
+**a Full Stack Engineer** — Hazel
+- Salary: Not listed
+- Location: See listing
+- Posted: 4 days ago
+- Link: https://www.ycombinator.com/companies/hazel-2/jobs/3epPWgu-full-stack-engineer-ts-sci
+- Tags: YC startup
+
+#### Hacker News #3
+**a Founding Growth Marketer** — Emerge Career
+- Salary: Not listed
+- Location: See listing
+- Posted: 7 days ago
+- Link: https://www.ycombinator.com/companies/emerge-career/jobs/v0S1AEG-founding-growth-marketer
+- Tags: YC startup
+
+#### Hacker News #4
+**Back end Engineers** — GoGoGrandparent
+- Salary: Not listed
+- Location: See listing
+- Posted: 7 days ago
+- Link: https://www.ycombinator.com/companies/gogograndparent/jobs/2vbzAw8-backend-engineer
+- Tags: YC startup
+
+#### Hacker News #5
+**to building open source Codex** — Proliferate
+- Salary: Not listed
+- Location: See listing
+- Posted: 8 days ago
+- Link: https://www.ycombinator.com/companies/proliferate/jobs/L3copvK-founding-engineer
+- Tags: YC startup
+
+#### Hacker News #6
+**General role** — 9 Mothers (YC P26) Is Hiring
+- Salary: Not listed
+- Location: See listing
+- Posted: 9 days ago
+- Link: https://9mothers.com/careers
+- Tags: YC startup
+
+#### Hacker News #7
+**Founding Machine Learning Engineer (Robotics)** — Mbodi AI
+- Salary: Not listed
+- Location: See listing
+- Posted: 10 days ago
+- Link: https://www.ycombinator.com/companies/mbodi-ai/jobs/WYAcNkX-founding-machine-learning-engineer
+- Tags: YC startup
+
+#### Hacker News #8
+**staff back end engineers** — Nango
+- Salary: Not listed
+- Location: See listing
+- Posted: 11 days ago
+- Link: https://nango.dev/careers
+- Tags: YC startup
+
+**Status:** Automated pull completed with tracked delivery results.
