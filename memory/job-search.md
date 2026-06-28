@@ -793,3 +793,178 @@ Older roles from the March pipeline are kept as backlog/parallel options unless 
 - Tags: YC startup
 
 **Status:** Automated pull completed with tracked delivery results.
+
+## Pull #1781877603 - 2026-06-19 14:00 UTC - AUTOMATED CRON
+
+**Status:** FAILED - HTTP Error 429: Too Many Requests
+
+## Pull #1782136801 - 2026-06-22 14:00 UTC - AUTOMATED CRON
+
+**Sources:**
+- RemoteOK React/React Native: ✅ Pulled (0 listings)
+- Hacker News Jobs: ✅ Pulled (8 listings)
+
+**Delivery Status:**
+- Telegram: OK - message_id=7970
+- Email send: OK - SMTP accepted message
+- Email verify: OK - inbox match count=1
+
+### RemoteOK Listings
+- No matching RemoteOK listings found.
+
+### Hacker News Listings
+
+#### Hacker News #1
+**an applied ML engineer** — Wildcard
+- Salary: Not listed
+- Location: See listing
+- Posted: 20 hours ago
+- Link: https://www.ycombinator.com/companies/wildcard/jobs/SEmo4di-founding-applied-ml-engineer
+- Tags: YC startup
+
+#### Hacker News #2
+**in Indonesia, India, and Thailand** — Flexport
+- Salary: Not listed
+- Location: See listing
+- Posted: 3 days ago
+- Link: https://www.flexport.com/company/careers/
+- Tags: YC startup
+
+#### Hacker News #3
+**General role** — Trellis AI (YC W24) hiring a product lead to build agents for healthcare access
+- Salary: Not listed
+- Location: See listing
+- Posted: 4 days ago
+- Link: https://www.ycombinator.com/companies/trellis-ai/jobs/Cg94htp-product-lead
+- Tags: YC startup
+
+#### Hacker News #4
+**a Senior Software Engineer in Germany** — Dalus
+- Salary: Not listed
+- Location: See listing
+- Posted: 7 days ago
+- Link: https://www.ycombinator.com/companies/dalus/jobs/5IDmKJt-senior-software-frontend-engineer-germany-office
+- Tags: YC startup
+
+#### Hacker News #5
+**a Full Stack Engineer** — Hazel
+- Salary: Not listed
+- Location: See listing
+- Posted: 10 days ago
+- Link: https://www.ycombinator.com/companies/hazel-2/jobs/3epPWgu-full-stack-engineer-ts-sci
+- Tags: YC startup
+
+#### Hacker News #6
+**a Founding Growth Marketer** — Emerge Career
+- Salary: Not listed
+- Location: See listing
+- Posted: 13 days ago
+- Link: https://www.ycombinator.com/companies/emerge-career/jobs/v0S1AEG-founding-growth-marketer
+- Tags: YC startup
+
+#### Hacker News #7
+**Back end Engineers** — GoGoGrandparent
+- Salary: Not listed
+- Location: See listing
+- Posted: 13 days ago
+- Link: https://www.ycombinator.com/companies/gogograndparent/jobs/2vbzAw8-backend-engineer
+- Tags: YC startup
+
+#### Hacker News #8
+**to building open source Codex** — Proliferate
+- Salary: Not listed
+- Location: See listing
+- Posted: 14 days ago
+- Link: https://www.ycombinator.com/companies/proliferate/jobs/L3copvK-founding-engineer
+- Tags: YC startup
+
+**Status:** Automated pull completed with tracked delivery results.
+
+## Pull #1782396001 - 2026-06-25 14:00 UTC - AUTOMATED CRON
+
+**Sources:**
+- RemoteOK React/React Native: ✅ Pulled (1 listings)
+- Hacker News Jobs: ✅ Pulled (8 listings)
+
+**Delivery Status:**
+- Telegram: OK - message_id=8022
+- Email send: OK - SMTP accepted message
+- Email verify: OK - inbox match count=1
+
+### RemoteOK Listings
+
+#### RemoteOK #1
+**Senior DevOps Engineer** — Lemon.io
+- Salary: $50,000 - $150,000
+- Location: Remote
+- Posted: 2026-06-24T11:33:33+00:00
+- Link: https://remoteOK.com/remote-jobs/remote-senior-devops-engineer-lemon-io-1134015
+- Tags: dev, devops, engineer, kubernetes, aws, gcp, python, sql, senior, full time
+
+### Hacker News Listings
+
+#### Hacker News #1
+**EMEA Engineers Who Can Design** — Ashby
+- Salary: Not listed
+- Location: See listing
+- Posted: 1 day ago
+- Link: https://www.ashbyhq.com/careers?ashby_jid=87b96eef-edc1-4de4-adb6-d460126d02f8&utm_source=hn
+- Tags: YC startup
+
+#### Hacker News #2
+**a Head of Engineering** — Kyber
+- Salary: Not listed
+- Location: See listing
+- Posted: 2 days ago
+- Link: https://www.ycombinator.com/companies/kyber/jobs/FGmI8mx-head-of-engineering
+- Tags: YC startup
+
+#### Hacker News #3
+**Software and Hardware Engineers** — Charge Robotics
+- Salary: Not listed
+- Location: See listing
+- Posted: 2 days ago
+- Link: https://jobs.ashbyhq.com/charge-robotics
+- Tags: YC startup
+
+#### Hacker News #4
+**an applied ML engineer** — Wildcard
+- Salary: Not listed
+- Location: See listing
+- Posted: 3 days ago
+- Link: https://www.ycombinator.com/companies/wildcard/jobs/SEmo4di-founding-applied-ml-engineer
+- Tags: YC startup
+
+#### Hacker News #5
+**in Indonesia, India, and Thailand** — Flexport
+- Salary: Not listed
+- Location: See listing
+- Posted: 6 days ago
+- Link: https://www.flexport.com/company/careers/
+- Tags: YC startup
+
+#### Hacker News #6
+**General role** — Trellis AI (YC W24) hiring a product lead to build agents for healthcare access
+- Salary: Not listed
+- Location: See listing
+- Posted: 7 days ago
+- Link: https://www.ycombinator.com/companies/trellis-ai/jobs/Cg94htp-product-lead
+- Tags: YC startup
+
+#### Hacker News #7
+**a Senior Software Engineer in Germany** — Dalus
+- Salary: Not listed
+- Location: See listing
+- Posted: 10 days ago
+- Link: https://www.ycombinator.com/companies/dalus/jobs/5IDmKJt-senior-software-frontend-engineer-germany-office
+- Tags: YC startup
+
+#### Hacker News #8
+**a Full Stack Engineer** — Hazel
+- Salary: Not listed
+- Location: See listing
+- Posted: 13 days ago
+- Link: https://www.ycombinator.com/companies/hazel-2/jobs/3epPWgu-full-stack-engineer-ts-sci
+- Tags: YC startup
+
+**Status:** Automated pull completed with tracked delivery results.

@@ -88,3 +88,11 @@
 - **Guardrail**: Route any request to run, check, or inspect a link for substantive results through the background runner when browsing/research may exceed quick-reply latency; keep the inline path for lightweight chat only
 - **Status**: logged
 
+## 2026-06-26 09:16 UTC: Treated NotebookLM login success as meaningful access signal
+- **What**: Treated NotebookLM login success as meaningful access signal
+- **Context**: AdugboInsure cron runs on 2026-06-25 and 2026-06-26
+- **Root cause**: The workflow kept retrying after login commands reported success without requiring a downstream command like notebook list or video create to prove the session was actually usable
+- **Pattern**: Repeated false-positive auth state from nlm login/manual import
+- **Guardrail**: Do not treat NotebookLM login success as verified until a real follow-up command succeeds; gate automation on notebook list or equivalent live read/write check
+- **Status**: logged
+
