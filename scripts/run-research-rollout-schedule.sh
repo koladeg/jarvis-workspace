@@ -3,9 +3,9 @@ set -euo pipefail
 
 MODE="${1:-full}"
 WORKSPACE="${WORKSPACE:-/home/claw/.openclaw/workspace}"
-DEFAULT_RESEARCH_WORKSPACE="$WORKSPACE/workspace-research"
+DEFAULT_RESEARCH_WORKSPACE="/home/claw/.openclaw/workspace-research"
 if [ ! -d "$DEFAULT_RESEARCH_WORKSPACE" ]; then
-  DEFAULT_RESEARCH_WORKSPACE="/home/claw/.openclaw/workspace-research"
+  DEFAULT_RESEARCH_WORKSPACE="$WORKSPACE/workspace-research"
 fi
 RESEARCH_WORKSPACE="${RESEARCH_WORKSPACE:-$DEFAULT_RESEARCH_WORKSPACE}"
 MEMORY_DIR="$RESEARCH_WORKSPACE/memory"
