@@ -27,6 +27,7 @@ require_cmd() {
 require_cmd git
 require_cmd curl
 require_cmd python3
+require_cmd gh
 
 if [ ! -f "$CRED_FILE" ]; then
   echo "Credentials file not found: $CRED_FILE" >&2
@@ -42,6 +43,12 @@ if [ -z "${TELEGRAM_BOT_TOKEN:-}" ]; then
   exit 1
 fi
 
+GH_AUTH_TOKEN="$(gh auth token)"
+if [ -z "${GH_AUTH_TOKEN}" ]; then
+  echo "Unable to resolve GitHub auth token via gh auth token" >&2
+  exit 1
+fi
+
 if [ -f "$LAST_SENT_FILE" ]; then
   SINCE="$(cat "$LAST_SENT_FILE")"
 else
@@ -53,11 +60,17 @@ NOW_LABEL="$(date -u '+%Y-%m-%d %H:%M UTC')"
 sync_repo() {
   local url="$1"
   local dir="$2"
+  local auth_url="${url/https:\/\//https:\/\/x-access-token:${GH_AUTH_TOKEN}@}"
+  local branch
   if [ ! -d "$dir/.git" ]; then
-    git clone --quiet "$url" "$dir"
+    git -c credential.helper= -c core.askPass= -c credential.interactive=never \
+      clone --quiet "$auth_url" "$dir"
     log "Cloned $url into $dir"
   else
-    git -C "$dir" fetch --all --prune --quiet
+    branch="$(git -C "$dir" rev-parse --abbrev-ref HEAD)"
+    git -C "$dir" -c credential.helper= -c core.askPass= -c credential.interactive=never \
+      fetch "$auth_url" "+refs/heads/*:refs/remotes/origin/*" --prune --quiet
+    git -C "$dir" reset --hard "origin/${branch}" --quiet
     log "Fetched updates for $dir"
   fi
 }
