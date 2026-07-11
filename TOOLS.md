@@ -51,6 +51,17 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
   - Before saying email delivery is unavailable, first check whether the requested file can be sent through this existing Gmail/SMTP path.
   - For resume/CV deliverables, default behavior should be: generate file → verify file exists → use existing email route if user asked for email delivery.
 
+## ClickUp
+
+- **ClickUp API access exists locally and should be checked before saying ClickUp is unavailable**
+  - Token file: `/home/claw/.openclaw/workspace/.credentials/clickup_clickup_api_token.txt`
+  - Verified workspace: `Orisynx's Workspace` (`9017801638`)
+  - Verified space: `GRCS Platform` (`90173715286`)
+  - Known folder: `Meetings` (`90176009754`)
+  - Existing task-creation helper: `/home/claw/.openclaw/workspace/scripts/create_orisynx_medium_clickup_tickets.sh`
+  - Existing MCP config: `/home/claw/.openclaw/workspace/config/mcporter.json`
+  - Before saying ClickUp access is unavailable, first verify the token and run a small read-only API check such as `GET /api/v2/team`.
+
 ## Research / Browsing Tools
 
 - **agent-browser**
