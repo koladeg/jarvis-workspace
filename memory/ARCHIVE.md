@@ -1,5 +1,37 @@
 # Memory Archive - Historical Consolidations
 
+## Week of July 7 - July 13, 2026 - Weekly Consolidation Summary
+
+**Archive Date:** Monday, July 13, 2026 (17:00 UTC)
+**Period:** Past 7 days (July 7 - July 13)
+**Status:** Consolidated and archived
+
+### Consolidated Sessions (Compressed)
+- **2026-07-07:** No daily file was present in this review window.
+- **2026-07-08:** AdugboInsure rotated to testimonials, posted the script to Telegram, reconfirmed the same false-positive NotebookLM auth pattern, and produced a branded fallback video.
+- **2026-07-09:** AdugboInsure rotated to benefits and produced a fallback video; the Orisynx board-resolution DOCX was emailed successfully; Robin weekday lane jobs were restored after dropping out of cron; and the safe GitHub publishing rule was reaffirmed by pushing only a reviewed subset to a dedicated branch.
+- **2026-07-10:** Networking-event sourcing was verified for Founders Connect Live Lagos, Nigeria Fintech Forum 2026, Borderless Experience, and Disrupt Tech Expo while Oneremit remained unverified; AdugboInsure rotated to enrollment; NotebookLM browser-backed recovery failed again; and reusable AdugboInsure/BimaLab application answers plus the logo-asset delivery were completed.
+- **2026-07-11:** AdugboInsure rotated to coverage and produced a fallback video; NotebookLM stayed blocked; Orisynx frontend triage confirmed direct-route `403` behavior on the S3-hosted SPA; and a durable lesson was recorded to verify existing local ClickUp access before declaring it unavailable.
+- **2026-07-12:** AdugboInsure rotated to claims, produced a fallback video, and reconfirmed the same blocked NotebookLM state.
+- **2026-07-13:** OpenClaw server stability was restored by lowering concurrency, adding explicit plugin allowlisting, configuring `agent-browser` idle timeout, and clearing stale browser state; Orisynx QA reproduced a fresh-user `STAKEHOLDER`/missing-`audit:create` permission pattern, silent redirects on restricted create flows, and multiple module load failures; corresponding ClickUp backlog tasks were created.
+
+### Distilled Long-Term Updates
+- The strongest new durable system lesson is operational: on this `2 GiB` host, OpenClaw should stay conservative on concurrency and plugin loading, and stale browser state should be treated as an early outage suspect.
+- NotebookLM remains the primary active blocker, with a wider evidence window now extending through `2026-07-13`: manual cookie import can still report success while real notebook commands fail with `Authentication expired`, and browser-backed recovery remains unavailable or unreachable from this host.
+- Orisynx now has a clearer durable QA baseline: fresh registrations currently default to `STAKEHOLDER`, restricted create flows fail by redirecting instead of showing access denial, some modules still show API/load failures, and the S3-hosted frontend still needs proper SPA deep-link fallback handling.
+- The ClickUp access rule is now explicit and durable: verify the existing local token/helper path before saying ClickUp access is unavailable.
+- The safe-publish guardrail remains important: keep private memory/internal research off public-remote `main`, and publish only reviewed safe subsets on dedicated branches.
+
+### 14-Day Compression Update
+- **Newly old daily logs now compressed:** `2026-06-05`, `2026-06-07`, `2026-06-08`, `2026-06-11`, `2026-06-13` to `2026-06-26` are now represented in archive form as: AdugboInsure continued near-daily topic rotation with Telegram delivery plus branded fallback exports, NotebookLM remained blocked by the same false-positive auth pattern throughout, `2026-06-07` refined the live/closed job-search pool, `2026-06-13` restored the missing job-search cron entry, and `2026-06-19` confirmed credentials were healthy except for long-expired optional NotebookLM cookies.
+- **Daily logs older than 14 days (before `2026-06-29`):** are now safely represented by archive summaries and no longer need active full-fidelity retention.
+
+### Local Ollama Attempt
+- A real local `ollama run llama3.2:3b` attempt was made for this consolidation, but it failed because the model required about `2.3 GiB` of system memory while only about `1.6 GiB` was available, so final edits were completed from the verified notes.
+
+### Next Consolidation
+- Monday, July 20, 2026
+
 ## Week of May 29 - June 4, 2026 - Weekly Consolidation Summary
 
 **Archive Date:** Thursday, June 4, 2026 (17:00 UTC)
