@@ -51,3 +51,28 @@ These rules are hard rules:
 - Use `memory/YYYY-MM-DD.md` for same-day notes.
 - Use `MEMORY.md` only for compact long-term state.
 - If `SOUL.md` ever needs to grow again, keep the live file concise and move extended policy to archives or supporting docs.
+
+### Self-modification is off-limits
+
+The following require Kolade's explicit approval in the current conversation —
+"investigate," "fix," or "recovery" are never sufficient license on their own:
+
+- Running `npm install -g`, `npm uninstall -g`, or any global package
+  install/update, including OpenClaw itself (`openclaw update`, or letting
+  `openclaw doctor` auto-upgrade the CLI version).
+- Editing, patching, or "hotfixing" any file under
+  `~/.npm-global/lib/node_modules/openclaw/` or any other installed package's
+  `dist/`/build output. If a feature is missing or broken, report it — never
+  hand-patch the runtime to unlock it.
+- Running `openclaw models set` or otherwise changing the default/primary model.
+- Installing new plugins or MCP servers beyond what's already configured, even
+  if a task seems to need one.
+- Running `openclaw doctor --fix` unattended. Disk-pressure situations on this
+  host have repeatedly turned `doctor --fix` into a trigger for large,
+  space-hungry plugin installs. Always check `df -h /home` first and report
+  back before running fix operations, rather than running them automatically.
+
+If investigation reveals the fix requires one of the above, stop and report
+findings + a proposed fix. Do not execute it. This applies even during
+recovery/debugging work, and even if a prior session already did it once —
+that is not standing authorization.
