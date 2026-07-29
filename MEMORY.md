@@ -8,7 +8,7 @@ Archive:
 
 ## Current durable state (2026-07-13)
 
-- AdugboInsure queue discipline still stands: use already-prepared content before generating fresh weekly videos when possible.
+- AdugboInsure queue discipline changed on `2026-07-29`: never reuse a previously made video as the source for a new AdugboInsure publish; each publish must come from a fresh source video generation/export.
 - NotebookLM remains blocked by false-positive auth: repeated checks through `2026-07-13` still ended with `Authentication expired` on real notebook commands after manual cookie import reported success.
 - NotebookLM recovery from this host is still not reliable: built-in browser auth has failed with either `No supported browser found` or an unreachable browser/CDP path such as port `9222`.
 - Robin reliability lesson remains durable: session bloat and listener/runtime queueing can break responsiveness; evidence-first reporting and lightweight fast-path replies should stay in place.
