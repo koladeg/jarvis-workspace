@@ -22,7 +22,12 @@ mkdir -p "$MEMORY_DIR" "$LOG_DIR" "$STATE_DIR"
 touch "$RUN_LOG"
 
 log() {
-  printf '%s %s\n' "$(date -u '+%Y-%m-%dT%H:%M:%SZ')" "$*" | tee -a "$RUN_LOG" >&2
+  local line
+  line="$(date -u '+%Y-%m-%dT%H:%M:%SZ') $*"
+  printf '%s\n' "$line" >> "$RUN_LOG"
+  if [ -t 2 ]; then
+    printf '%s\n' "$line" >&2
+  fi
 }
 
 send_rollout_update() {
@@ -90,16 +95,6 @@ run_networking() {
 - Honest note: scheduler confirmed timing; event quality still depends on the actual source check"
 }
 
-run_trucks() {
-  local marker="## Trucks scheduled run (${TODAY_UTC} ${RUN_STAMP})"
-  section_exists "$marker" || append_section "${marker}
-- Status: due today under the approved schedule
-- What was actually checked: scheduled trucks lane trigger recorded
-- Change state: no fresh marketplace scan performed inside this scheduler step
-- Follow-up: separate strong-fit / near-fit / reject clearly in the next live truck pass
-- Honest note: scheduler confirms monitoring cadence; it does not substitute for real listing extraction"
-}
-
 run_school() {
   local marker="## School-MBA scheduled run (${TODAY_UTC} ${RUN_STAMP})"
   section_exists "$marker" || append_section "${marker}
@@ -144,7 +139,6 @@ text='\n'.join(open(f,'r',encoding='utf-8').read() for f in files if os.path.exi
 patterns=[
  ('Funding',[r'## Funding lane quality test.*?(?=\n## |\Z)']),
  ('Events',[r'## Networking events lane quality test.*?(?=\n## |\Z)']),
- ('Trucks',[r'## Trucks lane quality test.*?(?=\n## |\Z)']),
  ('Jobs',[r'## Jobs lane quality test.*?(?=\n## |\Z)']),
  ('School/MBA',[r'## School / MBA lane quality test.*?(?=\n## |\Z)', r'## School-MBA scheduled run.*?(?=\n## |\Z)']),
  ('Immigration',[r'## Immigration lane quality test.*?(?=\n## |\Z)']),
@@ -207,9 +201,9 @@ run_mistake_review
 case "$ISO_DOW" in
   1) run_jobs; run_funding; run_networking ;;
   2) [ $((10#$WEEK_NUM % 2)) -eq 0 ] && run_community_sponsors ;;
-  3) run_jobs; run_trucks; run_school ;;
+  3) run_jobs; run_school ;;
   4) [ $((10#$WEEK_NUM % 2)) -eq 0 ] && run_immigration ;;
-  5) run_funding; run_networking; run_trucks ;;
+  5) run_funding; run_networking ;;
   7) run_weekly_roundup ;;
 esac
 
