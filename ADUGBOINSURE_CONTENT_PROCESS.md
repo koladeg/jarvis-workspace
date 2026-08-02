@@ -68,6 +68,26 @@ AdugboInsure has a **3-part automated content workflow** for agent education vid
 - Mar 26: Payment flexibility
 - Etc. (rotating weekly)
 
+### Script Writing Guardrails (Added 2026-08-02)
+
+Use these rules for future AdugboInsure video scripts, especially when Kolade is not manually guiding the draft:
+
+- Keep the language very simple. Prefer everyday words like **sickness** over more formal words like **illness** when the meaning stays clear.
+- Say **health insurance through AdugboInsure** clearly. Do not make AdugboInsure sound like a vague standalone concept.
+- Keep AdugboInsure positioned as the community access, awareness, and enrollment support layer for health insurance.
+- Use the **community POS agent** angle often. The POS agent should feel like a trusted, familiar local guide.
+- Make the tone community-first, warm, practical, and trust-based — not like a generic corporate insurance advert.
+- Focus on what families understand immediately: sudden sickness, hospital bills, stress, peace of mind, and preparing early.
+- Avoid complicated wording, abstract explanations, and long sentences.
+- Prefer one clear message per section of the script.
+- Strong opening hooks should sound natural for everyday listeners. Example approved style: **Nobody plans for sickness, but every family should prepare for it.**
+- End with a direct, simple call to action when appropriate.
+- Current preferred end-card CTA:
+  - **Protect your family with AdugboInsure**
+  - **Register today**
+  - **Call/WhatsApp: 0812 050 3445**
+  - **Share with your friends and family**
+
 ---
 
 ### Step 2: Video Generation (BLOCKED)
