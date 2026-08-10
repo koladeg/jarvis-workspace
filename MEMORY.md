@@ -43,6 +43,7 @@ Archive:
 - DOCX durable workflow: use the local `skills/docx-safe/` fork.
 - mhGAP/Indigo durable lesson: prefer same-signed versionCode `10` recovery/update builds over more ADB-only extraction attempts.
 - Resume/deliverable preference: prefer email for personal files/results and GitHub for project/code/docs when Drive is awkward.
+- Email evidence reminder from `2026-08-10`: for anything that may depend on company/regulatory/supporting documents, check the Jarvis Gmail inbox first for prior forwarded materials from Kolade before saying the docs are missing or asking again. Verified examples already present there include the forwarded SCUML submission email for `ORISYNX LIMITED` (RC `RC9422696`, portal status later checked as `PENDING`) and prior company/CAC document emails from Kolade. Do not rely on memory alone; re-check the mailbox first.
 
 ## Next-step reminders
 
