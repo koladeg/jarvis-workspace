@@ -3,7 +3,7 @@
 Files included:
 
 - `db.py` — creates SQLite schema for jobs + application tracking
-- `parse_jobs.py` — fetches up to 50 jobs from RemoteOK and Hacker News, extracts tech stack, deduplicates, stores in SQLite
+- `parse_jobs.py` — fetches up to 50 jobs from RemoteOK, Hacker News, Jobberman, MyJobMag, Hot Nigerian Jobs, and supported config-driven company career pages, extracts tech stack, deduplicates, stores in SQLite
 - `generate_documents.py` — creates tailored CV and cover letter PDFs for each job
 - `package_and_email.py` — zips all job packages and emails them via SMTP
 - `weekly_workflow.py` — runs the full workflow end-to-end for weekly automation
@@ -48,4 +48,5 @@ Generated files are placed under:
 
 - PDF generation is dependency-free and uses a lightweight internal writer.
 - Tech stack extraction is keyword-based and easy to extend in `parse_jobs.py`.
+- Company-career coverage is intentionally conservative: sources that only expose listings through heavy client rendering or anti-bot flows should stay browser/manual until a stable parser exists.
 - Candidate data is currently embedded in `generate_documents.py`; move it to a JSON/YAML config if you want easier editing later.
