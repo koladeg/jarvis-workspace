@@ -66,8 +66,6 @@ JOB_LINE=$(extract_after_line "### 1) Jobs")
 EVENT_LINE=$(extract_after_line "### 2) Networking events")
 FUNDING_LINE=$(extract_after_line "### 3) Funding")
 PARTNER_LINE=$(extract_after_line "### 4) Partners / Validators")
-TRUCK_LINE=$(extract_after_line "### 5) Trucks")
-
 if [ "$FILE_HASH" != "$LAST_HASH" ] || [ "$BASENAME" != "$LAST_FILE" ]; then
   HAS_NEW_ACTIVITY="yes"
   MESSAGE=$(cat <<EOF
@@ -82,7 +80,6 @@ Highlights
 - Events: ${EVENT_LINE:-No events summary captured}
 - Funding: ${FUNDING_LINE:-No funding summary captured}
 - Partners: ${PARTNER_LINE:-No partner summary captured}
-- Trucks: ${TRUCK_LINE:-No truck summary captured}
 EOF
 )
 
