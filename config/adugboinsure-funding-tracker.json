@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "version": "1.0",
+    "last_updated": "2026-08-02T11:05:00Z",
+    "purpose": "Last-verified funding tracker for AdugboInsure. Only list opportunities that were actually checked.",
+    "rules": [
+      "Use states active, watched, stale, rejected, unknown.",
+      "Every retained item needs source, last_verified, and deadline or null.",
+      "If no opportunity was freshly verified, summaries must say so plainly.",
+      "If shallow search/fetch results look thin, contradictory, or claim 404/closed, verify the official page with agent-browser before retaining or rejecting the opportunity."
+    ]
+  },
+  "items": [
+    {
+      "name": "Africa's Business Heroes",
+      "state": "active",
+      "source": "https://www.africabusinessheroes.org/en/register",
+      "last_verified": "2026-08-02",
+      "deadline": null,
+      "fit": "medium",
+      "verification_method": "agent-browser",
+      "verification_evidence": "Official site shows a live registration form and Apply Now flow.",
+      "verified_url": "https://www.africabusinessheroes.org/en/register",
+      "verified_at": "2026-08-02T11:05:00Z",
+      "notes": "Official site shows a live registration form and Apply Now flow. Strong founder-program fit, though less directly health-insurance-specific than the Nigeria healthcare-focused options."
+    },
+    {
+      "name": "NSIA Prize for Innovation (NPI 4.0)",
+      "state": "active",
+      "source": "https://nsia.com.ng/nsia-invites-applications-for-the-fourth-edition-of-the-nsia-prize-for-innovation-npi-4-0/",
+      "last_verified": "2026-08-02",
+      "deadline": null,
+      "fit": "strong",
+      "verification_method": "agent-browser",
+      "verification_evidence": "Official NSIA page says it is inviting applications for NPI 4.0 and explicitly includes Healthcare among the focus areas.",
+      "verified_url": "https://nsia.com.ng/nsia-invites-applications-for-the-fourth-edition-of-the-nsia-prize-for-innovation-npi-4-0/",
+      "verified_at": "2026-08-02T11:05:00Z",
+      "notes": "Official NSIA page says it is inviting applications for NPI 4.0 and explicitly includes Healthcare among the focus areas."
+    },
+    {
+      "name": "MIT Solve open challenges",
+      "state": "watched",
+      "source": "https://solve.mit.edu/challenges",
+      "last_verified": "2026-08-02",
+      "deadline": null,
+      "fit": "medium",
+      "verification_method": "agent-browser",
+      "verification_evidence": "Official hub is live and shows Health and Economic Prosperity lanes, but no specific open AdugboInsure-fit challenge was pinned.",
+      "verified_url": "https://solve.mit.edu/challenges",
+      "verified_at": "2026-08-02T11:05:00Z",
+      "notes": "Official challenges hub is live and still shows Health and Economic Prosperity lanes, but no specific open AdugboInsure-fit challenge was pinned in the 2026-08-02 check."
+    },
+    {
+      "name": "BimaLab Africa / Jubilee Group partnership call",
+      "state": "stale",
+      "source": "https://bimalab.org/jubilee-group-x-bimalab-africa/",
+      "last_verified": "2026-08-02",
+      "deadline": "2026-07-31 23:59 EAT",
+      "fit": "strong",
+      "verification_method": "agent-browser",
+      "verification_evidence": "Official page shows the deadline as 31 Jul 2026, 23:59 EAT.",
+      "verified_url": "https://bimalab.org/jubilee-group-x-bimalab-africa/",
+      "verified_at": "2026-08-02T11:05:00Z",
+      "notes": "Official page shows the deadline as 31 Jul 2026, 23:59 EAT. Keep as a strong-fit historical reference, not an active opportunity."
+    },
+    {
+      "name": "UNICEF Venture Fund Climate and Health 2026",
+      "state": "stale",
+      "source": "https://www.unicef.org/innovation/venturefund",
+      "last_verified": "2026-05-08",
+      "deadline": null,
+      "fit": "strong",
+      "verification_method": "historical-record",
+      "verification_evidence": "Recorded as already submitted on 2026-05-08; retained as historical reference.",
+      "verified_url": "https://www.unicef.org/innovation/venturefund",
+      "verified_at": "2026-05-08T00:00:00Z",
+      "notes": "Already submitted as of 2026-05-08. Keep as historical reference, not an active opportunity."
+    },
+    {
+      "name": "Visa Africa Fintech Accelerator Program 6",
+      "state": "stale",
+      "source": "https://developer.visa.com/capability/visa-accelerator-program",
+      "last_verified": "2026-05-08",
+      "deadline": null,
+      "fit": "medium",
+      "verification_method": "historical-record",
+      "verification_evidence": "Recorded as already submitted on 2026-05-08; retained as historical reference.",
+      "verified_url": "https://developer.visa.com/capability/visa-accelerator-program",
+      "verified_at": "2026-05-08T00:00:00Z",
+      "notes": "Already submitted as of 2026-05-08. Keep as historical reference, not an active opportunity."
+    }
+  ]
+}

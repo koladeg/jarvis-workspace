@@ -50,6 +50,16 @@ The following jobs are currently compliant with this policy:
 - `scripts/send-morning-brief.sh`
 - `scripts/send-research-rollout-update.sh`
 - `scripts/send-research-activity-update.sh`
+- `scripts/check_research_cron_guard.sh`
+
+## Drift Guard
+For important recurring lanes, add a small shell watchdog that checks the live scheduler state and alerts only on real drift.
+
+Current example:
+- `scripts/check_research_cron_guard.sh`
+- Uses `openclaw cron list --all --json` instead of stale backup files
+- Alerts on disabled critical jobs, duplicate enabled lane jobs, and repeated job errors
+- Suppresses repeat alerts with a state hash in `.state/`
 
 ## Review Rule
 Before adding any new cron job or watcher:

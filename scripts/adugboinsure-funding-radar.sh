@@ -1,97 +1,112 @@
-#!/bin/bash
-# AdugboInsure Weekly Funding Radar
-# Aggregates funding opportunities + generates weekly dashboard
-# Posted to Jarvis-AdugboInsure Telegram group every Sunday 18:00 UTC (19:00 WAT)
+#!/usr/bin/env bash
+set -euo pipefail
 
-set -e
+WORKSPACE="${WORKSPACE:-/home/claw/.openclaw/workspace}"
+TRACKER_FILE="${TRACKER_FILE:-$WORKSPACE/config/adugboinsure-funding-tracker.json}"
+LOG_FILE="${LOG_FILE:-$WORKSPACE/logs/adugboinsure-funding.log}"
+TODAY="$(date -u +%Y-%m-%d)"
+DASHBOARD_FILE="${DASHBOARD_FILE:-$WORKSPACE/memory/adugboinsure-dashboard-${TODAY}.md}"
+ALLOW_SEND="${ALLOW_SEND:-0}"
 
-# Telegram credentials
-TELEGRAM_BOT_TOKEN="8733839699:AAEwhBgxZ7Lj9O894AQwlcVjoR3cv5zg1vo"
-TELEGRAM_CHAT_ID="-5126825082"
+mkdir -p "$(dirname "$LOG_FILE")" "$(dirname "$DASHBOARD_FILE")"
+touch "$LOG_FILE"
 
-LOG_FILE="/home/claw/.openclaw/workspace/logs/adugboinsure-funding.log"
-DASHBOARD_FILE="/home/claw/.openclaw/workspace/memory/adugboinsure-dashboard-$(date +%Y-%m-%d).md"
+log() {
+  printf '%s %s\n' "$(date -u '+%Y-%m-%dT%H:%M:%SZ')" "$*" >> "$LOG_FILE"
+}
 
-echo "[$(date)] Starting AdugboInsure funding radar..." >> "$LOG_FILE"
+if [ ! -f "$TRACKER_FILE" ]; then
+  log "Funding tracker missing: $TRACKER_FILE"
+  echo "Funding tracker missing: $TRACKER_FILE" >&2
+  exit 1
+fi
 
-# Generate dashboard from template
-cat > "$DASHBOARD_FILE" << 'EOF'
-# AdugboInsure Weekly Dashboard
+python3 "$WORKSPACE/scripts/verify_funding_source.py" validate-tracker "$TRACKER_FILE" >/dev/null
 
-**Week of:** $(date +%Y-%m-%d)
-**Status:** Active
+python3 - "$TRACKER_FILE" "$DASHBOARD_FILE" "$TODAY" <<'PY'
+import json
+import sys
+from collections import defaultdict
+from pathlib import Path
 
----
+tracker_path = Path(sys.argv[1])
+out_path = Path(sys.argv[2])
+today = sys.argv[3]
 
-## 📊 Agent Engagement
+data = json.loads(tracker_path.read_text())
+items = data.get("items", [])
+by_state = defaultdict(list)
+for item in items:
+    by_state[item.get("state", "unknown")].append(item)
 
-### Apete (5 Active Agents)
-- Status: Engaged
-- Responsiveness: 3-5 per week
-- Action items: [Add weekly summary]
+active = by_state.get("active", [])
+watched = by_state.get("watched", [])
+stale = by_state.get("stale", [])
+rejected = by_state.get("rejected", [])
+unknown = by_state.get("unknown", [])
 
-### Abe Emu (8 Recruited Agents)
-- Status: Activating mid-April 2026
-- Training prep: 6 weeks notice sent
-- Next milestone: [Add dates]
+lines = []
+lines.append("# AdugboInsure Funding Radar")
+lines.append("")
+lines.append(f"- Generated (UTC): {today}")
+lines.append(f"- Tracker: {tracker_path}")
+lines.append(f"- Last tracker update: {data.get('meta', {}).get('last_updated', 'unknown')}")
+lines.append(f"- Summary counts: active={len(active)}, watched={len(watched)}, stale={len(stale)}, rejected={len(rejected)}, unknown={len(unknown)}")
+lines.append("")
 
----
+if active:
+    lines.append("## Active opportunities")
+    for item in active:
+        lines.append(f"- **{item['name']}** — deadline: {item.get('deadline') or 'not recorded'} | last verified: {item.get('last_verified', 'unknown')} | verification: {item.get('verification_method', 'missing')} | source: {item.get('source', 'missing')}")
+        if item.get('notes'):
+            lines.append(f"  - Notes: {item['notes']}")
+else:
+    lines.append("## Active opportunities")
+    lines.append("- None currently verified as active. Do not report an active funding opportunity until a real source check updates the tracker.")
 
-## 💰 Funding Status
+if watched:
+    lines.append("")
+    lines.append("## Watched opportunities")
+    for item in watched:
+        lines.append(f"- **{item['name']}** — deadline: {item.get('deadline') or 'not recorded'} | last verified: {item.get('last_verified', 'unknown')} | verification: {item.get('verification_method', 'missing')} | source: {item.get('source', 'missing')}")
+        if item.get('notes'):
+            lines.append(f"  - Notes: {item['notes']}")
 
-**Target:** $5,000 USD (near-term expansion)
-**Timeline:** Mar-May 2026 (3 months)
+if unknown:
+    lines.append("")
+    lines.append("## Unknown / needs browser verification")
+    for item in unknown:
+        lines.append(f"- **{item['name']}** — last verified: {item.get('last_verified', 'unknown')} | verification: {item.get('verification_method', 'missing')} | source: {item.get('source', 'missing')}")
+        if item.get('notes'):
+            lines.append(f"  - Notes: {item['notes']}")
 
-### Grant Opportunities This Week
-- [FundsForNGOs checks]
-- [Foundation deadlines]
-- [Startup ecosystem opportunities]
+if stale:
+    lines.append("")
+    lines.append("## Stale / historical references")
+    for item in stale:
+        lines.append(f"- **{item['name']}** — last verified: {item.get('last_verified', 'unknown')} | verification: {item.get('verification_method', 'missing')} | source: {item.get('source', 'missing')}")
+        if item.get('notes'):
+            lines.append(f"  - Notes: {item['notes']}")
 
----
+if rejected:
+    lines.append("")
+    lines.append("## Rejected opportunities")
+    for item in rejected:
+        lines.append(f"- **{item['name']}** — last verified: {item.get('last_verified', 'unknown')} | verification: {item.get('verification_method', 'missing')} | source: {item.get('source', 'missing')}")
+        if item.get('notes'):
+            lines.append(f"  - Notes: {item['notes']}")
 
-## 🎯 Key Priorities
+lines.append("")
+lines.append("## Honesty rule")
+lines.append("- This report is tracker-backed only. It does not claim a live funding scan happened unless the tracker was actually updated from real source checks.")
 
-1. Clarify MOU status with OYSHIA
-2. Confirm ₦13,500 cost split + quarterly payments
-3. Collect agent onboarding feedback
-4. Track enrollment progress
+out_path.write_text("\n".join(lines) + "\n")
+PY
 
----
+log "Funding dashboard generated at $DASHBOARD_FILE from tracker $TRACKER_FILE"
 
-## 📝 Notes
+if [ "$ALLOW_SEND" = "1" ]; then
+  log "ALLOW_SEND=1 requested, but outbound posting is intentionally disabled in this script until a verified send path is wired back in without embedded secrets."
+fi
 
-- Content creation: Available from NotebookLM notebook
-- Agent activation: Weak on Apete, focus on Abe Emu preparation
-- Payment: Paystack + Moniepoint integrated (₦3,375/quarter available)
-
----
-
-**Next update:** Next Sunday 19:00 WAT
-EOF
-
-# Send summary to Telegram
-MESSAGE="📈 **AdugboInsure Weekly Funding Radar**
-
-**Agent Status:**
-• Apete: 5 active (3-5 responses/week)
-• Abe Emu: 8 recruited (launching mid-April)
-• Total enrollments: 0 (awareness phase)
-
-**Funding Focus:**
-• Target: \$5,000 USD
-• Timeline: 3 months (Mar-May 2026)
-• This week: Grant opportunity scan underway
-
-**Action Items:**
-✓ MOU status clarification pending
-✓ Quarterly payment structure confirmation
-✓ Onboarding feedback collection
-
-Dashboard saved & ready for updates 📊"
-
-# Post to Telegram
-curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
-  -H "Content-Type: application/json" \
-  -d "{\"chat_id\": ${TELEGRAM_CHAT_ID}, \"text\": \"📊 AdugboInsure Funding Radar\\n\\n${MESSAGE}\", \"parse_mode\": \"HTML\"}" > /dev/null 2>&1 && echo "[$(date)] Telegram post sent" >> "$LOG_FILE" || echo "[$(date)] WARNING: Telegram send failed" >> "$LOG_FILE"
-
-echo "[$(date)] Funding radar complete. Dashboard: $DASHBOARD_FILE" >> "$LOG_FILE"
+echo "$DASHBOARD_FILE"

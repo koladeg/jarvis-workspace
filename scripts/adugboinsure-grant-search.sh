@@ -1,104 +1,90 @@
-#!/bin/bash
-# AdugboInsure Weekly Grant Search
-# Scans grant sources for health insurance + Nigeria opportunities
-# Posted to Jarvis-AdugboInsure Telegram group every Sunday 18:00 UTC (19:00 WAT)
+#!/usr/bin/env bash
+set -euo pipefail
 
-set -e
+WORKSPACE="${WORKSPACE:-/home/claw/.openclaw/workspace}"
+TRACKER_FILE="${TRACKER_FILE:-$WORKSPACE/config/adugboinsure-funding-tracker.json}"
+LOG_FILE="${LOG_FILE:-$WORKSPACE/logs/adugboinsure-grants.log}"
+TODAY="$(date -u +%Y-%m-%d)"
+REPORT_FILE="${GRANT_FILE:-$WORKSPACE/memory/adugboinsure-weekly-grants-${TODAY}.md}"
+RADAR_SCRIPT="${RADAR_SCRIPT:-$WORKSPACE/scripts/adugboinsure-funding-radar.sh}"
 
-# Telegram credentials
-TELEGRAM_BOT_TOKEN="8733839699:AAEwhBgxZ7Lj9O894AQwlcVjoR3cv5zg1vo"
-TELEGRAM_CHAT_ID="-5126825082"
+mkdir -p "$(dirname "$LOG_FILE")" "$(dirname "$REPORT_FILE")"
+touch "$LOG_FILE"
 
-LOG_FILE="/home/claw/.openclaw/workspace/logs/adugboinsure-grants.log"
-GRANT_FILE="/home/claw/.openclaw/workspace/memory/adugboinsure-weekly-grants.md"
+log() {
+  printf '%s %s\n' "$(date -u '+%Y-%m-%dT%H:%M:%SZ')" "$*" >> "$LOG_FILE"
+}
 
-echo "[$(date)] Starting AdugboInsure grant search..." >> "$LOG_FILE"
+if [ ! -f "$TRACKER_FILE" ]; then
+  log "Funding tracker missing: $TRACKER_FILE"
+  echo "Funding tracker missing: $TRACKER_FILE" >&2
+  exit 1
+fi
 
-# Create markdown report
-cat > "$GRANT_FILE" << 'EOF'
-# AdugboInsure Weekly Grant Search
+if [ ! -x "$RADAR_SCRIPT" ]; then
+  log "Funding radar script missing or not executable: $RADAR_SCRIPT"
+  echo "Funding radar script missing or not executable: $RADAR_SCRIPT" >&2
+  exit 1
+fi
 
-**Generated:** $(date)
-**Status:** Active funding opportunities for community health insurance
+python3 "$WORKSPACE/scripts/verify_funding_source.py" validate-tracker "$TRACKER_FILE" >/dev/null
 
----
+DASHBOARD_PATH="$($RADAR_SCRIPT)"
 
-## Active Grant Sources
+python3 - "$TRACKER_FILE" "$REPORT_FILE" "$TODAY" "$DASHBOARD_PATH" <<'PY'
+import json
+import sys
+from pathlib import Path
 
-### FundsForNGOs Nigeria
-- [Visit](https://fundsfornpos.org.ng)
-- Focus: Health, community development, microfinance
-- Search terms: health insurance, community-based insurance, Nigeria
+tracker_path = Path(sys.argv[1])
+out_path = Path(sys.argv[2])
+today = sys.argv[3]
+dashboard_path = sys.argv[4]
 
-### Mastercard Foundation
-- [Visit](https://www.mastercardfdn.org)
-- Focus: Financial inclusion, Africa
-- Deadline tracking: Usually 4-6 week cycles
+data = json.loads(tracker_path.read_text())
+items = data.get("items", [])
+active = [i for i in items if i.get("state") == "active"]
+watched = [i for i in items if i.get("state") == "watched"]
+stale = [i for i in items if i.get("state") == "stale"]
+unknown = [i for i in items if i.get("state") == "unknown"]
 
-### Gates Foundation
-- [Visit](https://www.gatesfoundation.org)
-- Focus: Global health, development
-- Nigeria programs: Malaria, maternal health (adjacent to AdugboInsure)
+lines = []
+lines.append("# AdugboInsure Weekly Grant Search")
+lines.append("")
+lines.append(f"- Generated (UTC): {today}")
+lines.append(f"- Tracker update: {data.get('meta', {}).get('last_updated', 'unknown')}")
+lines.append(f"- Dashboard: {dashboard_path}")
+lines.append("")
+lines.append("## Verified status")
+if active:
+    lines.append(f"- Active opportunities: {len(active)}")
+    for item in active:
+        lines.append(f"  - {item['name']} | deadline: {item.get('deadline') or 'not recorded'} | fit: {item.get('fit', 'unknown')} | last verified: {item.get('last_verified', 'unknown')} | verification: {item.get('verification_method', 'missing')}")
+elif watched or unknown:
+    lines.append("- No active opportunities are currently verified.")
+    lines.append(f"- Watched opportunities: {len(watched)}")
+    for item in watched:
+        lines.append(f"  - {item['name']} | deadline: {item.get('deadline') or 'not recorded'} | fit: {item.get('fit', 'unknown')} | last verified: {item.get('last_verified', 'unknown')} | verification: {item.get('verification_method', 'missing')}")
+    if unknown:
+        lines.append(f"- Unknown / browser-verification-needed opportunities: {len(unknown)}")
+        for item in unknown:
+            lines.append(f"  - {item['name']} | last verified: {item.get('last_verified', 'unknown')} | verification: {item.get('verification_method', 'missing')} | note: {item.get('notes', 'n/a')}")
+else:
+    lines.append("- No active August funding opportunity is currently verified in the tracker.")
+    lines.append("- Do not claim a live funding win until a real source check updates the tracker.")
 
-### USAID
-- [Visit](https://www.usaid.gov)
-- Focus: Development, health, humanitarian
-- Nigeria funding: Significant
+if stale:
+    lines.append("")
+    lines.append("## Historical / stale references")
+    for item in stale:
+        lines.append(f"- {item['name']} | last verified: {item.get('last_verified', 'unknown')} | verification: {item.get('verification_method', 'missing')} | note: {item.get('notes', 'n/a')}")
 
-### Echoing Green
-- [Visit](https://www.echoinggreen.org)
-- Focus: Social entrepreneurs, Africa fellowship
-- Relevant: Founded ventures (AdugboInsure qualifies)
+lines.append("")
+lines.append("## Honesty rule")
+lines.append("- This file is tracker-backed only and intentionally does not send Telegram messages or pretend a live scan happened.")
 
-### Plug and Play Africa
-- [Visit](https://www.plugandplayafrica.com)
-- Focus: Startup ecosystem, FinTech, HealthTech
-- Relevant: InsurTech category
+out_path.write_text("\n".join(lines) + "\n")
+PY
 
----
-
-## This Week's Findings
-
-**High Priority (Closing Soon):**
-- [To be populated manually or via web scrape]
-
-**Medium Priority (30+ days):**
-- [To be populated]
-
-**Watch List (2+ months):**
-- [To be populated]
-
----
-
-## Action Items
-
-- [ ] Email prospects identified
-- [ ] Customize pitch for each grant (CAC/LTV focus)
-- [ ] Track application deadlines
-
----
-
-**Next update:** Next Sunday 19:00 WAT
-EOF
-
-# Send to Telegram
-MESSAGE="📋 **AdugboInsure Weekly Grant Search**
-
-Weekly funding opportunity scan complete. Check memory file for details.
-
-Key sources tracked:
-• FundsForNGOs Nigeria
-• Mastercard Foundation
-• Gates Foundation
-• USAID
-• Echoing Green
-• Plug and Play Africa
-
-Status: Ready for customization & outreach 🎯"
-
-# Post to Telegram group
-curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
-  -H "Content-Type: application/json" \
-  -d "{\"chat_id\": ${TELEGRAM_CHAT_ID}, \"text\": \"${MESSAGE}\", \"parse_mode\": \"HTML\"}" > /dev/null 2>&1 && echo "[$(date)] Telegram post sent" >> "$LOG_FILE" || echo "[$(date)] WARNING: Telegram send failed" >> "$LOG_FILE"
-
-echo "[$(date)] Grant search complete. Report saved to $GRANT_FILE" >> "$LOG_FILE"
+log "Weekly grant report generated at $REPORT_FILE using tracker $TRACKER_FILE"
+echo "$REPORT_FILE"
