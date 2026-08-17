@@ -35,7 +35,7 @@ Archive:
 
 - AdugboInsure positioning: the insurance product comes from OYSHIA; AdugboInsure is the community access, awareness, enrollment, and payment-support channel.
 - AdugboInsure opportunity tracking: UNICEF Venture Fund Climate and Health 2026 and Visa Africa FinTech Accelerator Program 6 were already submitted as of `2026-05-08`.
-- Orisynx primary repos to monitor: `Orisynx/backend`, `Orisynx/frontend`, `Orisynx/bootstrap`.
+- Orisynx primary repos to monitor: `Orisynx/backend` and `Orisynx/frontend-app` (frontend migrated Next.js→Vite/React on 2026-08-17; old `Orisynx/frontend` and `Audit-IS/fe` are superseded/legacy).
 - Orisynx durable docs:
   - `ORISYNX_CONFLICT_RESOLUTION_FRAMEWORK.md`
   - `memory/orisynx.md`
