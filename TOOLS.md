@@ -51,6 +51,18 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
   - Before saying email delivery is unavailable, first check whether the requested file can be sent through this existing Gmail/SMTP path.
   - For resume/CV deliverables, default behavior should be: generate file → verify file exists → use existing email route if user asked for email delivery.
 
+## n8n (remote EC2 — NOT local)
+
+- **n8n does NOT run locally by design.** There is no local `n8n` binary, no `~/.n8n` DB, nothing on port `5678`. Do not search for a local install — it does not exist, and that is correct.
+- **Instance URL:** `http://172.31.20.229:5678` (private VPC IP, separate EC2 host).
+- **API key:** `/home/claw/.openclaw/workspace/.credentials/n8n_api_key.txt` (public API key, JWT; use header `X-N8N-API-KEY: <key>`).
+- **Endpoint pattern:** `http://172.31.20.229:5678/api/v1/...`
+  - Workflow GET: `/api/v1/workflows/<id>`
+  - Execution GET: `/api/v1/executions/<id>` and `/api/v1/executions/<id>?includeData=true` (the latter exposes `workflowData.nodes` snapshot at exec time)
+  - Executions list: `/api/v1/executions?workflowId=<id>&limit=N`
+- **Main workflow:** `tWjdu66FcmQwOam1` — "Multi-Region Job Search (Light Sources)" (14 sources).
+- **Key lesson:** historical execution node config lives in the execution's `workflowData.nodes` (via `?includeData=true`), NOT under the workflow's current nodes. Use exec history to diff "what worked vs what broke" after a rebuild.
+
 ## ClickUp
 
 - **ClickUp API access exists locally and should be checked before saying ClickUp is unavailable**

@@ -26,6 +26,14 @@ Archive:
 - ClickUp access lesson from `2026-07-11`: verify the existing local token/helper path before claiming ClickUp is unavailable.
 - GitHub CLI auth on this machine was repaired on `2026-05-28`; `gh` is authenticated again as `koladeg` after refreshing the saved token.
 
+## n8n (remote EC2 — critical infra fact)
+
+- n8n does NOT run locally by design; no local binary / `~/.n8n` / port 5678 on this host. Do not search for a local install — it does not exist and that is correct.
+- Instance: `http://172.31.20.229:5678` (private VPC IP, separate EC2). API key: `.credentials/n8n_api_key.txt` → header `X-N8N-API-KEY`.
+- Main workflow: `tWjdu66FcmQwOam1` ("Multi-Region Job Search (Light Sources)", 14 sources).
+- Historical node config lives in an execution's `workflowData.nodes` (GET `/api/v1/executions/<id>?includeData=true`), not the workflow's current nodes — use this to diff before/after a rebuild.
+- Full access notes in `TOOLS.md` (checked frequently).
+
 ## Active blockers
 
 - A browser-backed NotebookLM reauthentication path; manual cookie import alone still does not restore real access here
