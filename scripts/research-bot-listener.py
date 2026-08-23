@@ -199,7 +199,7 @@ def robin_runtime_prompt(user_text: str) -> str:
         "If a lane remains thin, blocked, paginated, or low-yield after normal fetch/browser work, escalate to Apify as a real fallback instead of stopping early. "
         "Do not silently ignore Apify when it would likely improve coverage. "
         "Do not let one or two easy sources stand in for the whole lane. "
-        "For jobs, funding, networking events, and trucks, the default target is a lane-wide pass with multiple completed sources; if that breadth is not achieved, say the run is partial/incomplete plainly. "
+        "For jobs, funding, and networking events, the default target is a lane-wide pass with multiple completed sources; if that breadth is not achieved, say the run is partial/incomplete plainly. "
         "Always report source count, source names, tools used, and whether the pass was deep, targeted, or partial/incomplete when answering substantive research requests. "
         "If repeated blockers prevent breadth, name the blocker, name the recovery path attempted, and keep the answer honest instead of defending a shallow run. "
         "Use Codex-quality reasoning for substantive research and implementation tasks. "
