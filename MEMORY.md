@@ -52,6 +52,7 @@ Archive:
 - mhGAP/Indigo durable lesson: prefer same-signed versionCode `10` recovery/update builds over more ADB-only extraction attempts.
 - Resume/deliverable preference: prefer email for personal files/results and GitHub for project/code/docs when Drive is awkward.
 - Email evidence reminder from `2026-08-10`: for anything that may depend on company/regulatory/supporting documents, check the Jarvis Gmail inbox first for prior forwarded materials from Kolade before saying the docs are missing or asking again. Verified examples already present there include the forwarded SCUML submission email for `ORISYNX LIMITED` (RC `RC9422696`, portal status later checked as `PENDING`) and prior company/CAC document emails from Kolade. Do not rely on memory alone; re-check the mailbox first.
+- Google Drive access reminder from `2026-08-27`: before asking Kolade to open Chrome or proposing OAuth, check the recovered `gws` refresh-token route first. It is working and supports Drive list/search/download and read/export of supported Google files; it is intentionally read-only (`drive.readonly`, `documents.readonly`) and cannot upload, create, or edit. Config/token live under `~/.config/gws/`; verify with a small `gws drive files list` call when needed.
 
 ## Next-step reminders
 
