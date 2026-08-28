@@ -59,3 +59,4 @@ Archive:
 - Keep OpenClaw config conservative on this server.
 - Keep MEMORY concise; move bulky historical material into archive files instead of expanding this file again.
 - If Robin responsiveness regresses, inspect queue depth, concurrent worker count, and main-session bootstrap size before rebooting.
+- Miro OAuth is configured. Credentials are stored in OpenClaw's persistent owner-only MCP OAuth store, NOT in agent memory. Before asking the user to re-authorize Miro, first check that persistent store and attempt the OAuth refresh flow; only request reauthorization if the stored credential/refresh token is genuinely unavailable, revoked, or invalid. Never save raw OAuth tokens in memory or logs. Recovery instructions: `docs/MIRO_OAUTH_RECOVERY.md`. Store reference: `~/.openclaw/mcp-oauth/miro-5be67c33be9f6d16.json` (owner-only; current OpenClaw MCP OAuth storage is persistent but not encrypted).
