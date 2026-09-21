@@ -41,6 +41,8 @@ Archive:
 
 ## High-value durable references
 
+- Dietra is the current name of Kolade's early-stage health/nutrition mobile-app project; it was originally called NutriChef (sometimes transcribed as NutriSheff) and renamed because another company already used NutriChef. Historical notes/demo references may still use the old name.
+- Dietra's durable project source of truth is [`dietra.md`](dietra.md). It contains the product concept, Figma link/canvas reference, known flows, visual tokens, design-system direction, and update log. Always consult it for Dietra work and add durable decisions there.
 - AdugboInsure positioning: the insurance product comes from OYSHIA; AdugboInsure is the community access, awareness, enrollment, and payment-support channel.
 - AdugboInsure opportunity tracking: UNICEF Venture Fund Climate and Health 2026 and Visa Africa FinTech Accelerator Program 6 were already submitted as of `2026-05-08`.
 - Orisynx primary repos to monitor: `Orisynx/backend` and `Orisynx/frontend-app` (frontend migrated Next.js→Vite/React on 2026-08-17; old `Orisynx/frontend` and `Audit-IS/fe` are superseded/legacy).
