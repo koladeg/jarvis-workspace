@@ -45,6 +45,16 @@ Archive:
 - Dietra's durable project source of truth is [`dietra.md`](dietra.md). It contains the product concept, Figma link/canvas reference, known flows, visual tokens, design-system direction, and update log. Always consult it for Dietra work and add durable decisions there.
 - AdugboInsure positioning: the insurance product comes from OYSHIA; AdugboInsure is the community access, awareness, enrollment, and payment-support channel.
 - AdugboInsure opportunity tracking: UNICEF Venture Fund Climate and Health 2026 and Visa Africa FinTech Accelerator Program 6 were already submitted as of `2026-05-08`.
+
+### Funding lane source structure
+
+- The funding lane monitors Opportunity Desk Grants RSS and Ventureburn RSS on every pass.
+- Exa semantic search is an additive discovery source, not a replacement for those two RSS feeds. Run it through:
+  `mcporter --config /home/claw/.mcporter/mcporter.json call exa.web_search_exa query="African and Nigerian early-stage healthcare, healthtech, insurtech, digital health, or community-health startup grants and accelerators with 2026 applications or funding"`
+- Use Exa to surface relevant funding programs and organizations outside the fixed RSS source list.
+- Cross-check every Exa result against the funding tracker and recent lane memory before inclusion; deduplicate results that were already found through RSS or previously tracked.
+- Merge and deduplicate all three source streams before final output, then verify promising discoveries against the official source.
+
 - Orisynx primary repos to monitor: `Orisynx/backend` and `Orisynx/frontend-app` (frontend migrated Next.js→Vite/React on 2026-08-17; old `Orisynx/frontend` and `Audit-IS/fe` are superseded/legacy).
 - Orisynx durable docs:
   - `ORISYNX_CONFLICT_RESOLUTION_FRAMEWORK.md`

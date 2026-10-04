@@ -92,6 +92,21 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
   - Good for surfacing local signals on grants, jobs, events, community-support organizations, and other opportunity threads
   - Do not treat Nairaland threads as proof by themselves; verify promising leads at the original source before trusting or reporting them strongly
 
+## Funding lane source strategy
+
+- Every funding-lane pass runs both known-source monitors:
+  - Opportunity Desk Grants RSS
+  - Ventureburn RSS
+- Every pass also runs one additive Exa discovery search:
+
+  ```bash
+  mcporter --config /home/claw/.mcporter/mcporter.json call exa.web_search_exa query="African and Nigerian early-stage healthcare, healthtech, insurtech, digital health, or community-health startup grants and accelerators with 2026 applications or funding"
+  ```
+
+- Exa is a discovery layer for finding relevant programs and organizations not already covered by the fixed RSS sources. It does not replace either RSS feed.
+- Before an Exa result enters the lane output, cross-check it against the funding tracker, recent funding-lane memory notes, and other current lane records. Deduplicate by organization/program, canonical URL, and opportunity/deadline identity.
+- Merge and deduplicate the RSS and Exa results before producing the final lane output. Verify promising Exa discoveries against the official source before treating them as actionable opportunities.
+
 ## Recurring Automation Rule
 
 - Recurring jobs (cron, watchers, heartbeats, reminders) should stay **shell-first and Ollama-first**.
