@@ -55,6 +55,23 @@ Archive:
 - Cross-check every Exa result against the funding tracker and recent lane memory before inclusion; deduplicate results that were already found through RSS or previously tracked.
 - Merge and deduplicate all three source streams before final output, then verify promising discoveries against the official source.
 
+### Immigration lane source structure
+
+- Existing official route set: Canada IRCC Express Entry/FSW/category/PNP; Australia National Innovation Visa; UK Global Talent and Skilled Worker; U.S. EB-2 NIW/EB-1A. Germany EU Blue Card/Opportunity Card and Ireland Critical Skills are also retained as practical work-led comparison routes from recent passes. UAE Golden Visa and Netherlands Highly Skilled Migrant/Orientation Year are now part of the tracked eight-country scope.
+- UAE Golden Visa is tracked as a 5- or 10-year renewable, sponsor-free residence route for eligible investors, entrepreneurs, and exceptional/specialised talent; entrepreneur cases generally require innovative/technical project evidence plus authority and incubator approvals, while investor/talent categories have distinct capital, recommendation, qualification, or experience conditions.
+- Netherlands routes are tracked through the IND Highly Skilled Migrant permit (recognised Dutch sponsor, employment contract, income and market-rate salary requirements, up to five years, with a possible permanent-residence path) and the one-year Orientation Year permit for qualifying graduates/researchers, including qualifying graduates of designated foreign institutions.
+- Exa semantic search is an additive discovery layer, not a replacement for the named official route checks. Run it once per immigration pass with the eight-country target-specific query saved in `TOOLS.md`.
+- Use Exa to surface named immigration pathways, relocation programs, or route updates not already tracked.
+- Cross-check every Exa result against immigration memory, the named-route source set, canonical URL, route/program identity, and current deadline/status before inclusion; verify promising discoveries on the official source.
+
+### School/MBA lane source structure
+
+- Existing official source set: INSEAD, HEC Paris, Imperial, Oxford, RSM, Cambridge, IMD, Southampton, plus current official Canada/US MBA or business-program pages and Africa-linked scholarship pages when relevant.
+- Exa semantic search is an additive discovery layer, not a replacement for those official school/program checks. Run it once per School/MBA pass with the target-specific query saved in `TOOLS.md`.
+- Use Exa to surface MBA, business, innovation, entrepreneurship, or technology programs and scholarships/fellowships not already tracked.
+- Cross-check every Exa result against School/MBA memory, tracked school/scholarship records, canonical URL, program identity, intake, and deadline before inclusion; verify eligibility and funding on the official page.
+- Preserve the stage-fit guardrail: Kolade is 34 and graduated from Nigeria; undergraduate, recent-graduate, youth-only, unclear-eligibility, expired, and weakly funded options stay out of top recommendations.
+
 - Orisynx primary repos to monitor: `Orisynx/backend` and `Orisynx/frontend-app` (frontend migrated Next.js→Vite/React on 2026-08-17; old `Orisynx/frontend` and `Audit-IS/fe` are superseded/legacy).
 - Orisynx durable docs:
   - `ORISYNX_CONFLICT_RESOLUTION_FRAMEWORK.md`
