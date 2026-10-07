@@ -61,6 +61,7 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
   - Execution GET: `/api/v1/executions/<id>` and `/api/v1/executions/<id>?includeData=true` (the latter exposes `workflowData.nodes` snapshot at exec time)
   - Executions list: `/api/v1/executions?workflowId=<id>&limit=N`
 - **Main workflow:** `tWjdu66FcmQwOam1` — "Multi-Region Job Search (Light Sources)" (14 sources).
+- **Workflow debugging note (2026-10-07):** HN Jobs occasionally returns HTTP 419 with a `Sorry` page; this is currently treated as Hacker News's own rate-limit response, most likely triggered by repeated manual webhook testing in a short window, not a code bug. Production's 3-day schedule should not trigger this under normal operation. If it recurs without heavy manual testing nearby, investigate further. Jobberman's parser is separately known-broken (`raw=0`) — low priority, fail-soft, and not blocking the other sources.
 - **Key lesson:** historical execution node config lives in the execution's `workflowData.nodes` (via `?includeData=true`), NOT under the workflow's current nodes. Use exec history to diff "what worked vs what broke" after a rebuild.
 
 ## ClickUp
