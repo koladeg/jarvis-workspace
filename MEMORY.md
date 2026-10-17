@@ -73,6 +73,7 @@ Archive:
 - Preserve the stage-fit guardrail: Kolade is 34 and graduated from Nigeria; undergraduate, recent-graduate, youth-only, unclear-eligibility, expired, and weakly funded options stay out of top recommendations.
 
 - Orisynx primary repos to monitor: `Orisynx/backend` and `Orisynx/frontend-app` (frontend migrated Next.js→Vite/React on 2026-08-17; old `Orisynx/frontend` and `Audit-IS/fe` are superseded/legacy).
+- Orisynx pilot hypothesis (2026-10-17): measure against the current platform invoice/subscription cost and audit-plan planned-versus-actual duration; initially target a 20% reduction in administrative/non-fieldwork time, not necessarily fieldwork duration. Treat this as provisional until pilot data validates or changes it. ClickUp UI task: `86e3rubyt`.
 - Orisynx durable docs:
   - `ORISYNX_CONFLICT_RESOLUTION_FRAMEWORK.md`
   - `memory/orisynx.md`
