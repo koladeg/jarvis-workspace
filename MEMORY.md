@@ -16,7 +16,7 @@ Archive:
 - Robin direct-chat fix on `2026-05-25` remains in force: the research listener/runner must launch from `/home/claw/.openclaw/workspace-research`, not the heavy main workspace.
 - Main server constraint remains critical: this host has about `2 GiB` RAM, so large bootstrap context and high OpenClaw concurrency materially increase hang risk.
 - OpenClaw stability lesson from `2026-07-13`: keep concurrency conservative, preserve explicit plugin allowlisting, keep `agent-browser` idle timeouts set, and clear stale browser state early during outage recovery.
-- OpenClaw default model was switched on `2026-05-25` to `openai-codex/gpt-5.4` because Anthropic was billing-rejected and adding failover delay.
+- OpenClaw's live default model was changed on `2026-09-22` to `openai/gpt-5.6-luna`; the older GPT-5.4 note is historical only. When asked which model is running, verify `/home/claw/.openclaw/openclaw.json` live before answering rather than relying on memory.
 - Cron durable guardrail from `2026-05-22`: use explicit provider/model IDs in cron jobs; do not assume local Ollama model identifiers will pass cron allowlists.
 - Durable browsing guardrail: dynamic/React-style sites should be checked with `agent-browser` before declaring them empty.
 - Durable GitHub guardrail: do not infer private-repo access from unauthenticated browser `404`s; verify with authenticated `gh` or API access first.
